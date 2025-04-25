@@ -3,6 +3,7 @@
 		<div class="space-y-2">
 			<div class="flex items-center text-sm font-medium space-x-2">
 				<span>
+					
 					{{ __('What does include in preview mean?') }}
 				</span>
 			</div>
