@@ -1,0 +1,11 @@
+/* Override primary colors */
+:root {
+
+  }
+
+  
+  /* Override Frappe UI components */
+.btn-primary {
+  background-color: purple;
+  border-color: purple;
+}
