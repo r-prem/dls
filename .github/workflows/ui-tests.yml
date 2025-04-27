@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  
+
   test:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'frappe' }}
@@ -55,7 +55,7 @@ jobs:
 
       - name: Add to Hosts
         run: |
-          echo "127.0.0.1 lms.test" | sudo tee -a /etc/hosts
+          echo "127.0.0.1 dls.test" | sudo tee -a /etc/hosts
 
       - name: Cache pip
         uses: actions/cache@v4
@@ -97,20 +97,20 @@ jobs:
       - name: Site Setup
         run: |
           cd ~/frappe-bench/
-          bench --site lms.test execute frappe.utils.install.complete_setup_wizard
-          bench --site lms.test execute frappe.tests.ui_test_helpers.create_test_user
-          bench --site lms.test set-password frappe@example.com admin
-          bench --site lms.test execute lms.lms.utils.persona_captured
+          bench --site dls.test execute frappe.utils.install.complete_setup_wizard
+          bench --site dls.test execute frappe.tests.ui_test_helpers.create_test_user
+          bench --site dls.test set-password frappe@example.com admin
+          bench --site dls.test execute dls.dls.utils.persona_captured
 
       - name: cypress pre-requisites
         run: |
-          cd ~/frappe-bench/apps/lms
+          cd ~/frappe-bench/apps/dls
           yarn add cypress@^10 --no-lockfile
 
       - name: UI Tests
-        run: cd ~/frappe-bench/ && bench --site lms.test run-ui-tests lms --headless
+        run: cd ~/frappe-bench/ && bench --site dls.test run-ui-tests dls --headless
         env:
-          CYPRESS_BASE_URL: http://lms.test:8000
+          CYPRESS_BASE_URL: http://dls.test:8000
           CYPRESS_RECORD_KEY: 095366ec-7b9f-41bd-aeec-03bb76d627fe
 
       - name: Stop server and wait for coverage file

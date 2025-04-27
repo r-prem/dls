@@ -55,7 +55,7 @@ const props = defineProps({
 })
 
 const evaluations = createListResource({
-	doctype: 'LMS Certificate Request',
+	doctype: 'DLS Certificate Request',
 	filters: {
 		evaluator: user.data?.name,
 	},

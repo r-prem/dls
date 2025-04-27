@@ -58,7 +58,7 @@ const createReview = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Course Review',
+				doctype: 'DLS Course Review',
 				course: props.courseName,
 				...values,
 			},

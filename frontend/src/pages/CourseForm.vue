@@ -139,7 +139,7 @@
 						</div>
 						<div class="w-1/2 mb-4">
 							<Link
-								doctype="LMS Category"
+								doctype="DLS Category"
 								v-model="course.category"
 								:label="__('Category')"
 								:onCreate="(value, close) => openSettings(close)"
@@ -342,7 +342,7 @@ const courseCreationResource = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Course',
+				doctype: 'DLS Course',
 				image: course.course_image?.file_url || '',
 				instructors: instructors.value.map((instructor) => ({
 					instructor: instructor,
@@ -358,7 +358,7 @@ const courseEditResource = createResource({
 	auto: false,
 	makeParams(values) {
 		return {
-			doctype: 'LMS Course',
+			doctype: 'DLS Course',
 			name: values.course,
 			fieldname: {
 				image: course.course_image?.file_url || '',
@@ -375,7 +375,7 @@ const courseResource = createResource({
 	url: 'frappe.client.get',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Course',
+			doctype: 'DLS Course',
 			name: props.courseName,
 		}
 	},
@@ -409,7 +409,7 @@ const courseResource = createResource({
 })
 
 const imageResource = createResource({
-	url: 'lms.lms.api.get_file_info',
+	url: 'dls.dls.api.get_file_info',
 	makeParams(values) {
 		return {
 			file_url: values.image,
@@ -460,7 +460,7 @@ const submitCourse = () => {
 }
 
 const deleteCourse = createResource({
-	url: 'lms.lms.api.delete_course',
+	url: 'dls.dls.api.delete_course',
 	makeParams(values) {
 		return {
 			course: props.courseName,

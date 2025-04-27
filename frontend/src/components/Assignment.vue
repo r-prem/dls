@@ -237,7 +237,7 @@ onBeforeUnmount(() => {
 const assignment = createResource({
 	url: 'frappe.client.get',
 	params: {
-		doctype: 'LMS Assignment',
+		doctype: 'DLS Assignment',
 		name: props.assignmentID,
 	},
 	auto: true,
@@ -252,7 +252,7 @@ const newSubmission = createResource({
 	url: 'frappe.client.insert',
 	makeParams(values) {
 		let doc = {
-			doctype: 'LMS Assignment Submission',
+			doctype: 'DLS Assignment Submission',
 			assignment: props.assignmentID,
 			member: user.data?.name,
 		}
@@ -268,7 +268,7 @@ const newSubmission = createResource({
 })
 
 const imageResource = createResource({
-	url: 'lms.lms.api.get_file_info',
+	url: 'dls.dls.api.get_file_info',
 	makeParams(values) {
 		return {
 			file_url: values.image,
@@ -281,7 +281,7 @@ const imageResource = createResource({
 })
 
 const submissionResource = createDocumentResource({
-	doctype: 'LMS Assignment Submission',
+	doctype: 'DLS Assignment Submission',
 	name: props.submissionName,
 	onError(err) {
 		showToast(__('Error'), __(err.messages?.[0] || err), 'x')
@@ -387,7 +387,7 @@ const markLessonProgress = () => {
 		let chapterNumber = router.currentRoute.value.params.chapterNumber
 		let lessonNumber = router.currentRoute.value.params.lessonNumber
 
-		call('lms.lms.api.mark_lesson_progress', {
+		call('dls.dls.api.mark_lesson_progress', {
 			course: courseName,
 			chapter_number: chapterNumber,
 			lesson_number: lessonNumber,

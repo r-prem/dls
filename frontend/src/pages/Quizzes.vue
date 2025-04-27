@@ -104,7 +104,7 @@ const quizFilter = computed(() => {
 })
 
 const quizzes = createListResource({
-	doctype: 'LMS Quiz',
+	doctype: 'DLS Quiz',
 	filters: quizFilter,
 	fields: ['name', 'title', 'passing_percentage', 'total_marks'],
 	auto: true,

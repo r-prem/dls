@@ -15,7 +15,7 @@
 	>
 		<template #body-content>
 			<Link
-				doctype="LMS Course"
+				doctype="DLS Course"
 				v-model="course"
 				:label="__('Course')"
 				:required="true"
@@ -60,7 +60,7 @@ const createBatchCourse = createResource({
 			doc: {
 				doctype: 'Batch Course',
 				parent: props.batch,
-				parenttype: 'LMS Batch',
+				parenttype: 'DLS Batch',
 				parentfield: 'courses',
 				course: course.value,
 				evaluator: evaluator.value,

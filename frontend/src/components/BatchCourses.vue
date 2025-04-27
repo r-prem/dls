@@ -101,7 +101,7 @@ const props = defineProps({
 })
 
 const courses = createResource({
-	url: 'lms.lms.utils.get_batch_courses',
+	url: 'dls.dls.utils.get_batch_courses',
 	params: {
 		batch: props.batch,
 	},
@@ -134,7 +134,7 @@ const getCoursesColumns = () => {
 }
 
 const deleteCourses = createResource({
-	url: 'lms.lms.api.delete_documents',
+	url: 'dls.dls.api.delete_documents',
 	makeParams(values) {
 		return {
 			doctype: 'Batch Course',

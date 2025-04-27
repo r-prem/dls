@@ -147,7 +147,7 @@ const props = defineProps({
 })
 
 const upcoming_evals = createResource({
-	url: 'lms.lms.utils.get_upcoming_evals',
+	url: 'dls.dls.utils.get_upcoming_evals',
 	params: {
 		student: user.data.name,
 		courses: props.courses.map((course) => course.course),
@@ -176,7 +176,7 @@ const cancelEvaluation = (evl) => {
 				theme: 'red',
 				variant: 'solid',
 				onClick(close) {
-					call('lms.lms.api.cancel_evaluation', { evaluation: evl }).then(
+					call('dls.dls.api.cancel_evaluation', { evaluation: evl }).then(
 						() => {
 							upcoming_evals.reload()
 						}

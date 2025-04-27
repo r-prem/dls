@@ -2,7 +2,7 @@
 	<Dialog v-model="show" :options="{ size: '4xl' }">
 
 		<template #body>
-	
+
 			<div class="flex h-[calc(100vh_-_8rem)]">
 				<div class="flex w-52 shrink-0 flex-col bg-surface-gray-2 p-2">
 					<h1 class="mb-3 px-2 pt-2 text-lg font-semibold text-ink-gray-9">
@@ -92,7 +92,7 @@ import BrandSettings from '@/components/BrandSettings.vue'
 import PaymentSettings from '@/components/PaymentSettings.vue'
 
 const show = defineModel()
-const doctype = ref('LMS Settings')
+const doctype = ref('DLS Settings')
 const activeTab = ref(null)
 const settingsStore = useSettings()
 
@@ -105,7 +105,7 @@ const data = createDocumentResource({
 })
 
 const branding = createResource({
-	url: 'lms.lms.api.get_branding',
+	url: 'dls.dls.api.get_branding',
 	auto: true,
 	cache: 'brand',
 })

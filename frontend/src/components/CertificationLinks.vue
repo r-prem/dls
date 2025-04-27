@@ -67,7 +67,7 @@ const props = defineProps({
 })
 
 const certification = createResource({
-	url: 'lms.lms.api.get_certification_details',
+	url: 'dls.dls.api.get_certification_details',
 	params: {
 		course: props.courseName,
 	},
@@ -77,7 +77,7 @@ const certification = createResource({
 
 const downloadCertificate = () => {
 	window.open(
-		`/api/method/frappe.utils.print_format.download_pdf?doctype=LMS+Certificate&name=${
+		`/api/method/frappe.utils.print_format.download_pdf?doctype=DLS+Certificate&name=${
 			certification.data.certificate.name
 		}&format=${encodeURIComponent(certification.data.certificate.template)}`
 	)

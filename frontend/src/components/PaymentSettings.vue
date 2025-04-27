@@ -54,7 +54,7 @@ const props = defineProps({
 })
 
 const paymentGateway = createResource({
-	url: 'lms.lms.api.get_payment_gateway_details',
+	url: 'dls.dls.api.get_payment_gateway_details',
 	makeParams(values) {
 		return {
 			payment_gateway: props.data.doc.payment_gateway,

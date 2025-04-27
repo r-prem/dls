@@ -26,9 +26,9 @@
 			/>
 			<FormControl
 				:label="__('Student')"
-				v-model="lms_student"
+				v-model="dls_student"
 				type="checkbox"
-				@change.stop="changeRole('lms_student')"
+				@change.stop="changeRole('dls_student')"
 			/>
 		</div>
 	</div>
@@ -41,7 +41,7 @@ import { showToast, convertToTitleCase } from '@/utils'
 const moderator = ref(false)
 const course_creator = ref(false)
 const batch_evaluator = ref(false)
-const lms_student = ref(false)
+const dls_student = ref(false)
 
 const props = defineProps({
 	profile: {
@@ -51,7 +51,7 @@ const props = defineProps({
 })
 
 const roles = createResource({
-	url: 'lms.lms.utils.get_roles',
+	url: 'dls.dls.utils.get_roles',
 	makeParams(values) {
 		return {
 			name: props.profile.data?.name,
@@ -63,7 +63,7 @@ const roles = createResource({
 			'moderator',
 			'course_creator',
 			'batch_evaluator',
-			'lms_student',
+			'dls_student',
 		]
 		for (let role of roles) {
 			if (data[role]) eval(role).value = true
@@ -72,7 +72,7 @@ const roles = createResource({
 })
 
 const updateRole = createResource({
-	url: 'lms.lms.api.save_role',
+	url: 'dls.dls.api.save_role',
 	makeParams(values) {
 		return {
 			user: props.profile.data?.name,

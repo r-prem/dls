@@ -17,14 +17,14 @@
 					<Link
 						v-if="type == 'quiz'"
 						v-model="quiz"
-						doctype="LMS Quiz"
+						doctype="DLS Quiz"
 						:label="__('Select a quiz')"
 						:onCreate="(value, close) => redirectToForm()"
 					/>
 					<Link
 						v-else
 						v-model="assignment"
-						doctype="LMS Assignment"
+						doctype="DLS Assignment"
 						:label="__('Select an assignment')"
 						:onCreate="(value, close) => redirectToForm()"
 					/>
@@ -69,7 +69,7 @@ const addAssessment = () => {
 }
 
 const redirectToForm = () => {
-	if (props.type == 'quiz') window.open('/lms/quizzes/new', '_blank')
-	else window.open('/lms/assignments/new', '_blank')
+	if (props.type == 'quiz') window.open('/dls/quizzes/new', '_blank')
+	else window.open('/dls/assignments/new', '_blank')
 }
 </script>

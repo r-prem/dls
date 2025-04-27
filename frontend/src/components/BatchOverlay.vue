@@ -133,7 +133,7 @@ const props = defineProps({
 })
 
 const enroll = createResource({
-	url: 'lms.lms.utils.enroll_in_batch',
+	url: 'dls.dls.utils.enroll_in_batch',
 	makeParams(values) {
 		return {
 			batch: props.batch.data.name,

@@ -77,7 +77,7 @@ const chapter = createDocumentResource({
 })
 
 const enrollment = createListResource({
-	doctype: 'LMS Enrollment',
+	doctype: 'DLS Enrollment',
 	fields: ['member', 'course'],
 	filters: {
 		course: props.courseName,
@@ -87,7 +87,7 @@ const enrollment = createListResource({
 	cache: ['enrollments', props.courseName, user.data?.name],
 })
 
-const getDataFromLMS = (key) => {
+const getDataFromDLS = (key) => {
 	if (key == 'cmi.core.lesson_status') {
 		if (progress.data?.status == 'Complete') {
 			return 'passed'
@@ -97,14 +97,14 @@ const getDataFromLMS = (key) => {
 	return ''
 }
 
-const saveDataToLMS = (key, value) => {
+const saveDataToDLS = (key, value) => {
 	if (key == 'cmi.core.lesson_status' && value == 'passed') {
 		saveProgress()
 	}
 }
 
 const saveProgress = () => {
-	call('lms.lms.doctype.course_lesson.course_lesson.save_progress', {
+	call('dls.dls.doctype.course_lesson.course_lesson.save_progress', {
 		lesson: chapter.doc.lessons[0].lesson,
 		course: props.courseName,
 	})
@@ -114,7 +114,7 @@ const progress = createResource({
 	url: 'frappe.client.get_value',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Course Progress',
+			doctype: 'DLS Course Progress',
 			fieldname: 'status',
 			filters: {
 				member: user.data?.name,
@@ -149,12 +149,12 @@ const setupSCORMAPI = () => {
 		Terminate: () => 'true',
 		GetValue: (key) => {
 			console.log(`GET: ${key}`)
-			return getDataFromLMS(key)
+			return getDataFromDLS(key)
 		},
 		SetValue: (key, value) => {
 			console.log(`SET: ${key} to value: ${value}`)
 
-			saveDataToLMS(key, value)
+			saveDataToDLS(key, value)
 			return 'true'
 		},
 		Commit: () => 'true',
@@ -163,21 +163,21 @@ const setupSCORMAPI = () => {
 		GetDiagnostic: () => '',
 	}
 	window.API = {
-		LMSInitialize: () => 'true',
-		LMSFinish: () => 'true',
-		LMSGetValue: (key) => {
+		DLSInitialize: () => 'true',
+		DLSFinish: () => 'true',
+		DLSGetValue: (key) => {
 			console.log(`GET: ${key}`)
-			return getDataFromLMS(key)
+			return getDataFromDLS(key)
 		},
-		LMSSetValue: (key, value) => {
+		DLSSetValue: (key, value) => {
 			console.log(`SET: ${key} to value: ${value}`)
-			saveDataToLMS(key, value)
+			saveDataToDLS(key, value)
 			return 'true'
 		},
-		LMSCommit: () => 'true',
-		LMSGetLastError: () => '0',
-		LMSGetErrorString: () => '',
-		LMSGetDiagnostic: () => '',
+		DLSCommit: () => 'true',
+		DLSGetLastError: () => '0',
+		DLSGetErrorString: () => '',
+		DLSGetDiagnostic: () => '',
 	}
 }
 

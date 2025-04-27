@@ -112,7 +112,7 @@
 								:label="__('Template')"
 								doctype="Print Format"
 								:filters="{
-									doc_type: 'LMS Certificate',
+									doc_type: 'DLS Certificate',
 								}"
 							/>
 							<FormControl
@@ -184,7 +184,7 @@ const defaultTemplate = createResource({
 			doctype: 'Property Setter',
 			fieldname: 'value',
 			filters: {
-				doc_type: 'LMS Certificate',
+				doc_type: 'DLS Certificate',
 				property: 'default_print_format',
 			},
 		}
@@ -200,7 +200,7 @@ const openCallLink = (link) => {
 }
 
 const evaluationResource = createResource({
-	url: 'lms.lms.api.save_evaluation_details',
+	url: 'dls.dls.api.save_evaluation_details',
 	makeParams(values) {
 		return {
 			member: props.event.member,
@@ -225,7 +225,7 @@ const evaluationDetails = createResource({
 	url: 'frappe.client.get',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Certificate Evaluation',
+			doctype: 'DLS Certificate Evaluation',
 			filters: {
 				member: props.event.member,
 				course: props.event.course,
@@ -259,7 +259,7 @@ const saveEvaluation = () => {
 }
 
 const certificateResource = createResource({
-	url: 'lms.lms.api.save_certificate_details',
+	url: 'dls.dls.api.save_certificate_details',
 	makeParams(values) {
 		return {
 			member: props.event.member,
@@ -282,7 +282,7 @@ const certificateDetails = createResource({
 	url: 'frappe.client.get',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Certificate',
+			doctype: 'DLS Certificate',
 			filters: {
 				member: props.event.member,
 				course: props.event.course,
@@ -331,7 +331,7 @@ watch(show, () => {
 
 const openCertificate = (certificate) => {
 	window.open(
-		`/api/method/frappe.utils.print_format.download_pdf?doctype=LMS+Certificate&name=${
+		`/api/method/frappe.utils.print_format.download_pdf?doctype=DLS+Certificate&name=${
 			certificate.name
 		}&format=${encodeURIComponent(certificate.template)}`
 	)

@@ -128,7 +128,7 @@
 			v-model:articles="articles"
 			appName="learning"
 			title="Frappe Learning"
-			:logo="LMSLogo"
+			:logo="DLSLogo"
 			:afterSkip="(step) => capture('onboarding_step_skipped_' + step)"
 			:afterSkipAll="() => capture('onboarding_steps_skipped')"
 			:afterReset="(step) => capture('onboarding_step_reset_' + step)"
@@ -161,7 +161,7 @@ import { useSettings } from '@/stores/settings'
 import { Button, createResource, Tooltip } from 'frappe-ui'
 import PageModal from '@/components/Modals/PageModal.vue'
 import { capture } from '@/telemetry'
-import LMSLogo from '@/components/Icons/LMSLogo.vue'
+import DLSLogo from '@/components/Icons/DLSLogo.vue'
 import { useRouter } from 'vue-router'
 import InviteIcon from './Icons/InviteIcon.vue'
 import {
@@ -213,7 +213,7 @@ const iconProps = {
 onMounted(() => {
 	addNotifications()
 	setSidebarLinks()
-	socket.on('publish_lms_notifications', (data) => {
+	socket.on('publish_dls_notifications', (data) => {
 		unreadNotifications.reload()
 	})
 })
@@ -341,7 +341,7 @@ const openPageModal = (link) => {
 
 const deletePage = (link) => {
 	createResource({
-		url: 'lms.lms.api.delete_sidebar_item',
+		url: 'dls.dls.api.delete_sidebar_item',
 		makeParams(values) {
 			return {
 				webpage: link.web_page,
@@ -380,13 +380,13 @@ const toggleWebPages = () => {
 const getFirstCourse = async () => {
 	let firstCourse = localStorage.getItem('firstCourse')
 	if (firstCourse) return firstCourse
-	return await call('lms.lms.onboarding.get_first_course')
+	return await call('dls.dls.onboarding.get_first_course')
 }
 
 const getFirstBatch = async () => {
 	let firstBatch = localStorage.getItem('firstBatch')
 	if (firstBatch) return firstBatch
-	return await call('lms.lms.onboarding.get_first_batch')
+	return await call('dls.dls.onboarding.get_first_batch')
 }
 
 const steps = reactive([

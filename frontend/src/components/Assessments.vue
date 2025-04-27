@@ -40,7 +40,7 @@
 						<template #default="{ column, item }">
 							<ListRowItem :item="row[column.key]" :align="column.align">
 								<div v-if="column.key == 'assessment_type'">
-									{{ row[column.key] == 'LMS Quiz' ? 'Quiz' : 'Assignment' }}
+									{{ row[column.key] == 'DLS Quiz' ? 'Quiz' : 'Assignment' }}
 								</div>
 								<div v-else-if="column.key == 'title'">
 									{{ row[column.key] }}
@@ -123,7 +123,7 @@ const props = defineProps({
 })
 
 const assessments = createResource({
-	url: 'lms.lms.utils.get_assessments',
+	url: 'dls.dls.utils.get_assessments',
 	params: {
 		batch: props.batch,
 	},
@@ -131,10 +131,10 @@ const assessments = createResource({
 })
 
 const deleteAssessments = createResource({
-	url: 'lms.lms.api.delete_documents',
+	url: 'dls.dls.api.delete_documents',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Assessment',
+			doctype: 'DLS Assessment',
 			documents: values.assessments,
 		}
 	},
@@ -153,7 +153,7 @@ const removeAssessments = (selections, unselectAll) => {
 }
 
 const getRowRoute = (row) => {
-	if (row.assessment_type == 'LMS Assignment') {
+	if (row.assessment_type == 'DLS Assignment') {
 		if (row.submission) {
 			return {
 				name: 'AssignmentSubmission',

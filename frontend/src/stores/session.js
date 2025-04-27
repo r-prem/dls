@@ -4,7 +4,7 @@ import { usersStore } from './user'
 import router from '@/router'
 import { computed, reactive, ref } from 'vue'
 
-export const sessionStore = defineStore('lms-session', () => {
+export const sessionStore = defineStore('dls-session', () => {
 	let { userResource } = usersStore()
 	const brand = reactive({})
 
@@ -43,19 +43,19 @@ export const sessionStore = defineStore('lms-session', () => {
 	})
 
 	const branding = createResource({
-		url: 'lms.lms.api.get_branding',
+		url: 'dls.dls.api.get_branding',
 		cache: 'brand',
 		auto: true,
 		onSuccess(data) {
 			brand.name = data.app_name
 			brand.logo = data.app_logo
 			brand.favicon =
-				data.favicon?.file_url || '/assets/lms/frontend/learning.svg'
+				data.favicon?.file_url || '/assets/dls/frontend/learning.svg'
 		},
 	})
 
 	const sidebarSettings = createResource({
-		url: 'lms.lms.api.get_sidebar_settings',
+		url: 'dls.dls.api.get_sidebar_settings',
 		cache: 'Sidebar Settings',
 		auto: false,
 	})

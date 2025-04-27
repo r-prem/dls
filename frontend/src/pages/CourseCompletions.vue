@@ -37,7 +37,7 @@
           :columns="columns"
           :rows="sortedCompletions"
           row-key="name"
-          :options="{ 
+          :options="{
             showTooltip: false,
             sortBy: sortBy,
             sortOrder: sortOrder
@@ -122,7 +122,7 @@ onMounted(() => {
 })
 
 const courses = createResource({
-  url: 'lms.lms.utils.get_courses',
+  url: 'dls.dls.utils.get_courses',
   params: {
     filters: {
       published: 1
@@ -147,7 +147,7 @@ const formattedCourseOptions = computed(() => {
 const completions = createResource({
   url: 'frappe.client.get_list',
   params: {
-    doctype: 'LMS Enrollment',
+    doctype: 'DLS Enrollment',
     fields: ['name', 'member', 'member_name', 'progress', 'creation', 'modified'],
     filters: { course: selectedCourse.value },
     order_by: 'progress desc'
@@ -158,7 +158,7 @@ const loadCompletions = () => {
   if (selectedCourse.value) {
     completions.update({
       params: {
-        doctype: 'LMS Enrollment',
+        doctype: 'DLS Enrollment',
         fields: ['name', 'member', 'member_name', 'progress', 'creation', 'modified'],
         filters: { course: selectedCourse.value }
       }
@@ -191,15 +191,15 @@ const sortOrder = ref('desc')
 
 const sortedCompletions = computed(() => {
   if (!completions.data) return []
-  
+
   return [...completions.data].sort((a, b) => {
     const aValue = a[sortBy.value]
     const bValue = b[sortBy.value]
-    
+
     if (sortBy.value === 'progress') {
       return sortOrder.value === 'desc' ? bValue - aValue : aValue - bValue
     }
-    
+
     if (sortOrder.value === 'desc') {
       return bValue > aValue ? 1 : -1
     }
@@ -233,4 +233,4 @@ usePageMeta(() => ({
   title: 'Course Completions',
   icon: brand.favicon
 }))
-</script> 
+</script>

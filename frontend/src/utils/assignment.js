@@ -44,7 +44,7 @@ export class Assignment {
 		if (this.readOnly) {
 			const { userResource } = usersStore()
 			call('frappe.client.get_value', {
-				doctype: 'LMS Assignment Submission',
+				doctype: 'DLS Assignment Submission',
 				filters: {
 					assignment: assignment,
 					member: userResource.data?.name,
@@ -52,7 +52,7 @@ export class Assignment {
 				fieldname: ['name'],
 			}).then((data) => {
 				let submission = data.name || 'new'
-				this.wrapper.innerHTML = `<iframe src="/lms/assignment-submission/${assignment}/${submission}?fromLesson=1" class="w-full h-[500px]"></iframe>`
+				this.wrapper.innerHTML = `<iframe src="/dls/assignment-submission/${assignment}/${submission}?fromLesson=1" class="w-full h-[500px]"></iframe>`
 			})
 			return
 		}

@@ -105,7 +105,7 @@ const chapter = reactive({
 })
 
 const chapterResource = createResource({
-	url: 'lms.lms.api.upsert_chapter',
+	url: 'dls.dls.api.upsert_chapter',
 	makeParams(values) {
 		return {
 			title: chapter.title,
@@ -125,7 +125,7 @@ const chapterReference = createResource({
 				doctype: 'Chapter Reference',
 				chapter: values.name,
 				parent: props.course,
-				parenttype: 'LMS Course',
+				parenttype: 'DLS Course',
 				parentfield: 'chapters',
 			},
 		}

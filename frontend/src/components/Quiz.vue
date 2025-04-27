@@ -321,7 +321,7 @@ const quiz = createResource({
 	url: 'frappe.client.get',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Quiz',
+			doctype: 'DLS Quiz',
 			name: props.quizName,
 		}
 	},
@@ -391,7 +391,7 @@ const attempts = createResource({
 	url: 'frappe.client.get_list',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Quiz Submission',
+			doctype: 'DLS Quiz Submission',
 			filters: {
 				member: user.data?.name,
 				quiz: quiz.data?.name,
@@ -429,7 +429,7 @@ watch(
 )
 
 const quizSubmission = createResource({
-	url: 'lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary',
+	url: 'dls.dls.doctype.dls_quiz.dls_quiz.quiz_summary',
 	makeParams(values) {
 		return {
 			quiz: quiz.data.name,
@@ -439,7 +439,7 @@ const quizSubmission = createResource({
 })
 
 const questionDetails = createResource({
-	url: 'lms.lms.utils.get_question_details',
+	url: 'dls.dls.utils.get_question_details',
 	makeParams(values) {
 		return {
 			question: currentQuestion.value,
@@ -504,7 +504,7 @@ const checkAnswer = () => {
 	}
 
 	createResource({
-		url: 'lms.lms.doctype.lms_quiz.lms_quiz.check_answer',
+		url: 'dls.dls.doctype.dls_quiz.dls_quiz.check_answer',
 		params: {
 			question: currentQuestion.value,
 			type: questionDetails.data.type,
@@ -617,7 +617,7 @@ const getInstructions = (question) => {
 
 const markLessonProgress = () => {
 	if (router.currentRoute.value.name == 'Lesson') {
-		call('lms.lms.api.mark_lesson_progress', {
+		call('dls.dls.api.mark_lesson_progress', {
 			course: router.currentRoute.value.params.courseName,
 			chapter_number: router.currentRoute.value.params.chapterNumber,
 			lesson_number: router.currentRoute.value.params.lessonNumber,

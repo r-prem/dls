@@ -168,13 +168,13 @@ const breadcrumbs = computed(() => {
 })
 
 const chartDetails = createResource({
-	url: 'lms.lms.api.get_chart_details',
+	url: 'dls.dls.api.get_chart_details',
 	cache: ['statistics'],
 	auto: true,
 })
 
 const signupsChart = createResource({
-	url: 'lms.lms.utils.get_chart_data',
+	url: 'dls.dls.utils.get_chart_data',
 	cache: ['signups'],
 	params: {
 		chart_name: 'New Signups',
@@ -183,7 +183,7 @@ const signupsChart = createResource({
 })
 
 const enrollmentChart = createResource({
-	url: 'lms.lms.utils.get_chart_data',
+	url: 'dls.dls.utils.get_chart_data',
 	cache: ['enrollments'],
 	params: {
 		chart_name: 'Course Enrollments',
@@ -192,7 +192,7 @@ const enrollmentChart = createResource({
 })
 
 const lessonCompletion = createResource({
-	url: 'lms.lms.utils.get_chart_data',
+	url: 'dls.dls.utils.get_chart_data',
 	cache: ['lessonCompletion'],
 	params: {
 		chart_name: 'Lesson Completion',
@@ -201,7 +201,7 @@ const lessonCompletion = createResource({
 })
 
 const courseCompletion = createResource({
-	url: 'lms.lms.utils.get_course_completion_data',
+	url: 'dls.dls.utils.get_course_completion_data',
 	auto: true,
 	cache: ['courseCompletion'],
 })

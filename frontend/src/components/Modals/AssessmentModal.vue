@@ -53,9 +53,9 @@ const assessmentResource = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Assessment',
+				doctype: 'DLS Assessment',
 				parent: props.batch,
-				parenttype: 'LMS Batch',
+				parenttype: 'DLS Batch',
 				parentfield: 'assessment',
 				assessment_type: assessmentType.value,
 				assessment_name: assessment.value,
@@ -79,8 +79,8 @@ const addAssessment = (close) => {
 
 const assessmentTypes = computed(() => {
 	return [
-		{ label: 'Quiz', value: 'LMS Quiz' },
-		{ label: 'Assignment', value: 'LMS Assignment' },
+		{ label: 'Quiz', value: 'DLS Quiz' },
+		{ label: 'Assignment', value: 'DLS Assignment' },
 	]
 })
 </script>
