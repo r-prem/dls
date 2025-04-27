@@ -177,7 +177,7 @@ function enrollStudent() {
 		}, 2000)
 	} else {
 		const enrollStudentResource = createResource({
-			url: 'lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership',
+			url: 'dls.dls.doctype.lms_enrollment.lms_enrollment.create_membership',
 		})
 		enrollStudentResource
 			.submit({
@@ -235,7 +235,7 @@ const certificate = createResource({
 	},
 	onSuccess(data) {
 		window.open(
-			`/api/method/frappe.utils.print_format.download_pdf?doctype=LMS+Certificate&name=${
+			`/api/method/frappe.utils.print_format.download_pdf?doctype=DLS+Certificate&name=${
 				data.name
 			}&format=${encodeURIComponent(data.template)}`,
 			'_blank'

@@ -36,7 +36,7 @@ const props = defineProps({
 })
 
 const communications = createResource({
-	url: 'lms.lms.api.get_announcements',
+	url: 'dls.lms.api.get_announcements',
 	makeParams(value) {
 		return {
 			batch: props.batch,

@@ -81,7 +81,7 @@ const router = useRouter()
 onMounted(() => {
 	if (!user.data) router.push({ name: 'Courses' })
 
-	socket.on('publish_lms_notifications', (data) => {
+	socket.on('publish_dls_notifications', (data) => {
 		unReadNotifications.reload()
 	})
 })
@@ -94,7 +94,7 @@ const notifications = computed(() => {
 
 const unReadNotifications = createListResource({
 	doctype: 'Notification Log',
-	url: 'lms.lms.api.get_notifications',
+	url: 'dls.dls.api.get_notifications',
 	filters: {
 		for_user: user.data?.name,
 		read: 0,
@@ -105,7 +105,7 @@ const unReadNotifications = createListResource({
 
 const readNotifications = createListResource({
 	doctype: 'Notification Log',
-	url: 'lms.lms.api.get_notifications',
+	url: 'dls.dls.api.get_notifications',
 	filters: {
 		for_user: user.data?.name,
 		read: 1,
@@ -115,7 +115,7 @@ const readNotifications = createListResource({
 })
 
 const markAsRead = createResource({
-	url: 'lms.lms.api.mark_as_read',
+	url: 'dls.dls.api.mark_as_read',
 	makeParams(values) {
 		return {
 			name: values.name,
@@ -128,7 +128,7 @@ const markAsRead = createResource({
 })
 
 const markAllAsRead = createResource({
-	url: 'lms.lms.api.mark_all_as_read',
+	url: 'dls.dls.api.mark_all_as_read',
 	onSuccess(data) {
 		unReadNotifications.reload()
 		readNotifications.reload()

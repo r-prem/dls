@@ -255,7 +255,7 @@ onMounted(() => {
 })
 
 const lesson = createResource({
-	url: 'lms.lms.utils.get_lesson',
+	url: 'dls.dls.utils.get_lesson',
 	cache: ['lesson', props.courseName, props.chapterNumber, props.lessonNumber],
 	makeParams(values) {
 		return {
@@ -315,7 +315,7 @@ const markProgress = () => {
 }
 
 const progress = createResource({
-	url: 'lms.lms.doctype.course_lesson.course_lesson.save_progress',
+	url: 'dls.dls.doctype.course_lesson.course_lesson.save_progress',
 	makeParams() {
 		return {
 			lesson: lesson.data.name,
@@ -414,7 +414,7 @@ const enrollment = createResource({
 	makeParams() {
 		return {
 			doc: {
-				doctype: 'LMS Enrollment',
+				doctype: 'DLS Enrollment',
 				course: props.courseName,
 				member: user.data?.name,
 			},
@@ -434,7 +434,7 @@ const enrollStudent = () => {
 }
 
 const redirectToLogin = () => {
-	window.location.href = `/login?redirect-to=/lms/courses/${props.courseName}`
+	window.location.href = `../../../dls/courses/${props.courseName}`
 }
 
 usePageMeta(() => {

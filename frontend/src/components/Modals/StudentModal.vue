@@ -49,7 +49,7 @@ const studentResource = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Batch Enrollment',
+				doctype: 'DLS Batch Enrollment',
 				batch: props.batch,
 				member: student.value,
 			},

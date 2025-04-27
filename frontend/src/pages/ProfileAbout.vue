@@ -115,7 +115,7 @@ const props = defineProps({
 const badges = createResource({
 	url: 'frappe.client.get_list',
 	params: {
-		doctype: 'LMS Badge Assignment',
+		doctype: 'DLS Badge Assignment',
 		fields: ['name', 'badge', 'badge_image', 'badge_description', 'issued_on'],
 		filters: {
 			member: props.profile.data.name,
@@ -137,7 +137,7 @@ const badges = createResource({
 const shareOnSocial = (badge, medium) => {
 	let shareUrl
 	const url = encodeURIComponent(
-		`${window.location.origin}/lms/badges/${badge.badge}/${props.profile.data?.email}`
+		`${window.location.origin}/dls/badges/${badge.badge}/${props.profile.data?.email}`
 	)
 	const summary = `I am happy to announce that I earned the ${
 		badge.badge

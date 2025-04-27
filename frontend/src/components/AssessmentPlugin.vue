@@ -17,14 +17,14 @@
 					<Link
 						v-if="type == 'quiz'"
 						v-model="quiz"
-						doctype="LMS Quiz"
+						doctype="DLS Quiz"
 						:label="__('Select a quiz')"
 						:onCreate="(value, close) => redirectToForm()"
 					/>
 					<Link
 						v-else
 						v-model="assignment"
-						doctype="LMS Assignment"
+						doctype="DLS Assignment"
 						:label="__('Select an assignment')"
 						:onCreate="(value, close) => redirectToForm()"
 					/>

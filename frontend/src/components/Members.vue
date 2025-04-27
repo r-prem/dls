@@ -229,7 +229,7 @@ watch(search, () => {
 
 const getRole = (role) => {
 	const map = {
-		'LMS Student': 'Student',
+		'DLS Student': 'Student',
 		'Course Creator': 'Instructor',
 		Moderator: 'Moderator',
 		'Batch Evaluator': 'Evaluator',

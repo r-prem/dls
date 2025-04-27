@@ -3,13 +3,13 @@
 *.egg-info
 *.swp
 tags
-lms/docs/current
-lms/public/dist
+dls/docs/current
+dls/public/dist
 __pycache__/
 *.py[cod]
 *$py.class
 node_modules
 package-lock.json
-lms/public/frontend
-lms/www/lms.html
+dls/public/frontend
+dls/www/dls.html
 frappe-ui

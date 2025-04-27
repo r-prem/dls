@@ -308,7 +308,7 @@ const deleteStudents = createResource({
 	url: 'lms.lms.api.delete_documents',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Batch Enrollment',
+			doctype: 'DLS Batch Enrollment',
 			documents: values.students,
 		}
 	},
@@ -431,7 +431,7 @@ watch(students, () => {
 const certificationCount = createResource({
 	url: 'frappe.client.get_count',
 	params: {
-		doctype: 'LMS Certificate',
+		doctype: 'DLS Certificate',
 		filters: {
 			batch_name: props.batch.name,
 		},

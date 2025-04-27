@@ -80,7 +80,7 @@
 							</div>
 							<div v-else-if="tab.label == 'Discussions'">
 								<Discussions
-									doctype="LMS Batch"
+									doctype="DLS Batch"
 									:docname="batch.data.name"
 									:title="__('Discussions')"
 									:key="batch.data.name"
@@ -303,7 +303,7 @@ onMounted(() => {
 })
 
 const batch = createResource({
-	url: 'lms.lms.utils.get_batch_details',
+	url: 'dls.dls.utils.get_batch_details',
 	cache: ['batch', props.batchName],
 	params: {
 		batch: props.batchName,
@@ -340,7 +340,7 @@ const isStudent = computed(() => {
 })
 
 const redirectToLogin = () => {
-	window.location.href = `/login?redirect-to=/lms/batches/${props.batchName}`
+	window.location.href = `/login?redirect-to=/dls/batches/${props.batchName}`
 }
 
 const openAnnouncementModal = () => {

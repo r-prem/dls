@@ -121,7 +121,7 @@ const props = defineProps({
 })
 
 const course = createResource({
-	url: 'lms.lms.utils.get_course_details',
+	url: 'dls.dls.utils.get_course_details',
 	cache: ['course', props.courseName],
 	params: {
 		course: props.courseName,

@@ -46,7 +46,7 @@ const badge = createResource({
 	url: 'frappe.client.get',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Badge Assignment',
+			doctype: 'DLS Badge Assignment',
 			filters: {
 				badge: props.badgeName,
 				member: props.email,

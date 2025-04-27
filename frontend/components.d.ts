@@ -62,7 +62,7 @@ declare module 'vue' {
     Link: typeof import('./src/components/Controls/Link.vue')['default']
     LiveClass: typeof import('./src/components/LiveClass.vue')['default']
     LiveClassModal: typeof import('./src/components/Modals/LiveClassModal.vue')['default']
-    LMSLogo: typeof import('./src/components/Icons/LMSLogo.vue')['default']
+    DLSLogo: typeof import('./src/components/Icons/DLSLogo.vue')['default']
     Members: typeof import('./src/components/Members.vue')['default']
     MobileLayout: typeof import('./src/components/MobileLayout.vue')['default']
     MultiSelect: typeof import('./src/components/Controls/MultiSelect.vue')['default']

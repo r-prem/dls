@@ -100,7 +100,7 @@
 								v-model="billingDetails.phone"
 							/>
 							<Link
-								doctype="LMS Source"
+								doctype="DLS Source"
 								:value="billingDetails.source"
 								@change="(option) => (billingDetails.source = option)"
 								:label="__('Where did you hear about us?')"
@@ -137,14 +137,14 @@
 				:text="access.data.message"
 				:buttonLabel="type == 'course' ? 'Checkout Course' : 'Checkout Batch'"
 				:buttonLink="
-					type == 'course' ? `/lms/courses/${name}` : `/lms/batches/${name}`
+					type == 'course' ? `/dls/courses/${name}` : `/dls/batches/${name}`
 				"
 			/>
 		</div>
 		<div v-else-if="!user.data?.name">
 			<NotPermitted
 				text="Please login to access this page."
-				:buttonLink="`/login?redirect-to=/lms/billing/${type}/${name}`"
+				:buttonLink="`/login?redirect-to=/dls/billing/${type}/${name}`"
 			/>
 		</div>
 	</div>
@@ -187,7 +187,7 @@ const props = defineProps({
 })
 
 const access = createResource({
-	url: 'lms.lms.api.validate_billing_access',
+	url: 'dls.dls.api.validate_billing_access',
 	params: {
 		billing_type: props.type,
 		name: props.name,
@@ -199,10 +199,10 @@ const access = createResource({
 })
 
 const orderSummary = createResource({
-	url: 'lms.lms.utils.get_order_summary',
+	url: 'dls.dls.utils.get_order_summary',
 	makeParams(values) {
 		return {
-			doctype: props.type == 'batch' ? 'LMS Batch' : 'LMS Course',
+			doctype: props.type == 'batch' ? 'DLS Batch' : 'DLS Course',
 			docname: props.name,
 			country: billingDetails.country,
 		}
@@ -229,10 +229,10 @@ const setBillingDetails = (data) => {
 }
 
 const paymentLink = createResource({
-	url: 'lms.lms.payments.get_payment_link',
+	url: 'dls.dls.payments.get_payment_link',
 	makeParams(values) {
 		return {
-			doctype: props.type == 'batch' ? 'LMS Batch' : 'LMS Course',
+			doctype: props.type == 'batch' ? 'DLS Batch' : 'DLS Course',
 			docname: props.name,
 			title: orderSummary.data.title,
 			amount: orderSummary.data.original_amount,
@@ -350,11 +350,11 @@ const changeCurrency = (country) => {
 
 const redirectTo = computed(() => {
 	if (props.type == 'course') {
-		return `/lms/courses/${props.name}`
+		return `/dls/courses/${props.name}`
 	} else if (props.type == 'batch') {
-		return `/lms/batches/${props.name}`
+		return `/dls/batches/${props.name}`
 	} else if (props.type == 'certificate') {
-		return `/lms/courses/${props.name}/certification`
+		return `/dls/courses/${props.name}/certification`
 	}
 })
 

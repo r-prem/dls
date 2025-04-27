@@ -148,7 +148,7 @@
 			<Link
 				v-if="currentForm == 'course'"
 				v-model="course"
-				doctype="LMS Course"
+				doctype="DLS Course"
 				:filters="{
 					disable_self_learning: 1,
 				}"
@@ -211,7 +211,7 @@ const props = defineProps({
 })
 
 const program = createDocumentResource({
-	doctype: 'LMS Program',
+	doctype: 'DLS Program',
 	name: props.programName,
 	auto: true,
 	cache: ['program', props.programName],
@@ -310,7 +310,7 @@ const updateOrder = (e) => {
 
 const saveProgram = () => {
 	call('frappe.model.rename_doc.update_document_title', {
-		doctype: 'LMS Program',
+		doctype: 'DLS Program',
 		docname: program.doc.name,
 		name: program.doc.title,
 	}).then((data) => {

@@ -16,7 +16,7 @@
 					:src="branding.data?.banner_image.file_url"
 					class="w-8 h-8 rounded flex-shrink-0"
 				/>
-				<LMSLogo v-else class="w-8 h-8 rounded flex-shrink-0" />
+				<DLSLogo v-else class="w-8 h-8 rounded flex-shrink-0" />
 				<div
 					class="flex flex-1 flex-col text-left duration-300 ease-in-out"
 					:class="
@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-import LMSLogo from '@/components/Icons/LMSLogo.vue'
+import DLSLogo from '@/components/Icons/DLSLogo.vue'
 import { sessionStore } from '@/stores/session'
 import { Dropdown } from 'frappe-ui'
 import Apps from '@/components/Apps.vue'
