@@ -281,7 +281,7 @@ watch(
 const quizDetails = createResource({
 	url: 'frappe.client.get',
 	makeParams(values) {
-		return { doctype: 'LMS Quiz', name: props.quizID }
+		return { doctype: 'DLS Quiz', name: props.quizID }
 	},
 	auto: false,
 	onSuccess(data) {
@@ -307,7 +307,7 @@ const quizCreate = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Quiz',
+				doctype: 'DLS Quiz',
 				...quiz,
 			},
 		}
@@ -319,7 +319,7 @@ const quizUpdate = createResource({
 	auto: false,
 	makeParams(values) {
 		return {
-			doctype: 'LMS Quiz',
+			doctype: 'DLS Quiz',
 			name: values.quizID,
 			fieldname: {
 				total_marks: calculateTotalMarks(),
@@ -411,10 +411,10 @@ const openQuestionModal = (question = null) => {
 }
 
 const deleteQuestionResource = createResource({
-	url: 'lms.lms.api.delete_documents',
+	url: 'dls.dls.api.delete_documents',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Quiz Question',
+			doctype: 'DLS Quiz Question',
 			documents: values.questions,
 		}
 	},

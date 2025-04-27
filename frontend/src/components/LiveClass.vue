@@ -96,7 +96,7 @@ const props = defineProps({
 })
 
 const liveClasses = createListResource({
-	doctype: 'LMS Live Class',
+	doctype: 'DLS Live Class',
 	filters: {
 		batch_name: props.batch,
 	},

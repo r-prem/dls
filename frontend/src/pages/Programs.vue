@@ -154,7 +154,7 @@ onMounted(() => {
 })
 
 const programs = createResource({
-	url: 'lms.lms.utils.get_programs',
+	url: 'dls.dls.utils.get_programs',
 	auto: true,
 	cache: 'programs',
 })
@@ -162,7 +162,7 @@ const programs = createResource({
 const createProgram = (close) => {
 	call('frappe.client.insert', {
 		doc: {
-			doctype: 'LMS Program',
+			doctype: 'DLS Program',
 			title: title.value,
 		},
 	}).then((res) => {
@@ -171,7 +171,7 @@ const createProgram = (close) => {
 }
 
 const enrollMember = (program, course) => {
-	call('lms.lms.utils.enroll_in_program_course', {
+	call('dls.dls.utils.enroll_in_program_course', {
 		program: program,
 		course: course,
 	})

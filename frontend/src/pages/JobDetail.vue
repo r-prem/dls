@@ -177,7 +177,7 @@ const props = defineProps({
 })
 
 const job = createResource({
-	url: 'lms.lms.api.get_job_details',
+	url: 'dls.dls.api.get_job_details',
 	params: {
 		job: props.job,
 	},
@@ -195,7 +195,7 @@ const jobApplication = createResource({
 	url: 'frappe.client.get_list',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Job Application',
+			doctype: 'DLS Job Application',
 			filters: {
 				job: job.data?.name,
 				user: user.data?.name,
@@ -208,7 +208,7 @@ const applicationCount = createResource({
 	url: 'frappe.client.get_count',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Job Application',
+			doctype: 'DLS Job Application',
 			filters: {
 				job: job.data?.name,
 			},

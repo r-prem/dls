@@ -93,7 +93,7 @@ const jobApplication = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Job Application',
+				doctype: 'DLS Job Application',
 				user: user.data?.name,
 				resume: resume.value?.file_name,
 				job: props.job,

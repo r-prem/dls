@@ -237,7 +237,7 @@ onBeforeUnmount(() => {
 const assignment = createResource({
 	url: 'frappe.client.get',
 	params: {
-		doctype: 'LMS Assignment',
+		doctype: 'DLS Assignment',
 		name: props.assignmentID,
 	},
 	auto: true,
@@ -252,7 +252,7 @@ const newSubmission = createResource({
 	url: 'frappe.client.insert',
 	makeParams(values) {
 		let doc = {
-			doctype: 'LMS Assignment Submission',
+			doctype: 'DLS Assignment Submission',
 			assignment: props.assignmentID,
 			member: user.data?.name,
 		}
@@ -281,7 +281,7 @@ const imageResource = createResource({
 })
 
 const submissionResource = createDocumentResource({
-	doctype: 'LMS Assignment Submission',
+	doctype: 'DLS Assignment Submission',
 	name: props.submissionName,
 	onError(err) {
 		showToast(__('Error'), __(err.messages?.[0] || err), 'x')

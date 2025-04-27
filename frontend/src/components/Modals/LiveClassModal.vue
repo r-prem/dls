@@ -156,7 +156,7 @@ const createLiveClass = createResource({
 	url: 'lms.lms.doctype.lms_batch.lms_batch.create_live_class',
 	makeParams(values) {
 		return {
-			doctype: 'LMS Live Class',
+			doctype: 'DLS Live Class',
 			batch_name: values.batch,
 			...values,
 		}

@@ -2,7 +2,7 @@
 	<div class="flex h-screen overflow-hidden sm:bg-gray-50">
 		<div class="relative h-full z-10 mx-auto pt-8 sm:w-max sm:pt-32">
 			<div class="mx-auto flex items-center justify-center space-x-2">
-				<LMSLogo class="size-7" />
+				<DLSLogo class="size-7" />
 				<span
 					class="select-none text-xl font-semibold tracking-tight text-gray-900"
 				>
@@ -78,7 +78,7 @@
 	</div>
 </template>
 <script setup>
-import LMSLogo from '@/components/Icons/LMSLogo.vue'
+import DLSLogo from '@/components/Icons/DLSLogo.vue'
 import { Button, call, FormControl, usePageMeta } from 'frappe-ui'
 import { computed, inject, reactive } from 'vue'
 import { useRouter } from 'vue-router'
@@ -104,7 +104,7 @@ const submitPersona = () => {
 		use_case: persona.useCase,
 		frappe_products: persona.frappeProducts,
 	}
-	call('lms.lms.api.capture_user_persona', {
+	call('dls.dls.api.capture_user_persona', {
 		responses: JSON.stringify(responses),
 	}).then(() => {
 		router.push({
@@ -115,7 +115,7 @@ const submitPersona = () => {
 
 const skipPersonaForm = () => {
 	call('frappe.client.set_value', {
-		doctype: 'LMS Settings',
+		doctype: 'DLS Settings',
 		name: null,
 		fieldname: 'persona_captured',
 		value: 1,

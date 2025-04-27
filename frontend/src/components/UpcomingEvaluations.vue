@@ -147,7 +147,7 @@ const props = defineProps({
 })
 
 const upcoming_evals = createResource({
-	url: 'lms.lms.utils.get_upcoming_evals',
+	url: 'dls.dls.utils.get_upcoming_evals',
 	params: {
 		student: user.data.name,
 		courses: props.courses.map((course) => course.course),

@@ -43,7 +43,7 @@
 					:label="__('Template')"
 					doctype="Print Format"
 					:filters="{
-						doc_type: 'LMS Certificate',
+						doc_type: 'DLS Certificate',
 					}"
 				/>
 				<Switch
@@ -88,7 +88,7 @@ const createCertificate = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Certificate',
+				doctype: 'DLS Certificate',
 				issue_date: details.issue_date,
 				expiry_date: details.expiry_date,
 				template: details.template,

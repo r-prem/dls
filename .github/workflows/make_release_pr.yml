@@ -16,7 +16,7 @@ jobs:
         with:
           route: POST /repos/{owner}/{repo}/pulls
           owner: frappe
-          repo: lms
+          repo: dls
           title: |-
             "chore: merge 'develop' into 'main'"
           body: "Automated weekly release"

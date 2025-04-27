@@ -40,11 +40,11 @@
 							class="flex items-center text-ink-gray-7 font-medium"
 							:to="{
 								name:
-									student.assessments[assessment].type == 'LMS Assignment'
+									student.assessments[assessment].type == 'DLS Assignment'
 										? 'AssignmentSubmission'
 										: '',
 								params:
-									student.assessments[assessment].type == 'LMS Assignment'
+									student.assessments[assessment].type == 'DLS Assignment'
 										? {
 												assignmentID:
 													student.assessments[assessment].assessment,

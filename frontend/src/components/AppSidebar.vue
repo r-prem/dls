@@ -128,7 +128,7 @@
 			v-model:articles="articles"
 			appName="learning"
 			title="Frappe Learning"
-			:logo="LMSLogo"
+			:logo="DLSLogo"
 			:afterSkip="(step) => capture('onboarding_step_skipped_' + step)"
 			:afterSkipAll="() => capture('onboarding_steps_skipped')"
 			:afterReset="(step) => capture('onboarding_step_reset_' + step)"
@@ -161,7 +161,7 @@ import { useSettings } from '@/stores/settings'
 import { Button, createResource, Tooltip } from 'frappe-ui'
 import PageModal from '@/components/Modals/PageModal.vue'
 import { capture } from '@/telemetry'
-import LMSLogo from '@/components/Icons/LMSLogo.vue'
+import DLSLogo from '@/components/Icons/DLSLogo.vue'
 import { useRouter } from 'vue-router'
 import InviteIcon from './Icons/InviteIcon.vue'
 import {

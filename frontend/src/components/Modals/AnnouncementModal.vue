@@ -74,7 +74,7 @@ const announcementResource = createResource({
 			cc: announcement.replyTo,
 			subject: announcement.subject,
 			content: announcement.announcement,
-			doctype: 'LMS Batch',
+			doctype: 'DLS Batch',
 			name: props.batch,
 			send_email: 1,
 		}

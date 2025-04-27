@@ -2,7 +2,7 @@ import { useStorage } from "@vueuse/core";
 import { call } from "frappe-ui";
 import "../../../frappe/frappe/public/js/lib/posthog.js";
 
-const APP = "lms";
+const APP = "dls";
 const SITENAME = window.location.hostname;
 
 declare global {
@@ -49,7 +49,7 @@ export async function init() {
 async function set_enabled() {
   if (telemetry.value.enabled) return;
 
-  await call("lms.lms.telemetry.is_enabled").then((res) => {
+  await call("dls.dls.telemetry.is_enabled").then((res) => {
     telemetry.value.enabled = res;
   });
 }
@@ -58,7 +58,7 @@ async function set_credentials() {
   if (!telemetry.value.enabled) return;
   if (telemetry.value.project_id && telemetry.value.host) return;
 
-  await call("lms.lms.telemetry.get_credentials").then((res) => {
+  await call("dls.dls.telemetry.get_credentials").then((res) => {
     telemetry.value.project_id = res.project_id;
     telemetry.value.host = res.telemetry_host;
   });

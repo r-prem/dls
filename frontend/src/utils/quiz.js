@@ -43,7 +43,7 @@ export class Quiz {
 
 	renderQuiz(quiz) {
 		if (this.readOnly) {
-			this.wrapper.innerHTML = `<iframe src="/lms/quiz/${quiz}?fromLesson=1" class="w-full h-[500px]"></iframe>`
+			this.wrapper.innerHTML = `<iframe src="/dls/quiz/${quiz}?fromLesson=1" class="w-full h-[500px]"></iframe>`
 			return
 		}
 		this.wrapper.innerHTML = `<div class='border rounded-md p-10 text-center bg-surface-menu-bar mb-2'>

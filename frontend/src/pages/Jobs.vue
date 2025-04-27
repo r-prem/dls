@@ -119,7 +119,7 @@ onMounted(() => {
 })
 
 const jobs = createResource({
-	url: 'lms.lms.api.get_job_opportunities',
+	url: 'dls.dls.api.get_job_opportunities',
 	cache: ['jobs'],
 })
 

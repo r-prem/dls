@@ -4,7 +4,7 @@ import { usersStore } from './user'
 import router from '@/router'
 import { computed, reactive, ref } from 'vue'
 
-export const sessionStore = defineStore('lms-session', () => {
+export const sessionStore = defineStore('dls-session', () => {
 	let { userResource } = usersStore()
 	const brand = reactive({})
 

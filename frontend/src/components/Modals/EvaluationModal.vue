@@ -104,7 +104,7 @@ const createEvaluation = createResource({
 	makeParams(values) {
 		return {
 			doc: {
-				doctype: 'LMS Certificate Request',
+				doctype: 'DLS Certificate Request',
 				batch_name: values.batch,
 				...values,
 			},
