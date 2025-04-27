@@ -2,8 +2,8 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "class_student")
-	frappe.reload_doc("lms", "doctype", "class_student_registration")
+	frappe.reload_doc("dls", "doctype", "class_student")
+	frappe.reload_doc("dls", "doctype", "class_student_registration")
 
 	students = frappe.get_all(
 		"Class Student", {"parent": ["is", "set"]}, ["name", "student", "parent"]

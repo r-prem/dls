@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_certificate")
+	frappe.reload_doc("dls", "doctype", "dls_certificate")
 	default_certificate_template = frappe.db.get_value(
 		"Property Setter",
 		{

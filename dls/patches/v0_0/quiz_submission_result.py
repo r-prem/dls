@@ -2,8 +2,8 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_quiz_submission")
-	frappe.reload_doc("lms", "doctype", "lms_quiz_result")
+	frappe.reload_doc("dls", "doctype", "dls_quiz_submission")
+	frappe.reload_doc("dls", "doctype", "dls_quiz_result")
 	results = frappe.get_all("LMS Quiz Result", fields=["name", "result"])
 
 	for result in results:

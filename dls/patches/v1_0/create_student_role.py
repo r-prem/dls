@@ -1,9 +1,9 @@
 import frappe
-from dls.install import create_lms_student_role
+from dls.install import create_dls_student_role
 
 
 def execute():
-	create_lms_student_role()
+	create_dls_student_role()
 
 	users = frappe.get_all(
 		"User", filters={"user_type": "Website User", "enabled": 1}, pluck="name"

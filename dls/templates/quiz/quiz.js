@@ -123,7 +123,7 @@ const quiz_summary = (e = undefined) => {
 	let self = this;
 
 	frappe.call({
-		method: "lms.lms.doctype.lms_quiz.lms_quiz.quiz_summary",
+		method: "dls.dls.doctype.dls_quiz.dls_quiz.quiz_summary",
 		args: {
 			quiz: quiz_name,
 			results: localStorage.getItem(quiz_name),
@@ -214,7 +214,7 @@ const parse_options = () => {
 const is_answer_correct = (type, user_answers, element) => {
 	frappe.call({
 		async: false,
-		method: "lms.lms.doctype.lms_quiz.lms_quiz.check_answer",
+		method: "dls.dls.doctype.dls_quiz.dls_quiz.check_answer",
 		args: {
 			question: $(".active-question").data("name"),
 			type: type,
@@ -273,7 +273,7 @@ const add_icon = (element, icon) => {
 	let label = $(element).siblings(".option-text").text();
 	$(element).siblings(".option-text").html(`
         <div>
-            <img class="d-inline mr-3" src="/assets/lms/icons/${icon}.svg">
+            <img class="d-inline mr-3" src="/assets/dls/icons/${icon}.svg">
             ${label}
         </div>
     `);

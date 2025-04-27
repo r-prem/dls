@@ -123,7 +123,7 @@ const props = defineProps({
 })
 
 const assessments = createResource({
-	url: 'lms.lms.utils.get_assessments',
+	url: 'dls.dls.utils.get_assessments',
 	params: {
 		batch: props.batch,
 	},
@@ -131,7 +131,7 @@ const assessments = createResource({
 })
 
 const deleteAssessments = createResource({
-	url: 'lms.lms.api.delete_documents',
+	url: 'dls.dls.api.delete_documents',
 	makeParams(values) {
 		return {
 			doctype: 'DLS Assessment',

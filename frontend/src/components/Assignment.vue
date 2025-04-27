@@ -268,7 +268,7 @@ const newSubmission = createResource({
 })
 
 const imageResource = createResource({
-	url: 'lms.lms.api.get_file_info',
+	url: 'dls.dls.api.get_file_info',
 	makeParams(values) {
 		return {
 			file_url: values.image,
@@ -387,7 +387,7 @@ const markLessonProgress = () => {
 		let chapterNumber = router.currentRoute.value.params.chapterNumber
 		let lessonNumber = router.currentRoute.value.params.lessonNumber
 
-		call('lms.lms.api.mark_lesson_progress', {
+		call('dls.dls.api.mark_lesson_progress', {
 			course: courseName,
 			chapter_number: chapterNumber,
 			lesson_number: lessonNumber,

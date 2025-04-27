@@ -2,16 +2,16 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "course_chapter")
-	frappe.reload_doc("lms", "doctype", "course_lesson")
-	frappe.reload_doc("lms", "doctype", "chapter_reference")
-	frappe.reload_doc("lms", "doctype", "lesson_reference")
-	frappe.reload_doc("lms", "doctype", "exercise")
-	frappe.reload_doc("lms", "doctype", "exercise_submission")
-	frappe.reload_doc("lms", "doctype", "lms_batch_membership")
-	frappe.reload_doc("lms", "doctype", "lms_course")
-	frappe.reload_doc("lms", "doctype", "lms_course_progress")
-	frappe.reload_doc("lms", "doctype", "lms_quiz")
+	frappe.reload_doc("dls", "doctype", "course_chapter")
+	frappe.reload_doc("dls", "doctype", "course_lesson")
+	frappe.reload_doc("dls", "doctype", "chapter_reference")
+	frappe.reload_doc("dls", "doctype", "lesson_reference")
+	frappe.reload_doc("dls", "doctype", "exercise")
+	frappe.reload_doc("dls", "doctype", "exercise_submission")
+	frappe.reload_doc("dls", "doctype", "dls_batch_membership")
+	frappe.reload_doc("dls", "doctype", "dls_course")
+	frappe.reload_doc("dls", "doctype", "dls_course_progress")
+	frappe.reload_doc("dls", "doctype", "dls_quiz")
 
 	if not frappe.db.count("Course Chapter"):
 		move_chapters()

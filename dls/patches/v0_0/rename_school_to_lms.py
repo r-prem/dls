@@ -6,4 +6,4 @@ def execute():
 
 	if "school" in frappe.db.get_global("installed_apps"):
 		remove_from_installed_apps("school")
-		add_to_installed_apps("lms")
+		add_to_installed_apps("dls")

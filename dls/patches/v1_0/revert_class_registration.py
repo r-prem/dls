@@ -3,7 +3,7 @@ import frappe
 
 def execute():
 	if frappe.db.exists("DocType", "Class Student Registration"):
-		frappe.reload_doc("lms", "doctype", "class_student")
+		frappe.reload_doc("dls", "doctype", "class_student")
 
 		students = frappe.get_all("Class Student", fields=["name", "student"])
 		for student in students:

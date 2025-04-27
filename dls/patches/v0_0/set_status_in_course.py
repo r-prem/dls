@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_course")
+	frappe.reload_doc("dls", "doctype", "dls_course")
 	courses = frappe.get_all(
 		"LMS Course", {"status": ("is", "not set")}, ["name", "published"]
 	)

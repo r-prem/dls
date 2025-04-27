@@ -18,7 +18,7 @@ def amend_lesson_content():
 		for lesson in lessons:
 			frappe.db.set_value("Course Lesson", lesson.name, "body", to_markdown(lesson.body))
 
-		frappe.reload_doc("lms", "doctype", "course_lesson")
+		frappe.reload_doc("dls", "doctype", "course_lesson")
 
 
 def amend_course_description():
@@ -34,4 +34,4 @@ def amend_course_description():
 				"LMS Course", course.name, "description", to_markdown(course.description)
 			)
 
-		frappe.reload_doc("lms", "doctype", "lms_course")
+		frappe.reload_doc("dls", "doctype", "dls_course")

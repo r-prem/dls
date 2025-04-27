@@ -47,13 +47,13 @@ const apps = createResource({
 		let _apps = [
 			{
 				name: 'frappe',
-				logo: '/assets/lms/images/desk.png',
+				logo: '/assets/dls/images/desk.png',
 				title: __('Desk'),
 				route: '/app',
 			},
 		]
 		data.map((app) => {
-			if (app.name === 'lms') return
+			if (app.name === 'dls') return
 			_apps.push({
 				name: app.name,
 				logo: app.logo,

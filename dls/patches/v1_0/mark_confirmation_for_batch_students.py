@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "batch_student")
+	frappe.reload_doc("dls", "doctype", "batch_student")
 	students = frappe.get_all("Batch Student", pluck="name")
 
 	for student in students:

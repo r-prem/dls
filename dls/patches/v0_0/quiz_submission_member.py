@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_quiz_submission")
+	frappe.reload_doc("dls", "doctype", "dls_quiz_submission")
 	submissions = frappe.db.get_all("LMS Quiz Submission", fields=["name", "owner"])
 
 	for submission in submissions:

@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_course_progress")
+	frappe.reload_doc("dls", "doctype", "dls_course_progress")
 	progress_records = frappe.get_all(
 		"LMS Course Progress", fields=["name", "owner", "member"]
 	)

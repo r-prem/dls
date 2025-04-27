@@ -83,7 +83,7 @@ const enroll_in_course = (e) => {
 	let batch = $(e.currentTarget).attr("data-batch");
 	batch = batch ? decodeURIComponent(batch) : "";
 	frappe.call({
-		method: "lms.lms.doctype.lms_enrollment.lms_enrollment.create_membership",
+		method: "dls.dls.doctype.dls_enrollment.dls_enrollment.create_membership",
 		args: {
 			batch: batch ? batch : "",
 			course: course,
@@ -115,7 +115,7 @@ const notify_user = (e) => {
 	}
 
 	frappe.call({
-		method: "lms.lms.doctype.lms_course_interest.lms_course_interest.capture_interest",
+		method: "dls.dls.doctype.dls_course_interest.dls_course_interest.capture_interest",
 		args: {
 			course: course,
 		},
@@ -141,7 +141,7 @@ const generate_graph = (chart_name, element, type = "line") => {
 	let date = frappe.datetime;
 
 	frappe.call({
-		method: "lms.lms.utils.get_chart_data",
+		method: "dls.dls.utils.get_chart_data",
 		args: {
 			chart_name: chart_name,
 			timespan: "Select Date Range",
@@ -173,7 +173,7 @@ const render_chart = (data, chart_name, element, type) => {
 
 const generate_course_completion_graph = () => {
 	frappe.call({
-		method: "lms.lms.utils.get_course_completion_data",
+		method: "dls.dls.utils.get_course_completion_data",
 		callback: (data) => {
 			render_chart(
 				data.message,
@@ -418,7 +418,7 @@ const save_batch = (values) => {
 		args = values;
 	}
 	frappe.call({
-		method: "lms.lms.doctype.lms_batch.lms_batch.create_batch",
+		method: "dls.dls.doctype.dls_batch.dls_batch.create_batch",
 		args: args,
 		callback: (r) => {
 			if (r.message) {

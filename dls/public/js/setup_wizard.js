@@ -1,5 +1,5 @@
-frappe.provide("lms.setup");
+frappe.provide("dls.setup");
 
-// redirect to desk page 'lms' after setup wizard is complete
-// 'lms' desk page redirects to '/courses'
-//frappe.setup.welcome_page = "/app/lms-home";
+// redirect to desk page 'dls' after setup wizard is complete
+// 'dls' desk page redirects to '/courses'
+//frappe.setup.welcome_page = "/app/dls-home";

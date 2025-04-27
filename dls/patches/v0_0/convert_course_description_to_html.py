@@ -9,4 +9,4 @@ def execute():
 		html = markdown_to_html(course.description)
 		frappe.db.set_value("LMS Course", course.name, "description", html)
 
-	frappe.reload_doc("lms", "doctype", "lms_course")
+	frappe.reload_doc("dls", "doctype", "dls_course")

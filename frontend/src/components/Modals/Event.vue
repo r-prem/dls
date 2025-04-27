@@ -200,7 +200,7 @@ const openCallLink = (link) => {
 }
 
 const evaluationResource = createResource({
-	url: 'lms.lms.api.save_evaluation_details',
+	url: 'dls.dls.api.save_evaluation_details',
 	makeParams(values) {
 		return {
 			member: props.event.member,
@@ -259,7 +259,7 @@ const saveEvaluation = () => {
 }
 
 const certificateResource = createResource({
-	url: 'lms.lms.api.save_certificate_details',
+	url: 'dls.dls.api.save_certificate_details',
 	makeParams(values) {
 		return {
 			member: props.event.member,

@@ -13,7 +13,7 @@ export const usersStore = defineStore('dls-users', () => {
 	})
 
 	const allUsers = createResource({
-		url: 'dls.lms.api.get_all_users',
+		url: 'dls.dls.api.get_all_users',
 		cache: ['allUsers'],
 	})
 

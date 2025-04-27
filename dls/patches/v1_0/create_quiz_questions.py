@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_question")
+	frappe.reload_doc("dls", "doctype", "dls_question")
 
 	fields = ["name", "question", "type", "multiple"]
 	for num in range(1, 5):

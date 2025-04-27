@@ -2,10 +2,10 @@ import frappe
 
 
 def execute():
-	rename_link("/courses", "/lms/courses")
-	rename_link("/batches", "/lms/batches")
-	rename_link("/statistics", "/lms/statistics")
-	rename_link("/job-openings", "/lms/job-openings")
+	rename_link("/courses", "/dls/courses")
+	rename_link("/batches", "/dls/batches")
+	rename_link("/statistics", "/dls/statistics")
+	rename_link("/job-openings", "/dls/job-openings")
 	delete_link("/people")
 
 

@@ -108,9 +108,9 @@ jobs:
           yarn add cypress@^10 --no-lockfile
 
       - name: UI Tests
-        run: cd ~/frappe-bench/ && bench --site lms.test run-ui-tests lms --headless
+        run: cd ~/frappe-bench/ && bench --site dls.test run-ui-tests dls --headless
         env:
-          CYPRESS_BASE_URL: http://lms.test:8000
+          CYPRESS_BASE_URL: http://dls.test:8000
           CYPRESS_RECORD_KEY: 095366ec-7b9f-41bd-aeec-03bb76d627fe
 
       - name: Stop server and wait for coverage file

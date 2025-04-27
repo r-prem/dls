@@ -2,11 +2,11 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_course")
-	frappe.reload_doc("lms", "doctype", "chapter")
-	frappe.reload_doc("lms", "doctype", "lesson")
-	frappe.reload_doc("lms", "doctype", "chapter_reference")
-	frappe.reload_doc("lms", "doctype", "lesson_reference")
+	frappe.reload_doc("dls", "doctype", "dls_course")
+	frappe.reload_doc("dls", "doctype", "chapter")
+	frappe.reload_doc("dls", "doctype", "lesson")
+	frappe.reload_doc("dls", "doctype", "chapter_reference")
+	frappe.reload_doc("dls", "doctype", "lesson_reference")
 
 	if not frappe.db.count("Chapter Reference"):
 		move_chapters()

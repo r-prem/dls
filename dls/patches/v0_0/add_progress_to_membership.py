@@ -5,7 +5,7 @@ from dls.dls.utils import get_course_progress
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_batch_membership")
+	frappe.reload_doc("dls", "doctype", "dls_batch_membership")
 	memberships = frappe.get_all(
 		"LMS Enrollment", ["name", "course", "member"], order_by="course"
 	)

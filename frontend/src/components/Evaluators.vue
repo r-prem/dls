@@ -104,7 +104,7 @@ const evaluators = createResource({
 })
 
 const addEvaluator = () => {
-	call('lms.lms.api.add_an_evaluator', {
+	call('dls.dls.api.add_an_evaluator', {
 		email: email.value,
 	}).then((data) => {
 		showForm.value = false

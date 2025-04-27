@@ -177,7 +177,7 @@ function enrollStudent() {
 		}, 2000)
 	} else {
 		const enrollStudentResource = createResource({
-			url: 'dls.dls.doctype.lms_enrollment.lms_enrollment.create_membership',
+			url: 'dls.dls.doctype.dls_enrollment.dls_enrollment.create_membership',
 		})
 		enrollStudentResource
 			.submit({
@@ -227,7 +227,7 @@ const canGetCertificate = computed(() => {
 })
 
 const certificate = createResource({
-	url: 'lms.lms.doctype.lms_certificate.lms_certificate.create_certificate',
+	url: 'dls.dls.doctype.dls_certificate.dls_certificate.create_certificate',
 	makeParams(values) {
 		return {
 			course: values.course,

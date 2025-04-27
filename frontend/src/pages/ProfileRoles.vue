@@ -63,7 +63,7 @@ const roles = createResource({
 			'moderator',
 			'course_creator',
 			'batch_evaluator',
-			'lms_student',
+			'dls_student',
 		]
 		for (let role of roles) {
 			if (data[role]) eval(role).value = true
@@ -72,7 +72,7 @@ const roles = createResource({
 })
 
 const updateRole = createResource({
-	url: 'lms.lms.api.save_role',
+	url: 'dls.dls.api.save_role',
 	makeParams(values) {
 		return {
 			user: props.profile.data?.name,

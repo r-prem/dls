@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_message")
+	frappe.reload_doc("dls", "doctype", "dls_message")
 	messages = frappe.get_all("LMS Message", ["author", "name"])
 	for message in messages:
 		user = frappe.db.get_value(

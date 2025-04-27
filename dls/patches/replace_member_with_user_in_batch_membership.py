@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	frappe.reload_doc("lms", "doctype", "lms_batch_membership")
+	frappe.reload_doc("dls", "doctype", "dls_batch_membership")
 	memberships = frappe.get_all("LMS Enrollment", ["member", "name"])
 	for membership in memberships:
 		email = frappe.db.get_value("Community Member", membership.member, "email")

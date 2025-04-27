@@ -160,7 +160,7 @@ const count = call('dls.dls.api.get_count_of_certified_members').then(
 
 const categories = createListResource({
 	doctype: 'DLS Certificate',
-	url: 'dls.lms.api.get_certification_categories',
+	url: 'dls.dls.api.get_certification_categories',
 	cache: ['certification_categories'],
 	auto: true,
 	transform(data) {

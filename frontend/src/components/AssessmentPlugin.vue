@@ -69,7 +69,7 @@ const addAssessment = () => {
 }
 
 const redirectToForm = () => {
-	if (props.type == 'quiz') window.open('/lms/quizzes/new', '_blank')
-	else window.open('/lms/assignments/new', '_blank')
+	if (props.type == 'quiz') window.open('/dls/quizzes/new', '_blank')
+	else window.open('/dls/assignments/new', '_blank')
 }
 </script>

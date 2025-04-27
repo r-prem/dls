@@ -6,12 +6,12 @@ def execute():
 	if frappe.db.exists("DocField", {"fieldname": "students", "parent": "LMS Batch"}):
 		return
 
-	rename_lms_class()
+	rename_dls_class()
 	rename_class_student()
 	rename_class_courses()
 
 
-def rename_lms_class():
+def rename_dls_class():
 	frappe.flags.ignore_route_conflict_validation = True
 	rename_doc("DocType", "LMS Class", "LMS Batch")
 	frappe.flags.ignore_route_conflict_validation = False

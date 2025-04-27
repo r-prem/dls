@@ -176,7 +176,7 @@ const cancelEvaluation = (evl) => {
 				theme: 'red',
 				variant: 'solid',
 				onClick(close) {
-					call('lms.lms.api.cancel_evaluation', { evaluation: evl }).then(
+					call('dls.dls.api.cancel_evaluation', { evaluation: evl }).then(
 						() => {
 							upcoming_evals.reload()
 						}
