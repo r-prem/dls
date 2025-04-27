@@ -2,7 +2,7 @@ import frappe
 
 
 def execute():
-	roles = ["Course Creator", "Moderator", "Batch Evaluator", "LMS Student"]
+	roles = ["Course Creator", "Moderator", "Batch Evaluator", "DLS Student"]
 
 	for role in roles:
 		if frappe.db.exists("Role", role):

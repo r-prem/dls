@@ -12,12 +12,12 @@ def execute():
 		fields.append(f"possibility_{num}")
 
 	questions = frappe.get_all(
-		"LMS Quiz Question",
+		"DLS Quiz Question",
 		fields=fields,
 	)
 
 	for question in questions:
-		doc = frappe.new_doc("LMS Question")
+		doc = frappe.new_doc("DLS Question")
 		doc.update(
 			{
 				"question": question.question,
@@ -38,4 +38,4 @@ def execute():
 				)
 
 		doc.save()
-		frappe.db.set_value("LMS Quiz Question", question.name, "question", doc.name)
+		frappe.db.set_value("DLS Quiz Question", question.name, "question", doc.name)

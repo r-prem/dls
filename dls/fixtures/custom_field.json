@@ -146,7 +146,7 @@
   "link_filters": null,
   "mandatory_depends_on": null,
   "modified": "2022-04-19 13:02:18.219510",
-  "module": "LMS",
+  "module": "DLS",
   "name": "User-user_category",
   "no_copy": 0,
   "non_negative": 0,

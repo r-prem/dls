@@ -8,7 +8,7 @@
 			{{ _("Get Started") }}
 		</div>
 		<div class="onboarding-subtitle">
-			{{ _("Lets start setting up your content on the LMS so that you can reclaim time and focus on growth.") }}
+			{{ _("Lets start setting up your content on the DLS so that you can reclaim time and focus on growth.") }}
 		</div>
 		<div class="onboarding-steps">
 			<a class="onboarding-steps-link" href="/courses/new-course/edit">
@@ -51,8 +51,8 @@
 		frappe.call({
 			method: "frappe.client.set_value",
 			args: {
-				doctype: "LMS Settings",
-				name: "LMS Settings",
+				doctype: "DLS Settings",
+				name: "DLS Settings",
 				fieldname: "is_onboarding_complete",
 				value: 1,
 			},

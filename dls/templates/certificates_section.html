@@ -1,7 +1,7 @@
 {% if certificates | length %}
 <div class="cards-parent">
     {% for certificate in certificates %}
-        {% set course = frappe.db.get_value("LMS Course", certificate.course, ["title", "name", "image"], as_dict=True) %}
+        {% set course = frappe.db.get_value("DLS Course", certificate.course, ["title", "name", "image"], as_dict=True) %}
 
         <div class="common-card-style column-card medium">
             <div class="bold-heading">

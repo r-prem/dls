@@ -2,13 +2,13 @@ import frappe
 
 
 def execute():
-	certificates = frappe.get_all("LMS Certificate", fields=["member", "name"])
+	certificates = frappe.get_all("DLS Certificate", fields=["member", "name"])
 
 	for certificate in certificates:
 		if not frappe.db.exists(
 			"DocShare",
 			{
-				"share_doctype": "LMS Certificate",
+				"share_doctype": "DLS Certificate",
 				"share_name": certificate.name,
 				"user": certificate.member,
 			},
@@ -17,7 +17,7 @@ def execute():
 				{
 					"doctype": "DocShare",
 					"user": certificate.member,
-					"share_doctype": "LMS Certificate",
+					"share_doctype": "DLS Certificate",
 					"share_name": certificate.name,
 					"read": 1,
 				}

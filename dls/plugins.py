@@ -227,7 +227,7 @@ def assignment_renderer(detail):
 
 
 def show_custom_signup():
-	settings = frappe.get_single("LMS Settings")
+	settings = frappe.get_single("DLS Settings")
 	if settings.custom_signup_content or settings.user_category:
 		return "dls/templates/signup-form.html"
 	return "frappe/templates/signup.html"

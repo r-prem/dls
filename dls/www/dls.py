@@ -246,7 +246,7 @@ def get_meta_from_document(app_path):
 	if re.match(r"^quizzes/[^/]+$", app_path):
 		quiz_name = app_path.split("/")[1]
 		quiz = frappe.db.get_value(
-			"LMS Quiz",
+			"DLS Quiz",
 			quiz_name,
 			["title"],
 			as_dict=True,
@@ -268,7 +268,7 @@ def get_meta_from_document(app_path):
 	if re.match(r"^assignments/[^/]+$", app_path):
 		assignment_name = app_path.split("/")[1]
 		assignment = frappe.db.get_value(
-			"LMS Assignment",
+			"DLS Assignment",
 			assignment_name,
 			["title"],
 			as_dict=True,

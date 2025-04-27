@@ -3,8 +3,8 @@ from dls.dls.utils import get_course_progress
 
 
 def execute():
-	enrollments = frappe.get_all("LMS Enrollment", fields=["name", "course", "member"])
+	enrollments = frappe.get_all("DLS Enrollment", fields=["name", "course", "member"])
 
 	for enrollment in enrollments:
 		progress = get_course_progress(enrollment.course, enrollment.member)
-		frappe.db.set_value("LMS Enrollment", enrollment.name, "progress", progress)
+		frappe.db.set_value("DLS Enrollment", enrollment.name, "progress", progress)

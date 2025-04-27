@@ -13,4 +13,4 @@ def execute():
 	]
 
 	for field in fields:
-		frappe.db.set_single_value("LMS Settings", field, 1)
+		frappe.db.set_single_value("DLS Settings", field, 1)

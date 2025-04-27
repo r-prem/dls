@@ -10,7 +10,7 @@ cd ./frappe-bench || exit
 
 bench -v setup requirements
 
-echo "Setting Up LMS App..."
+echo "Setting Up DLS App..."
 bench get-app dls "${GITHUB_WORKSPACE}"
 
 echo "Setting Up Sites & Database..."

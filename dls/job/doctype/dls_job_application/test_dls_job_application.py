@@ -5,5 +5,5 @@
 from frappe.tests import UnitTestCase
 
 
-class TestLMSJobApplication(UnitTestCase):
+class TestDLSJobApplication(UnitTestCase):
 	pass

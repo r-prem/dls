@@ -8,7 +8,7 @@ pip install frappe-bench
 bench -v init frappe-bench --skip-assets --skip-redis-config-generation --python "$(which python)" --frappe-branch "${BASE_BRANCH}"
 cd ./frappe-bench || exit
 
-echo "Get LMS..."
+echo "Get DLS..."
 bench get-app --skip-assets dls "${GITHUB_WORKSPACE}"
 
 echo "Generating POT file..."

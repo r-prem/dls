@@ -14,7 +14,7 @@ def execute():
 			"parent": user,
 			"parenttype": "User",
 			"parentfield": "roles",
-			"role": "LMS Student",
+			"role": "DLS Student",
 		}
 		if not frappe.db.exists("Has Role", filters):
 			doc = frappe.new_doc("Has Role")

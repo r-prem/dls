@@ -23,7 +23,7 @@ def execute():
 		).insert(ignore_permissions=True)
 
 		frappe.db.set_single_value(
-			"LMS Settings",
+			"DLS Settings",
 			"mentor_request_creation",
 			_("Mentor Request Creation Template"),
 		)
@@ -43,7 +43,7 @@ def execute():
 		).insert(ignore_permissions=True)
 
 		frappe.db.set_single_value(
-			"LMS Settings",
+			"DLS Settings",
 			"mentor_request_status_update",
 			_("Mentor Request Status Update Template"),
 		)

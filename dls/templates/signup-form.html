@@ -1,4 +1,4 @@
-{% set custom_signup_content = frappe.db.get_single_value("LMS Settings", "custom_signup_content") %}
+{% set custom_signup_content = frappe.db.get_single_value("DLS Settings", "custom_signup_content") %}
 <form class="signup-form" role="form">
     <div class="page-card-body">
         <div class="form-group">
@@ -12,7 +12,7 @@
             placeholder="{{ _('jane@example.com') }}" required>
         </div>
 
-        {% if frappe.db.get_single_value("LMS Settings", "user_category") %}
+        {% if frappe.db.get_single_value("DLS Settings", "user_category") %}
         <div class="form-group">
             <label class="form-label sr-only"> {{ _("User Category") }} </label>
             <div class="control-input-wrapper">

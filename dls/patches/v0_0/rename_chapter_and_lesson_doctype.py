@@ -25,7 +25,7 @@ def execute():
 def move_chapters():
 	docs = frappe.get_all("Chapter", fields=["*"])
 	for doc in docs:
-		if frappe.db.exists("LMS Course", doc.course):
+		if frappe.db.exists("DLS Course", doc.course):
 			name = doc.name
 			doc.update({"doctype": "Course Chapter"})
 			del doc["name"]

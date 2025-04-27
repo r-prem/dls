@@ -6,7 +6,7 @@ from frappe import _
 from frappe.model.document import Document
 
 
-class LMSJobApplication(Document):
+class DLSJobApplication(Document):
 	def validate(self):
 		self.validate_duplicate()
 
@@ -18,7 +18,7 @@ class LMSJobApplication(Document):
 			self.send_email_to_employer()
 
 	def validate_duplicate(self):
-		if frappe.db.exists("LMS Job Application", {"job": self.job, "user": self.user}):
+		if frappe.db.exists("DLS Job Application", {"job": self.job, "user": self.user}):
 			frappe.throw(_("You have already applied for this job."))
 
 	def send_email_to_employer(self):
