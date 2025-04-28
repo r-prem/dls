@@ -1,8 +1,8 @@
 from . import __version__ as app_version
 
 app_name = "frappe_dls"
-app_title = "Frappe dls"
-app_publisher = "Frappe"
+app_title = "DLS"
+app_publisher = "Raffael"
 app_description = "Frappe DLS App"
 app_icon_url = "/assets/dls/images/dls-logo.png"
 app_icon_title = "Learning"

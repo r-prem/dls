@@ -5,7 +5,7 @@
     </header>
     <div class="p-5">
       <div class="flex items-center justify-between mb-6">
-        <div class="text-xl font-semibold">{{ __('Course Completions') }}</div>
+        <div class="text-xl font-semibold text-ink-gray-9">{{ __('Course Completions') }}</div>
         <div class="flex space-x-4">
           <FormControl
             v-model="selectedCourse"
@@ -13,6 +13,7 @@
             :options="formattedCourseOptions"
             :placeholder="__('Select Course')"
             @change="loadCompletions"
+            class="min-w-32"
           />
         </div>
       </div>

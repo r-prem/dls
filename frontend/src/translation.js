@@ -3,7 +3,16 @@ import { createResource } from 'frappe-ui'
 export default function translationPlugin(app) {
 	app.config.globalProperties.__ = translate
 	window.__ = translate
-	if (!window.translatedMessages) fetchTranslations()
+	
+	// Initialize translations
+	if (!window.translatedMessages) {
+		fetchTranslations()
+	}
+
+	// Listen for language changes
+	window.addEventListener('language-change', () => {
+		fetchTranslations()
+	})
 }
 
 function translate(message) {
@@ -34,7 +43,16 @@ function fetchTranslations(lang) {
 		cache: 'translations',
 		auto: true,
 		transform: (data) => {
-			window.translatedMessages = data
+			if (data && typeof data === 'object') {
+				window.translatedMessages = data
+				// Trigger a custom event to notify components about language change
+				window.dispatchEvent(new Event('translations-updated'))
+			}
 		},
+		onError: (error) => {
+			console.error('Error fetching translations:', error)
+			// Set empty translations object to prevent errors
+			window.translatedMessages = {}
+		}
 	})
 }
