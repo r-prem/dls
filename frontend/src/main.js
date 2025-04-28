@@ -14,6 +14,11 @@ let pinia = createPinia()
 let app = createApp(App)
 setConfig('resourceFetcher', frappeRequest)
 
+// Listen for language changes from the system
+window.addEventListener('language-change', () => {
+	window.dispatchEvent(new Event('translations-updated'))
+})
+
 app.use(FrappeUI)
 app.use(pinia)
 app.use(router)
