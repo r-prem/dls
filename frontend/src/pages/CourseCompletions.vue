@@ -130,10 +130,10 @@ const courses = createResource({
   },
   auto: true,
   onSuccess(data) {
-    console.log('Courses data:', data)
+    //console.log('Courses data:', data)
   },
   onError(error) {
-    console.error('Error fetching courses:', error)
+    //console.error('Error fetching courses:', error)
   }
 })
 

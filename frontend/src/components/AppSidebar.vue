@@ -602,6 +602,13 @@ watch(userResource, () => {
 				to: 'CourseCompletions',
 				activeFor: ['CourseCompletions']
 			})
+
+			sidebarLinks.value.push({
+				label: __('User Management'),
+				icon: 'UserPlus',
+				to: 'UserManagement',
+				activeFor: ['UserManagement']
+			})
 		}
 
 		addPrograms()

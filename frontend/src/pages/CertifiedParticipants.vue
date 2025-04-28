@@ -18,7 +18,7 @@
 	>
 		<div class="flex flex-col md:flex-row justify-between mb-4 px-3">
 			<div class="text-xl font-semibold text-ink-gray-7 mb-4 md:mb-0">
-				{{ memberCount }} {{ __('certified members') }}
+				{{ memberCount }} {{ __('certified participants') }}
 			</div>
 			<div class="grid grid-cols-2 gap-2">
 				<FormControl
@@ -107,12 +107,12 @@
 	>
 		<BookOpen class="size-10 mx-auto stroke-1 text-ink-gray-4" />
 		<div class="text-lg font-medium mb-1">
-			{{ __('No certified members') }}
+			{{ __('No certified participants') }}
 		</div>
 		<div class="leading-5 w-2/5 text-center">
 			{{
 				__(
-					'No certified members found. Please check again later or get certified yourself.'
+					'No certified participants found. Please check again later or get certified yourself.'
 				)
 			}}
 		</div>
@@ -193,14 +193,14 @@ const updateFilters = () => {
 
 const breadcrumbs = computed(() => [
 	{
-		label: __('Certified Members'),
+		label: __('Certified Participants'),
 		route: { name: 'CertifiedParticipants' },
 	},
 ])
 
 usePageMeta(() => {
 	return {
-		title: __('Certified Members'),
+		title: __('Certified Participants'),
 		icon: brand.favicon,
 	}
 })
