@@ -76,3 +76,7 @@ msgstr "Wählen Sie einen Kurs aus, um die Abschlussdaten anzuzeigen"
 msgid "Course Completions"
 msgstr "Kursabschlüsse"
 
+#: frontend/src/pages/CourseCompletions.vue:222
+msgid "Courses"
+msgstr "Kurse"
+

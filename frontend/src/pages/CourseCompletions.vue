@@ -221,11 +221,11 @@ const formatDate = (date) => {
 
 const breadcrumbs = computed(() => [
   {
-    label: 'Courses',
+    label: __('Courses'),
     route: { name: 'Courses' }
   },
   {
-    label: 'Course Completions',
+    label: __('Course Completions'),
     route: { name: 'CourseCompletions' }
   }
 ])
