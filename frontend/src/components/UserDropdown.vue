@@ -139,13 +139,6 @@ const userDropdownOptions = computed(() => {
 					},
 				},
 				{
-					icon: theme.value === 'light' ? Moon : Sun,
-					label: 'Toggle Theme',
-					onClick: () => {
-						toggleTheme()
-					},
-				},
-				{
 					component: markRaw(Apps),
 					condition: () => {
 						let cookies = new URLSearchParams(
