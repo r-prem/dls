@@ -15,7 +15,6 @@ class DLSCourse(Document):
 	def validate(self):
 		self.validate_published()
 		self.validate_instructors()
-		self.validate_video_link()
 		self.validate_status()
 		self.validate_payments_app()
 		self.validate_certification()
@@ -37,10 +36,6 @@ class DLSCourse(Document):
 					"parenttype": "DLS Course",
 				}
 			).save(ignore_permissions=True)
-
-	def validate_video_link(self):
-		if self.video_link and "/" in self.video_link:
-			self.video_link = self.video_link.split("/")[-1]
 
 	def validate_status(self):
 		if self.published:
