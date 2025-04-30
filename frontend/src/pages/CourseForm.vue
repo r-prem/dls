@@ -147,6 +147,7 @@
 									type="checkbox"
 									v-model="course.disable_self_learning"
 									:label="__('Disable Self Enrollment')"
+									class="hidden"
 								/>
 								<FormControl
 									type="checkbox"
