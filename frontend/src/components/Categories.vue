@@ -28,14 +28,24 @@
 		</div>
 
 		<div class="overflow-y-scroll">
-			<div class="text-base divide-y space-y-2">
-				<FormControl
-					:value="cat.category"
-					type="text"
-					v-for="cat in categories.data"
-					class=""
-					@change.stop="(e) => update(cat.name, e.target.value)"
-				/>
+			<div class="text-base space-y-2">
+				<div class="flex items-center space-x-2" v-for="cat in categories.data">
+					<FormControl
+						:value="cat.category"
+						type="text"
+						class="flex-1"
+						@change.stop="(e) => update(cat.name, e.target.value)"
+					/>
+					<Button
+						@click="() => deleteCategory(cat.name)"
+						variant="ghost"
+						class="text-red-500 hover:text-red-600"
+					>
+						<template #icon>
+							<Trash2 class="h-4 w-4" />
+						</template>
+					</Button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -48,7 +58,7 @@ import {
 	createResource,
 	debounce,
 } from 'frappe-ui'
-import { Plus, X } from 'lucide-vue-next'
+import { Plus, X, Trash2 } from 'lucide-vue-next'
 import { ref } from 'vue'
 
 const showForm = ref(false)
@@ -83,6 +93,29 @@ const newCategory = createResource({
 		}
 	},
 })
+
+const deleteCategoryResource = createResource({
+	url: 'frappe.client.delete',
+	makeParams(values) {
+		return {
+			doctype: 'DLS Category',
+			name: values.name,
+		}
+	},
+})
+
+const deleteCategory = (name) => {
+	deleteCategoryResource.submit(
+		{
+			name: name,
+		},
+		{
+			onSuccess() {
+				categories.reload()
+			},
+		}
+	)
+}
 
 const addCategory = () => {
 	newCategory.submit(
