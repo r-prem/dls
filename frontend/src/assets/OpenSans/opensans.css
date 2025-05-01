@@ -37,3 +37,10 @@
 body {
     font-family: var(--font-stack);
   } 
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: var(--font-stack);
+        font-optical-sizing: auto;
+    }
+} 

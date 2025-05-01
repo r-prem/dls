@@ -6,3 +6,10 @@
 body {
     font-family: var(--dls-font-family);
 } 
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: var(--dls-font-family);
+        font-optical-sizing: auto;
+    }
+}
