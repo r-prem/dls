@@ -321,6 +321,11 @@ const tabsStructure = computed(() => {
 							type: 'checkbox',
 						},
 						{
+							label: 'Assignments',
+							name: 'assignments',
+							type: 'checkbox',
+						},
+						{
 							type: 'Column Break',
 						},
 						{
@@ -336,6 +341,11 @@ const tabsStructure = computed(() => {
 						{
 							label: 'Notifications',
 							name: 'notifications',
+							type: 'checkbox',
+						},
+						{
+							label: 'Programs',
+							name: 'programs',
 							type: 'checkbox',
 						},
 					],

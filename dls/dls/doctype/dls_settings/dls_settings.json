@@ -43,6 +43,7 @@
   "jobs",
   "statistics",
   "notifications",
+  "assignments",
   "section_break_qlss",
   "sidebar_items",
   "mentor_request_section",
@@ -444,6 +445,18 @@
    "fieldtype": "Int",
    "default": 30,
    "description": "Time in seconds a user needs to spend on a lesson before it can be marked as complete"
+  },
+  {
+   "default": "1",
+   "fieldname": "assignments",
+   "fieldtype": "Check",
+   "label": "Assignments"
+  },
+  {
+   "default": "1",
+   "fieldname": "programs",
+   "fieldtype": "Check",
+   "label": "Programs"
   }
  ],
  "grid_page_length": 50,

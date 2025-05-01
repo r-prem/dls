@@ -536,6 +536,8 @@ def get_sidebar_settings():
 		"jobs",
 		"statistics",
 		"notifications",
+		"assignments",
+		"programs",
 	]
 	for item in items:
 		sidebar_items[item] = dls_settings.get(item)
