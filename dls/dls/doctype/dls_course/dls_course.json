@@ -79,11 +79,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "video_link",
-   "fieldtype": "Data",
-   "label": "Video Embed Link"
-  },
-  {
    "fieldname": "short_introduction",
    "fieldtype": "Small Text",
    "label": "Short Introduction",

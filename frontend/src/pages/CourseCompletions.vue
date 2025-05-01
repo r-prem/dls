@@ -131,7 +131,7 @@ const courses = createResource({
   },
   auto: true,
   onSuccess(data) {
-    //console.log('Courses data:', data)
+    console.log('Courses data:', data)
   },
   onError(error) {
     //console.error('Error fetching courses:', error)
@@ -221,11 +221,11 @@ const formatDate = (date) => {
 
 const breadcrumbs = computed(() => [
   {
-    label: 'Courses',
+    label: __('Courses'),
     route: { name: 'Courses' }
   },
   {
-    label: 'Course Completions',
+    label: __('Course Completions'),
     route: { name: 'CourseCompletions' }
   }
 ])

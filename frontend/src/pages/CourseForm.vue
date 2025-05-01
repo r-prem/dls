@@ -102,41 +102,6 @@
 								</div>
 							</div>
 						</div>
-						<FormControl
-							v-model="course.video_link"
-							:label="__('Preview Video')"
-							:placeholder="
-								__(
-									'Paste the youtube link of a short video introducing the course'
-								)
-							"
-							class="mb-4"
-						/>
-						<div class="mb-4">
-							<div class="mb-1.5 text-xs text-ink-gray-5">
-								{{ __('Tags') }}
-							</div>
-							<div class="flex items-center">
-								<div
-									v-if="course.tags"
-									v-for="tag in course.tags?.split(', ')"
-									class="flex items-center bg-surface-gray-2 text-ink-gray-7 p-2 rounded-md mr-2"
-								>
-									{{ tag }}
-									<X
-										class="stroke-1.5 w-3 h-3 ml-2 cursor-pointer"
-										@click="removeTag(tag)"
-									/>
-								</div>
-								<FormControl
-									v-model="newTag"
-									:placeholder="__('Add a keyword and then press enter')"
-									class="w-72"
-									@keyup.enter="updateTags()"
-									id="tags"
-								/>
-							</div>
-						</div>
 						<div class="w-1/2 mb-4">
 							<Link
 								doctype="DLS Category"
@@ -145,13 +110,6 @@
 								:onCreate="(value, close) => openSettings(close)"
 							/>
 						</div>
-						<MultiSelect
-							v-model="instructors"
-							doctype="User"
-							:label="__('Instructors')"
-							:filters="{ ignore_user_type: 1 }"
-							:required="true"
-						/>
 					</div>
 					<div class="container border-t">
 						<div class="text-lg font-semibold mt-5 mb-4">
@@ -189,6 +147,7 @@
 									type="checkbox"
 									v-model="course.disable_self_learning"
 									:label="__('Disable Self Enrollment')"
+									class="hidden"
 								/>
 								<FormControl
 									type="checkbox"
@@ -276,7 +235,6 @@ const user = inject('$user')
 const newTag = ref('')
 const { brand } = sessionStore()
 const router = useRouter()
-const instructors = ref([])
 const settingsStore = useSettings()
 const app = getCurrentInstance()
 const { updateOnboardingStep } = useOnboarding('learning')
@@ -344,9 +302,9 @@ const courseCreationResource = createResource({
 			doc: {
 				doctype: 'DLS Course',
 				image: course.course_image?.file_url || '',
-				instructors: instructors.value.map((instructor) => ({
-					instructor: instructor,
-				})),
+				instructors: [{
+					instructor: user.data?.name
+				}],
 				...values,
 			},
 		}
@@ -362,9 +320,9 @@ const courseEditResource = createResource({
 			name: values.course,
 			fieldname: {
 				image: course.course_image?.file_url || '',
-				instructors: instructors.value.map((instructor) => ({
-					instructor: instructor,
-				})),
+				instructors: [{
+					instructor: user.data?.name
+				}],
 				...course,
 			},
 		}

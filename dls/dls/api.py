@@ -197,17 +197,7 @@ def get_translations():
 		language = frappe.db.get_value("User", frappe.session.user, "language")
 	else:
 		language = frappe.db.get_single_value("System Settings", "language")
-	
-	# Clear cache if language has changed
-	cache_key = f"translations_{language}"
-	if frappe.cache().get_value(cache_key) is None:
-		frappe.cache().delete_value("translations")
-	
-	translations = get_all_translations(language)
-	if not translations:
-		translations = {}
-	
-	return translations
+	return get_all_translations(language)
 
 
 @frappe.whitelist()
