@@ -18,7 +18,7 @@ import { init as initTelemetry } from '@/telemetry'
 import { usersStore } from '@/stores/user'
 import { useRouter } from 'vue-router'
 import { sessionStore } from '@/stores/session'
-import { generateColorRange } from '@/utils/colors'
+import { generateColorRange, injectPrimaryColorVariables } from '@/utils/colors'
 
 const screenSize = useScreenSize()
 let { userResource } = usersStore()
@@ -45,32 +45,6 @@ const Layout = computed(() => {
 		return DesktopLayout
 	}
 })
-
-function injectPrimaryColorVariables(primaryColor) {
-	if (!primaryColor) return
-	const colors = generateColorRange(primaryColor)
-	let styleElement = document.getElementById('primary-color-variables')
-	if (!styleElement) {
-		styleElement = document.createElement('style')
-		styleElement.id = 'primary-color-variables'
-		document.head.appendChild(styleElement)
-	}
-	styleElement.textContent = `
-		button.bg-surface-gray-7 {
-			${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
-		}
-		.progress-bar {
-			--progress-color: ${colors['--surface-gray-7']};
-			--progress-bg: ${colors['--surface-gray-2']};
-		}
-		.progress-bar-fill {
-			background-color: var(--progress-color);
-		}
-		.progress-bar-bg {
-			background-color: var(--progress-bg);
-		}
-	`
-}
 
 onMounted(async () => {
 	if (userResource.data) await initTelemetry()

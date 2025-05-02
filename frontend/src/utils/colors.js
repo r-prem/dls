@@ -18,8 +18,30 @@ export function generateColorRange(hexColor) {
     // Convert back to hex
     const shadeHex = `#${shadeR.toString(16).padStart(2, '0')}${shadeG.toString(16).padStart(2, '0')}${shadeB.toString(16).padStart(2, '0')}`
     
-    colors[`--surface-gray-${i}`] = shadeHex
+    if(i === 7) {
+      colors[`--surface-gray-${i}`] = hexColor
+    } else {
+      colors[`--surface-gray-${i}`] = shadeHex
+    }
+
   }
 
   return colors
+}
+
+export function injectPrimaryColorVariables(primaryColor) {
+  if (!primaryColor) return
+  const colors = generateColorRange(primaryColor)
+  let styleElement = document.getElementById('primary-color-variables')
+  if (!styleElement) {
+    styleElement = document.createElement('style')
+    styleElement.id = 'primary-color-variables'
+    document.head.appendChild(styleElement)
+  }
+  styleElement.textContent = `
+    button.bg-surface-gray-7,
+    div.bg-surface-gray-7.rounded-full.h-1 {
+      ${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+    }
+  `
 } 

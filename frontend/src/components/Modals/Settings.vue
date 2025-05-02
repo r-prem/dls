@@ -82,7 +82,7 @@
 </template>
 <script setup>
 import { Dialog, createDocumentResource, createResource } from 'frappe-ui'
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, nextTick } from 'vue'
 import { useSettings } from '@/stores/settings'
 import SettingDetails from '../SettingDetails.vue'
 import SidebarLink from '@/components/SidebarLink.vue'
@@ -132,23 +132,26 @@ function injectPrimaryColorVariables(primaryColor) {
 	`
 }
 
-watch(show, (val) => {
-	if (val) {
+watch(show, (val, oldVal) => {
+	if (val && !oldVal) {
 		originalPrimaryColor = branding.data?.primary_color
 		isBrandingSaved = false
-	} else {
-		// Modal closed: revert to original color if not saved
-		if (!isBrandingSaved) {
-			injectPrimaryColorVariables(originalPrimaryColor)
-		}
+	} else if (!val && oldVal) {
+		nextTick(() => {
+			if (!isBrandingSaved) {
+				injectPrimaryColorVariables(originalPrimaryColor)
+			}
+		})
 	}
 })
 
 watch(activeTab, (newTab, oldTab) => {
 	if (oldTab && oldTab.label === 'Branding' && newTab && newTab.label !== 'Branding') {
-		if (!isBrandingSaved) {
-			injectPrimaryColorVariables(originalPrimaryColor)
-		}
+		nextTick(() => {
+			if (!isBrandingSaved) {
+				injectPrimaryColorVariables(originalPrimaryColor)
+			}
+		})
 	}
 })
 
