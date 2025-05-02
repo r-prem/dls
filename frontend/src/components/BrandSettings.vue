@@ -26,10 +26,12 @@
 		</div>
 	</div>
 </template>
+
 <script setup>
 import { createResource, Button, Badge } from 'frappe-ui'
 import SettingFields from '@/components/SettingFields.vue'
 import { watch, ref } from 'vue'
+import { generateColorRange } from '@/utils/colors'
 
 const isDirty = ref(false)
 
@@ -72,6 +74,24 @@ const update = () => {
 			fieldsToSave[f.name] = f.value
 		}
 	})
+
+	// If primary color is being updated, generate and apply the color range
+	if (fieldsToSave.primary_color) {
+		const colors = generateColorRange(fieldsToSave.primary_color)
+		// Create a style element to inject the CSS variables
+		let styleElement = document.getElementById('primary-color-variables')
+		if (!styleElement) {
+			styleElement = document.createElement('style')
+			styleElement.id = 'primary-color-variables'
+			document.head.appendChild(styleElement)
+		}
+		styleElement.textContent = `
+			button.bg-surface-gray-7 {
+				${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+			}
+		`
+	}
+
 	saveSettings.submit(
 		{
 			fields: fieldsToSave,

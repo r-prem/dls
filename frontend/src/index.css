@@ -2,3 +2,23 @@
 @import './assets/OpenSans/opensans.css';
 @import 'frappe-ui/src/style.css';
 @import './assets/custom.css';
+
+/**
+* We know that the button of type "solid" has a background color of "surface-gray-7"
+* We will misuse it to display our own "primary" button
+*/
+button.bg-surface-gray-7 {
+    --surface-gray-1: #FFF6E5;
+    --surface-gray-2: #FFEDCC;
+    --surface-gray-3: #FFDB99;
+    --surface-gray-4: #FFC966;
+    --surface-gray-5: #FFB833;
+    --surface-gray-6: #FFA500;
+    --surface-gray-7: #CC8500;
+    --surface-gray-8: #996300;
+    --surface-gray-9: #664200;
+    
+}
+
+
+

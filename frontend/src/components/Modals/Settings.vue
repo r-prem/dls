@@ -267,6 +267,12 @@ const tabsStructure = computed(() => {
 							type: 'text',
 						},
 						{
+							label: 'Primary Color',
+							name: 'primary_color',
+							type: 'color',
+							description: 'This will be used as the primary color for buttons and other UI elements'
+						},
+						{
 							label: 'Logo',
 							name: 'banner_image',
 							type: 'Upload',
