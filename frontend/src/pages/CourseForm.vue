@@ -240,6 +240,8 @@ const app = getCurrentInstance()
 const { updateOnboardingStep } = useOnboarding('learning')
 const { $dialog } = app.appContext.config.globalProperties
 
+const instructors = ref([])
+
 const props = defineProps({
 	courseName: {
 		type: String,
@@ -265,6 +267,7 @@ const course = reactive({
 	course_price: '',
 	currency: '',
 	evaluator: '',
+	instructors: [],
 })
 
 onMounted(() => {
@@ -298,6 +301,7 @@ onBeforeUnmount(() => {
 const courseCreationResource = createResource({
 	url: 'frappe.client.insert',
 	makeParams(values) {
+		console.log(values)
 		return {
 			doc: {
 				doctype: 'DLS Course',
@@ -319,11 +323,12 @@ const courseEditResource = createResource({
 			doctype: 'DLS Course',
 			name: values.course,
 			fieldname: {
+				...course,
 				image: course.course_image?.file_url || '',
 				instructors: [{
 					instructor: user.data?.name
 				}],
-				...course,
+
 			},
 		}
 	},
@@ -360,7 +365,6 @@ const courseResource = createResource({
 			let key = checkboxes[idx]
 			course[key] = course[key] ? true : false
 		}
-
 		if (data.image) imageResource.reload({ image: data.image })
 		check_permission()
 	},

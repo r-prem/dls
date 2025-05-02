@@ -103,3 +103,5 @@ dls.patches.v2_0.delete_old_enrollment_doctypes
 dls.patches.v2_0.delete_unused_custom_fields
 dls.patches.v2_0.update_certificate_request_status
 dls.patches.v2_0.add_theme_fields
+dls.patches.v2_0.add_video_link_field
+
