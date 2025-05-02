@@ -323,9 +323,12 @@ const courseEditResource = createResource({
 			doctype: 'DLS Course',
 			name: values.course,
 			fieldname: {
-				image: course.course_image?.file_url || '',
-				instructors: instructors.value,
 				...course,
+				image: course.course_image?.file_url || '',
+				instructors: [{
+					instructor: user.data?.name
+				}],
+
 			},
 		}
 	},
