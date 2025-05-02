@@ -108,5 +108,31 @@ watch(props.data, (newData) => {
 	if (newData && !isDirty.value) {
 		isDirty.value = true
 	}
+
+	// Inject primary color CSS variables on initial load
+	if (newData && newData.primary_color) {
+		const colors = generateColorRange(newData.primary_color)
+		let styleElement = document.getElementById('primary-color-variables')
+		if (!styleElement) {
+			styleElement = document.createElement('style')
+			styleElement.id = 'primary-color-variables'
+			document.head.appendChild(styleElement)
+		}
+		styleElement.textContent = `
+			button.bg-surface-gray-7 {
+				${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+			}
+			.progress-bar {
+				--progress-color: ${colors['--surface-gray-7']};
+				--progress-bg: ${colors['--surface-gray-2']};
+			}
+			.progress-bar-fill {
+				background-color: var(--progress-color);
+			}
+			.progress-bar-bg {
+				background-color: var(--progress-bg);
+			}
+		`
+	}
 })
 </script>
