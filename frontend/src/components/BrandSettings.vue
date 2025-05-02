@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="overflow-y-auto">
-			<SettingFields :fields="fields" :data="data.data" />
+			<SettingFields :fields="fields" :data="localData" />
 			<div class="flex flex-row-reverse mt-auto">
 				<Button variant="solid" :loading="saveSettings.loading" @click="update">
 					{{ __('Update') }}
@@ -30,7 +30,7 @@
 <script setup>
 import { createResource, Button, Badge } from 'frappe-ui'
 import SettingFields from '@/components/SettingFields.vue'
-import { watch, ref, defineEmits } from 'vue'
+import { watch, ref, defineEmits, reactive } from 'vue'
 import { generateColorRange, injectPrimaryColorVariables } from '@/utils/colors'
 
 const isDirty = ref(false)
@@ -65,14 +65,26 @@ const saveSettings = createResource({
 	},
 })
 
+// Create a local copy of the data for editing
+const localData = reactive({ ...props.data.data })
+
+// Watch for changes in props.data.data (e.g., when modal is opened)
+watch(
+	() => props.data.data,
+	(newData) => {
+		Object.assign(localData, newData)
+	},
+	{ immediate: true, deep: true }
+)
+
 const update = () => {
 	let fieldsToSave = {}
 	let imageFields = ['favicon', 'banner_image', 'footer_logo']
 	props.fields.forEach((f) => {
 		if (imageFields.includes(f.name)) {
-			fieldsToSave[f.name] = props.data.data[f.name] ? props.data.data[f.name].file_url : null
+			fieldsToSave[f.name] = localData[f.name] ? localData[f.name].file_url : null
 		} else {
-			fieldsToSave[f.name] = props.data.data[f.name]
+			fieldsToSave[f.name] = localData[f.name]
 		}
 	})
 
