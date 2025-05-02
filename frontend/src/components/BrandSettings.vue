@@ -30,10 +30,11 @@
 <script setup>
 import { createResource, Button, Badge } from 'frappe-ui'
 import SettingFields from '@/components/SettingFields.vue'
-import { watch, ref } from 'vue'
+import { watch, ref, defineEmits } from 'vue'
 import { generateColorRange } from '@/utils/colors'
 
 const isDirty = ref(false)
+const emit = defineEmits(['saved'])
 
 const props = defineProps({
 	fields: {
@@ -75,23 +76,6 @@ const update = () => {
 		}
 	})
 
-	// If primary color is being updated, generate and apply the color range
-	if (fieldsToSave.primary_color) {
-		const colors = generateColorRange(fieldsToSave.primary_color)
-		// Create a style element to inject the CSS variables
-		let styleElement = document.getElementById('primary-color-variables')
-		if (!styleElement) {
-			styleElement = document.createElement('style')
-			styleElement.id = 'primary-color-variables'
-			document.head.appendChild(styleElement)
-		}
-		styleElement.textContent = `
-			button.bg-surface-gray-7 {
-				${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
-			}
-		`
-	}
-
 	saveSettings.submit(
 		{
 			fields: fieldsToSave,
@@ -99,7 +83,24 @@ const update = () => {
 		{
 			onSuccess(data) {
 				isDirty.value = false
-			},
+				emit('saved', fieldsToSave.primary_color)
+				// Inject CSS variables only after successful save
+				if (fieldsToSave.primary_color) {
+					const colors = generateColorRange(fieldsToSave.primary_color)
+					let styleElement = document.getElementById('primary-color-variables')
+					if (!styleElement) {
+						styleElement = document.createElement('style')
+						styleElement.id = 'primary-color-variables'
+						document.head.appendChild(styleElement)
+					}
+					styleElement.textContent = `
+						button.bg-surface-gray-7,
+						div.bg-surface-gray-7.rounded-full.h-1 {
+							${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+						}
+					`
+				}
+			}
 		}
 	)
 }
@@ -119,7 +120,35 @@ watch(props.data, (newData) => {
 			document.head.appendChild(styleElement)
 		}
 		styleElement.textContent = `
-			button.bg-surface-gray-7 {
+			button.bg-surface-gray-7,
+			div.bg-surface-gray-7.rounded-full.h-1 {
+				${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+			}
+			.progress-bar {
+				--progress-color: ${colors['--surface-gray-7']};
+				--progress-bg: ${colors['--surface-gray-2']};
+			}
+			.progress-bar-fill {
+				background-color: var(--progress-color);
+			}
+			.progress-bar-bg {
+				background-color: var(--progress-bg);
+			}
+		`
+	}
+
+	// If primary color is being updated, generate and apply the color range
+	if (fieldsToSave.primary_color) {
+		const colors = generateColorRange(fieldsToSave.primary_color)
+		let styleElement = document.getElementById('primary-color-variables')
+		if (!styleElement) {
+			styleElement = document.createElement('style')
+			styleElement.id = 'primary-color-variables'
+			document.head.appendChild(styleElement)
+		}
+		styleElement.textContent = `
+			button.bg-surface-gray-7,
+			div.bg-surface-gray-7.rounded-full.h-1 {
 				${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
 			}
 			.progress-bar {

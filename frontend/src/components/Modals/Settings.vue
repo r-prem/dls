@@ -66,6 +66,7 @@
 						:description="activeTab.description"
 						:fields="activeTab.fields"
 						:data="branding"
+						@saved="onBrandingSaved"
 					/>
 					<SettingDetails
 						v-else
@@ -90,6 +91,7 @@ import Evaluators from '@/components/Evaluators.vue'
 import Categories from '@/components/Categories.vue'
 import BrandSettings from '@/components/BrandSettings.vue'
 import PaymentSettings from '@/components/PaymentSettings.vue'
+import { generateColorRange } from '@/utils/colors'
 
 const show = defineModel()
 const doctype = ref('DLS Settings')
@@ -109,6 +111,50 @@ const branding = createResource({
 	auto: true,
 	cache: 'brand',
 })
+
+let originalPrimaryColor = null
+let isBrandingSaved = false
+
+function injectPrimaryColorVariables(primaryColor) {
+	if (!primaryColor) return
+	const colors = generateColorRange(primaryColor)
+	let styleElement = document.getElementById('primary-color-variables')
+	if (!styleElement) {
+		styleElement = document.createElement('style')
+		styleElement.id = 'primary-color-variables'
+		document.head.appendChild(styleElement)
+	}
+	styleElement.textContent = `
+		button.bg-surface-gray-7,
+		div.bg-surface-gray-7.rounded-full.h-1 {
+			${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+		}
+	`
+}
+
+watch(show, (val) => {
+	if (val) {
+		originalPrimaryColor = branding.data?.primary_color
+		isBrandingSaved = false
+	} else {
+		// Modal closed: revert to original color if not saved
+		if (!isBrandingSaved) {
+			injectPrimaryColorVariables(originalPrimaryColor)
+		}
+	}
+})
+
+watch(activeTab, (newTab, oldTab) => {
+	if (oldTab && oldTab.label === 'Branding' && newTab && newTab.label !== 'Branding') {
+		if (!isBrandingSaved) {
+			injectPrimaryColorVariables(originalPrimaryColor)
+		}
+	}
+})
+
+function onBrandingSaved(newColor) {
+	isBrandingSaved = true
+}
 
 const tabsStructure = computed(() => {
 	const tabs = [
