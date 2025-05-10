@@ -32,6 +32,11 @@ export default class AIAssistantInlineTool {
     this.button.disabled = true;
     this.button.innerHTML = '<svg class="animate-spin" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="#888" stroke-width="2" fill="none" stroke-dasharray="22" stroke-dashoffset="10"></circle></svg>';
 
+    if(window.origin.includes('localhost')) {
+      headers = { 'Content-Type': 'application/json' };
+    } else {
+      headers = { 'Content-Type': 'application/json', 'X-frappe-csrf-token': token, 'X-frappe-site-name': window.origin };
+    }
     fetch('/api/method/dls.dls.api.openai_generate_response', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
