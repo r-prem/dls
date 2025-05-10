@@ -100,18 +100,18 @@ export default class AIAssistantInlineTool {
     const footer = document.createElement('div');
     footer.className = 'flex justify-end gap-2';
   
-    // Accept button (green, app style)
     const acceptBtn = document.createElement('button');
-    acceptBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none text-ink-white bg-green-600 hover:bg-green-700 active:bg-green-800 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
+    acceptBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none text-ink-white bg-surface-gray-7 hover:bg-surface-gray-6 active:bg-surface-gray-5 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
     acceptBtn.innerHTML = window.__ ? window.__('Accept') : 'Accept';
     acceptBtn.onclick = () => {
       onAccept();
       overlay.remove();
     };
   
-    // Decline button (gray, app style)
     const declineBtn = document.createElement('button');
-    declineBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none text-ink-white bg-surface-gray-7 hover:bg-surface-gray-6 active:bg-surface-gray-5 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
+    declineBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none hover:bg-surface-gray-6 active:bg-surface-gray-5 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
+    declineBtn.style.background = 'transparent';
+    declineBtn.style.border = 'none';
     declineBtn.innerHTML = window.__ ? window.__('Decline') : 'Decline';
     declineBtn.onclick = () => {
       overlay.remove();
