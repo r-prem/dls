@@ -1,9 +1,11 @@
 import { createResource } from 'frappe-ui'
 
+
+
 export default function translationPlugin(app) {
+
 	app.config.globalProperties.__ = translate
 	window.__ = translate
-	
 	// Initialize translations
 	if (!window.translatedMessages) {
 		fetchTranslations()
@@ -53,6 +55,9 @@ function fetchTranslations(lang) {
 			console.error('Error fetching translations:', error)
 			// Set empty translations object to prevent errors
 			window.translatedMessages = {}
-		}
+		},
+		onSuccess: () => {
+			window.dispatchEvent(new Event('translations-loaded'))
+		},
 	})
 }

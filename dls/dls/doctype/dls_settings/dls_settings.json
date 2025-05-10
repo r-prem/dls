@@ -43,6 +43,7 @@
   "jobs",
   "statistics",
   "notifications",
+  "assignments",
   "section_break_qlss",
   "sidebar_items",
   "mentor_request_section",
@@ -61,7 +62,7 @@
   "payments_app_is_not_installed",
   "email_templates_tab",
   "certification_template",
-  "batch_confirmation_template",
+  "default_certificate_template",
   "column_break_uwsp",
   "payment_reminder_template",
   "seo_tab",
@@ -240,6 +241,13 @@
    "fieldtype": "Link",
    "label": "Certificate Email Template",
    "options": "Email Template"
+  },
+  {
+   "fieldname": "default_certificate_template",
+   "fieldtype": "Link",
+   "label": "Default Certificate Template",
+   "options": "Print Format",
+   "description": "Default template for course completion certificates"
   },
   {
    "fieldname": "email_templates_tab",
@@ -444,6 +452,18 @@
    "fieldtype": "Int",
    "default": 30,
    "description": "Time in seconds a user needs to spend on a lesson before it can be marked as complete"
+  },
+  {
+   "default": "1",
+   "fieldname": "assignments",
+   "fieldtype": "Check",
+   "label": "Assignments"
+  },
+  {
+   "default": "1",
+   "fieldname": "programs",
+   "fieldtype": "Check",
+   "label": "Programs"
   }
  ],
  "grid_page_length": 50,

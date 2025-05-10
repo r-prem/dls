@@ -80,3 +80,4656 @@ msgstr "Kursabschlüsse"
 msgid "Courses"
 msgstr "Kurse"
 
+#: frontend/src/pages/Programs.vue:39
+msgid "% completed"
+msgstr "% abgeschlossen"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<a href=\"/app/dls-settings/DLS%20Settings\">DLS Settings</a>"
+msgstr "<a href=\"/app/dls-settings/DLS%20Settings\">DLS-Einstellungen</a>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<a href=\"/app/web-page/new-web-page-1\">Setup a Home Page</a>"
+msgstr "<a href=\"/app/web-page/new-web-page-1\">Startseite einrichten</a>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<a href=\"/dls/courses\">Visit DLS Portal</a>"
+msgstr "<a href=\"/dls/courses\">DLS-Portal besuchen</a>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<a href=\"/dls/courses/new/edit\">Create a Course</a>"
+msgstr "<a href=\"/dls/courses/new/edit\">Kurs erstellen</a>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<a href=\"https://docs.frappe.io/learning\">Documentation</a>"
+msgstr "<a href=\"https://docs.frappe.io/learning\">Dokumentation</a>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<span class=\"h4\"><b>Get Started</b></span>"
+msgstr "<span class=\"h4\"><b>Erste Schritte</b></span>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<span class=\"h4\"><b>Master</b></span>"
+msgstr "<span class=\"h4\"><b>Hauptmenü</b></span>"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "<span style=\"font-size: 18px;\"><b>Statistics</b></span>"
+msgstr "<span style=\"font-size: 18px;\"><b>Statistiken</b></span>"
+
+#: dls/dls/doctype/dls_course/dls_course.py:63
+msgid "A course cannot have both paid certificate and certificate of completion."
+msgstr "Ein Kurs kann nicht sowohl ein kostenpflichtiges Zertifikat als auch ein Abschlusszertifikat haben."
+
+#: frontend/src/pages/CourseForm.vue:37
+msgid "A one line introduction to the course that appears on the course card"
+msgstr "Eine einzeilige Einführung in den Kurs, die auf der Kurskarte erscheint"
+
+#: frontend/src/pages/ProfileAbout.vue:4
+msgid "About"
+msgstr "Über"
+
+#: frontend/src/pages/Batch.vue:100
+msgid "About this batch"
+msgstr "Über diesen Kurs"
+
+#: dls/fixtures/custom_field.json
+msgid "Acceptance for Terms and/or Policies"
+msgstr "Akzeptanz der Bedingungen und/oder Richtlinien"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Accepted"
+msgstr "Akzeptiert"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Account ID"
+msgstr "Konto-ID"
+
+#: frontend/src/pages/ProfileAbout.vue:17
+msgid "Achievements"
+msgstr "Erfolge"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Active"
+msgstr "Aktiv"
+
+#: frontend/src/components/Assessments.vue:11
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: frontend/src/components/CourseOutline.vue:18
+msgid "Add Chapter"
+msgstr "Kapitel hinzufügen"
+
+#: frontend/src/components/CourseOutline.vue:136
+msgid "Add Lesson"
+msgstr "Lektion hinzufügen"
+
+#: frontend/src/pages/ProfileEvaluator.vue:75
+msgid "Add Slot"
+msgstr "Zeitslot hinzufügen"
+
+#: dls/templates/onboarding_header.html:26
+msgid "Add a Chapter"
+msgstr "Kapitel hinzufügen"
+
+#: dls/templates/onboarding_header.html:33
+msgid "Add a Lesson"
+msgstr "Lektion hinzufügen"
+
+#: frontend/src/components/Modals/StudentModal.vue:5
+msgid "Add a Student"
+msgstr "Schüler hinzufügen"
+
+#: frontend/src/components/AppSidebar.vue:525
+msgid "Add a chapter"
+msgstr "Kapitel hinzufügen"
+
+#: frontend/src/components/Modals/BatchCourseModal.vue:5
+msgid "Add a course"
+msgstr "Kurs hinzufügen"
+
+#: frontend/src/pages/CourseForm.vue:133
+msgid "Add a keyword and then press enter"
+msgstr "Fügen Sie ein Schlüsselwort hinzu und drücken Sie dann Enter"
+
+#: frontend/src/components/AppSidebar.vue:526
+msgid "Add a lesson"
+msgstr "Lektion hinzufügen"
+
+#: frontend/src/components/Modals/Question.vue:147
+msgid "Add a new question"
+msgstr "Neue Frage hinzufügen"
+
+#: frontend/src/components/AssessmentPlugin.vue:11
+msgid "Add a quiz to your lesson"
+msgstr "Fügen Sie Ihrem Unterricht einen Quiz hinzu"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:5
+msgid "Add an assessment"
+msgstr "Bewertung hinzufügen"
+
+#: frontend/src/components/AssessmentPlugin.vue:14
+msgid "Add an assignment to your lesson"
+msgstr "Fügen Sie Ihrem Unterricht eine Aufgabe hinzu"
+
+#: frontend/src/components/Modals/Question.vue:18
+msgid "Add an existing question"
+msgstr "Vorhandene Frage hinzufügen"
+
+#: dls/dls/doctype/dls_question/dls_question.py:66
+msgid "Add at least one possible answer for this question: {0}"
+msgstr "Fügen Sie mindestens eine mögliche Antwort für diese Frage hinzu: {0}"
+
+#: frontend/src/components/AppSidebar.vue:490
+msgid "Add courses to your batch"
+msgstr "Fügen Sie Kurse zu Ihrem Kurs hinzu"
+
+#: frontend/src/components/AppSidebar.vue:470
+msgid "Add students to your batch"
+msgstr "Fügen Sie Schüler zu Ihrem Kurs hinzu"
+
+#: frontend/src/components/Modals/PageModal.vue:6
+msgid "Add web page to sidebar"
+msgstr "Webseite zur Seitenleiste hinzufügen"
+
+#: frontend/src/components/Assignment.vue:68
+msgid "Add your assignment as {0}"
+msgstr "Fügen Sie Ihre Aufgabe als {0} hinzu"
+
+#: frontend/src/components/Assignment.vue:71
+msgid "Assignment"
+msgstr "Aufgabe"
+
+#: frontend/src/components/Assignment.vue:72
+msgid "Assignment Details"
+msgstr "Aufgabendetails"
+
+#: frontend/src/components/Assignment.vue:73
+msgid "Assignment Type"
+msgstr "Aufgabentyp"
+
+#: frontend/src/components/Assignment.vue:74
+msgid "Assignment URL"
+msgstr "Aufgaben-URL"
+
+#: frontend/src/components/Assignment.vue:75
+msgid "Assignment File"
+msgstr "Aufgabendatei"
+
+#: frontend/src/components/Assignment.vue:76
+msgid "Assignment Text"
+msgstr "Aufgabentext"
+
+#: frontend/src/components/Assignment.vue:77
+msgid "Assignment Comments"
+msgstr "Aufgabenkommentare"
+
+#: frontend/src/components/Assignment.vue:78
+msgid "Assignment Status"
+msgstr "Aufgabenstatus"
+
+#: frontend/src/components/Assignment.vue:79
+msgid "Assignment Grade"
+msgstr "Aufgabenbewertung"
+
+#: frontend/src/components/Assignment.vue:80
+msgid "Assignment Feedback"
+msgstr "Aufgabenfeedback"
+
+#: frontend/src/components/Assignment.vue:81
+msgid "Assignment Due Date"
+msgstr "Aufgabenfrist"
+
+#: frontend/src/components/Assignment.vue:82
+msgid "Assignment Submission Date"
+msgstr "Aufgabenabgabedatum"
+
+#: frontend/src/components/Assignment.vue:83
+msgid "Assignment Evaluation"
+msgstr "Aufgabenbewertung"
+
+#: frontend/src/components/Assignment.vue:84
+msgid "Assignment Evaluation Date"
+msgstr "Aufgabenbewertungsdatum"
+
+#: frontend/src/components/Assignment.vue:85
+msgid "Assignment Evaluation Comments"
+msgstr "Aufgabenbewertungskommentare"
+
+#: frontend/src/components/Assignment.vue:86
+msgid "Assignment Evaluation Status"
+msgstr "Aufgabenbewertungsstatus"
+
+#: frontend/src/components/Assignment.vue:87
+msgid "Assignment Evaluation Grade"
+msgstr "Aufgabenbewertungsnote"
+
+#: frontend/src/components/Assignment.vue:88
+msgid "Assignment Evaluation Feedback"
+msgstr "Aufgabenbewertungsfeedback"
+
+#: frontend/src/components/Assignment.vue:89
+msgid "Assignment Evaluation Due Date"
+msgstr "Aufgabenbewertungsfrist"
+
+#: frontend/src/components/Assignment.vue:90
+msgid "Assignment Evaluation Submission Date"
+msgstr "Aufgabenbewertungsabgabedatum"
+
+#: frontend/src/components/Batch.vue:1
+msgid "Batch"
+msgstr "Kurs"
+
+#: frontend/src/components/Batch.vue:2
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: frontend/src/components/Batch.vue:3
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: frontend/src/components/Batch.vue:4
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/components/Batch.vue:5
+msgid "Batch Start Date"
+msgstr "Kursstartdatum"
+
+#: frontend/src/components/Batch.vue:6
+msgid "Batch End Date"
+msgstr "Kursenddatum"
+
+#: frontend/src/components/Batch.vue:7
+msgid "Batch Status"
+msgstr "Kursstatus"
+
+#: frontend/src/components/Batch.vue:8
+msgid "Batch Type"
+msgstr "Kurstyp"
+
+#: frontend/src/components/Batch.vue:9
+msgid "Batch Capacity"
+msgstr "Kurskapazität"
+
+#: frontend/src/components/Batch.vue:10
+msgid "Batch Enrolled"
+msgstr "Kurseingeschrieben"
+
+#: frontend/src/components/Batch.vue:11
+msgid "Batch Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/components/Batch.vue:12
+msgid "Batch Progress"
+msgstr "Kursfortschritt"
+
+#: frontend/src/components/Batch.vue:13
+msgid "Batch Completion Rate"
+msgstr "Kursabschlussrate"
+
+#: frontend/src/components/Batch.vue:14
+msgid "Batch Last Updated"
+msgstr "Kurs zuletzt aktualisiert"
+
+#: frontend/src/components/Batch.vue:15
+msgid "Batch No Data Available"
+msgstr "Keine Kursdaten verfügbar"
+
+#: frontend/src/components/Batch.vue:16
+msgid "Batch Select to View Data"
+msgstr "Kurs auswählen, um Daten anzuzeigen"
+
+#: frontend/src/components/Batch.vue:17
+msgid "Batch Courses"
+msgstr "Kurskurse"
+
+#: frontend/src/components/Batch.vue:18
+msgid "Batch Students"
+msgstr "Kursschüler"
+
+#: frontend/src/components/Batch.vue:19
+msgid "Batch Instructors"
+msgstr "Kursleiter"
+
+#: frontend/src/components/Batch.vue:20
+msgid "Batch Schedule"
+msgstr "Kursplan"
+
+#: frontend/src/components/Course.vue:1
+msgid "Course"
+msgstr "Kurs"
+
+#: frontend/src/components/Course.vue:2
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: frontend/src/components/Course.vue:3
+msgid "Course Name"
+msgstr "Kursname"
+
+#: frontend/src/components/Course.vue:4
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/components/Course.vue:5
+msgid "Course Start Date"
+msgstr "Kursstartdatum"
+
+#: frontend/src/components/Course.vue:6
+msgid "Course End Date"
+msgstr "Kursenddatum"
+
+#: frontend/src/components/Course.vue:7
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: frontend/src/components/Course.vue:8
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: frontend/src/components/Course.vue:9
+msgid "Course Capacity"
+msgstr "Kurskapazität"
+
+#: frontend/src/components/Course.vue:10
+msgid "Course Enrolled"
+msgstr "Kurseingeschrieben"
+
+#: frontend/src/components/Course.vue:11
+msgid "Course Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/components/Course.vue:12
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: frontend/src/components/Course.vue:13
+msgid "Course Completion Rate"
+msgstr "Kursabschlussrate"
+
+#: frontend/src/components/Course.vue:14
+msgid "Course Last Updated"
+msgstr "Kurs zuletzt aktualisiert"
+
+#: frontend/src/components/Course.vue:15
+msgid "Course No Data Available"
+msgstr "Keine Kursdaten verfügbar"
+
+#: frontend/src/components/Course.vue:16
+msgid "Course Select to View Data"
+msgstr "Kurs auswählen, um Daten anzuzeigen"
+
+#: frontend/src/components/Course.vue:17
+msgid "Course Lessons"
+msgstr "Kurslektionen"
+
+#: frontend/src/components/Course.vue:18
+msgid "Course Students"
+msgstr "Kursschüler"
+
+#: frontend/src/components/Course.vue:19
+msgid "Course Instructors"
+msgstr "Kursleiter"
+
+#: frontend/src/components/Course.vue:20
+msgid "Course Schedule"
+msgstr "Kursplan"
+
+#: frontend/src/components/Lesson.vue:1
+msgid "Lesson"
+msgstr "Lektion"
+
+#: frontend/src/components/Lesson.vue:2
+msgid "Lesson Details"
+msgstr "Lektionsdetails"
+
+#: frontend/src/components/Lesson.vue:3
+msgid "Lesson Name"
+msgstr "Lektionsname"
+
+#: frontend/src/components/Lesson.vue:4
+msgid "Lesson Description"
+msgstr "Lektionsbeschreibung"
+
+#: frontend/src/components/Lesson.vue:5
+msgid "Lesson Start Date"
+msgstr "Lektionsstartdatum"
+
+#: frontend/src/components/Lesson.vue:6
+msgid "Lesson End Date"
+msgstr "Lektionsenddatum"
+
+#: frontend/src/components/Lesson.vue:7
+msgid "Lesson Status"
+msgstr "Lektionsstatus"
+
+#: frontend/src/components/Lesson.vue:8
+msgid "Lesson Type"
+msgstr "Lektionstyp"
+
+#: frontend/src/components/Lesson.vue:9
+msgid "Lesson Duration"
+msgstr "Lektionsdauer"
+
+#: frontend/src/components/Lesson.vue:10
+msgid "Lesson Completed"
+msgstr "Lektion abgeschlossen"
+
+#: frontend/src/components/Lesson.vue:11
+msgid "Lesson Progress"
+msgstr "Lektionsfortschritt"
+
+#: frontend/src/components/Lesson.vue:12
+msgid "Lesson Completion Rate"
+msgstr "Lektionsabschlussrate"
+
+#: frontend/src/components/Lesson.vue:13
+msgid "Lesson Last Updated"
+msgstr "Lektion zuletzt aktualisiert"
+
+#: frontend/src/components/Lesson.vue:14
+msgid "Lesson No Data Available"
+msgstr "Keine Lektionsdaten verfügbar"
+
+#: frontend/src/components/Lesson.vue:15
+msgid "Lesson Select to View Data"
+msgstr "Lektion auswählen, um Daten anzuzeigen"
+
+#: frontend/src/components/Lesson.vue:16
+msgid "Lesson Content"
+msgstr "Lektionsinhalt"
+
+#: frontend/src/components/Lesson.vue:17
+msgid "Lesson Students"
+msgstr "Lektionsschüler"
+
+#: frontend/src/components/Lesson.vue:18
+msgid "Lesson Instructors"
+msgstr "Lektionsleiter"
+
+#: frontend/src/components/Lesson.vue:19
+msgid "Lesson Schedule"
+msgstr "Lektionsplan"
+
+#: frontend/src/components/Lesson.vue:20
+msgid "Lesson Quiz"
+msgstr "Lektionsquiz"
+
+#: frontend/src/components/AppSidebar.vue:406
+msgid "Add your first chapter"
+msgstr "Fügen Sie Ihr erstes Kapitel hinzu"
+
+#: frontend/src/components/AppSidebar.vue:421
+msgid "Add your first lesson"
+msgstr "Fügen Sie Ihre erste Lektion hinzu"
+
+#: frontend/src/pages/Billing.vue:64
+msgid "Address"
+msgstr "Adresse"
+
+#: frontend/src/pages/Billing.vue:74
+msgid "Address Line 1"
+msgstr "Adresszeile 1"
+
+#: frontend/src/pages/Billing.vue:78
+msgid "Address Line 2"
+msgstr "Adresszeile 2"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Admin"
+msgstr "Administrator"
+
+#: frontend/src/pages/Batches.vue:284
+msgid "All"
+msgstr "Alle"
+
+#: frontend/src/pages/Batches.vue:26
+msgid "All Batches"
+msgstr "Alle Kurse"
+
+#: frontend/src/pages/Courses.vue:26
+msgid "All Courses"
+msgstr "Alle Kurse"
+
+#: frontend/src/components/BatchFeedback.vue:51
+msgid "All Feedback"
+msgstr "Alle Rückmeldungen"
+
+#: dls/templates/quiz/quiz.html:141
+msgid "All Submissions"
+msgstr "Alle Einreichungen"
+
+#: dls/dls/doctype/dls_quiz/dls_quiz.py:44
+msgid "All questions should have the same marks if the limit is set."
+msgstr "Alle Fragen sollten die gleiche Punktzahl haben, wenn das Limit festgelegt ist."
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Allow Guest Access"
+msgstr "Gastzugang erlauben"
+
+#: dls/job/doctype/job_settings/job_settings.json
+msgid "Allow Job Posting From Website"
+msgstr "Stellenausschreibung von der Website erlauben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Allow Self Enrollment"
+msgstr "Selbsteinschreibung erlauben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Allow accessing future dates"
+msgstr "Zugriff auf zukünftige Termine erlauben"
+
+#: frontend/src/pages/BatchForm.vue:43
+msgid "Allow self enrollment"
+msgstr "Selbsteinschreibung erlauben"
+
+#: dls/dls/user.py:34
+msgid "Already Registered"
+msgstr "Bereits registriert"
+
+#: frontend/src/pages/BatchForm.vue:224
+msgid "Amount"
+msgstr "Betrag"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Amount (USD)"
+msgstr "Betrag (USD)"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:65
+msgid "Amount and currency are required for paid batches."
+msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
+
+#: dls/dls/doctype/dls_course/dls_course.py:74
+msgid "Amount and currency are required for paid certificates."
+msgstr "Betrag und Währung sind für kostenpflichtige Zertifikate erforderlich."
+
+#: dls/dls/doctype/dls_course/dls_course.py:71
+msgid "Amount and currency are required for paid courses."
+msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
+
+#: dls/dls/doctype/dls_payment/dls_payment.json
+msgid "Amount with GST"
+msgstr "Betrag mit MwSt."
+
+#: frontend/src/components/Modals/AnnouncementModal.vue:33
+msgid "Announcement"
+msgstr "Ankündigung"
+
+#: frontend/src/components/Modals/AnnouncementModal.vue:100
+msgid "Announcement has been sent successfully"
+msgstr "Ankündigung wurde erfolgreich gesendet"
+
+#: frontend/src/pages/QuizSubmission.vue:61
+msgid "Answer"
+msgstr "Antwort"
+
+#: frontend/src/pages/CourseForm.vue:81
+msgid "Appears on the course card in the course list"
+msgstr "Erscheint auf der Kurskarte in der Kursliste"
+
+#: frontend/src/pages/BatchForm.vue:75
+msgid "Appears when the batch URL is shared on any online platform"
+msgstr "Erscheint, wenn die Kurs-URL auf einer Online-Plattform geteilt wird"
+
+#: frontend/src/pages/JobDetail.vue:128
+msgid "Applications Received"
+msgstr "Eingegangene Bewerbungen"
+
+#: frontend/src/pages/JobDetail.vue:48
+msgid "Apply"
+msgstr "Bewerben"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Apply GST for India"
+msgstr "MwSt. für Indien anwenden"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Apply Rounding on Equivalent"
+msgstr "Rundung auf Äquivalent anwenden"
+
+#: frontend/src/components/Modals/JobApplicationModal.vue:6
+msgid "Apply for this job"
+msgstr "Auf diese Stelle bewerben"
+
+#: dls/dls/doctype/invite_request/invite_request.json
+msgid "Approved"
+msgstr "Genehmigt"
+
+#: frontend/src/components/Apps.vue:13
+msgid "Apps"
+msgstr "Apps"
+
+#: frontend/src/pages/Batches.vue:294
+msgid "Archived"
+msgstr "Archiviert"
+
+#: frontend/src/components/UpcomingEvaluations.vue:170
+msgid "Are you sure you want to cancel this evaluation? This action cannot be undone."
+msgstr "Sind Sie sicher, dass Sie diese Bewertung abbrechen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
+
+#: frontend/src/components/UserDropdown.vue:175
+msgid "Are you sure you want to login to your Frappe Cloud dashboard?"
+msgstr "Sind Sie sicher, dass Sie sich bei Ihrem Frappe Cloud Dashboard anmelden möchten?"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:27
+msgid "Assessment"
+msgstr "Bewertung"
+
+#: dls/dls/doctype/dls_assessment/dls_assessment.json
+msgid "Assessment Name"
+msgstr "Bewertungsname"
+
+#: dls/dls/doctype/dls_assessment/dls_assessment.json
+msgid "Assessment Type"
+msgstr "Bewertungstyp"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:73
+msgid "Assessment added successfully"
+msgstr "Bewertung erfolgreich hinzugefügt"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:75
+msgid "Assessment {0} has already been added to this batch."
+msgstr "Bewertung {0} wurde diesem Kurs bereits hinzugefügt."
+
+#: frontend/src/components/AppSidebar.vue:538
+msgid "Assessments"
+msgstr "Bewertungen"
+
+#: dls/dls/doctype/dls_badge/dls_badge.js:50
+msgid "Assign"
+msgstr "Zuweisen"
+
+#: frontend/src/pages/AssignmentSubmissionList.vue:12
+msgid "Assignment"
+msgstr "Aufgabe"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
+msgid "Assignment Attachment"
+msgstr "Aufgabenanhang"
+
+#: frontend/src/pages/AssignmentSubmissionList.vue:223
+msgid "Assignment Submissions"
+msgstr "Aufgabeneinreichungen"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
+msgid "Assignment Title"
+msgstr "Aufgabentitel"
+
+#: frontend/src/components/Modals/AssignmentForm.vue:112
+msgid "Assignment created successfully"
+msgstr "Aufgabe erfolgreich erstellt"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.py:24
+msgid "Assignment for Lesson {0} by {1} already exists."
+msgstr "Aufgabe für Lektion {0} von {1} existiert bereits."
+
+#: frontend/src/components/Modals/AssignmentForm.vue:129
+msgid "Assignment updated successfully"
+msgstr "Aufgabe erfolgreich aktualisiert"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Assignment will appear at the bottom of the lesson."
+msgstr "Die Aufgabe erscheint am Ende der Lektion."
+
+#: frontend/src/components/AppSidebar.vue:542
+msgid "Assignments"
+msgstr "Aufgaben"
+
+#: dls/dls/doctype/dls_question/dls_question.py:43
+msgid "At least one option must be correct for this question."
+msgstr "Mindestens eine Option muss für diese Frage richtig sein."
+
+#: dls/fixtures/custom_field.json
+msgid "Attire Preference"
+msgstr "Kleidungspräferenz"
+
+#: frontend/src/pages/ProfileEvaluator.vue:123
+msgid "Authorize Google Calendar Access"
+msgstr "Google Kalender-Zugriff autorisieren"
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Auto Assign"
+msgstr "Automatisch zuweisen"
+
+#: frontend/src/components/Modals/LiveClassModal.vue:77
+msgid "Auto Recording"
+msgstr "Automatische Aufnahme"
+
+#: frontend/src/components/CourseCard.vue:51
+msgid "Average Rating"
+msgstr "Durchschnittliche Bewertung"
+
+#: frontend/src/components/BatchFeedback.vue:38
+msgid "Average of Feedback Received"
+msgstr "Durchschnitt der erhaltenen Rückmeldungen"
+
+#: frontend/src/pages/Lesson.vue:97
+msgid "Back to Course"
+msgstr "Zurück zum Kurs"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge"
+msgstr "Abzeichen"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Description"
+msgstr "Abzeichenbeschreibung"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Image"
+msgstr "Abzeichenbild"
+
+#: frontend/src/components/Modals/Event.vue:32
+msgid "Batch"
+msgstr "Kurs"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Batch Confirmation Template"
+msgstr "Kursbestätigungsvorlage"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Batch Course"
+msgstr "Kurskurs"
+
+#: dls/public/js/common_functions.js:428
+msgid "Batch Created"
+msgstr "Kurs erstellt"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/pages/BatchForm.vue:250
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Batch Details Raw"
+msgstr "Kursdetails (Rohformat)"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Batch Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_certificate_evaluation/dls_certificate_evaluation.json
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/exercise_latest_submission/exercise_latest_submission.json
+msgid "Batch Old"
+msgstr "Alter Kurs"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/templates/emails/batch_confirmation.html:11
+msgid "Batch Start Date:"
+msgstr "Kursstartdatum:"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.json
+msgid "Batch Title"
+msgstr "Kurstitel"
+
+#: dls/public/js/common_functions.js:427
+msgid "Batch Updated"
+msgstr "Kurs aktualisiert"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:41
+msgid "Batch end date cannot be before the batch start date"
+msgstr "Das Kursenddatum kann nicht vor dem Kursstartdatum liegen"
+
+#: dls/dls/api.py:240
+msgid "Batch is sold out."
+msgstr "Kurs ist ausgebucht."
+
+#: dls/templates/emails/batch_start_reminder.html:10
+msgid "Batch:"
+msgstr "Kurs:"
+
+#: frontend/src/pages/Batches.vue:304
+msgid "Batches"
+msgstr "Kurse"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Begin Date"
+msgstr "Startdatum"
+
+#: dls/templates/emails/batch_confirmation.html:31
+msgid "Best Regards"
+msgstr "Beste Grüße"
+
+#: frontend/src/pages/Billing.vue:8
+msgid "Billing Details"
+msgstr "Rechnungsdetails"
+
+#: frontend/src/pages/Billing.vue:70
+msgid "Billing Name"
+msgstr "Rechnungsname"
+
+#: frontend/src/components/Modals/EditProfile.vue:75
+msgid "Bio"
+msgstr "Biografie"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Body"
+msgstr "Inhalt"
+
+#: dls/fixtures/custom_field.json
+msgid "Both Individual and Team Work"
+msgstr "Sowohl Einzel- als auch Teamarbeit"
+
+#: dls/fixtures/custom_field.json
+msgid "Branch"
+msgstr "Zweigstelle"
+
+#: dls/fixtures/custom_field.json
+msgid "Business Owner"
+msgstr "Geschäftsinhaber"
+
+#: frontend/src/components/CourseCardOverlay.vue:47
+msgid "Buy this course"
+msgstr "Diesen Kurs kaufen"
+
+#: dls/templates/emails/dls_message.html:11
+msgid "By"
+msgstr "Von"
+
+#: dls/dls/doctype/education_detail/education_detail.json
+msgid "CGPA/4"
+msgstr "CGPA/4"
+
+#: frontend/src/components/UpcomingEvaluations.vue:60
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: frontend/src/components/UpcomingEvaluations.vue:169
+msgid "Cancel this evaluation?"
+msgstr "Diese Bewertung abbrechen?"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cancelled"
+msgstr "Abgebrochen"
+
+#: dls/fixtures/custom_field.json
+msgid "Career Preference Details"
+msgstr "Details zur Karrierepräferenz"
+
+#: dls/fixtures/custom_field.json
+msgid "Casual Wear"
+msgstr "Freizeitkleidung"
+
+#: frontend/src/pages/BatchForm.vue:198
+msgid "Category"
+msgstr "Kategorie"
+
+#: frontend/src/components/Categories.vue:22
+msgid "Category Name"
+msgstr "Kategoriename"
+
+#: dls/dls/doctype/dls_enrollment/dls_enrollment.json
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certificate Email Template"
+msgstr "Zertifikat-E-Mail-Vorlage"
+
+#: dls/templates/emails/certification.html:13
+msgid "Certificate Link"
+msgstr "Zertifikatslink"
+
+#: frontend/src/components/CourseCardOverlay.vue:124
+msgid "Certificate of Completion"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/components/Modals/Event.vue:310
+msgid "Certificate saved successfully"
+msgstr "Zertifikat erfolgreich gespeichert"
+
+#: frontend/src/pages/ProfileCertificates.vue:4
+msgid "Certificates"
+msgstr "Zertifikate"
+
+#: frontend/src/components/Modals/BulkCertificates.vue:121
+msgid "Certificates generated successfully"
+msgstr "Zertifikate erfolgreich generiert"
+
+#: frontend/src/components/AppSidebar.vue:546
+msgid "Certification"
+msgstr "Zertifizierung"
+
+#: frontend/src/components/BatchStudents.vue:36
+msgid "Certified"
+msgstr "Zertifiziert"
+
+#: frontend/src/pages/CertifiedParticipants.vue:196
+msgid "Certified Members"
+msgstr "Zertifizierte Mitglieder"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certified Participants"
+msgstr "Zertifizierte Teilnehmer"
+
+#: dls/templates/assignment.html:13
+msgid "Change"
+msgstr "Ändern"
+
+#: frontend/src/components/Assignment.vue:341
+msgid "Changes saved successfully"
+msgstr "Änderungen erfolgreich gespeichert"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter"
+msgstr "Kapitel"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter Reference"
+msgstr "Kapitelreferenz"
+
+#: frontend/src/components/Modals/ChapterModal.vue:155
+msgid "Chapter added successfully"
+msgstr "Kapitel erfolgreich hinzugefügt"
+
+#: frontend/src/components/Modals/ChapterModal.vue:199
+msgid "Chapter updated successfully"
+msgstr "Kapitel erfolgreich aktualisiert"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Chapters"
+msgstr "Kapitel"
+
+#: frontend/src/components/Quiz.vue:205
+msgid "Check"
+msgstr "Prüfen"
+
+#: dls/templates/emails/mention_template.html:10
+msgid "Check Discussion"
+msgstr "Diskussion prüfen"
+
+#: dls/templates/certificates_section.html:24
+msgid "Check out the {0} to know more about certification."
+msgstr "Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
+
+#: frontend/src/components/NoPermission.vue:19
+msgid "Checkout Courses"
+msgstr "Kurse ansehen"
+
+#: dls/dls/doctype/dls_question/dls_question.json
+msgid "Choices"
+msgstr "Auswahlmöglichkeiten"
+
+#: frontend/src/components/Quiz.vue:613
+msgid "Choose all answers that apply"
+msgstr "Wählen Sie alle zutreffenden Antworten"
+
+#: frontend/src/components/Controls/IconPicker.vue:27
+msgid "Choose an icon"
+msgstr "Wählen Sie ein Symbol"
+
+#: frontend/src/components/Quiz.vue:614
+msgid "Choose one answer"
+msgstr "Wählen Sie eine Antwort"
+
+#: frontend/src/pages/Billing.vue:81
+msgid "City"
+msgstr "Stadt"
+
+#: dls/templates/emails/live_class_reminder.html:10
+msgid "Class:"
+msgstr "Kurs:"
+
+#: frontend/src/components/Controls/Link.vue:49
+msgid "Clear"
+msgstr "Löschen"
+
+#: dls/fixtures/custom_field.json
+msgid "Clearly Defined Role"
+msgstr "Klar definierte Rolle"
+
+#: frontend/src/components/LessonHelp.vue:30
+msgid "Click on the add icon in the editor and select Quiz from the menu. It opens up a dialog, where you can either select a quiz from the list or create a new quiz. When you select the Create New option it redirects you to the quiz creation page."
+msgstr "Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client ID"
+msgstr "Client-ID"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client Secret"
+msgstr "Client-Secret"
+
+#: dls/job/doctype/job_opportunity/job_opportunity.json
+msgid "Closed"
+msgstr "Geschlossen"
+
+#: dls/dls/doctype/dls_live_class/dls_live_class.json
+msgid "Cloud"
+msgstr "Cloud"
+
+#: dls/dls/doctype/dls_exercise/dls_exercise.json
+msgid "Code"
+msgstr "Code"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cohort"
+msgstr "Kohorte"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Cohort Join Request"
+msgstr "Kohorte Beitrittsanfrage"
+
+#: dls/dls/doctype/cohort_mentor/cohort_mentor.json
+msgid "Cohort Mentor"
+msgstr "Kohorte Mentor"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Cohort Staff"
+msgstr "Kohorte Mitarbeiter"
+
+#: dls/dls/doctype/cohort_subgroup/cohort_subgroup.json
+msgid "Cohort Subgroup"
+msgstr "Kohorte Untergruppe"
+
+#: dls/dls/doctype/cohort_web_page/cohort_web_page.json
+msgid "Cohort Web Page"
+msgstr "Kohorte Webseite"
+
+#: dls/fixtures/custom_field.json
+msgid "Collaboration Preference"
+msgstr "Zusammenarbeitspräferenz"
+
+#: frontend/src/components/AppSidebar.vue:112
+msgid "Collapse"
+msgstr "Einklappen"
+
+#: frontend/src/components/CourseOutline.vue:21
+msgid "Collapse all chapters"
+msgstr "Alle Kapitel einklappen"
+
+#: dls/fixtures/custom_field.json
+msgid "College Name"
+msgstr "Hochschulname"
+
+#: dls/dls/doctype/dls_timetable_legend/dls_timetable_legend.json
+msgid "Color"
+msgstr "Farbe"
+
+#: frontend/src/components/Assignment.vue:164
+msgid "Comments"
+msgstr "Kommentare"
+
+#: frontend/src/components/Assignment.vue:142
+msgid "Comments by Evaluator"
+msgstr "Kommentare des Bewerters"
+
+#: dls/job/doctype/dls_job_application/dls_job_application.json
+msgid "Company"
+msgstr "Unternehmen"
+
+#: frontend/src/pages/JobCreation.vue:64
+msgid "Company Details"
+msgstr "Unternehmensdetails"
+
+#: frontend/src/pages/JobCreation.vue:83
+msgid "Company Email Address"
+msgstr "Unternehmens-E-Mail-Adresse"
+
+#: frontend/src/pages/JobCreation.vue:88
+msgid "Company Logo"
+msgstr "Unternehmenslogo"
+
+#: frontend/src/pages/JobCreation.vue:70
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#: dls/fixtures/custom_field.json
+msgid "Company Type"
+msgstr "Unternehmenstyp"
+
+#: frontend/src/pages/JobCreation.vue:76
+msgid "Company Website"
+msgstr "Unternehmenswebsite"
+
+#: frontend/src/components/Modals/BatchStudentProgress.vue:18
+msgid "Complete"
+msgstr "Abgeschlossen"
+
+#: dls/templates/emails/dls_invite_request_approved.html:7
+msgid "Complete Sign Up"
+msgstr "Registrierung abschließen"
+
+#: dls/templates/emails/payment_reminder.html:15
+msgid "Complete Your Enrollment"
+msgstr "Schließen Sie Ihre Anmeldung ab"
+
+#: dls/dls/doctype/dls_payment/dls_payment.py:73
+msgid "Complete Your Enrollment - Don't miss out!"
+msgstr "Schließen Sie Ihre Anmeldung ab - Verpassen Sie es nicht!"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: frontend/src/components/BatchStudents.vue:370
+msgid "Completed by Students"
+msgstr "Von Schülern abgeschlossen"
+
+#: frontend/src/pages/CourseForm.vue:209
+msgid "Completion Certificate"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/pages/Statistics.vue:66
+msgid "Completions"
+msgstr "Abschlüsse"
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Condition"
+msgstr "Bedingung"
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:16
+msgid "Condition must be in valid JSON format."
+msgstr "Bedingung muss im gültigen JSON-Format sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:21
+msgid "Condition must be valid python code."
+msgstr "Bedingung muss gültiger Python-Code sein."
+
+#: dls/dls/doctype/dls_certificate_request/dls_certificate_request.js:7
+msgid "Conduct Evaluation"
+msgstr "Bewertung durchführen"
+
+#: frontend/src/components/UserDropdown.vue:180
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: dls/dls/doctype/dls_batch_enrollment/dls_batch_enrollment.json
+msgid "Confirmation Email Sent"
+msgstr "Bestätigungs-E-Mail gesendet"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Confirmation Email Template"
+msgstr "Bestätigungs-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.py:29
+msgid "Congratulations on getting certified!"
+msgstr "Herzlichen Glückwunsch zur Zertifizierung!"
+
+#: frontend/src/components/CourseCardOverlay.vue:55
+msgid "Contact the Administrator to enroll for this course."
+msgstr "Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
+
+#: frontend/src/pages/LessonForm.vue:62
+msgid "Content"
+msgstr "Inhalt"
+
+#: frontend/src/components/CourseCardOverlay.vue:29
+msgid "Continue Learning"
+msgstr "Weiterlernen"
+
+#: frontend/src/pages/Jobs.vue:163
+msgid "Contract"
+msgstr "Vertrag"
+
+#: dls/dls/utils.py:436
+msgid "Cookie Policy"
+msgstr "Cookie-Richtlinie"
+
+#: frontend/src/components/LessonHelp.vue:68
+msgid "Copy the URL of the video from YouTube and paste it in the editor."
+msgstr "Kopieren Sie die URL des Videos von YouTube und fügen Sie sie in den Editor ein."
+
+#: dls/fixtures/custom_field.json
+msgid "Corporate Organization"
+msgstr "Unternehmensorganisation"
+
+#: frontend/src/components/Quiz.vue:165
+msgid "Correct"
+msgstr "Richtig"
+
+#: frontend/src/components/Modals/Question.vue:73
+msgid "Correct Answer"
+msgstr "Richtige Antwort"
+
+#: frontend/src/pages/Billing.vue:92
+msgid "Country"
+msgstr "Land"
+
+#: frontend/src/components/Modals/BatchCourseModal.vue:20
+msgid "Course"
+msgstr "Kurs"
+
+#: dls/dls/doctype/course_chapter/course_chapter.json
+msgid "Course Chapter"
+msgstr "Kurskapitel"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/pages/ProfileRoles.vue:16
+msgid "Course Creator"
+msgstr "Kursersteller"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_course_interest/dls_course_interest.json
+msgid "Course Interest"
+msgstr "Kursinteresse"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/dls/doctype/dls_course_mentor_mapping/dls_course_mentor_mapping.json
+msgid "Course Mentor Mapping"
+msgstr "Kurs-Mentor-Zuordnung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/dls_course_progress/dls_course_progress.json
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: dls/dls/doctype/dls_course_review/dls_course_review.json
+msgid "Course Review"
+msgstr "Kursbewertung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Title"
+msgstr "Kurstitel"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: frontend/src/pages/Courses.vue:304
+msgid "Courses"
+msgstr "Kurse"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Data"
+msgstr "Kursdaten"
+
+#: frontend/src/pages/CourseForm.vue:46
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: frontend/src/pages/CourseForm.vue:59
+msgid "Course Image"
+msgstr "Kursbild"
+
+#: dls/dls/doctype/course_instructor/course_instructor.json
+msgid "Course Instructor"
+msgstr "Kursleiter"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/www/dls.py:75
+msgid "Course List"
+msgstr "Kursliste"
+
+#: dls/dls/report/course_progress_summary/course_progress_summary.py:58
+msgid "Course Name"
+msgstr "Kursname"
+
+#: frontend/src/pages/CourseDetail.vue:76
+msgid "Course Outline"
+msgstr "Kursübersicht"
+
+#: dls/dls/report/course_progress_summary/course_progress_summary.json
+msgid "Course Progress Summary"
+msgstr "Kursfortschritt Zusammenfassung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Stats"
+msgstr "Kursstatistiken"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Course Title"
+msgstr "Kurstitel"
+
+#: frontend/src/pages/ProgramForm.vue:232
+msgid "Course added to program"
+msgstr "Kurs zum Programm hinzugefügt"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:270
+msgid "Course already added to the batch."
+msgstr "Kurs wurde bereits zum Batch hinzugefügt."
+
+#: frontend/src/pages/CourseForm.vue:470
+msgid "Course deleted successfully"
+msgstr "Kurs erfolgreich gelöscht"
+
+#: frontend/src/pages/ProgramForm.vue:301
+msgid "Course moved successfully"
+msgstr "Kurs erfolgreich verschoben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:49
+msgid "Course {0} has already been added to this batch."
+msgstr "Kurs {0} wurde bereits zu diesem Batch hinzugefügt."
+
+#: frontend/src/components/BatchCourses.vue:5
+msgid "Courses"
+msgstr "Kurse"
+
+# Missing German translations for DLS
+# Format: msgid "English text" followed by msgstr "German translation"
+
+#: dls/templates/quiz/quiz.html:141
+msgid "All Submissions"
+msgstr "Alle Einreichungen"
+
+#: dls/dls/doctype/dls_quiz/dls_quiz.py:44
+msgid "All questions should have the same marks if the limit is set."
+msgstr "Alle Fragen sollten die gleiche Punktzahl haben, wenn das Limit festgelegt ist."
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Allow Guest Access"
+msgstr "Gastzugang erlauben"
+
+#: dls/job/doctype/job_settings/job_settings.json
+msgid "Allow Job Posting From Website"
+msgstr "Stellenausschreibung von der Website erlauben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Allow Self Enrollment"
+msgstr "Selbsteinschreibung erlauben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Allow accessing future dates"
+msgstr "Zugriff auf zukünftige Termine erlauben"
+
+#: frontend/src/pages/BatchForm.vue:43
+msgid "Allow self enrollment"
+msgstr "Selbsteinschreibung erlauben"
+
+#: dls/dls/user.py:34
+msgid "Already Registered"
+msgstr "Bereits registriert"
+
+#: frontend/src/pages/BatchForm.vue:224
+msgid "Amount"
+msgstr "Betrag"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Amount (USD)"
+msgstr "Betrag (USD)"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:65
+msgid "Amount and currency are required for paid batches."
+msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
+
+#: dls/dls/doctype/dls_course/dls_course.py:74
+msgid "Amount and currency are required for paid certificates."
+msgstr "Betrag und Währung sind für kostenpflichtige Zertifikate erforderlich."
+
+#: dls/dls/doctype/dls_course/dls_course.py:71
+msgid "Amount and currency are required for paid courses."
+msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
+
+#: dls/dls/doctype/dls_payment/dls_payment.json
+msgid "Amount with GST"
+msgstr "Betrag mit MwSt."
+
+#: frontend/src/components/Modals/AnnouncementModal.vue:33
+msgid "Announcement"
+msgstr "Ankündigung"
+
+#: frontend/src/components/Modals/AnnouncementModal.vue:100
+msgid "Announcement has been sent successfully"
+msgstr "Ankündigung wurde erfolgreich gesendet"
+
+#: frontend/src/pages/QuizSubmission.vue:61
+msgid "Answer"
+msgstr "Antwort"
+
+#: frontend/src/pages/CourseForm.vue:81
+msgid "Appears on the course card in the course list"
+msgstr "Erscheint auf der Kurskarte in der Kursliste"
+
+#: frontend/src/pages/BatchForm.vue:75
+msgid "Appears when the batch URL is shared on any online platform"
+msgstr "Erscheint, wenn die Kurs-URL auf einer Online-Plattform geteilt wird"
+
+#: frontend/src/pages/JobDetail.vue:128
+msgid "Applications Received"
+msgstr "Eingegangene Bewerbungen"
+
+#: frontend/src/pages/JobDetail.vue:48
+msgid "Apply"
+msgstr "Bewerben"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Apply GST for India"
+msgstr "MwSt. für Indien anwenden"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Apply Rounding on Equivalent"
+msgstr "Rundung auf Äquivalent anwenden"
+
+#: frontend/src/components/Modals/JobApplicationModal.vue:6
+msgid "Apply for this job"
+msgstr "Auf diese Stelle bewerben"
+
+#: dls/dls/doctype/invite_request/invite_request.json
+msgid "Approved"
+msgstr "Genehmigt"
+
+#: frontend/src/components/Apps.vue:13
+msgid "Apps"
+msgstr "Apps"
+
+#: frontend/src/pages/Batches.vue:294
+msgid "Archived"
+msgstr "Archiviert"
+
+#: frontend/src/components/UpcomingEvaluations.vue:170
+msgid "Are you sure you want to cancel this evaluation? This action cannot be undone."
+msgstr "Sind Sie sicher, dass Sie diese Bewertung abbrechen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
+
+#: frontend/src/components/UserDropdown.vue:175
+msgid "Are you sure you want to login to your Frappe Cloud dashboard?"
+msgstr "Sind Sie sicher, dass Sie sich bei Ihrem Frappe Cloud Dashboard anmelden möchten?"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:27
+msgid "Assessment"
+msgstr "Bewertung"
+
+#: dls/dls/doctype/dls_assessment/dls_assessment.json
+msgid "Assessment Name"
+msgstr "Bewertungsname"
+
+#: dls/dls/doctype/dls_assessment/dls_assessment.json
+msgid "Assessment Type"
+msgstr "Bewertungstyp"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:73
+msgid "Assessment added successfully"
+msgstr "Bewertung erfolgreich hinzugefügt"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:75
+msgid "Assessment {0} has already been added to this batch."
+msgstr "Bewertung {0} wurde diesem Kurs bereits hinzugefügt."
+
+#: frontend/src/components/AppSidebar.vue:538
+msgid "Assessments"
+msgstr "Bewertungen"
+
+#: dls/dls/doctype/dls_badge/dls_badge.js:50
+msgid "Assign"
+msgstr "Zuweisen"
+
+#: frontend/src/pages/AssignmentSubmissionList.vue:12
+msgid "Assignment"
+msgstr "Aufgabe"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
+msgid "Assignment Attachment"
+msgstr "Aufgabenanhang"
+
+#: frontend/src/pages/AssignmentSubmissionList.vue:223
+msgid "Assignment Submissions"
+msgstr "Aufgabeneinreichungen"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
+msgid "Assignment Title"
+msgstr "Aufgabentitel"
+
+#: frontend/src/components/Modals/AssignmentForm.vue:112
+msgid "Assignment created successfully"
+msgstr "Aufgabe erfolgreich erstellt"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.py:24
+msgid "Assignment for Lesson {0} by {1} already exists."
+msgstr "Aufgabe für Lektion {0} von {1} existiert bereits."
+
+#: frontend/src/components/Modals/AssignmentForm.vue:129
+msgid "Assignment updated successfully"
+msgstr "Aufgabe erfolgreich aktualisiert"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Assignment will appear at the bottom of the lesson."
+msgstr "Die Aufgabe erscheint am Ende der Lektion."
+
+#: frontend/src/components/AppSidebar.vue:542
+msgid "Assignments"
+msgstr "Aufgaben"
+
+#: dls/dls/doctype/dls_question/dls_question.py:43
+msgid "At least one option must be correct for this question."
+msgstr "Mindestens eine Option muss für diese Frage richtig sein."
+
+#: dls/fixtures/custom_field.json
+msgid "Attire Preference"
+msgstr "Kleidungspräferenz"
+
+#: frontend/src/pages/ProfileEvaluator.vue:123
+msgid "Authorize Google Calendar Access"
+msgstr "Google Kalender-Zugriff autorisieren"
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Auto Assign"
+msgstr "Automatisch zuweisen"
+
+#: frontend/src/components/Modals/LiveClassModal.vue:77
+msgid "Auto Recording"
+msgstr "Automatische Aufnahme"
+
+#: frontend/src/components/CourseCard.vue:51
+msgid "Average Rating"
+msgstr "Durchschnittliche Bewertung"
+
+#: frontend/src/components/BatchFeedback.vue:38
+msgid "Average of Feedback Received"
+msgstr "Durchschnitt der erhaltenen Rückmeldungen"
+
+#: frontend/src/pages/Lesson.vue:97
+msgid "Back to Course"
+msgstr "Zurück zum Kurs"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge"
+msgstr "Abzeichen"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Description"
+msgstr "Abzeichenbeschreibung"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Image"
+msgstr "Abzeichenbild"
+
+#: frontend/src/components/Modals/Event.vue:32
+msgid "Batch"
+msgstr "Kurs"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Batch Confirmation Template"
+msgstr "Kursbestätigungsvorlage"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Batch Course"
+msgstr "Kurskurs"
+
+#: dls/public/js/common_functions.js:428
+msgid "Batch Created"
+msgstr "Kurs erstellt"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/pages/BatchForm.vue:250
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Batch Details Raw"
+msgstr "Kursdetails (Rohformat)"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Batch Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_certificate_evaluation/dls_certificate_evaluation.json
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/exercise_latest_submission/exercise_latest_submission.json
+msgid "Batch Old"
+msgstr "Alter Kurs"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/templates/emails/batch_confirmation.html:11
+msgid "Batch Start Date:"
+msgstr "Kursstartdatum:"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.json
+msgid "Batch Title"
+msgstr "Kurstitel"
+
+#: dls/public/js/common_functions.js:427
+msgid "Batch Updated"
+msgstr "Kurs aktualisiert"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:41
+msgid "Batch end date cannot be before the batch start date"
+msgstr "Das Kursenddatum kann nicht vor dem Kursstartdatum liegen"
+
+#: dls/dls/api.py:240
+msgid "Batch is sold out."
+msgstr "Kurs ist ausgebucht."
+
+#: dls/templates/emails/batch_start_reminder.html:10
+msgid "Batch:"
+msgstr "Kurs:"
+
+#: frontend/src/pages/Batches.vue:304
+msgid "Batches"
+msgstr "Kurse"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Begin Date"
+msgstr "Startdatum"
+
+#: dls/templates/emails/batch_confirmation.html:31
+msgid "Best Regards"
+msgstr "Beste Grüße"
+
+#: frontend/src/pages/Billing.vue:8
+msgid "Billing Details"
+msgstr "Rechnungsdetails"
+
+#: frontend/src/pages/Billing.vue:70
+msgid "Billing Name"
+msgstr "Rechnungsname"
+
+#: frontend/src/components/Modals/EditProfile.vue:75
+msgid "Bio"
+msgstr "Biografie"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Body"
+msgstr "Inhalt"
+
+#: dls/fixtures/custom_field.json
+msgid "Both Individual and Team Work"
+msgstr "Sowohl Einzel- als auch Teamarbeit"
+
+#: dls/fixtures/custom_field.json
+msgid "Branch"
+msgstr "Zweigstelle"
+
+#: dls/fixtures/custom_field.json
+msgid "Business Owner"
+msgstr "Geschäftsinhaber"
+
+#: frontend/src/components/CourseCardOverlay.vue:47
+msgid "Buy this course"
+msgstr "Diesen Kurs kaufen"
+
+#: dls/templates/emails/dls_message.html:11
+msgid "By"
+msgstr "Von"
+
+#: dls/dls/doctype/education_detail/education_detail.json
+msgid "CGPA/4"
+msgstr "CGPA/4"
+
+#: frontend/src/components/UpcomingEvaluations.vue:60
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: frontend/src/components/UpcomingEvaluations.vue:169
+msgid "Cancel this evaluation?"
+msgstr "Diese Bewertung abbrechen?"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cancelled"
+msgstr "Abgebrochen"
+
+#: dls/fixtures/custom_field.json
+msgid "Career Preference Details"
+msgstr "Details zur Karrierepräferenz"
+
+#: dls/fixtures/custom_field.json
+msgid "Casual Wear"
+msgstr "Freizeitkleidung"
+
+#: frontend/src/pages/BatchForm.vue:198
+msgid "Category"
+msgstr "Kategorie"
+
+#: frontend/src/components/Categories.vue:22
+msgid "Category Name"
+msgstr "Kategoriename"
+
+#: dls/dls/doctype/dls_enrollment/dls_enrollment.json
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certificate Email Template"
+msgstr "Zertifikat-E-Mail-Vorlage"
+
+#: dls/templates/emails/certification.html:13
+msgid "Certificate Link"
+msgstr "Zertifikatslink"
+
+#: frontend/src/components/CourseCardOverlay.vue:124
+msgid "Certificate of Completion"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/components/Modals/Event.vue:310
+msgid "Certificate saved successfully"
+msgstr "Zertifikat erfolgreich gespeichert"
+
+#: frontend/src/pages/ProfileCertificates.vue:4
+msgid "Certificates"
+msgstr "Zertifikate"
+
+#: frontend/src/components/Modals/BulkCertificates.vue:121
+msgid "Certificates generated successfully"
+msgstr "Zertifikate erfolgreich generiert"
+
+#: frontend/src/components/AppSidebar.vue:546
+msgid "Certification"
+msgstr "Zertifizierung"
+
+#: frontend/src/components/BatchStudents.vue:36
+msgid "Certified"
+msgstr "Zertifiziert"
+
+#: frontend/src/pages/CertifiedParticipants.vue:196
+msgid "Certified Members"
+msgstr "Zertifizierte Mitglieder"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certified Participants"
+msgstr "Zertifizierte Teilnehmer"
+
+#: dls/templates/assignment.html:13
+msgid "Change"
+msgstr "Ändern"
+
+#: frontend/src/components/Assignment.vue:341
+msgid "Changes saved successfully"
+msgstr "Änderungen erfolgreich gespeichert"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter"
+msgstr "Kapitel"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter Reference"
+msgstr "Kapitelreferenz"
+
+#: frontend/src/components/Modals/ChapterModal.vue:155
+msgid "Chapter added successfully"
+msgstr "Kapitel erfolgreich hinzugefügt"
+
+#: frontend/src/components/Modals/ChapterModal.vue:199
+msgid "Chapter updated successfully"
+msgstr "Kapitel erfolgreich aktualisiert"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Chapters"
+msgstr "Kapitel"
+
+#: frontend/src/components/Quiz.vue:205
+msgid "Check"
+msgstr "Prüfen"
+
+#: dls/templates/emails/mention_template.html:10
+msgid "Check Discussion"
+msgstr "Diskussion prüfen"
+
+#: dls/templates/certificates_section.html:24
+msgid "Check out the {0} to know more about certification."
+msgstr "Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
+
+#: frontend/src/components/NoPermission.vue:19
+msgid "Checkout Courses"
+msgstr "Kurse ansehen"
+
+#: dls/dls/doctype/dls_question/dls_question.json
+msgid "Choices"
+msgstr "Auswahlmöglichkeiten"
+
+#: frontend/src/components/Quiz.vue:613
+msgid "Choose all answers that apply"
+msgstr "Wählen Sie alle zutreffenden Antworten"
+
+#: frontend/src/components/Controls/IconPicker.vue:27
+msgid "Choose an icon"
+msgstr "Wählen Sie ein Symbol"
+
+#: frontend/src/components/Quiz.vue:614
+msgid "Choose one answer"
+msgstr "Wählen Sie eine Antwort"
+
+#: frontend/src/pages/Billing.vue:81
+msgid "City"
+msgstr "Stadt"
+
+#: dls/templates/emails/live_class_reminder.html:10
+msgid "Class:"
+msgstr "Kurs:"
+
+#: frontend/src/components/Controls/Link.vue:49
+msgid "Clear"
+msgstr "Löschen"
+
+#: dls/fixtures/custom_field.json
+msgid "Clearly Defined Role"
+msgstr "Klar definierte Rolle"
+
+#: frontend/src/components/LessonHelp.vue:30
+msgid "Click on the add icon in the editor and select Quiz from the menu. It opens up a dialog, where you can either select a quiz from the list or create a new quiz. When you select the Create New option it redirects you to the quiz creation page."
+msgstr "Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client ID"
+msgstr "Client-ID"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client Secret"
+msgstr "Client-Secret"
+
+#: dls/job/doctype/job_opportunity/job_opportunity.json
+msgid "Closed"
+msgstr "Geschlossen"
+
+#: dls/dls/doctype/dls_live_class/dls_live_class.json
+msgid "Cloud"
+msgstr "Cloud"
+
+#: dls/dls/doctype/dls_exercise/dls_exercise.json
+msgid "Code"
+msgstr "Code"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cohort"
+msgstr "Kohorte"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Cohort Join Request"
+msgstr "Kohorte Beitrittsanfrage"
+
+#: dls/dls/doctype/cohort_mentor/cohort_mentor.json
+msgid "Cohort Mentor"
+msgstr "Kohorte Mentor"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Cohort Staff"
+msgstr "Kohorte Mitarbeiter"
+
+#: dls/dls/doctype/cohort_subgroup/cohort_subgroup.json
+msgid "Cohort Subgroup"
+msgstr "Kohorte Untergruppe"
+
+#: dls/dls/doctype/cohort_web_page/cohort_web_page.json
+msgid "Cohort Web Page"
+msgstr "Kohorte Webseite"
+
+#: dls/fixtures/custom_field.json
+msgid "Collaboration Preference"
+msgstr "Zusammenarbeitspräferenz"
+
+#: frontend/src/components/AppSidebar.vue:112
+msgid "Collapse"
+msgstr "Einklappen"
+
+#: frontend/src/components/CourseOutline.vue:21
+msgid "Collapse all chapters"
+msgstr "Alle Kapitel einklappen"
+
+#: dls/fixtures/custom_field.json
+msgid "College Name"
+msgstr "Hochschulname"
+
+#: dls/dls/doctype/dls_timetable_legend/dls_timetable_legend.json
+msgid "Color"
+msgstr "Farbe"
+
+#: frontend/src/components/Assignment.vue:164
+msgid "Comments"
+msgstr "Kommentare"
+
+#: frontend/src/components/Assignment.vue:142
+msgid "Comments by Evaluator"
+msgstr "Kommentare des Bewerters"
+
+#: dls/job/doctype/dls_job_application/dls_job_application.json
+msgid "Company"
+msgstr "Unternehmen"
+
+#: frontend/src/pages/JobCreation.vue:64
+msgid "Company Details"
+msgstr "Unternehmensdetails"
+
+#: frontend/src/pages/JobCreation.vue:83
+msgid "Company Email Address"
+msgstr "Unternehmens-E-Mail-Adresse"
+
+#: frontend/src/pages/JobCreation.vue:88
+msgid "Company Logo"
+msgstr "Unternehmenslogo"
+
+#: frontend/src/pages/JobCreation.vue:70
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#: dls/fixtures/custom_field.json
+msgid "Company Type"
+msgstr "Unternehmenstyp"
+
+#: frontend/src/pages/JobCreation.vue:76
+msgid "Company Website"
+msgstr "Unternehmenswebsite"
+
+#: frontend/src/components/Modals/BatchStudentProgress.vue:18
+msgid "Complete"
+msgstr "Abgeschlossen"
+
+#: dls/templates/emails/dls_invite_request_approved.html:7
+msgid "Complete Sign Up"
+msgstr "Registrierung abschließen"
+
+#: dls/templates/emails/payment_reminder.html:15
+msgid "Complete Your Enrollment"
+msgstr "Schließen Sie Ihre Anmeldung ab"
+
+#: dls/dls/doctype/dls_payment/dls_payment.py:73
+msgid "Complete Your Enrollment - Don't miss out!"
+msgstr "Schließen Sie Ihre Anmeldung ab - Verpassen Sie es nicht!"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: frontend/src/components/BatchStudents.vue:370
+msgid "Completed by Students"
+msgstr "Von Schülern abgeschlossen"
+
+#: frontend/src/pages/CourseForm.vue:209
+msgid "Completion Certificate"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/pages/Statistics.vue:66
+msgid "Completions"
+msgstr "Abschlüsse"
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Condition"
+msgstr "Bedingung"
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:16
+msgid "Condition must be in valid JSON format."
+msgstr "Bedingung muss im gültigen JSON-Format sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:21
+msgid "Condition must be valid python code."
+msgstr "Bedingung muss gültiger Python-Code sein."
+
+#: dls/dls/doctype/dls_certificate_request/dls_certificate_request.js:7
+msgid "Conduct Evaluation"
+msgstr "Bewertung durchführen"
+
+#: frontend/src/components/UserDropdown.vue:180
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: dls/dls/doctype/dls_batch_enrollment/dls_batch_enrollment.json
+msgid "Confirmation Email Sent"
+msgstr "Bestätigungs-E-Mail gesendet"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Confirmation Email Template"
+msgstr "Bestätigungs-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.py:29
+msgid "Congratulations on getting certified!"
+msgstr "Herzlichen Glückwunsch zur Zertifizierung!"
+
+#: frontend/src/components/CourseCardOverlay.vue:55
+msgid "Contact the Administrator to enroll for this course."
+msgstr "Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
+
+#: frontend/src/pages/LessonForm.vue:62
+msgid "Content"
+msgstr "Inhalt"
+
+#: frontend/src/components/CourseCardOverlay.vue:29
+msgid "Continue Learning"
+msgstr "Weiterlernen"
+
+#: frontend/src/pages/Jobs.vue:163
+msgid "Contract"
+msgstr "Vertrag"
+
+#: dls/dls/utils.py:436
+msgid "Cookie Policy"
+msgstr "Cookie-Richtlinie"
+
+#: frontend/src/components/LessonHelp.vue:68
+msgid "Copy the URL of the video from YouTube and paste it in the editor."
+msgstr "Kopieren Sie die URL des Videos von YouTube und fügen Sie sie in den Editor ein."
+
+#: dls/fixtures/custom_field.json
+msgid "Corporate Organization"
+msgstr "Unternehmensorganisation"
+
+#: frontend/src/components/Quiz.vue:165
+msgid "Correct"
+msgstr "Richtig"
+
+#: frontend/src/components/Modals/Question.vue:73
+msgid "Correct Answer"
+msgstr "Richtige Antwort"
+
+#: frontend/src/pages/Billing.vue:92
+msgid "Country"
+msgstr "Land"
+
+#: frontend/src/components/Modals/BatchCourseModal.vue:20
+msgid "Course"
+msgstr "Kurs"
+
+#: dls/dls/doctype/course_chapter/course_chapter.json
+msgid "Course Chapter"
+msgstr "Kurskapitel"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/pages/ProfileRoles.vue:16
+msgid "Course Creator"
+msgstr "Kursersteller"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_course_interest/dls_course_interest.json
+msgid "Course Interest"
+msgstr "Kursinteresse"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/dls/doctype/dls_course_mentor_mapping/dls_course_mentor_mapping.json
+msgid "Course Mentor Mapping"
+msgstr "Kurs-Mentor-Zuordnung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/dls_course_progress/dls_course_progress.json
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: dls/dls/doctype/dls_course_review/dls_course_review.json
+msgid "Course Review"
+msgstr "Kursbewertung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Title"
+msgstr "Kurstitel"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: frontend/src/pages/Courses.vue:304
+msgid "Courses"
+msgstr "Kurse"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Data"
+msgstr "Kursdaten"
+
+#: frontend/src/pages/CourseForm.vue:46
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: frontend/src/pages/CourseForm.vue:59
+msgid "Course Image"
+msgstr "Kursbild"
+
+#: dls/dls/doctype/course_instructor/course_instructor.json
+msgid "Course Instructor"
+msgstr "Kursleiter"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/www/dls.py:75
+msgid "Course List"
+msgstr "Kursliste"
+
+#: dls/dls/report/course_progress_summary/course_progress_summary.py:58
+msgid "Course Name"
+msgstr "Kursname"
+
+#: frontend/src/pages/CourseDetail.vue:76
+msgid "Course Outline"
+msgstr "Kursübersicht"
+
+#: dls/dls/report/course_progress_summary/course_progress_summary.json
+msgid "Course Progress Summary"
+msgstr "Kursfortschritt Zusammenfassung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Stats"
+msgstr "Kursstatistiken"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Course Title"
+msgstr "Kurstitel"
+
+#: frontend/src/pages/ProgramForm.vue:232
+msgid "Course added to program"
+msgstr "Kurs zum Programm hinzugefügt"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:270
+msgid "Course already added to the batch."
+msgstr "Kurs wurde bereits zum Batch hinzugefügt."
+
+#: frontend/src/pages/CourseForm.vue:470
+msgid "Course deleted successfully"
+msgstr "Kurs erfolgreich gelöscht"
+
+#: frontend/src/pages/ProgramForm.vue:301
+msgid "Course moved successfully"
+msgstr "Kurs erfolgreich verschoben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:49
+msgid "Course {0} has already been added to this batch."
+msgstr "Kurs {0} wurde bereits zu diesem Batch hinzugefügt."
+
+#: frontend/src/components/BatchCourses.vue:5
+msgid "Courses"
+msgstr "Kurse"
+
+#: dls/dls/doctype/dls_course/dls_course.py:63
+msgid "A course cannot have both paid certificate and certificate of completion."
+msgstr "Ein Kurs kann nicht sowohl ein kostenpflichtiges Zertifikat als auch ein Abschlusszertifikat haben."
+
+#: frontend/src/pages/CourseForm.vue:37
+msgid "A one line introduction to the course that appears on the course card"
+msgstr "Eine einzeilige Einführung in den Kurs, die auf der Kurskarte erscheint"
+
+#: frontend/src/pages/ProfileAbout.vue:4
+msgid "About"
+msgstr "Über"
+
+#: frontend/src/pages/Batch.vue:100
+msgid "About this batch"
+msgstr "Über diesen Kurs"
+
+#: dls/fixtures/custom_field.json
+msgid "Acceptance for Terms and/or Policies"
+msgstr "Akzeptanz der Bedingungen und/oder Richtlinien"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Accepted"
+msgstr "Akzeptiert"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Account ID"
+msgstr "Konto-ID"
+
+#: frontend/src/pages/ProfileAbout.vue:17
+msgid "Achievements"
+msgstr "Erfolge"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Active"
+msgstr "Aktiv"
+
+#: frontend/src/components/Assessments.vue:11
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: frontend/src/components/CourseOutline.vue:18
+msgid "Add Chapter"
+msgstr "Kapitel hinzufügen"
+
+#: frontend/src/components/CourseOutline.vue:136
+msgid "Add Lesson"
+msgstr "Lektion hinzufügen"
+
+#: frontend/src/pages/ProfileEvaluator.vue:75
+msgid "Add Slot"
+msgstr "Zeitslot hinzufügen"
+
+#: dls/templates/onboarding_header.html:26
+msgid "Add a Chapter"
+msgstr "Kapitel hinzufügen"
+
+#: dls/templates/onboarding_header.html:33
+msgid "Add a Lesson"
+msgstr "Lektion hinzufügen"
+
+#: frontend/src/components/Modals/StudentModal.vue:5
+msgid "Add a Student"
+msgstr "Schüler hinzufügen"
+
+#: frontend/src/components/AppSidebar.vue:525
+msgid "Add a chapter"
+msgstr "Kapitel hinzufügen"
+
+#: frontend/src/components/Modals/BatchCourseModal.vue:5
+msgid "Add a course"
+msgstr "Kurs hinzufügen"
+
+#: frontend/src/pages/CourseForm.vue:133
+msgid "Add a keyword and then press enter"
+msgstr "Fügen Sie ein Schlüsselwort hinzu und drücken Sie dann Enter"
+
+#: frontend/src/components/AppSidebar.vue:526
+msgid "Add a lesson"
+msgstr "Lektion hinzufügen"
+
+#: frontend/src/components/Modals/Question.vue:147
+msgid "Add a new question"
+msgstr "Neue Frage hinzufügen"
+
+#: frontend/src/components/AssessmentPlugin.vue:11
+msgid "Add a quiz to your lesson"
+msgstr "Fügen Sie Ihrem Unterricht einen Quiz hinzu"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:5
+msgid "Add an assessment"
+msgstr "Bewertung hinzufügen"
+
+#: frontend/src/components/AssessmentPlugin.vue:14
+msgid "Add an assignment to your lesson"
+msgstr "Fügen Sie Ihrem Unterricht eine Aufgabe hinzu"
+
+#: frontend/src/components/Modals/Question.vue:18
+msgid "Add an existing question"
+msgstr "Vorhandene Frage hinzufügen"
+
+#: dls/dls/doctype/dls_question/dls_question.py:66
+msgid "Add at least one possible answer for this question: {0}"
+msgstr "Fügen Sie mindestens eine mögliche Antwort für diese Frage hinzu: {0}"
+
+#: frontend/src/components/AppSidebar.vue:490
+msgid "Add courses to your batch"
+msgstr "Fügen Sie Kurse zu Ihrem Kurs hinzu"
+
+#: frontend/src/components/AppSidebar.vue:470
+msgid "Add students to your batch"
+msgstr "Fügen Sie Schüler zu Ihrem Kurs hinzu"
+
+#: frontend/src/components/Modals/PageModal.vue:6
+msgid "Add web page to sidebar"
+msgstr "Webseite zur Seitenleiste hinzufügen"
+
+#: frontend/src/components/Assignment.vue:68
+msgid "Add your assignment as {0}"
+msgstr "Fügen Sie Ihre Aufgabe als {0} hinzu"
+
+#: frontend/src/components/Assignment.vue:71
+msgid "Assignment"
+msgstr "Aufgabe"
+
+#: frontend/src/components/Assignment.vue:72
+msgid "Assignment Details"
+msgstr "Aufgabendetails"
+
+#: frontend/src/components/Assignment.vue:73
+msgid "Assignment Type"
+msgstr "Aufgabentyp"
+
+#: frontend/src/components/Assignment.vue:74
+msgid "Assignment URL"
+msgstr "Aufgaben-URL"
+
+#: frontend/src/components/Assignment.vue:75
+msgid "Assignment File"
+msgstr "Aufgabendatei"
+
+#: frontend/src/components/Assignment.vue:76
+msgid "Assignment Text"
+msgstr "Aufgabentext"
+
+#: frontend/src/components/Assignment.vue:77
+msgid "Assignment Comments"
+msgstr "Aufgabenkommentare"
+
+#: frontend/src/components/Assignment.vue:78
+msgid "Assignment Status"
+msgstr "Aufgabenstatus"
+
+#: frontend/src/components/Assignment.vue:79
+msgid "Assignment Grade"
+msgstr "Aufgabenbewertung"
+
+#: frontend/src/components/Assignment.vue:80
+msgid "Assignment Feedback"
+msgstr "Aufgabenfeedback"
+
+#: frontend/src/components/Assignment.vue:81
+msgid "Assignment Due Date"
+msgstr "Aufgabenfrist"
+
+#: frontend/src/components/Assignment.vue:82
+msgid "Assignment Submission Date"
+msgstr "Aufgabenabgabedatum"
+
+#: frontend/src/components/Assignment.vue:83
+msgid "Assignment Evaluation"
+msgstr "Aufgabenbewertung"
+
+#: frontend/src/components/Assignment.vue:84
+msgid "Assignment Evaluation Date"
+msgstr "Aufgabenbewertungsdatum"
+
+#: frontend/src/components/Assignment.vue:85
+msgid "Assignment Evaluation Comments"
+msgstr "Aufgabenbewertungskommentare"
+
+#: frontend/src/components/Assignment.vue:86
+msgid "Assignment Evaluation Status"
+msgstr "Aufgabenbewertungsstatus"
+
+#: frontend/src/components/Assignment.vue:87
+msgid "Assignment Evaluation Grade"
+msgstr "Aufgabenbewertungsnote"
+
+#: frontend/src/components/Assignment.vue:88
+msgid "Assignment Evaluation Feedback"
+msgstr "Aufgabenbewertungsfeedback"
+
+#: frontend/src/components/Assignment.vue:89
+msgid "Assignment Evaluation Due Date"
+msgstr "Aufgabenbewertungsfrist"
+
+#: frontend/src/components/Assignment.vue:90
+msgid "Assignment Evaluation Submission Date"
+msgstr "Aufgabenbewertungsabgabedatum"
+
+#: frontend/src/components/Batch.vue:1
+msgid "Batch"
+msgstr "Kurs"
+
+#: frontend/src/components/Batch.vue:2
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: frontend/src/components/Batch.vue:3
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: frontend/src/components/Batch.vue:4
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/components/Batch.vue:5
+msgid "Batch Start Date"
+msgstr "Kursstartdatum"
+
+#: frontend/src/components/Batch.vue:6
+msgid "Batch End Date"
+msgstr "Kursenddatum"
+
+#: frontend/src/components/Batch.vue:7
+msgid "Batch Status"
+msgstr "Kursstatus"
+
+#: frontend/src/components/Batch.vue:8
+msgid "Batch Type"
+msgstr "Kurstyp"
+
+#: frontend/src/components/Batch.vue:9
+msgid "Batch Capacity"
+msgstr "Kurskapazität"
+
+#: frontend/src/components/Batch.vue:10
+msgid "Batch Enrolled"
+msgstr "Kurseingeschrieben"
+
+#: frontend/src/components/Batch.vue:11
+msgid "Batch Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/components/Batch.vue:12
+msgid "Batch Progress"
+msgstr "Kursfortschritt"
+
+#: frontend/src/components/Batch.vue:13
+msgid "Batch Completion Rate"
+msgstr "Kursabschlussrate"
+
+#: frontend/src/components/Batch.vue:14
+msgid "Batch Last Updated"
+msgstr "Kurs zuletzt aktualisiert"
+
+#: frontend/src/components/Batch.vue:15
+msgid "Batch No Data Available"
+msgstr "Keine Kursdaten verfügbar"
+
+#: frontend/src/components/Batch.vue:16
+msgid "Batch Select to View Data"
+msgstr "Kurs auswählen, um Daten anzuzeigen"
+
+#: frontend/src/components/Batch.vue:17
+msgid "Batch Courses"
+msgstr "Kurskurse"
+
+#: frontend/src/components/Batch.vue:18
+msgid "Batch Students"
+msgstr "Kursschüler"
+
+#: frontend/src/components/Batch.vue:19
+msgid "Batch Instructors"
+msgstr "Kursleiter"
+
+#: frontend/src/components/Batch.vue:20
+msgid "Batch Schedule"
+msgstr "Kursplan"
+
+#: frontend/src/components/Course.vue:1
+msgid "Course"
+msgstr "Kurs"
+
+#: frontend/src/components/Course.vue:2
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: frontend/src/components/Course.vue:3
+msgid "Course Name"
+msgstr "Kursname"
+
+#: frontend/src/components/Course.vue:4
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/components/Course.vue:5
+msgid "Course Start Date"
+msgstr "Kursstartdatum"
+
+#: frontend/src/components/Course.vue:6
+msgid "Course End Date"
+msgstr "Kursenddatum"
+
+#: frontend/src/components/Course.vue:7
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: frontend/src/components/Course.vue:8
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: frontend/src/components/Course.vue:9
+msgid "Course Capacity"
+msgstr "Kurskapazität"
+
+#: frontend/src/components/Course.vue:10
+msgid "Course Enrolled"
+msgstr "Kurseingeschrieben"
+
+#: frontend/src/components/Course.vue:11
+msgid "Course Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/components/Course.vue:12
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: frontend/src/components/Course.vue:13
+msgid "Course Completion Rate"
+msgstr "Kursabschlussrate"
+
+#: frontend/src/components/Course.vue:14
+msgid "Course Last Updated"
+msgstr "Kurs zuletzt aktualisiert"
+
+#: frontend/src/components/Course.vue:15
+msgid "Course No Data Available"
+msgstr "Keine Kursdaten verfügbar"
+
+#: frontend/src/components/Course.vue:16
+msgid "Course Select to View Data"
+msgstr "Kurs auswählen, um Daten anzuzeigen"
+
+#: frontend/src/components/Course.vue:17
+msgid "Course Lessons"
+msgstr "Kurslektionen"
+
+#: frontend/src/components/Course.vue:18
+msgid "Course Students"
+msgstr "Kursschüler"
+
+#: frontend/src/components/Course.vue:19
+msgid "Course Instructors"
+msgstr "Kursleiter"
+
+#: frontend/src/components/Course.vue:20
+msgid "Course Schedule"
+msgstr "Kursplan"
+
+#: frontend/src/components/Lesson.vue:1
+msgid "Lesson"
+msgstr "Lektion"
+
+#: frontend/src/components/Lesson.vue:2
+msgid "Lesson Details"
+msgstr "Lektionsdetails"
+
+#: frontend/src/components/Lesson.vue:3
+msgid "Lesson Name"
+msgstr "Lektionsname"
+
+#: frontend/src/components/Lesson.vue:4
+msgid "Lesson Description"
+msgstr "Lektionsbeschreibung"
+
+#: frontend/src/components/Lesson.vue:5
+msgid "Lesson Start Date"
+msgstr "Lektionsstartdatum"
+
+#: frontend/src/components/Lesson.vue:6
+msgid "Lesson End Date"
+msgstr "Lektionsenddatum"
+
+#: frontend/src/components/Lesson.vue:7
+msgid "Lesson Status"
+msgstr "Lektionsstatus"
+
+#: frontend/src/components/Lesson.vue:8
+msgid "Lesson Type"
+msgstr "Lektionstyp"
+
+#: frontend/src/components/Lesson.vue:9
+msgid "Lesson Duration"
+msgstr "Lektionsdauer"
+
+#: frontend/src/components/Lesson.vue:10
+msgid "Lesson Completed"
+msgstr "Lektion abgeschlossen"
+
+#: frontend/src/components/Lesson.vue:11
+msgid "Lesson Progress"
+msgstr "Lektionsfortschritt"
+
+#: frontend/src/components/Lesson.vue:12
+msgid "Lesson Completion Rate"
+msgstr "Lektionsabschlussrate"
+
+#: frontend/src/components/Lesson.vue:13
+msgid "Lesson Last Updated"
+msgstr "Lektion zuletzt aktualisiert"
+
+#: frontend/src/components/Lesson.vue:14
+msgid "Lesson No Data Available"
+msgstr "Keine Lektionsdaten verfügbar"
+
+#: frontend/src/components/Lesson.vue:15
+msgid "Lesson Select to View Data"
+msgstr "Lektion auswählen, um Daten anzuzeigen"
+
+#: frontend/src/components/Lesson.vue:16
+msgid "Lesson Content"
+msgstr "Lektionsinhalt"
+
+#: frontend/src/components/Lesson.vue:17
+msgid "Lesson Students"
+msgstr "Lektionsschüler"
+
+#: frontend/src/components/Lesson.vue:18
+msgid "Lesson Instructors"
+msgstr "Lektionsleiter"
+
+#: frontend/src/components/Lesson.vue:19
+msgid "Lesson Schedule"
+msgstr "Lektionsplan"
+
+#: frontend/src/components/Lesson.vue:20
+msgid "Lesson Quiz"
+msgstr "Lektionsquiz"
+
+#: frontend/src/components/AppSidebar.vue:406
+msgid "Add your first chapter"
+msgstr "Fügen Sie Ihr erstes Kapitel hinzu"
+
+#: frontend/src/components/AppSidebar.vue:421
+msgid "Add your first lesson"
+msgstr "Fügen Sie Ihre erste Lektion hinzu"
+
+#: frontend/src/pages/Billing.vue:64
+msgid "Address"
+msgstr "Adresse"
+
+#: frontend/src/pages/Billing.vue:74
+msgid "Address Line 1"
+msgstr "Adresszeile 1"
+
+#: frontend/src/pages/Billing.vue:78
+msgid "Address Line 2"
+msgstr "Adresszeile 2"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Admin"
+msgstr "Administrator"
+
+#: frontend/src/pages/Batches.vue:284
+msgid "All"
+msgstr "Alle"
+
+#: frontend/src/pages/Batches.vue:26
+msgid "All Batches"
+msgstr "Alle Kurse"
+
+#: frontend/src/pages/Courses.vue:26
+msgid "All Courses"
+msgstr "Alle Kurse"
+
+#: frontend/src/components/BatchFeedback.vue:51
+msgid "All Feedback"
+msgstr "Alle Rückmeldungen"
+
+#: dls/templates/quiz/quiz.html:141
+msgid "All Submissions"
+msgstr "Alle Einreichungen"
+
+#: dls/dls/doctype/dls_quiz/dls_quiz.py:44
+msgid "All questions should have the same marks if the limit is set."
+msgstr "Alle Fragen sollten die gleiche Punktzahl haben, wenn das Limit festgelegt ist."
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Allow Guest Access"
+msgstr "Gastzugang erlauben"
+
+#: dls/job/doctype/job_settings/job_settings.json
+msgid "Allow Job Posting From Website"
+msgstr "Stellenausschreibung von der Website erlauben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Allow Self Enrollment"
+msgstr "Selbsteinschreibung erlauben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Allow accessing future dates"
+msgstr "Zugriff auf zukünftige Termine erlauben"
+
+#: frontend/src/pages/BatchForm.vue:43
+msgid "Allow self enrollment"
+msgstr "Selbsteinschreibung erlauben"
+
+#: dls/dls/user.py:34
+msgid "Already Registered"
+msgstr "Bereits registriert"
+
+#: frontend/src/pages/BatchForm.vue:224
+msgid "Amount"
+msgstr "Betrag"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Amount (USD)"
+msgstr "Betrag (USD)"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:65
+msgid "Amount and currency are required for paid batches."
+msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
+
+#: dls/dls/doctype/dls_course/dls_course.py:74
+msgid "Amount and currency are required for paid certificates."
+msgstr "Betrag und Währung sind für kostenpflichtige Zertifikate erforderlich."
+
+#: dls/dls/doctype/dls_course/dls_course.py:71
+msgid "Amount and currency are required for paid courses."
+msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
+
+#: dls/dls/doctype/dls_payment/dls_payment.json
+msgid "Amount with GST"
+msgstr "Betrag mit MwSt."
+
+#: frontend/src/components/Modals/AnnouncementModal.vue:33
+msgid "Announcement"
+msgstr "Ankündigung"
+
+#: frontend/src/components/Modals/AnnouncementModal.vue:100
+msgid "Announcement has been sent successfully"
+msgstr "Ankündigung wurde erfolgreich gesendet"
+
+#: frontend/src/pages/QuizSubmission.vue:61
+msgid "Answer"
+msgstr "Antwort"
+
+#: frontend/src/pages/CourseForm.vue:81
+msgid "Appears on the course card in the course list"
+msgstr "Erscheint auf der Kurskarte in der Kursliste"
+
+#: frontend/src/pages/BatchForm.vue:75
+msgid "Appears when the batch URL is shared on any online platform"
+msgstr "Erscheint, wenn die Kurs-URL auf einer Online-Plattform geteilt wird"
+
+#: frontend/src/pages/JobDetail.vue:128
+msgid "Applications Received"
+msgstr "Eingegangene Bewerbungen"
+
+#: frontend/src/pages/JobDetail.vue:48
+msgid "Apply"
+msgstr "Bewerben"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Apply GST for India"
+msgstr "MwSt. für Indien anwenden"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Apply Rounding on Equivalent"
+msgstr "Rundung auf Äquivalent anwenden"
+
+#: frontend/src/components/Modals/JobApplicationModal.vue:6
+msgid "Apply for this job"
+msgstr "Auf diese Stelle bewerben"
+
+#: dls/dls/doctype/invite_request/invite_request.json
+msgid "Approved"
+msgstr "Genehmigt"
+
+#: frontend/src/components/Apps.vue:13
+msgid "Apps"
+msgstr "Apps"
+
+#: frontend/src/pages/Batches.vue:294
+msgid "Archived"
+msgstr "Archiviert"
+
+#: frontend/src/components/UpcomingEvaluations.vue:170
+msgid "Are you sure you want to cancel this evaluation? This action cannot be undone."
+msgstr "Sind Sie sicher, dass Sie diese Bewertung abbrechen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
+
+#: frontend/src/components/UserDropdown.vue:175
+msgid "Are you sure you want to login to your Frappe Cloud dashboard?"
+msgstr "Sind Sie sicher, dass Sie sich bei Ihrem Frappe Cloud Dashboard anmelden möchten?"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:27
+msgid "Assessment"
+msgstr "Bewertung"
+
+#: dls/dls/doctype/dls_assessment/dls_assessment.json
+msgid "Assessment Name"
+msgstr "Bewertungsname"
+
+#: dls/dls/doctype/dls_assessment/dls_assessment.json
+msgid "Assessment Type"
+msgstr "Bewertungstyp"
+
+#: frontend/src/components/Modals/AssessmentModal.vue:73
+msgid "Assessment added successfully"
+msgstr "Bewertung erfolgreich hinzugefügt"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:75
+msgid "Assessment {0} has already been added to this batch."
+msgstr "Bewertung {0} wurde diesem Kurs bereits hinzugefügt."
+
+#: frontend/src/components/AppSidebar.vue:538
+msgid "Assessments"
+msgstr "Bewertungen"
+
+#: dls/dls/doctype/dls_badge/dls_badge.js:50
+msgid "Assign"
+msgstr "Zuweisen"
+
+#: frontend/src/pages/AssignmentSubmissionList.vue:12
+msgid "Assignment"
+msgstr "Aufgabe"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
+msgid "Assignment Attachment"
+msgstr "Aufgabenanhang"
+
+#: frontend/src/pages/AssignmentSubmissionList.vue:223
+msgid "Assignment Submissions"
+msgstr "Aufgabeneinreichungen"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
+msgid "Assignment Title"
+msgstr "Aufgabentitel"
+
+#: frontend/src/components/Modals/AssignmentForm.vue:112
+msgid "Assignment created successfully"
+msgstr "Aufgabe erfolgreich erstellt"
+
+#: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.py:24
+msgid "Assignment for Lesson {0} by {1} already exists."
+msgstr "Aufgabe für Lektion {0} von {1} existiert bereits."
+
+#: frontend/src/components/Modals/AssignmentForm.vue:129
+msgid "Assignment updated successfully"
+msgstr "Aufgabe erfolgreich aktualisiert"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Assignment will appear at the bottom of the lesson."
+msgstr "Die Aufgabe erscheint am Ende der Lektion."
+
+#: frontend/src/components/AppSidebar.vue:542
+msgid "Assignments"
+msgstr "Aufgaben"
+
+#: dls/dls/doctype/dls_question/dls_question.py:43
+msgid "At least one option must be correct for this question."
+msgstr "Mindestens eine Option muss für diese Frage richtig sein."
+
+#: dls/fixtures/custom_field.json
+msgid "Attire Preference"
+msgstr "Kleidungspräferenz"
+
+#: frontend/src/pages/ProfileEvaluator.vue:123
+msgid "Authorize Google Calendar Access"
+msgstr "Google Kalender-Zugriff autorisieren"
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Auto Assign"
+msgstr "Automatisch zuweisen"
+
+#: frontend/src/components/Modals/LiveClassModal.vue:77
+msgid "Auto Recording"
+msgstr "Automatische Aufnahme"
+
+#: frontend/src/components/CourseCard.vue:51
+msgid "Average Rating"
+msgstr "Durchschnittliche Bewertung"
+
+#: frontend/src/components/BatchFeedback.vue:38
+msgid "Average of Feedback Received"
+msgstr "Durchschnitt der erhaltenen Rückmeldungen"
+
+# Missing German translations for DLS
+# Format: msgid "English text" followed by msgstr "German translation"
+
+// ... existing code ...
+
+#: frontend/src/components/BatchFeedback.vue:38
+msgid "Average of Feedback Received"
+msgstr "Durchschnitt der erhaltenen Rückmeldungen"
+
+#: frontend/src/pages/Lesson.vue:97
+msgid "Back to Course"
+msgstr "Zurück zum Kurs"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge"
+msgstr "Abzeichen"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Description"
+msgstr "Abzeichenbeschreibung"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Image"
+msgstr "Abzeichenbild"
+
+#: frontend/src/components/Modals/Event.vue:32
+msgid "Batch"
+msgstr "Kurs"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Batch Confirmation Template"
+msgstr "Kursbestätigungsvorlage"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Batch Course"
+msgstr "Kurskurs"
+
+#: dls/public/js/common_functions.js:428
+msgid "Batch Created"
+msgstr "Kurs erstellt"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: frontend/src/pages/BatchForm.vue:250
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Batch Details Raw"
+msgstr "Kursdetails (Rohformat)"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Batch Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_certificate_evaluation/dls_certificate_evaluation.json
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/exercise_latest_submission/exercise_latest_submission.json
+msgid "Batch Old"
+msgstr "Alter Kurs"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/templates/emails/batch_confirmation.html:11
+msgid "Batch Start Date:"
+msgstr "Kursstartdatum:"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.json
+msgid "Batch Title"
+msgstr "Kurstitel"
+
+#: dls/public/js/common_functions.js:427
+msgid "Batch Updated"
+msgstr "Kurs aktualisiert"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:41
+msgid "Batch end date cannot be before the batch start date"
+msgstr "Das Kursenddatum kann nicht vor dem Kursstartdatum liegen"
+
+#: dls/dls/api.py:240
+msgid "Batch is sold out."
+msgstr "Kurs ist ausgebucht."
+
+#: dls/templates/emails/batch_start_reminder.html:10
+msgid "Batch:"
+msgstr "Kurs:"
+
+#: frontend/src/pages/Batches.vue:304
+msgid "Batches"
+msgstr "Kurse"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Begin Date"
+msgstr "Startdatum"
+
+#: dls/templates/emails/batch_confirmation.html:31
+msgid "Best Regards"
+msgstr "Beste Grüße"
+
+#: frontend/src/pages/Billing.vue:8
+msgid "Billing Details"
+msgstr "Rechnungsdetails"
+
+#: frontend/src/pages/Billing.vue:70
+msgid "Billing Name"
+msgstr "Rechnungsname"
+
+#: frontend/src/components/Modals/EditProfile.vue:75
+msgid "Bio"
+msgstr "Biografie"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Body"
+msgstr "Inhalt"
+
+#: dls/fixtures/custom_field.json
+msgid "Both Individual and Team Work"
+msgstr "Sowohl Einzel- als auch Teamarbeit"
+
+#: dls/fixtures/custom_field.json
+msgid "Branch"
+msgstr "Zweigstelle"
+
+#: dls/fixtures/custom_field.json
+msgid "Business Owner"
+msgstr "Geschäftsinhaber"
+
+#: frontend/src/components/CourseCardOverlay.vue:47
+msgid "Buy this course"
+msgstr "Diesen Kurs kaufen"
+
+#: dls/templates/emails/dls_message.html:11
+msgid "By"
+msgstr "Von"
+
+#: dls/dls/doctype/education_detail/education_detail.json
+msgid "CGPA/4"
+msgstr "CGPA/4"
+
+#: frontend/src/components/UpcomingEvaluations.vue:60
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: frontend/src/components/UpcomingEvaluations.vue:169
+msgid "Cancel this evaluation?"
+msgstr "Diese Bewertung abbrechen?"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cancelled"
+msgstr "Abgebrochen"
+
+#: dls/fixtures/custom_field.json
+msgid "Career Preference Details"
+msgstr "Details zur Karrierepräferenz"
+
+#: dls/fixtures/custom_field.json
+msgid "Casual Wear"
+msgstr "Freizeitkleidung"
+
+#: frontend/src/pages/BatchForm.vue:198
+msgid "Category"
+msgstr "Kategorie"
+
+#: frontend/src/components/Categories.vue:22
+msgid "Category Name"
+msgstr "Kategoriename"
+
+#: dls/dls/doctype/dls_enrollment/dls_enrollment.json
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certificate Email Template"
+msgstr "Zertifikat-E-Mail-Vorlage"
+
+#: dls/templates/emails/certification.html:13
+msgid "Certificate Link"
+msgstr "Zertifikatslink"
+
+#: frontend/src/components/CourseCardOverlay.vue:124
+msgid "Certificate of Completion"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/components/Modals/Event.vue:310
+msgid "Certificate saved successfully"
+msgstr "Zertifikat erfolgreich gespeichert"
+
+#: frontend/src/pages/ProfileCertificates.vue:4
+msgid "Certificates"
+msgstr "Zertifikate"
+
+#: frontend/src/components/Modals/BulkCertificates.vue:121
+msgid "Certificates generated successfully"
+msgstr "Zertifikate erfolgreich generiert"
+
+#: frontend/src/components/AppSidebar.vue:546
+msgid "Certification"
+msgstr "Zertifizierung"
+
+#: frontend/src/components/BatchStudents.vue:36
+msgid "Certified"
+msgstr "Zertifiziert"
+
+#: frontend/src/pages/CertifiedParticipants.vue:196
+msgid "Certified Members"
+msgstr "Zertifizierte Mitglieder"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certified Participants"
+msgstr "Zertifizierte Teilnehmer"
+
+#: dls/templates/assignment.html:13
+msgid "Change"
+msgstr "Ändern"
+
+#: frontend/src/components/Assignment.vue:341
+msgid "Changes saved successfully"
+msgstr "Änderungen erfolgreich gespeichert"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter"
+msgstr "Kapitel"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter Reference"
+msgstr "Kapitelreferenz"
+
+#: frontend/src/components/Modals/ChapterModal.vue:155
+msgid "Chapter added successfully"
+msgstr "Kapitel erfolgreich hinzugefügt"
+
+#: frontend/src/components/Modals/ChapterModal.vue:199
+msgid "Chapter updated successfully"
+msgstr "Kapitel erfolgreich aktualisiert"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Chapters"
+msgstr "Kapitel"
+
+#: frontend/src/components/Quiz.vue:205
+msgid "Check"
+msgstr "Prüfen"
+
+#: dls/templates/emails/mention_template.html:10
+msgid "Check Discussion"
+msgstr "Diskussion prüfen"
+
+#: dls/templates/certificates_section.html:24
+msgid "Check out the {0} to know more about certification."
+msgstr "Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
+
+#: frontend/src/components/NoPermission.vue:19
+msgid "Checkout Courses"
+msgstr "Kurse ansehen"
+
+#: dls/dls/doctype/dls_question/dls_question.json
+msgid "Choices"
+msgstr "Auswahlmöglichkeiten"
+
+#: frontend/src/components/Quiz.vue:613
+msgid "Choose all answers that apply"
+msgstr "Wählen Sie alle zutreffenden Antworten"
+
+#: frontend/src/components/Controls/IconPicker.vue:27
+msgid "Choose an icon"
+msgstr "Wählen Sie ein Symbol"
+
+#: frontend/src/components/Quiz.vue:614
+msgid "Choose one answer"
+msgstr "Wählen Sie eine Antwort"
+
+#: frontend/src/pages/Billing.vue:81
+msgid "City"
+msgstr "Stadt"
+
+#: dls/templates/emails/live_class_reminder.html:10
+msgid "Class:"
+msgstr "Kurs:"
+
+#: frontend/src/components/Controls/Link.vue:49
+msgid "Clear"
+msgstr "Löschen"
+
+#: dls/fixtures/custom_field.json
+msgid "Clearly Defined Role"
+msgstr "Klar definierte Rolle"
+
+#: frontend/src/components/LessonHelp.vue:30
+msgid "Click on the add icon in the editor and select Quiz from the menu. It opens up a dialog, where you can either select a quiz from the list or create a new quiz. When you select the Create New option it redirects you to the quiz creation page."
+msgstr "Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client ID"
+msgstr "Client-ID"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client Secret"
+msgstr "Client-Secret"
+
+#: dls/job/doctype/job_opportunity/job_opportunity.json
+msgid "Closed"
+msgstr "Geschlossen"
+
+#: dls/dls/doctype/dls_live_class/dls_live_class.json
+msgid "Cloud"
+msgstr "Cloud"
+
+#: dls/dls/doctype/dls_exercise/dls_exercise.json
+msgid "Code"
+msgstr "Code"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cohort"
+msgstr "Kohorte"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Cohort Join Request"
+msgstr "Kohorte Beitrittsanfrage"
+
+#: dls/dls/doctype/cohort_mentor/cohort_mentor.json
+msgid "Cohort Mentor"
+msgstr "Kohorte Mentor"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Cohort Staff"
+msgstr "Kohorte Mitarbeiter"
+
+#: dls/dls/doctype/cohort_subgroup/cohort_subgroup.json
+msgid "Cohort Subgroup"
+msgstr "Kohorte Untergruppe"
+
+#: dls/dls/doctype/cohort_web_page/cohort_web_page.json
+msgid "Cohort Web Page"
+msgstr "Kohorte Webseite"
+
+#: dls/fixtures/custom_field.json
+msgid "Collaboration Preference"
+msgstr "Zusammenarbeitspräferenz"
+
+#: frontend/src/components/AppSidebar.vue:112
+msgid "Collapse"
+msgstr "Einklappen"
+
+#: frontend/src/components/CourseOutline.vue:21
+msgid "Collapse all chapters"
+msgstr "Alle Kapitel einklappen"
+
+#: dls/fixtures/custom_field.json
+msgid "College Name"
+msgstr "Hochschulname"
+
+#: dls/dls/doctype/dls_timetable_legend/dls_timetable_legend.json
+msgid "Color"
+msgstr "Farbe"
+
+#: frontend/src/components/Assignment.vue:164
+msgid "Comments"
+msgstr "Kommentare"
+
+#: frontend/src/components/Assignment.vue:142
+msgid "Comments by Evaluator"
+msgstr "Kommentare des Bewerters"
+
+#: dls/job/doctype/dls_job_application/dls_job_application.json
+msgid "Company"
+msgstr "Unternehmen"
+
+#: frontend/src/pages/JobCreation.vue:64
+msgid "Company Details"
+msgstr "Unternehmensdetails"
+
+#: frontend/src/pages/JobCreation.vue:83
+msgid "Company Email Address"
+msgstr "Unternehmens-E-Mail-Adresse"
+
+#: frontend/src/pages/JobCreation.vue:88
+msgid "Company Logo"
+msgstr "Unternehmenslogo"
+
+#: frontend/src/pages/JobCreation.vue:70
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#: dls/fixtures/custom_field.json
+msgid "Company Type"
+msgstr "Unternehmenstyp"
+
+#: frontend/src/pages/JobCreation.vue:76
+msgid "Company Website"
+msgstr "Unternehmenswebsite"
+
+#: frontend/src/components/Modals/BatchStudentProgress.vue:18
+msgid "Complete"
+msgstr "Abgeschlossen"
+
+#: dls/templates/emails/dls_invite_request_approved.html:7
+msgid "Complete Sign Up"
+msgstr "Registrierung abschließen"
+
+#: dls/templates/emails/payment_reminder.html:15
+msgid "Complete Your Enrollment"
+msgstr "Schließen Sie Ihre Anmeldung ab"
+
+#: dls/dls/doctype/dls_payment/dls_payment.py:73
+msgid "Complete Your Enrollment - Don't miss out!"
+msgstr "Schließen Sie Ihre Anmeldung ab - Verpassen Sie es nicht!"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: frontend/src/components/BatchStudents.vue:370
+msgid "Completed by Students"
+msgstr "Von Schülern abgeschlossen"
+
+#: frontend/src/pages/CourseForm.vue:209
+msgid "Completion Certificate"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/pages/Statistics.vue:66
+msgid "Completions"
+msgstr "Abschlüsse"
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Condition"
+msgstr "Bedingung"
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:16
+msgid "Condition must be in valid JSON format."
+msgstr "Bedingung muss im gültigen JSON-Format sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:21
+msgid "Condition must be valid python code."
+msgstr "Bedingung muss gültiger Python-Code sein."
+
+#: dls/dls/doctype/dls_certificate_request/dls_certificate_request.js:7
+msgid "Conduct Evaluation"
+msgstr "Bewertung durchführen"
+
+#: frontend/src/components/UserDropdown.vue:180
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: dls/dls/doctype/dls_batch_enrollment/dls_batch_enrollment.json
+msgid "Confirmation Email Sent"
+msgstr "Bestätigungs-E-Mail gesendet"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Confirmation Email Template"
+msgstr "Bestätigungs-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.py:29
+msgid "Congratulations on getting certified!"
+msgstr "Herzlichen Glückwunsch zur Zertifizierung!"
+
+#: frontend/src/components/CourseCardOverlay.vue:55
+msgid "Contact the Administrator to enroll for this course."
+msgstr "Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
+
+#: frontend/src/pages/LessonForm.vue:62
+msgid "Content"
+msgstr "Inhalt"
+
+#: frontend/src/components/CourseCardOverlay.vue:29
+msgid "Continue Learning"
+msgstr "Weiterlernen"
+
+#: frontend/src/pages/Jobs.vue:163
+msgid "Contract"
+msgstr "Vertrag"
+
+#: dls/dls/utils.py:436
+msgid "Cookie Policy"
+msgstr "Cookie-Richtlinie"
+
+#: frontend/src/components/LessonHelp.vue:68
+msgid "Copy the URL of the video from YouTube and paste it in the editor."
+msgstr "Kopieren Sie die URL des Videos von YouTube und fügen Sie sie in den Editor ein."
+
+#: dls/fixtures/custom_field.json
+msgid "Corporate Organization"
+msgstr "Unternehmensorganisation"
+
+#: frontend/src/components/Quiz.vue:165
+msgid "Correct"
+msgstr "Richtig"
+
+#: frontend/src/components/Modals/Question.vue:73
+msgid "Correct Answer"
+msgstr "Richtige Antwort"
+
+#: frontend/src/pages/Billing.vue:92
+msgid "Country"
+msgstr "Land"
+
+#: frontend/src/components/Modals/BatchCourseModal.vue:20
+msgid "Course"
+msgstr "Kurs"
+
+#: dls/dls/doctype/course_chapter/course_chapter.json
+msgid "Course Chapter"
+msgstr "Kurskapitel"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Completed"
+msgstr "Kurs abgeschlossen"
+
+#: frontend/src/pages/ProfileRoles.vue:16
+msgid "Course Creator"
+msgstr "Kursersteller"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_course_interest/dls_course_interest.json
+msgid "Course Interest"
+msgstr "Kursinteresse"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/dls/doctype/dls_course_mentor_mapping/dls_course_mentor_mapping.json
+msgid "Course Mentor Mapping"
+msgstr "Kurs-Mentor-Zuordnung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/dls_course_progress/dls_course_progress.json
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: dls/dls/doctype/dls_course_review/dls_course_review.json
+msgid "Course Review"
+msgstr "Kursbewertung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Title"
+msgstr "Kurstitel"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: frontend/src/pages/Courses.vue:304
+msgid "Courses"
+msgstr "Kurse"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Data"
+msgstr "Kursdaten"
+
+#: frontend/src/pages/CourseForm.vue:46
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: frontend/src/pages/CourseForm.vue:59
+msgid "Course Image"
+msgstr "Kursbild"
+
+#: dls/dls/doctype/course_instructor/course_instructor.json
+msgid "Course Instructor"
+msgstr "Kursleiter"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/www/dls.py:75
+msgid "Course List"
+msgstr "Kursliste"
+
+#: dls/dls/report/course_progress_summary/course_progress_summary.py:58
+msgid "Course Name"
+msgstr "Kursname"
+
+#: frontend/src/pages/CourseDetail.vue:76
+msgid "Course Outline"
+msgstr "Kursübersicht"
+
+#: dls/dls/report/course_progress_summary/course_progress_summary.json
+msgid "Course Progress Summary"
+msgstr "Kursfortschritt Zusammenfassung"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/workspace/dls/dls.json
+msgid "Course Stats"
+msgstr "Kursstatistiken"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Course Title"
+msgstr "Kurstitel"
+
+#: frontend/src/pages/ProgramForm.vue:232
+msgid "Course added to program"
+msgstr "Kurs zum Programm hinzugefügt"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:270
+msgid "Course already added to the batch."
+msgstr "Kurs wurde bereits zum Batch hinzugefügt."
+
+#: frontend/src/pages/CourseForm.vue:470
+msgid "Course deleted successfully"
+msgstr "Kurs erfolgreich gelöscht"
+
+#: frontend/src/pages/ProgramForm.vue:301
+msgid "Course moved successfully"
+msgstr "Kurs erfolgreich verschoben"
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:49
+msgid "Course {0} has already been added to this batch."
+msgstr "Kurs {0} wurde bereits zu diesem Batch hinzugefügt."
+
+#: frontend/src/components/BatchCourses.vue:5
+msgid "Courses"
+msgstr "Kurse"
+
+# Missing German translations for DLS
+# Format: msgid "English text" followed by msgstr "German translation"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Review"
+msgstr "Kursbewertung"
+
+#: dls/dls/doctype/dls_course_progress/dls_course_progress.json
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/dls_course_mentor_mapping/dls_course_mentor_mapping.json
+msgid "Course Mentor Mapping"
+msgstr "Kurs-Mentor-Zuordnung"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/dls/doctype/dls_course_interest/dls_course_interest.json
+msgid "Course Interest"
+msgstr "Kursinteresse"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/course_chapter/course_chapter.json
+msgid "Course Chapter"
+msgstr "Kurskapitel"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course"
+msgstr "Kurs"
+
+#: frontend/src/pages/Billing.vue:92
+msgid "Country"
+msgstr "Land"
+
+#: frontend/src/components/Modals/Question.vue:73
+msgid "Correct Answer"
+msgstr "Richtige Antwort"
+
+#: frontend/src/components/Quiz.vue:165
+msgid "Correct"
+msgstr "Richtig"
+
+#: dls/fixtures/custom_field.json
+msgid "Corporate Organization"
+msgstr "Unternehmensorganisation"
+
+#: frontend/src/components/LessonHelp.vue:68
+msgid "Copy the URL of the video from YouTube and paste it in the editor."
+msgstr "Kopieren Sie die URL des Videos von YouTube und fügen Sie sie in den Editor ein."
+
+#: dls/dls/utils.py:436
+msgid "Cookie Policy"
+msgstr "Cookie-Richtlinie"
+
+#: frontend/src/pages/Jobs.vue:163
+msgid "Contract"
+msgstr "Vertrag"
+
+#: frontend/src/components/CourseCardOverlay.vue:29
+msgid "Continue Learning"
+msgstr "Weiterlernen"
+
+#: frontend/src/pages/LessonForm.vue:62
+msgid "Content"
+msgstr "Inhalt"
+
+#: frontend/src/components/CourseCardOverlay.vue:55
+msgid "Contact the Administrator to enroll for this course."
+msgstr "Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.py:29
+msgid "Congratulations on getting certified!"
+msgstr "Herzlichen Glückwunsch zur Zertifizierung!"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Confirmation Email Template"
+msgstr "Bestätigungs-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_batch_enrollment/dls_batch_enrollment.json
+msgid "Confirmation Email Sent"
+msgstr "Bestätigungs-E-Mail gesendet"
+
+#: frontend/src/components/UserDropdown.vue:180
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: dls/dls/doctype/dls_certificate_request/dls_certificate_request.js:7
+msgid "Conduct Evaluation"
+msgstr "Bewertung durchführen"
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:21
+msgid "Condition must be valid python code."
+msgstr "Bedingung muss gültiger Python-Code sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:16
+msgid "Condition must be in valid JSON format."
+msgstr "Bedingung muss im gültigen JSON-Format sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Condition"
+msgstr "Bedingung"
+
+#: frontend/src/pages/Statistics.vue:66
+msgid "Completions"
+msgstr "Abschlüsse"
+
+#: frontend/src/pages/CourseForm.vue:209
+msgid "Completion Certificate"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/components/BatchStudents.vue:370
+msgid "Completed by Students"
+msgstr "Von Schülern abgeschlossen"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: dls/dls/doctype/dls_payment/dls_payment.py:73
+msgid "Complete Your Enrollment - Don't miss out!"
+msgstr "Schließen Sie Ihre Anmeldung ab - Verpassen Sie es nicht!"
+
+#: dls/templates/emails/payment_reminder.html:15
+msgid "Complete Your Enrollment"
+msgstr "Schließen Sie Ihre Anmeldung ab"
+
+#: dls/templates/emails/dls_invite_request_approved.html:7
+msgid "Complete Sign Up"
+msgstr "Registrierung abschließen"
+
+#: frontend/src/components/Modals/BatchStudentProgress.vue:18
+msgid "Complete"
+msgstr "Abgeschlossen"
+
+#: frontend/src/pages/JobCreation.vue:76
+msgid "Company Website"
+msgstr "Unternehmenswebsite"
+
+#: dls/fixtures/custom_field.json
+msgid "Company Type"
+msgstr "Unternehmenstyp"
+
+#: frontend/src/pages/JobCreation.vue:70
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#: frontend/src/pages/JobCreation.vue:88
+msgid "Company Logo"
+msgstr "Unternehmenslogo"
+
+#: frontend/src/pages/JobCreation.vue:83
+msgid "Company Email Address"
+msgstr "Unternehmens-E-Mail-Adresse"
+
+#: frontend/src/pages/JobCreation.vue:64
+msgid "Company Details"
+msgstr "Unternehmensdetails"
+
+#: dls/job/doctype/dls_job_application/dls_job_application.json
+msgid "Company"
+msgstr "Unternehmen"
+
+#: frontend/src/components/Assignment.vue:142
+msgid "Comments by Evaluator"
+msgstr "Kommentare des Bewerters"
+
+#: frontend/src/components/Assignment.vue:164
+msgid "Comments"
+msgstr "Kommentare"
+
+#: dls/dls/doctype/dls_timetable_legend/dls_timetable_legend.json
+msgid "Color"
+msgstr "Farbe"
+
+#: dls/fixtures/custom_field.json
+msgid "College Name"
+msgstr "Hochschulname"
+
+#: frontend/src/components/CourseOutline.vue:21
+msgid "Collapse all chapters"
+msgstr "Alle Kapitel einklappen"
+
+#: frontend/src/components/AppSidebar.vue:112
+msgid "Collapse"
+msgstr "Einklappen"
+
+#: dls/fixtures/custom_field.json
+msgid "Collaboration Preference"
+msgstr "Zusammenarbeitspräferenz"
+
+#: dls/dls/doctype/cohort_web_page/cohort_web_page.json
+msgid "Cohort Web Page"
+msgstr "Kohorte Webseite"
+
+#: dls/dls/doctype/cohort_subgroup/cohort_subgroup.json
+msgid "Cohort Subgroup"
+msgstr "Kohorte Untergruppe"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Cohort Staff"
+msgstr "Kohorte Mitarbeiter"
+
+#: dls/dls/doctype/cohort_mentor/cohort_mentor.json
+msgid "Cohort Mentor"
+msgstr "Kohorte Mentor"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Cohort Join Request"
+msgstr "Kohorte Beitrittsanfrage"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cohort"
+msgstr "Kohorte"
+
+#: dls/dls/doctype/dls_exercise/dls_exercise.json
+msgid "Code"
+msgstr "Code"
+
+#: dls/dls/doctype/dls_live_class/dls_live_class.json
+msgid "Cloud"
+msgstr "Cloud"
+
+#: dls/job/doctype/job_opportunity/job_opportunity.json
+msgid "Closed"
+msgstr "Geschlossen"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client Secret"
+msgstr "Client-Secret"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client ID"
+msgstr "Client-ID"
+
+#: frontend/src/components/LessonHelp.vue:30
+msgid "Click on the add icon in the editor and select Quiz from the menu. It opens up a dialog, where you can either select a quiz from the list or create a new quiz. When you select the Create New option it redirects you to the quiz creation page."
+msgstr "Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
+
+#: dls/fixtures/custom_field.json
+msgid "Clearly Defined Role"
+msgstr "Klar definierte Rolle"
+
+#: frontend/src/components/Controls/Link.vue:49
+msgid "Clear"
+msgstr "Löschen"
+
+#: dls/templates/emails/live_class_reminder.html:10
+msgid "Class:"
+msgstr "Kurs:"
+
+#: frontend/src/pages/Billing.vue:81
+msgid "City"
+msgstr "Stadt"
+
+#: frontend/src/components/Quiz.vue:614
+msgid "Choose one answer"
+msgstr "Wählen Sie eine Antwort"
+
+#: frontend/src/components/Controls/IconPicker.vue:27
+msgid "Choose an icon"
+msgstr "Wählen Sie ein Symbol"
+
+#: frontend/src/components/Quiz.vue:613
+msgid "Choose all answers that apply"
+msgstr "Wählen Sie alle zutreffenden Antworten"
+
+#: frontend/src/components/NoPermission.vue:19
+msgid "Checkout Courses"
+msgstr "Kurse ansehen"
+
+#: dls/templates/certificates_section.html:24
+msgid "Check out the {0} to know more about certification."
+msgstr "Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
+
+#: dls/templates/emails/mention_template.html:10
+msgid "Check Discussion"
+msgstr "Diskussion prüfen"
+
+#: frontend/src/components/Quiz.vue:205
+msgid "Check"
+msgstr "Prüfen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Chapters"
+msgstr "Kapitel"
+
+#: frontend/src/components/Modals/ChapterModal.vue:199
+msgid "Chapter updated successfully"
+msgstr "Kapitel erfolgreich aktualisiert"
+
+#: frontend/src/components/Modals/ChapterModal.vue:155
+msgid "Chapter added successfully"
+msgstr "Kapitel erfolgreich hinzugefügt"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter Reference"
+msgstr "Kapitelreferenz"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter"
+msgstr "Kapitel"
+
+#: frontend/src/components/Assignment.vue:341
+msgid "Changes saved successfully"
+msgstr "Änderungen erfolgreich gespeichert"
+
+#: dls/templates/assignment.html:13
+msgid "Change"
+msgstr "Ändern"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certified Participants"
+msgstr "Zertifizierte Teilnehmer"
+
+#: frontend/src/pages/CertifiedParticipants.vue:196
+msgid "Certified Members"
+msgstr "Zertifizierte Mitglieder"
+
+#: frontend/src/components/BatchStudents.vue:36
+msgid "Certified"
+msgstr "Zertifiziert"
+
+#: frontend/src/components/AppSidebar.vue:546
+msgid "Certification"
+msgstr "Zertifizierung"
+
+#: frontend/src/components/Modals/BulkCertificates.vue:121
+msgid "Certificates generated successfully"
+msgstr "Zertifikate erfolgreich generiert"
+
+#: frontend/src/pages/ProfileCertificates.vue:4
+msgid "Certificates"
+msgstr "Zertifikate"
+
+#: frontend/src/components/Modals/Event.vue:310
+msgid "Certificate saved successfully"
+msgstr "Zertifikat erfolgreich gespeichert"
+
+#: frontend/src/components/CourseCardOverlay.vue:124
+msgid "Certificate of Completion"
+msgstr "Abschlusszertifikat"
+
+#: dls/templates/emails/certification.html:13
+msgid "Certificate Link"
+msgstr "Zertifikatslink"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certificate Email Template"
+msgstr "Zertifikat-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_enrollment/dls_enrollment.json
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#: frontend/src/components/Categories.vue:22
+msgid "Category Name"
+msgstr "Kategoriename"
+
+#: frontend/src/pages/BatchForm.vue:198
+msgid "Category"
+msgstr "Kategorie"
+
+#: dls/fixtures/custom_field.json
+msgid "Casual Wear"
+msgstr "Freizeitkleidung"
+
+#: dls/fixtures/custom_field.json
+msgid "Career Preference Details"
+msgstr "Details zur Karrierepräferenz"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cancelled"
+msgstr "Abgebrochen"
+
+#: frontend/src/components/UpcomingEvaluations.vue:169
+msgid "Cancel this evaluation?"
+msgstr "Diese Bewertung abbrechen?"
+
+#: frontend/src/components/UpcomingEvaluations.vue:60
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: dls/dls/doctype/education_detail/education_detail.json
+msgid "CGPA/4"
+msgstr "CGPA/4"
+
+#: dls/templates/emails/dls_message.html:11
+msgid "By"
+msgstr "Von"
+
+#: frontend/src/components/CourseCardOverlay.vue:47
+msgid "Buy this course"
+msgstr "Diesen Kurs kaufen"
+
+#: dls/fixtures/custom_field.json
+msgid "Business Owner"
+msgstr "Geschäftsinhaber"
+
+#: dls/fixtures/custom_field.json
+msgid "Branch"
+msgstr "Zweigstelle"
+
+#: dls/fixtures/custom_field.json
+msgid "Both Individual and Team Work"
+msgstr "Sowohl Einzel- als auch Teamarbeit"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Body"
+msgstr "Inhalt"
+
+#: frontend/src/components/Modals/EditProfile.vue:75
+msgid "Bio"
+msgstr "Biografie"
+
+#: frontend/src/pages/Billing.vue:70
+msgid "Billing Name"
+msgstr "Rechnungsname"
+
+#: frontend/src/pages/Billing.vue:8
+msgid "Billing Details"
+msgstr "Rechnungsdetails"
+
+#: dls/templates/emails/batch_confirmation.html:31
+msgid "Best Regards"
+msgstr "Beste Grüße"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Begin Date"
+msgstr "Startdatum"
+
+#: frontend/src/pages/Batches.vue:304
+msgid "Batches"
+msgstr "Kurse"
+
+#: dls/templates/emails/batch_start_reminder.html:10
+msgid "Batch:"
+msgstr "Kurs:"
+
+#: dls/dls/api.py:240
+msgid "Batch is sold out."
+msgstr "Kurs ist ausgebucht."
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:41
+msgid "Batch end date cannot be before the batch start date"
+msgstr "Das Kursenddatum kann nicht vor dem Kursstartdatum liegen"
+
+#: dls/public/js/common_functions.js:427
+msgid "Batch Updated"
+msgstr "Kurs aktualisiert"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.json
+msgid "Batch Title"
+msgstr "Kurstitel"
+
+#: dls/templates/emails/batch_confirmation.html:11
+msgid "Batch Start Date:"
+msgstr "Kursstartdatum:"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/exercise_latest_submission/exercise_latest_submission.json
+msgid "Batch Old"
+msgstr "Alter Kurs"
+
+#: dls/dls/doctype/dls_certificate_evaluation/dls_certificate_evaluation.json
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Batch Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Batch Details Raw"
+msgstr "Kursdetails (Rohformat)"
+
+#: frontend/src/pages/BatchForm.vue:250
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: dls/public/js/common_functions.js:428
+msgid "Batch Created"
+msgstr "Kurs erstellt"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Batch Course"
+msgstr "Kurskurs"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Batch Confirmation Template"
+msgstr "Kursbestätigungsvorlage"
+
+#: frontend/src/components/Modals/Event.vue:32
+msgid "Batch"
+msgstr "Kurs"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Image"
+msgstr "Abzeichenbild"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Description"
+msgstr "Abzeichenbeschreibung"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge"
+msgstr "Abzeichen"
+
+#: frontend/src/pages/Lesson.vue:97
+msgid "Back to Course"
+msgstr "Zurück zum Kurs"
+
+#: frontend/src/components/BatchFeedback.vue:38
+msgid "Average of Feedback Received"
+msgstr "Durchschnitt der erhaltenen Rückmeldungen"
+
+# Missing German translations for DLS
+# Format: msgid "English text" followed by msgstr "German translation"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Type"
+msgstr "Kurstyp"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Status"
+msgstr "Kursstatus"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Review"
+msgstr "Kursbewertung"
+
+#: dls/dls/doctype/dls_course_progress/dls_course_progress.json
+msgid "Course Progress"
+msgstr "Kursfortschritt"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/dls_course_mentor_mapping/dls_course_mentor_mapping.json
+msgid "Course Mentor Mapping"
+msgstr "Kurs-Mentor-Zuordnung"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Course Lesson"
+msgstr "Kurslektion"
+
+#: dls/dls/doctype/dls_course_interest/dls_course_interest.json
+msgid "Course Interest"
+msgstr "Kursinteresse"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Course Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course Description"
+msgstr "Kursbeschreibung"
+
+#: dls/dls/doctype/course_chapter/course_chapter.json
+msgid "Course Chapter"
+msgstr "Kurskapitel"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Course"
+msgstr "Kurs"
+
+#: frontend/src/pages/Billing.vue:92
+msgid "Country"
+msgstr "Land"
+
+#: frontend/src/components/Modals/Question.vue:73
+msgid "Correct Answer"
+msgstr "Richtige Antwort"
+
+#: frontend/src/components/Quiz.vue:165
+msgid "Correct"
+msgstr "Richtig"
+
+#: dls/fixtures/custom_field.json
+msgid "Corporate Organization"
+msgstr "Unternehmensorganisation"
+
+#: frontend/src/components/LessonHelp.vue:68
+msgid "Copy the URL of the video from YouTube and paste it in the editor."
+msgstr "Kopieren Sie die URL des Videos von YouTube und fügen Sie sie in den Editor ein."
+
+#: dls/dls/utils.py:436
+msgid "Cookie Policy"
+msgstr "Cookie-Richtlinie"
+
+#: frontend/src/pages/Jobs.vue:163
+msgid "Contract"
+msgstr "Vertrag"
+
+#: frontend/src/components/CourseCardOverlay.vue:29
+msgid "Continue Learning"
+msgstr "Weiterlernen"
+
+#: frontend/src/pages/LessonForm.vue:62
+msgid "Content"
+msgstr "Inhalt"
+
+#: frontend/src/components/CourseCardOverlay.vue:55
+msgid "Contact the Administrator to enroll for this course."
+msgstr "Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.py:29
+msgid "Congratulations on getting certified!"
+msgstr "Herzlichen Glückwunsch zur Zertifizierung!"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Confirmation Email Template"
+msgstr "Bestätigungs-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_batch_enrollment/dls_batch_enrollment.json
+msgid "Confirmation Email Sent"
+msgstr "Bestätigungs-E-Mail gesendet"
+
+#: frontend/src/components/UserDropdown.vue:180
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: dls/dls/doctype/dls_certificate_request/dls_certificate_request.js:7
+msgid "Conduct Evaluation"
+msgstr "Bewertung durchführen"
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:21
+msgid "Condition must be valid python code."
+msgstr "Bedingung muss gültiger Python-Code sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.py:16
+msgid "Condition must be in valid JSON format."
+msgstr "Bedingung muss im gültigen JSON-Format sein."
+
+#: dls/dls/doctype/dls_badge/dls_badge.json
+msgid "Condition"
+msgstr "Bedingung"
+
+#: frontend/src/pages/Statistics.vue:66
+msgid "Completions"
+msgstr "Abschlüsse"
+
+#: frontend/src/pages/CourseForm.vue:209
+msgid "Completion Certificate"
+msgstr "Abschlusszertifikat"
+
+#: frontend/src/components/BatchStudents.vue:370
+msgid "Completed by Students"
+msgstr "Von Schülern abgeschlossen"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: dls/dls/doctype/dls_payment/dls_payment.py:73
+msgid "Complete Your Enrollment - Don't miss out!"
+msgstr "Schließen Sie Ihre Anmeldung ab - Verpassen Sie es nicht!"
+
+#: dls/templates/emails/payment_reminder.html:15
+msgid "Complete Your Enrollment"
+msgstr "Schließen Sie Ihre Anmeldung ab"
+
+#: dls/templates/emails/dls_invite_request_approved.html:7
+msgid "Complete Sign Up"
+msgstr "Registrierung abschließen"
+
+#: frontend/src/components/Modals/BatchStudentProgress.vue:18
+msgid "Complete"
+msgstr "Abgeschlossen"
+
+#: frontend/src/pages/JobCreation.vue:76
+msgid "Company Website"
+msgstr "Unternehmenswebsite"
+
+#: dls/fixtures/custom_field.json
+msgid "Company Type"
+msgstr "Unternehmenstyp"
+
+#: frontend/src/pages/JobCreation.vue:70
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#: frontend/src/pages/JobCreation.vue:88
+msgid "Company Logo"
+msgstr "Unternehmenslogo"
+
+#: frontend/src/pages/JobCreation.vue:83
+msgid "Company Email Address"
+msgstr "Unternehmens-E-Mail-Adresse"
+
+#: frontend/src/pages/JobCreation.vue:64
+msgid "Company Details"
+msgstr "Unternehmensdetails"
+
+#: dls/job/doctype/dls_job_application/dls_job_application.json
+msgid "Company"
+msgstr "Unternehmen"
+
+#: frontend/src/components/Assignment.vue:142
+msgid "Comments by Evaluator"
+msgstr "Kommentare des Bewerters"
+
+#: frontend/src/components/Assignment.vue:164
+msgid "Comments"
+msgstr "Kommentare"
+
+#: dls/dls/doctype/dls_timetable_legend/dls_timetable_legend.json
+msgid "Color"
+msgstr "Farbe"
+
+#: dls/fixtures/custom_field.json
+msgid "College Name"
+msgstr "Hochschulname"
+
+#: frontend/src/components/CourseOutline.vue:21
+msgid "Collapse all chapters"
+msgstr "Alle Kapitel einklappen"
+
+#: frontend/src/components/AppSidebar.vue:112
+msgid "Collapse"
+msgstr "Einklappen"
+
+#: dls/fixtures/custom_field.json
+msgid "Collaboration Preference"
+msgstr "Zusammenarbeitspräferenz"
+
+#: dls/dls/doctype/cohort_web_page/cohort_web_page.json
+msgid "Cohort Web Page"
+msgstr "Kohorte Webseite"
+
+#: dls/dls/doctype/cohort_subgroup/cohort_subgroup.json
+msgid "Cohort Subgroup"
+msgstr "Kohorte Untergruppe"
+
+#: dls/dls/doctype/cohort_staff/cohort_staff.json
+msgid "Cohort Staff"
+msgstr "Kohorte Mitarbeiter"
+
+#: dls/dls/doctype/cohort_mentor/cohort_mentor.json
+msgid "Cohort Mentor"
+msgstr "Kohorte Mentor"
+
+#: dls/dls/doctype/cohort_join_request/cohort_join_request.json
+msgid "Cohort Join Request"
+msgstr "Kohorte Beitrittsanfrage"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cohort"
+msgstr "Kohorte"
+
+#: dls/dls/doctype/dls_exercise/dls_exercise.json
+msgid "Code"
+msgstr "Code"
+
+#: dls/dls/doctype/dls_live_class/dls_live_class.json
+msgid "Cloud"
+msgstr "Cloud"
+
+#: dls/job/doctype/job_opportunity/job_opportunity.json
+msgid "Closed"
+msgstr "Geschlossen"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client Secret"
+msgstr "Client-Secret"
+
+#: dls/dls/doctype/zoom_settings/zoom_settings.json
+msgid "Client ID"
+msgstr "Client-ID"
+
+#: frontend/src/components/LessonHelp.vue:30
+msgid "Click on the add icon in the editor and select Quiz from the menu. It opens up a dialog, where you can either select a quiz from the list or create a new quiz. When you select the Create New option it redirects you to the quiz creation page."
+msgstr "Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
+
+#: dls/fixtures/custom_field.json
+msgid "Clearly Defined Role"
+msgstr "Klar definierte Rolle"
+
+#: frontend/src/components/Controls/Link.vue:49
+msgid "Clear"
+msgstr "Löschen"
+
+#: dls/templates/emails/live_class_reminder.html:10
+msgid "Class:"
+msgstr "Kurs:"
+
+#: frontend/src/pages/Billing.vue:81
+msgid "City"
+msgstr "Stadt"
+
+#: frontend/src/components/Quiz.vue:614
+msgid "Choose one answer"
+msgstr "Wählen Sie eine Antwort"
+
+#: frontend/src/components/Controls/IconPicker.vue:27
+msgid "Choose an icon"
+msgstr "Wählen Sie ein Symbol"
+
+#: frontend/src/components/Quiz.vue:613
+msgid "Choose all answers that apply"
+msgstr "Wählen Sie alle zutreffenden Antworten"
+
+#: frontend/src/components/NoPermission.vue:19
+msgid "Checkout Courses"
+msgstr "Kurse ansehen"
+
+#: dls/templates/certificates_section.html:24
+msgid "Check out the {0} to know more about certification."
+msgstr "Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
+
+#: dls/templates/emails/mention_template.html:10
+msgid "Check Discussion"
+msgstr "Diskussion prüfen"
+
+#: frontend/src/components/Quiz.vue:205
+msgid "Check"
+msgstr "Prüfen"
+
+#: dls/dls/doctype/dls_course/dls_course.json
+msgid "Chapters"
+msgstr "Kapitel"
+
+#: frontend/src/components/Modals/ChapterModal.vue:199
+msgid "Chapter updated successfully"
+msgstr "Kapitel erfolgreich aktualisiert"
+
+#: frontend/src/components/Modals/ChapterModal.vue:155
+msgid "Chapter added successfully"
+msgstr "Kapitel erfolgreich hinzugefügt"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter Reference"
+msgstr "Kapitelreferenz"
+
+#: dls/dls/doctype/chapter_reference/chapter_reference.json
+msgid "Chapter"
+msgstr "Kapitel"
+
+#: frontend/src/components/Assignment.vue:341
+msgid "Changes saved successfully"
+msgstr "Änderungen erfolgreich gespeichert"
+
+#: dls/templates/assignment.html:13
+msgid "Change"
+msgstr "Ändern"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certified Participants"
+msgstr "Zertifizierte Teilnehmer"
+
+#: frontend/src/pages/CertifiedParticipants.vue:196
+msgid "Certified Members"
+msgstr "Zertifizierte Mitglieder"
+
+#: frontend/src/components/BatchStudents.vue:36
+msgid "Certified"
+msgstr "Zertifiziert"
+
+#: frontend/src/components/AppSidebar.vue:546
+msgid "Certification"
+msgstr "Zertifizierung"
+
+#: frontend/src/components/Modals/BulkCertificates.vue:121
+msgid "Certificates generated successfully"
+msgstr "Zertifikate erfolgreich generiert"
+
+#: frontend/src/pages/ProfileCertificates.vue:4
+msgid "Certificates"
+msgstr "Zertifikate"
+
+#: frontend/src/components/Modals/Event.vue:310
+msgid "Certificate saved successfully"
+msgstr "Zertifikat erfolgreich gespeichert"
+
+#: frontend/src/components/CourseCardOverlay.vue:124
+msgid "Certificate of Completion"
+msgstr "Abschlusszertifikat"
+
+#: dls/templates/emails/certification.html:13
+msgid "Certificate Link"
+msgstr "Zertifikatslink"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Certificate Email Template"
+msgstr "Zertifikat-E-Mail-Vorlage"
+
+#: dls/dls/doctype/dls_enrollment/dls_enrollment.json
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#: frontend/src/components/Categories.vue:22
+msgid "Category Name"
+msgstr "Kategoriename"
+
+#: frontend/src/pages/BatchForm.vue:198
+msgid "Category"
+msgstr "Kategorie"
+
+#: dls/fixtures/custom_field.json
+msgid "Casual Wear"
+msgstr "Freizeitkleidung"
+
+#: dls/fixtures/custom_field.json
+msgid "Career Preference Details"
+msgstr "Details zur Karrierepräferenz"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Cancelled"
+msgstr "Abgebrochen"
+
+#: frontend/src/components/UpcomingEvaluations.vue:169
+msgid "Cancel this evaluation?"
+msgstr "Diese Bewertung abbrechen?"
+
+#: frontend/src/components/UpcomingEvaluations.vue:60
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: dls/dls/doctype/education_detail/education_detail.json
+msgid "CGPA/4"
+msgstr "CGPA/4"
+
+#: dls/templates/emails/dls_message.html:11
+msgid "By"
+msgstr "Von"
+
+#: frontend/src/components/CourseCardOverlay.vue:47
+msgid "Buy this course"
+msgstr "Diesen Kurs kaufen"
+
+#: dls/fixtures/custom_field.json
+msgid "Business Owner"
+msgstr "Geschäftsinhaber"
+
+#: dls/fixtures/custom_field.json
+msgid "Branch"
+msgstr "Zweigstelle"
+
+#: dls/fixtures/custom_field.json
+msgid "Both Individual and Team Work"
+msgstr "Sowohl Einzel- als auch Teamarbeit"
+
+#: dls/dls/doctype/course_lesson/course_lesson.json
+msgid "Body"
+msgstr "Inhalt"
+
+#: frontend/src/components/Modals/EditProfile.vue:75
+msgid "Bio"
+msgstr "Biografie"
+
+#: frontend/src/pages/Billing.vue:70
+msgid "Billing Name"
+msgstr "Rechnungsname"
+
+#: frontend/src/pages/Billing.vue:8
+msgid "Billing Details"
+msgstr "Rechnungsdetails"
+
+#: dls/templates/emails/batch_confirmation.html:31
+msgid "Best Regards"
+msgstr "Beste Grüße"
+
+#: dls/dls/doctype/cohort/cohort.json
+msgid "Begin Date"
+msgstr "Startdatum"
+
+#: frontend/src/pages/Batches.vue:304
+msgid "Batches"
+msgstr "Kurse"
+
+#: dls/templates/emails/batch_start_reminder.html:10
+msgid "Batch:"
+msgstr "Kurs:"
+
+#: dls/dls/api.py:240
+msgid "Batch is sold out."
+msgstr "Kurs ist ausgebucht."
+
+#: dls/dls/doctype/dls_batch/dls_batch.py:41
+msgid "Batch end date cannot be before the batch start date"
+msgstr "Das Kursenddatum kann nicht vor dem Kursstartdatum liegen"
+
+#: dls/public/js/common_functions.js:427
+msgid "Batch Updated"
+msgstr "Kurs aktualisiert"
+
+#: dls/dls/doctype/dls_certificate/dls_certificate.json
+msgid "Batch Title"
+msgstr "Kurstitel"
+
+#: dls/templates/emails/batch_confirmation.html:11
+msgid "Batch Start Date:"
+msgstr "Kursstartdatum:"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Settings"
+msgstr "Kurseinstellungen"
+
+#: dls/dls/doctype/exercise_latest_submission/exercise_latest_submission.json
+msgid "Batch Old"
+msgstr "Alter Kurs"
+
+#: dls/dls/doctype/dls_certificate_evaluation/dls_certificate_evaluation.json
+msgid "Batch Name"
+msgstr "Kursname"
+
+#: dls/dls/doctype/course_evaluator/course_evaluator.json
+msgid "Batch Evaluator"
+msgstr "Kursevaluator"
+
+#: dls/dls/doctype/dls_batch/dls_batch.json
+msgid "Batch Details Raw"
+msgstr "Kursdetails (Rohformat)"
+
+#: frontend/src/pages/BatchForm.vue:250
+msgid "Batch Details"
+msgstr "Kursdetails"
+
+#: dls/dls/doctype/dls_batch_old/dls_batch_old.json
+msgid "Batch Description"
+msgstr "Kursbeschreibung"
+
+#: dls/public/js/common_functions.js:428
+msgid "Batch Created"
+msgstr "Kurs erstellt"
+
+#: dls/dls/doctype/batch_course/batch_course.json
+msgid "Batch Course"
+msgstr "Kurskurs"
+
+#: dls/dls/doctype/dls_settings/dls_settings.json
+msgid "Batch Confirmation Template"
+msgstr "Kursbestätigungsvorlage"
+
+#: frontend/src/components/Modals/Event.vue:32
+msgid "Batch"
+msgstr "Kurs"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Image"
+msgstr "Abzeichenbild"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge Description"
+msgstr "Abzeichenbeschreibung"
+
+#: dls/dls/doctype/dls_badge_assignment/dls_badge_assignment.json
+msgid "Badge"
+msgstr "Abzeichen"
+
+#: frontend/src/pages/Lesson.vue:97
+msgid "Back to Course"
+msgstr "Zurück zum Kurs"
+
+#: frontend/src/components/BatchFeedback.vue:38
+msgid "Average of Feedback Received"
+msgstr "Durchschnitt der erhaltenen Rückmeldungen"

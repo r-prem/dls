@@ -192,12 +192,38 @@ def get_user_info():
 
 
 @frappe.whitelist(allow_guest=True)
-def get_translations():
-	if frappe.session.user != "Guest":
-		language = frappe.db.get_value("User", frappe.session.user, "language")
-	else:
-		language = frappe.db.get_single_value("System Settings", "language")
-	return get_all_translations(language)
+def get_system_language():
+	"""Get the system's default language."""
+	try:
+		# First try to get user's language if logged in
+		#if frappe.session.user != "Guest":
+		#	lang = frappe.db.get_value("User", frappe.session.user, "language")
+		#	if lang:
+		#		return {"language": lang}
+		
+		# Fallback to system settings
+		lang = frappe.db.get_single_value("System Settings", "language")
+		return {"language": lang or "en"}
+	except Exception:
+		return {"language": "en"}
+
+
+@frappe.whitelist(allow_guest=True)
+def get_translations(lang=None):
+	"""Get translations for the specified language or user's preferred language.
+	
+	Args:
+		lang (str, optional): Language code (e.g. 'de' for German). Defaults to None.
+	"""
+	if not lang:
+		if frappe.session.user != "Guest":
+			lang = frappe.db.get_value("User", frappe.session.user, "language")
+		else:
+			lang = frappe.db.get_single_value("System Settings", "language")
+	
+	# Set the language in the session for consistency
+	frappe.local.lang = lang
+	return get_all_translations(lang)
 
 
 @frappe.whitelist()
@@ -536,6 +562,8 @@ def get_sidebar_settings():
 		"jobs",
 		"statistics",
 		"notifications",
+		"assignments",
+		"programs",
 	]
 	for item in items:
 		sidebar_items[item] = dls_settings.get(item)
