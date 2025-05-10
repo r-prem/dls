@@ -62,7 +62,7 @@
   "payments_app_is_not_installed",
   "email_templates_tab",
   "certification_template",
-  "batch_confirmation_template",
+  "default_certificate_template",
   "column_break_uwsp",
   "payment_reminder_template",
   "seo_tab",
@@ -241,6 +241,13 @@
    "fieldtype": "Link",
    "label": "Certificate Email Template",
    "options": "Email Template"
+  },
+  {
+   "fieldname": "default_certificate_template",
+   "fieldtype": "Link",
+   "label": "Default Certificate Template",
+   "options": "Print Format",
+   "description": "Default template for course completion certificates"
   },
   {
    "fieldname": "email_templates_tab",

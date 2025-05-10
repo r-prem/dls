@@ -301,7 +301,6 @@ onBeforeUnmount(() => {
 const courseCreationResource = createResource({
 	url: 'frappe.client.insert',
 	makeParams(values) {
-		console.log(values)
 		return {
 			doc: {
 				doctype: 'DLS Course',

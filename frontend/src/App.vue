@@ -19,12 +19,14 @@ import { usersStore } from '@/stores/user'
 import { useRouter } from 'vue-router'
 import { sessionStore } from '@/stores/session'
 import { generateColorRange, injectPrimaryColorVariables } from '@/utils/colors'
-
+import LoadingScreen from '@/components/Common/LoadingScreen.vue'
 const screenSize = useScreenSize()
 let { userResource } = usersStore()
 const router = useRouter()
 const noSidebar = ref(false)
 const { branding } = sessionStore()
+const translationsLoaded = ref(false)
+
 
 router.beforeEach((to, from, next) => {
 	if (to.query.fromLesson || to.path === '/persona') {
@@ -36,6 +38,12 @@ router.beforeEach((to, from, next) => {
 })
 
 const Layout = computed(() => {
+	if (!translationsLoaded.value) {
+		console.log('Translations not loaded')
+		return LoadingScreen
+	}
+	console.log('Translations loaded')
+
 	if (noSidebar.value) {
 		return NoSidebarLayout
 	}
@@ -52,6 +60,12 @@ onMounted(async () => {
 	if (branding.data && branding.data.primary_color) {
 		injectPrimaryColorVariables(branding.data.primary_color)
 	}
+
+	const setLoaded = () => { translationsLoaded.value = true }
+  	window.addEventListener('translations-loaded', setLoaded)
+  	if (window.translatedMessages) {
+   	 translationsLoaded.value = true
+  	}
 })
 
 // Also watch for changes in branding.data.primary_color (in case it loads after mount)
@@ -67,6 +81,7 @@ watch(
 
 onUnmounted(() => {
 	noSidebar.value = false
+	window.removeEventListener('translations-loaded', setLoaded)
 	stopSession()
 })
 </script>
