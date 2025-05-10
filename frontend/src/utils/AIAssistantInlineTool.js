@@ -32,9 +32,18 @@ export default class AIAssistantInlineTool {
     this.button.disabled = true;
     this.button.innerHTML = '<svg class="animate-spin" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="#888" stroke-width="2" fill="none" stroke-dasharray="22" stroke-dashoffset="10"></circle></svg>';
 
+    const token = window.csrf_token;
+    let headers = undefined;
+
+    if(window.origin.includes('localhost')) {
+      headers = { 'Content-Type': 'application/json' };
+    } else {
+      headers = { 'Content-Type': 'application/json', 'X-frappe-csrf-token:': token, 'X-frappe-site-name': window.origin };
+    }
+
     fetch('/api/method/dls.dls.api.openai_generate_response', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: headers,
       body: JSON.stringify({ prompt: this.selectedText }),
     })
       .then(res => res.json())
@@ -44,19 +53,9 @@ export default class AIAssistantInlineTool {
           range.deleteContents();
           range.insertNode(document.createTextNode(aiText));
         });
-
-
-
-        /** 
-        const aiText = data.message?.choices?.[0]?.message?.content || '';
-        if (aiText) {
-          range.deleteContents();
-          range.insertNode(document.createTextNode(aiText));
-        }
-        **/
       })
       .catch((e) => {
-        console.log(e);
+        console.error(e);
         alert('AI generation failed');
       })
       .finally(() => {
@@ -104,16 +103,18 @@ export default class AIAssistantInlineTool {
   
     // Accept button (green, app style)
     const acceptBtn = document.createElement('button');
-    acceptBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none text-ink-white bg-green-600 hover:bg-green-700 active:bg-green-800 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
+    acceptBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none text-ink-white bg-surface-gray-7 hover:bg-surface-gray-6 active:bg-surface-gray-5 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
     acceptBtn.innerHTML = window.__ ? window.__('Accept') : 'Accept';
     acceptBtn.onclick = () => {
       onAccept();
       overlay.remove();
     };
   
-    // Decline button (gray, app style)
+    // Decline button (text-only, transparent background)
     const declineBtn = document.createElement('button');
-    declineBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none text-ink-white bg-surface-gray-7 hover:bg-surface-gray-6 active:bg-surface-gray-5 focus-visible:ring focus-visible:ring-outline-gray-3 h-7 text-base px-2 rounded';
+    declineBtn.className = 'mt-3 md:mt-0 inline-flex items-center justify-center gap-2 transition-colors focus:outline-none bg-transparent text-ink-gray-7 hover:text-ink-gray-9 h-7 text-base px-2 rounded shadow-none border-none';
+    declineBtn.style.background = 'transparent';
+    declineBtn.style.border = 'none';
     declineBtn.innerHTML = window.__ ? window.__('Decline') : 'Decline';
     declineBtn.onclick = () => {
       overlay.remove();

@@ -522,50 +522,6 @@ usePageMeta(() => {
 		icon: brand.favicon,
 	}
 })
-
-const generateContent = async () => {
-	if (!lesson.title) {
-		createToast('Error', 'Please enter a lesson title first', 'x')
-		return
-	}
-
-	isGenerating.value = true
-	try {
-		const prompt = `Create engaging and educational content for a lesson titled "${lesson.title}". Include examples, explanations, and key points.`
-		const response = await fetch('/api/method/dls.dls.api.openai_generate_response', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({ prompt })
-		})
-		const data = await response.json()
-		
-		if (data.message?.choices?.[0]?.message?.content) {
-			const content = data.message.choices[0].message.content
-			// Convert the content to EditorJS blocks
-			const blocks = content.split('\n\n').map((text, index) => ({
-				id: `block-${index}`,
-				type: 'paragraph',
-				data: { text: text.trim() }
-			}))
-			
-			// Update the editor with the generated content
-			editor.value.isReady.then(() => {
-				editor.value.render({
-					time: new Date().getTime(),
-					version: '2.0',
-					blocks: blocks
-				})
-			})
-		}
-	} catch (error) {
-		createToast('Error', 'Failed to generate content', 'x')
-		console.error('Error generating content:', error)
-	} finally {
-		isGenerating.value = false
-	}
-}
 </script>
 <style>
 .embed-tool__caption,
