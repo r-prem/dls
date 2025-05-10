@@ -6,10 +6,8 @@ export default function translationPlugin(app) {
 
 	app.config.globalProperties.__ = translate
 	window.__ = translate
-	console.log('Translations plugin initialized')
 	// Initialize translations
 	if (!window.translatedMessages) {
-		console.log('Fetching translations')
 		fetchTranslations()
 	}
 

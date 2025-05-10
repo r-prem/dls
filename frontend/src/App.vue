@@ -18,7 +18,7 @@ import { init as initTelemetry } from '@/telemetry'
 import { usersStore } from '@/stores/user'
 import { useRouter } from 'vue-router'
 import { sessionStore } from '@/stores/session'
-import { generateColorRange, injectPrimaryColorVariables } from '@/utils/colors'
+import { injectPrimaryColorVariables } from '@/utils/colors'
 import LoadingScreen from '@/components/Common/LoadingScreen.vue'
 const screenSize = useScreenSize()
 let { userResource } = usersStore()
@@ -39,10 +39,8 @@ router.beforeEach((to, from, next) => {
 
 const Layout = computed(() => {
 	if (!translationsLoaded.value) {
-		console.log('Translations not loaded')
 		return LoadingScreen
 	}
-	console.log('Translations loaded')
 
 	if (noSidebar.value) {
 		return NoSidebarLayout
