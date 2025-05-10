@@ -96,7 +96,7 @@ import {
 import { sessionStore } from '../stores/session'
 import EditorJS from '@editorjs/editorjs'
 import LessonHelp from '@/components/LessonHelp.vue'
-import { ChevronRight } from 'lucide-vue-next'
+import { ChevronRight, Sparkles } from 'lucide-vue-next'
 import { createToast, getEditorTools } from '@/utils'
 import { capture } from '@/telemetry'
 import { useOnboarding } from 'frappe-ui/frappe'
@@ -109,6 +109,8 @@ const openInstructorEditor = ref(false)
 const { updateOnboardingStep } = useOnboarding('learning')
 let autoSaveInterval
 let showSuccessMessage = false
+const isGenerating = ref(false)
+const aiEnabled = ref(false)
 
 const props = defineProps({
 	courseName: {
@@ -125,20 +127,30 @@ const props = defineProps({
 	},
 })
 
-onMounted(() => {
+onMounted(async () => {
 	if (!user.data?.is_moderator && !user.data?.is_instructor) {
 		window.location.href = '/login'
 	}
 	capture('lesson_form_opened')
-	editor.value = renderEditor('content')
-	instructorEditor.value = renderEditor('instructor-notes')
+
+	// Check if OpenAI API key is set
+	try {
+		const res = await fetch('/api/method/dls.dls.api.has_openai_api_key')
+		const data = await res.json()
+		aiEnabled.value = !!data.message
+	} catch (e) {
+		aiEnabled.value = false
+	}
+
+	editor.value = renderEditor('content', aiEnabled.value)
+	instructorEditor.value = renderEditor('instructor-notes', aiEnabled.value)
 	window.addEventListener('keydown', keyboardShortcut)
 })
 
-const renderEditor = (holder) => {
+const renderEditor = (holder, enableAI = true) => {
 	return new EditorJS({
 		holder: holder,
-		tools: getEditorTools(true),
+		tools: getEditorTools(enableAI),
 		autofocus: true,
 		defaultBlock: 'markdown',
 	})
@@ -510,6 +522,50 @@ usePageMeta(() => {
 		icon: brand.favicon,
 	}
 })
+
+const generateContent = async () => {
+	if (!lesson.title) {
+		createToast('Error', 'Please enter a lesson title first', 'x')
+		return
+	}
+
+	isGenerating.value = true
+	try {
+		const prompt = `Create engaging and educational content for a lesson titled "${lesson.title}". Include examples, explanations, and key points.`
+		const response = await fetch('/api/method/dls.dls.api.openai_generate_response', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ prompt })
+		})
+		const data = await response.json()
+		
+		if (data.message?.choices?.[0]?.message?.content) {
+			const content = data.message.choices[0].message.content
+			// Convert the content to EditorJS blocks
+			const blocks = content.split('\n\n').map((text, index) => ({
+				id: `block-${index}`,
+				type: 'paragraph',
+				data: { text: text.trim() }
+			}))
+			
+			// Update the editor with the generated content
+			editor.value.isReady.then(() => {
+				editor.value.render({
+					time: new Date().getTime(),
+					version: '2.0',
+					blocks: blocks
+				})
+			})
+		}
+	} catch (error) {
+		createToast('Error', 'Failed to generate content', 'x')
+		console.error('Error generating content:', error)
+	} finally {
+		isGenerating.value = false
+	}
+}
 </script>
 <style>
 .embed-tool__caption,

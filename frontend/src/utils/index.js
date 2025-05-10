@@ -15,6 +15,7 @@ import Embed from '@editorjs/embed'
 import SimpleImage from '@editorjs/simple-image'
 import Table from '@editorjs/table'
 import { usersStore } from '../stores/user'
+import AIAssistantInlineTool from './AIAssistantInlineTool'
 
 export function createToast(options) {
 	toast({
@@ -148,8 +149,8 @@ export function htmlToText(html) {
 	return div.textContent || div.innerText || ''
 }
 
-export function getEditorTools() {
-	return {
+export function getEditorTools(enableAI = true) {
+	const tools = {
 		header: {
 			class: Header,
 			config: {
@@ -170,7 +171,7 @@ export function getEditorTools() {
 		},
 		paragraph: {
 			class: Paragraph,
-			inlineToolbar: true,
+			inlineToolbar: ['bold', 'italic', 'link', ...(enableAI ? ['aiAssistant'] : [])],
 			config: {
 				preserveBlank: true,
 			},
@@ -208,7 +209,6 @@ export function getEditorTools() {
 							if (!params && id) {
 								return id
 							}
-
 							const paramsMap = {
 								start: 'start',
 								end: 'end',
@@ -217,23 +217,18 @@ export function getEditorTools() {
 								time_continue: 'start',
 								list: 'list',
 							}
-
 							let newParams = params
 								.slice(1)
 								.split('&')
 								.map((param) => {
 									const [name, value] = param.split('=')
-
 									if (!id && name === 'v') {
 										id = value
-
 										return null
 									}
-
 									if (!paramsMap[name]) {
 										return null
 									}
-
 									if (
 										value === 'LL' ||
 										value.startsWith('RDMM') ||
@@ -241,11 +236,9 @@ export function getEditorTools() {
 									) {
 										return null
 									}
-
 									return `${paramsMap[name]}=${value}`
 								})
 								.filter((param) => !!param)
-
 							return id + '?' + newParams.join('&')
 						},
 					},
@@ -275,6 +268,7 @@ export function getEditorTools() {
 						html: `<iframe style='width: 100%; height: ${
 							window.innerWidth < 640 ? '15rem' : '30rem'
 						}; border: 1px solid #D3D3D3; border-radius: 12px; margin: 1rem 0' frameborder='0' allowfullscreen='true'></iframe>`,
+						id: ([id]) => id,
 					},
 					drive: {
 						regex: /https:\/\/drive\.google\.com\/file\/d\/([A-Za-z0-9_-]+)\/view(\?.+)?/,
@@ -312,6 +306,13 @@ export function getEditorTools() {
 			},
 		},
 	}
+	if (enableAI) {
+		tools.aiAssistant = {
+			class: AIAssistantInlineTool,
+			shortcut: 'CMD+SHIFT+A',
+		}
+	}
+	return tools
 }
 
 export function getTimezones() {
