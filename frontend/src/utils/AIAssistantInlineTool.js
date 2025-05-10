@@ -33,6 +33,7 @@ export default class AIAssistantInlineTool {
     this.button.innerHTML = '<svg class="animate-spin" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="#888" stroke-width="2" fill="none" stroke-dasharray="22" stroke-dashoffset="10"></circle></svg>';
 
     let headers = {};
+    const token = window.csrf_token;
     if(window.origin.includes('localhost')) {
       headers = { 'Content-Type': 'application/json' };
     } else {
