@@ -63,6 +63,7 @@ declare module 'vue' {
     Link: typeof import('./src/components/Controls/Link.vue')['default']
     LiveClass: typeof import('./src/components/LiveClass.vue')['default']
     LiveClassModal: typeof import('./src/components/Modals/LiveClassModal.vue')['default']
+    LoadingScreen: typeof import('./src/components/Common/LoadingScreen.vue')['default']
     Members: typeof import('./src/components/Members.vue')['default']
     MobileLayout: typeof import('./src/components/MobileLayout.vue')['default']
     MultiSelect: typeof import('./src/components/Controls/MultiSelect.vue')['default']

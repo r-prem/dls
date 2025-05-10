@@ -328,8 +328,6 @@ const validateAddress = () => {
 		!states.includes(billingDetails.state)
 	)
 		return 'Please enter a valid state with correct spelling and the first letter capitalized.'
-
-	console.log('validation address')
 }
 
 const showError = (err) => {

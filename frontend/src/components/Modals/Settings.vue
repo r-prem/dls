@@ -66,6 +66,7 @@
 						:description="activeTab.description"
 						:fields="activeTab.fields"
 						:data="branding"
+						@saved="onBrandingSaved"
 					/>
 					<SettingDetails
 						v-else
@@ -81,7 +82,7 @@
 </template>
 <script setup>
 import { Dialog, createDocumentResource, createResource } from 'frappe-ui'
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, nextTick } from 'vue'
 import { useSettings } from '@/stores/settings'
 import SettingDetails from '../SettingDetails.vue'
 import SidebarLink from '@/components/SidebarLink.vue'
@@ -90,6 +91,7 @@ import Evaluators from '@/components/Evaluators.vue'
 import Categories from '@/components/Categories.vue'
 import BrandSettings from '@/components/BrandSettings.vue'
 import PaymentSettings from '@/components/PaymentSettings.vue'
+import { generateColorRange } from '@/utils/colors'
 
 const show = defineModel()
 const doctype = ref('DLS Settings')
@@ -109,6 +111,53 @@ const branding = createResource({
 	auto: true,
 	cache: 'brand',
 })
+
+let originalPrimaryColor = null
+let isBrandingSaved = false
+
+function injectPrimaryColorVariables(primaryColor) {
+	if (!primaryColor) return
+	const colors = generateColorRange(primaryColor)
+	let styleElement = document.getElementById('primary-color-variables')
+	if (!styleElement) {
+		styleElement = document.createElement('style')
+		styleElement.id = 'primary-color-variables'
+		document.head.appendChild(styleElement)
+	}
+	styleElement.textContent = `
+		button.bg-surface-gray-7,
+		div.bg-surface-gray-7.rounded-full.h-1 {
+			${Object.entries(colors).map(([key, value]) => `${key}: ${value};`).join('\n')}
+		}
+	`
+}
+
+watch(show, (val, oldVal) => {
+	if (val && !oldVal) {
+		originalPrimaryColor = branding.data?.primary_color
+		isBrandingSaved = false
+	} else if (!val && oldVal) {
+		nextTick(() => {
+			if (!isBrandingSaved) {
+				injectPrimaryColorVariables(originalPrimaryColor)
+			}
+		})
+	}
+})
+
+watch(activeTab, (newTab, oldTab) => {
+	if (oldTab && oldTab.label === 'Branding' && newTab && newTab.label !== 'Branding') {
+		nextTick(() => {
+			if (!isBrandingSaved) {
+				injectPrimaryColorVariables(originalPrimaryColor)
+			}
+		})
+	}
+})
+
+function onBrandingSaved(newColor) {
+	isBrandingSaved = true
+}
 
 const tabsStructure = computed(() => {
 	const tabs = [
@@ -142,6 +191,12 @@ const tabsStructure = computed(() => {
 							label: 'Unsplash Access Key',
 							name: 'unsplash_access_key',
 							description: 'Optional. If this is set, students can pick a cover image from the unsplash library for their profile page. https://unsplash.com/documentation#getting-started.',
+							type: 'password',
+						},
+						{
+							label: 'OpenAI API Key',
+							name: 'openai_api_key',
+							description: 'Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys',
 							type: 'password',
 						},
 					],
@@ -267,6 +322,12 @@ const tabsStructure = computed(() => {
 							type: 'text',
 						},
 						{
+							label: 'Primary Color',
+							name: 'primary_color',
+							type: 'color',
+							description: 'This will be used as the primary color for buttons and other UI elements'
+						},
+						{
 							label: 'Logo',
 							name: 'banner_image',
 							type: 'Upload',
@@ -321,6 +382,11 @@ const tabsStructure = computed(() => {
 							type: 'checkbox',
 						},
 						{
+							label: 'Assignments',
+							name: 'assignments',
+							type: 'checkbox',
+						},
+						{
 							type: 'Column Break',
 						},
 						{
@@ -336,6 +402,11 @@ const tabsStructure = computed(() => {
 						{
 							label: 'Notifications',
 							name: 'notifications',
+							type: 'checkbox',
+						},
+						{
+							label: 'Programs',
+							name: 'programs',
 							type: 'checkbox',
 						},
 					],

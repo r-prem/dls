@@ -43,6 +43,7 @@
   "jobs",
   "statistics",
   "notifications",
+  "assignments",
   "section_break_qlss",
   "sidebar_items",
   "mentor_request_section",
@@ -61,7 +62,7 @@
   "payments_app_is_not_installed",
   "email_templates_tab",
   "certification_template",
-  "batch_confirmation_template",
+  "default_certificate_template",
   "column_break_uwsp",
   "payment_reminder_template",
   "seo_tab",
@@ -69,7 +70,8 @@
   "meta_image",
   "column_break_xijv",
   "meta_keywords",
-  "lesson_completion_time"
+  "lesson_completion_time",
+  "openai_api_key"
  ],
  "fields": [
   {
@@ -242,6 +244,13 @@
    "options": "Email Template"
   },
   {
+   "fieldname": "default_certificate_template",
+   "fieldtype": "Link",
+   "label": "Default Certificate Template",
+   "options": "Print Format",
+   "description": "Default template for course completion certificates"
+  },
+  {
    "fieldname": "email_templates_tab",
    "fieldtype": "Tab Break",
    "label": "Email Templates"
@@ -258,8 +267,15 @@
   },
   {
    "fieldname": "unsplash_access_key",
-   "fieldtype": "Data",
-   "label": "Unsplash Access Key"
+   "fieldtype": "Password",
+   "label": "Unsplash Access Key",
+   "description": "Optional. If this is set, students can pick a cover image from the unsplash library for their profile page. https://unsplash.com/documentation#getting-started."
+  },
+  {
+   "fieldname": "openai_api_key",
+   "label": "OpenAI API Key",
+   "fieldtype": "Password",
+   "description": "Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys"
   },
   {
    "fieldname": "sidebar_tab",
@@ -444,6 +460,18 @@
    "fieldtype": "Int",
    "default": 30,
    "description": "Time in seconds a user needs to spend on a lesson before it can be marked as complete"
+  },
+  {
+   "default": "1",
+   "fieldname": "assignments",
+   "fieldtype": "Check",
+   "label": "Assignments"
+  },
+  {
+   "default": "1",
+   "fieldname": "programs",
+   "fieldtype": "Check",
+   "label": "Programs"
   }
  ],
  "grid_page_length": 50,

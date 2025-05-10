@@ -288,7 +288,7 @@ const addQuizzes = () => {
 }
 
 const addAssignments = () => {
-	if (isInstructor.value || isModerator.value) {
+	if ((isInstructor.value || isModerator.value) && sidebarSettings.data?.assignments) {
 		sidebarLinks.value.push({
 			label: 'Assignments',
 			icon: 'Pencil',
@@ -311,7 +311,8 @@ const addPrograms = () => {
 	if (
 		!isInstructor.value &&
 		!isModerator.value &&
-		settingsStore.learningPaths.data
+		settingsStore.learningPaths.data &&
+		sidebarSettings.data?.programs
 	) {
 		sidebarLinks.value = sidebarLinks.value.filter(
 			(link) => link.label !== 'Courses'
@@ -320,7 +321,7 @@ const addPrograms = () => {
 		activeFor.push('Lesson')
 		index = 0
 		canAddProgram = true
-	} else if (isInstructor.value || isModerator.value) {
+	} else if ((isInstructor.value || isModerator.value) && sidebarSettings.data?.programs) {
 		canAddProgram = true
 	}
 

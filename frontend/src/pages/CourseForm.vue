@@ -240,6 +240,8 @@ const app = getCurrentInstance()
 const { updateOnboardingStep } = useOnboarding('learning')
 const { $dialog } = app.appContext.config.globalProperties
 
+const instructors = ref([])
+
 const props = defineProps({
 	courseName: {
 		type: String,
@@ -265,6 +267,7 @@ const course = reactive({
 	course_price: '',
 	currency: '',
 	evaluator: '',
+	instructors: [],
 })
 
 onMounted(() => {
@@ -319,11 +322,12 @@ const courseEditResource = createResource({
 			doctype: 'DLS Course',
 			name: values.course,
 			fieldname: {
+				...course,
 				image: course.course_image?.file_url || '',
 				instructors: [{
 					instructor: user.data?.name
 				}],
-				...course,
+
 			},
 		}
 	},
@@ -340,7 +344,7 @@ const courseResource = createResource({
 	auto: false,
 	onSuccess(data) {
 		Object.keys(data).forEach((key) => {
-			if (key == 'instructors') {
+			if (key == 'instructors' && data.instructors && data.instructors.value) {
 				instructors.value = []
 				data.instructors.forEach((instructor) => {
 					instructors.value.push(instructor.instructor)
@@ -360,7 +364,6 @@ const courseResource = createResource({
 			let key = checkboxes[idx]
 			course[key] = course[key] ? true : false
 		}
-
 		if (data.image) imageResource.reload({ image: data.image })
 		check_permission()
 	},
