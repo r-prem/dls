@@ -144,6 +144,12 @@ const tabsStructure = computed(() => {
 							description: 'Optional. If this is set, students can pick a cover image from the unsplash library for their profile page. https://unsplash.com/documentation#getting-started.',
 							type: 'password',
 						},
+						{
+							label: 'OpenAI API Key',
+							name: 'openai_api_key',
+							description: 'Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys',
+							type: 'password',
+						},
 					],
 				},
 				{

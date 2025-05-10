@@ -340,7 +340,7 @@ const courseResource = createResource({
 	auto: false,
 	onSuccess(data) {
 		Object.keys(data).forEach((key) => {
-			if (key == 'instructors') {
+			if (key == 'instructors' && data.instructors && data.instructors.value) {
 				instructors.value = []
 				data.instructors.forEach((instructor) => {
 					instructors.value.push(instructor.instructor)

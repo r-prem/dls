@@ -69,7 +69,8 @@
   "meta_image",
   "column_break_xijv",
   "meta_keywords",
-  "lesson_completion_time"
+  "lesson_completion_time",
+  "openai_api_key"
  ],
  "fields": [
   {
@@ -258,8 +259,15 @@
   },
   {
    "fieldname": "unsplash_access_key",
-   "fieldtype": "Data",
-   "label": "Unsplash Access Key"
+   "fieldtype": "Password",
+   "label": "Unsplash Access Key",
+   "description": "Optional. If this is set, students can pick a cover image from the unsplash library for their profile page. https://unsplash.com/documentation#getting-started."
+  },
+  {
+   "fieldname": "openai_api_key",
+   "label": "OpenAI API Key",
+   "fieldtype": "Password",
+   "description": "Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys"
   },
   {
    "fieldname": "sidebar_tab",

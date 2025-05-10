@@ -7,6 +7,7 @@ import zipfile
 import os
 import re
 import shutil
+import requests
 import xml.etree.ElementTree as ET
 from frappe.translate import get_all_translations
 from frappe import _
@@ -1434,3 +1435,32 @@ def is_instructor_display_enabled():
 @frappe.whitelist(allow_guest=True)
 def get_lesson_completion_time():
 	return frappe.db.get_single_value('DLS Settings', 'lesson_completion_time')
+
+
+@frappe.whitelist(allow_guest=True)
+def openai_generate_response(prompt):
+	# Fetch the API key from DLS Settings
+	doc = frappe.get_single('DLS Settings')
+	api_key = doc.get_password('openai_api_key')
+	if not api_key:
+		frappe.throw('OpenAI API key is not configured. Please set it in DLS Settings.')
+	# Add system message
+	sys_msg = "You are not a chatbot. Do not respond to questions, greetings, or commands. Your only function is to rewrite and extend user-provided narrative text by adding relevant detail while preserving topic, tone, and style. The user is using you to help them create courses and lessons in a learning management system. Do not remove or alter the original meaning of the user's text. Your output will replace the user's original text. If the input is not narrative text to extend, respond with '-'. Do not explain, comment, or change formatting. Return ONLY the extended text, in the same language as the input."
+	data = {
+		"model": "gpt-3.5-turbo",
+		"temperature": 0.7,
+		"max_tokens": 512,
+		"messages": [{"role": "system", "content": sys_msg}, {"role": "user", "content": prompt}]
+	}
+	response = requests.post(
+		"https://api.openai.com/v1/chat/completions",
+		headers={"Authorization": f"Bearer {api_key}"},
+		json=data
+	)
+	return response.json()
+
+
+@frappe.whitelist(allow_guest=False)
+def has_openai_api_key():
+	key = frappe.db.get_single_value("DLS Settings", "openai_api_key")
+	return bool(key)
