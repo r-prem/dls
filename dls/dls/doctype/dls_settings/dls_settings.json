@@ -71,7 +71,9 @@
   "column_break_xijv",
   "meta_keywords",
   "lesson_completion_time",
-  "openai_api_key"
+  "openai_api_key",
+  "enable_certificates",
+  "enable_quizzes"
  ],
  "fields": [
   {
@@ -472,6 +474,20 @@
    "fieldname": "programs",
    "fieldtype": "Check",
    "label": "Programs"
+  },
+  {
+   "fieldname": "enable_certificates",
+   "label": "Enable Certificates",
+   "fieldtype": "Check",
+   "default": 1,
+   "description": "If disabled, certificates will not be available for courses."
+  },
+  {
+   "fieldname": "enable_quizzes",
+   "label": "Enable Quizzes",
+   "fieldtype": "Check",
+   "default": 1,
+   "description": "If disabled, quizzes will not be available in lessons."
   }
  ],
  "grid_page_length": 50,

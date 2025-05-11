@@ -59,6 +59,18 @@ export const useSettings = defineStore('settings', () => {
 		}
 	})
 
+	const certificatesEnabled = createResource({
+		url: 'dls.dls.api.is_certificates_enabled',
+		auto: true,
+		cache: ['certificatesEnabled'],
+	})
+
+	const quizzesEnabled = createResource({
+		url: 'dls.dls.api.is_quizzes_enabled',
+		auto: true,
+		cache: ['quizzesEnabled'],
+	})
+
 	return {
 		isSettingsOpen,
 		activeTab,
@@ -70,5 +82,7 @@ export const useSettings = defineStore('settings', () => {
 		questionsActive,
 		displayInstructor,
 		lessonCompletionTime,
+		certificatesEnabled,
+		quizzesEnabled,
 	}
 })

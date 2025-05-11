@@ -150,6 +150,7 @@
 									class="hidden"
 								/>
 								<FormControl
+									v-if="settingsStore.certificatesEnabled.data"
 									type="checkbox"
 									v-model="course.enable_certification"
 									:label="__('Completion Certificate')"

@@ -100,6 +100,7 @@ import { ChevronRight, Sparkles } from 'lucide-vue-next'
 import { createToast, getEditorTools } from '@/utils'
 import { capture } from '@/telemetry'
 import { useOnboarding } from 'frappe-ui/frappe'
+import { useSettings } from '@/stores/settings'
 
 const { brand } = sessionStore()
 const editor = ref(null)
@@ -111,6 +112,8 @@ let autoSaveInterval
 let showSuccessMessage = false
 const isGenerating = ref(false)
 const aiEnabled = ref(false)
+const settingsStore = useSettings()
+const quizzesEnabled = ref(true)
 
 const props = defineProps({
 	courseName: {
@@ -142,15 +145,18 @@ onMounted(async () => {
 		aiEnabled.value = false
 	}
 
-	editor.value = renderEditor('content', aiEnabled.value)
-	instructorEditor.value = renderEditor('instructor-notes', aiEnabled.value)
+	// Check if quizzes are enabled
+	quizzesEnabled.value = !!settingsStore.quizzesEnabled.data
+
+	editor.value = renderEditor('content', aiEnabled.value, quizzesEnabled.value)
+	instructorEditor.value = renderEditor('instructor-notes', aiEnabled.value, quizzesEnabled.value)
 	window.addEventListener('keydown', keyboardShortcut)
 })
 
-const renderEditor = (holder, enableAI = true) => {
+const renderEditor = (holder, enableAI = true, enableQuizzes = true) => {
 	return new EditorJS({
 		holder: holder,
-		tools: getEditorTools(enableAI),
+		tools: getEditorTools(enableAI, enableQuizzes),
 		autofocus: true,
 		defaultBlock: 'markdown',
 	})

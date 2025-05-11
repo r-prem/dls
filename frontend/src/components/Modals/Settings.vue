@@ -236,6 +236,18 @@ const tabsStructure = computed(() => {
 							type: 'checkbox',
 						},
 						{
+							label: 'Enable Certificates',
+							name: 'enable_certificates',
+							description: 'If disabled, certificates will not be available for courses.',
+							type: 'checkbox',
+						},
+						{
+							label: 'Enable Quizzes',
+							name: 'enable_quizzes',
+							description: 'If disabled, quizzes will not be available in lessons.',
+							type: 'checkbox',
+						},
+						{
 							label: 'Lesson Completion Time',
 							name: 'lesson_completion_time',
 							description: 'Time in seconds a user needs to spend on a lesson before it can be marked as complete.',

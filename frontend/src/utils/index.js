@@ -149,7 +149,7 @@ export function htmlToText(html) {
 	return div.textContent || div.innerText || ''
 }
 
-export function getEditorTools(enableAI = true) {
+export function getEditorTools(enableAI = true, enableQuizzes = true) {
 	const tools = {
 		header: {
 			class: Header,
@@ -157,7 +157,6 @@ export function getEditorTools(enableAI = true) {
 				placeholder: 'Header',
 			},
 		},
-		quiz: Quiz,
 		assignment: Assignment,
 		upload: Upload,
 		markdown: {
@@ -271,7 +270,7 @@ export function getEditorTools(enableAI = true) {
 						id: ([id]) => id,
 					},
 					drive: {
-						regex: /https:\/\/drive\.google\.com\/file\/d\/([A-Za-z0-9_-]+)\/view(\?.+)?/,
+						regex: /https:\/\/drive\.google.com\/file\/d\/([A-Za-z0-9_-]+)\/view(\?.+)?/,
 						embedUrl:
 							'https://drive.google.com/file/d/<%= remote_id %>/preview',
 						html: `<iframe style='width: 100%; height: ${
@@ -297,7 +296,7 @@ export function getEditorTools(enableAI = true) {
 						html: "<iframe style='width: 100%; height: 30rem; border: 1px solid #D3D3D3; border-radius: 12px; margin: 1rem 0;' frameborder='0' allowfullscreen='true'></iframe>",
 					},
 					codesandbox: {
-						regex: /^https:\/\/codesandbox\.io\/(?:embed\/)?([A-Za-z0-9_-]+)(?:\?[^\/]*)?$/,
+						regex: /^https:\/\/codesandbox.io\/(?:embed\/)?([A-Za-z0-9_-]+)(?:\?[^\/]*)?$/,
 						embedUrl:
 							'https://codesandbox.io/embed/<%= remote_id %>?view=editor+%2B+preview&module=%2Findex.html',
 						html: "<iframe style='width: 100%; height: 500px; border: 0; border-radius: 4px; overflow: hidden;' sandbox='allow-mods allow-forms allow-popups allow-scripts allow-same-origin' frameborder='0' allowfullscreen='true'></iframe>",
@@ -311,6 +310,9 @@ export function getEditorTools(enableAI = true) {
 			class: AIAssistantInlineTool,
 			shortcut: 'CMD+SHIFT+A',
 		}
+	}
+	if (enableQuizzes) {
+		tools.quiz = Quiz
 	}
 	return tools
 }

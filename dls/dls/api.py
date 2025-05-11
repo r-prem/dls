@@ -1492,3 +1492,13 @@ def openai_generate_response(prompt):
 def has_openai_api_key():
 	key = frappe.db.get_single_value("DLS Settings", "openai_api_key")
 	return bool(key)
+
+
+@frappe.whitelist(allow_guest=True)
+def is_certificates_enabled():
+	return frappe.db.get_single_value('DLS Settings', 'enable_certificates')
+
+
+@frappe.whitelist(allow_guest=True)
+def is_quizzes_enabled():
+	return frappe.db.get_single_value('DLS Settings', 'enable_quizzes')

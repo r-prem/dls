@@ -152,7 +152,7 @@ import UserDropdown from '@/components/UserDropdown.vue'
 import CollapseSidebar from '@/components/Icons/CollapseSidebar.vue'
 import SidebarLink from '@/components/SidebarLink.vue'
 import { useStorage } from '@vueuse/core'
-import { ref, onMounted, inject, watch, reactive, markRaw, h } from 'vue'
+import { ref, onMounted, inject, watch, reactive, markRaw, h, toRaw } from 'vue'
 import { getSidebarLinks } from '../utils'
 import { usersStore } from '@/stores/user'
 import { sessionStore } from '@/stores/session'
@@ -272,7 +272,7 @@ const addNotifications = () => {
 }
 
 const addQuizzes = () => {
-	if (isInstructor.value || isModerator.value) {
+	if ((isInstructor.value || isModerator.value) && settingsStore.quizzesEnabled.data) {
 		sidebarLinks.value.push({
 			label: 'Quizzes',
 			icon: 'CircleHelp',
