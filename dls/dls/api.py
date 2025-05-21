@@ -1467,7 +1467,6 @@ def get_lesson_completion_time():
 
 @frappe.whitelist(allow_guest=True)
 def openai_generate_response(prompt):
-	# Fetch the API key from DLS Settings
 	doc = frappe.get_single('DLS Settings')
 	api_key = doc.get_password('openai_api_key')
 	if not api_key:
