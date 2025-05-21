@@ -18,7 +18,7 @@
 		</div>
 
 		<SettingFields :fields="fields" :data="data.doc" />
-		<div class="flex flex-row-reverse mt-auto">
+		<div class="flex flex-row-reverse mt-auto mb-4 pb-4">
 			<Button variant="solid" :loading="data.save.loading" @click="update">
 				{{ __('Update') }}
 			</Button>

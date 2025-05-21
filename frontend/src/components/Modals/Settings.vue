@@ -11,7 +11,7 @@
 					<div v-for="tab in tabs" :key="tab.label">
 						<div
 							v-if="!tab.hideLabel"
-							class="mb-2 mt-3 flex cursor-pointer gap-1.5 px-1 text-base font-medium text-ink-gray-5 transition-all duration-300 ease-in-out"
+							class="mb-2 mt-3 flex cursor-pointer gap-1.5 px-1 text-base font-medium text-ink-gray-5 transition-all duration-300 ease-in-out overflow-scroll"
 						>
 							<span>{{ __(tab.label) }}</span>
 						</div>
@@ -34,7 +34,7 @@
 				<div
 					v-if="activeTab && data.doc"
 					:key="activeTab.label"
-					class="flex flex-1 flex-col px-10 py-8 bg-surface-modal"
+					class="flex flex-1 flex-col px-10 py-8 bg-surface-modal h-full overflow-auto mb-4"
 				>
 					<Members
 						v-if="activeTab.label === 'Members'"
