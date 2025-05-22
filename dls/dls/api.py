@@ -211,16 +211,14 @@ def get_system_language():
 
 @frappe.whitelist(allow_guest=True)
 def get_translations(lang=None):
-	"""Get translations for the specified language or user's preferred language.
+	"""Get translations for the specified language or system language.
 	
 	Args:
 		lang (str, optional): Language code (e.g. 'de' for German). Defaults to None.
 	"""
 	if not lang:
-		if frappe.session.user != "Guest":
-			lang = frappe.db.get_value("User", frappe.session.user, "language")
-		else:
-			lang = frappe.db.get_single_value("System Settings", "language")
+		# Always use system language setting
+		lang = frappe.db.get_single_value("System Settings", "language")
 	
 	# Set the language in the session for consistency
 	frappe.local.lang = lang

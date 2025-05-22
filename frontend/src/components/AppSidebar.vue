@@ -89,37 +89,20 @@
 							: 'flex-row space-x-3'
 					"
 				>
-					<Tooltip :text="__('Powered by Learning')">
-						<Zap
-							class="size-4 stroke-1.5 text-gray-700 cursor-pointer"
-							@click="redirectToWebsite()"
-						/>
-					</Tooltip>
-					<Tooltip :text="__('Help')">
-						<CircleHelp
-							class="size-4 stroke-1.5 text-gray-700 cursor-pointer"
-							@click="
-								() => {
-									showHelpModal = minimize ? true : !showHelpModal
-									minimize = !showHelpModal
-								}
-							"
+					<Tooltip
+						:text="
+							sidebarStore.isSidebarCollapsed ? __('Expand') : __('Collapse')
+						"
+					>
+						<CollapseSidebar
+							class="size-4 text-gray-700 duration-300 stroke-1.5 ease-in-out cursor-pointer"
+							:class="{
+								'[transform:rotateY(180deg)]': sidebarStore.isSidebarCollapsed,
+							}"
+							@click="toggleSidebar()"
 						/>
 					</Tooltip>
 				</div>
-				<Tooltip
-					:text="
-						sidebarStore.isSidebarCollapsed ? __('Expand') : __('Collapse')
-					"
-				>
-					<CollapseSidebar
-						class="size-4 text-gray-700 duration-300 stroke-1.5 ease-in-out cursor-pointer"
-						:class="{
-							'[transform:rotateY(180deg)]': sidebarStore.isSidebarCollapsed,
-						}"
-						@click="toggleSidebar()"
-					/>
-				</Tooltip>
 			</div>
 		</div>
 		<HelpModal
@@ -581,14 +564,14 @@ const setUpOnboarding = () => {
 	}
 }
 
-watch(userResource, () => {
-	if (userResource.data) {
-		isModerator.value = userResource.data.is_moderator
-		isInstructor.value = userResource.data.is_instructor
+watch(() => userResource.data, (newData) => {
+	if (newData) {
+		isModerator.value = newData.is_moderator
+		isInstructor.value = newData.is_instructor
 
 		// Update sidebar links based on user roles
 		if (sidebarSettings.data?.courses_enabled) {
-			sidebarLinks.value = sidebarLinks.value.filter(link => link.label !== 'Courses')
+			sidebarLinks.value = sidebarLinks.value.filter(link => link.label !== __('Courses'))
 			sidebarLinks.value.push({
 				label: __('Courses'),
 				icon: BookOpen,
@@ -596,22 +579,16 @@ watch(userResource, () => {
 			})
 		}
 
-		if (userResource.data.is_moderator || userResource.data.is_system_manager) {
+		if (newData.is_moderator || newData.is_system_manager || newData.is_instructor) {
+			// Remove existing Course Completions link if it exists
+			sidebarLinks.value = sidebarLinks.value.filter(link => link.label !== __('Course Completions'))
+			// Add Course Completions link
 			sidebarLinks.value.push({
 				label: __('Course Completions'),
 				icon: 'TrendingUp',
 				to: 'CourseCompletions',
 				activeFor: ['CourseCompletions']
 			})
-
-			/**
-			sidebarLinks.value.push({
-				label: __('User Management'),
-				icon: 'UserPlus',
-				to: 'UserManagement',
-				activeFor: ['UserManagement']
-			})
-			**/
 		}
 
 		addPrograms()
@@ -619,7 +596,7 @@ watch(userResource, () => {
 		addAssignments()
 		setUpOnboarding()
 	}
-})
+}, { immediate: true })
 
 const redirectToWebsite = () => {
 	window.open('https://frappe.io/learning', '_blank')
