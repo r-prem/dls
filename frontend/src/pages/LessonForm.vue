@@ -25,7 +25,7 @@
 						<FormControl
 							v-model="lesson.include_in_preview"
 							type="checkbox"
-							label="Include in Preview"
+							:label="__('Include in Preview')"
 						/>
 					</div>
 					<div class="border-t mt-4">

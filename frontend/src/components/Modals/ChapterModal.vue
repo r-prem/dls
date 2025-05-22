@@ -16,7 +16,7 @@
 	>
 		<template #body-content>
 			<div class="space-y-4 text-base">
-				<FormControl label="Title" v-model="chapter.title" :required="true" />
+				<FormControl label="__('Title')" v-model="chapter.title" :required="true" />
 				<Switch
 					size="sm"
 					:label="__('SCORM Package')"
@@ -191,7 +191,7 @@ const editChapter = (close) => {
 		{
 			validate() {
 				if (!chapter.title) {
-					return 'Title is required'
+					return __('Title is required')
 				}
 			},
 			onSuccess() {

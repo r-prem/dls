@@ -57,6 +57,7 @@
 						{{ profile.data.headline }}
 					</div>
 				</div>
+				<!--
 				<Button
 					v-if="isSessionUser()"
 					class="mt-3 sm:mt-0 md:ml-auto"
@@ -67,6 +68,7 @@
 					</template>
 					{{ __('Edit Profile') }}
 				</Button>
+				-->
 			</div>
 
 			<div class="mb-4 mt-6">
@@ -158,17 +160,14 @@ const setActiveTab = () => {
 			activeTab.value = convertToTitleCase(section)
 		}
 	})
-	if (!activeTab.value) activeTab.value = 'About'
+	if (!activeTab.value) activeTab.value = 'Certificates'
 }
 
 watchEffect(() => {
 	if (activeTab.value) {
 		let route = {
-			About: { name: 'ProfileAbout' },
 			Certificates: { name: 'ProfileCertificates' },
 			Roles: { name: 'ProfileRoles' },
-			Slots: { name: 'ProfileEvaluator' },
-			Schedule: { name: 'ProfileEvaluationSchedule' },
 		}[activeTab.value]
 		router.push(route)
 	}
@@ -190,23 +189,15 @@ const isSessionUser = () => {
 }
 
 const getTabButtons = () => {
-	let buttons = [{ label: 'About' }, { label: 'Certificates' }]
-	if ($user.data?.is_moderator) buttons.push({ label: 'Roles' })
-	if (
-		isSessionUser() &&
-		($user.data?.is_evaluator || $user.data?.is_moderator)
-	) {
-		buttons.push({ label: 'Slots' })
-		buttons.push({ label: 'Schedule' })
-	}
-
+	let buttons = [{ label: __('Certificates') }]
+	if ($user.data?.is_moderator) buttons.push({ label: __('Roles') })
 	return buttons
 }
 
 const breadcrumbs = computed(() => {
 	let crumbs = [
 		{
-			label: 'People',
+			label: __('People'),
 		},
 		{
 			label: profile.data?.full_name,

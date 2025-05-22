@@ -188,7 +188,7 @@ const assignmentTypes = computed(() => {
 
 const breadcrumbs = computed(() => [
 	{
-		label: 'Assignments',
+		label: __('Assignments'),
 		route: { name: 'Assignments' },
 	},
 ])

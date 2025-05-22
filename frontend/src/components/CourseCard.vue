@@ -87,7 +87,7 @@
 				v-if="user && course.membership"
 				class="text-sm text-ink-gray-7 mt-2 mb-4"
 			>
-				{{ Math.ceil(course.membership.progress) }}% completed
+				{{ Math.ceil(course.membership.progress) }}% {{ __('Completed') }}
 			</div>
 
 			<div class="flex items-center justify-between mt-auto">

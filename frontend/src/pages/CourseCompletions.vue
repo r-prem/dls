@@ -108,7 +108,6 @@ import {
 } from 'frappe-ui'
 import { ref, computed, inject, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import ProgressBar from '@/components/ProgressBar.vue'
 import { sessionStore } from '@/stores/session'
 
 const router = useRouter()
@@ -174,7 +173,7 @@ const columns = [
     sortable: true
   },
   {
-    label: 'Progress',
+    label: __('Progress'),
     key: 'progress',
     sortable: true
   },
@@ -230,7 +229,7 @@ const breadcrumbs = computed(() => [
 ])
 
 usePageMeta(() => ({
-  title: 'Course Completions',
+  title: __('Course Completions'),
   icon: brand.favicon
 }))
 </script>

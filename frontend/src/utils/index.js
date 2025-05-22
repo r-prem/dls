@@ -590,7 +590,7 @@ export const canCreateCourse = (courseCount) => {
 	const { maxCourses } = useSettings()
 	const totalCourses = courseCount || 0;
 
-	if (totalCourses >= maxCourses.data) {
+	if (totalCourses >= maxCourses.data && maxCourses.data !== 0) {
 		return false;
 	}
 

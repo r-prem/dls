@@ -17,9 +17,6 @@
 			<Button size="sm" v-if="allowEdit" @click="openChapterModal()">
 				{{ __('Add Chapter') }}
 			</Button>
-			<!-- <span class="font-medium cursor-pointer" @click="expandAllChapters()">
-				{{ expandAll ? __("Collapse all chapters") : __("Expand all chapters") }}
-			</span> -->
 		</div>
 		<div
 			:class="{

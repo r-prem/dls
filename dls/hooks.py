@@ -43,12 +43,14 @@ web_include_js = ["website.bundle.js"]
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "/dls"
 
 # website user home page (by Role)
-# role_home_page = {
-# 	"Role": "home_page"
-# }
+role_home_page = {
+	"Website User": "/dls",
+	"System Manager": "/",
+	"Moderator": "/dls"
+}
 
 # Generators
 # ----------
@@ -160,6 +162,7 @@ website_route_rules = [
 ]
 
 website_redirects = [
+	{"source": "/", "target": "/dls"},
 	{"source": "/update-profile", "target": "/edit-profile"},
 	{"source": "/courses", "target": "/dls/courses"},
 	{
