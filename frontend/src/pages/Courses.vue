@@ -4,7 +4,7 @@
 	>
 		<Breadcrumbs :items="breadcrumbs" />
 		<router-link
-			v-if="canCreateCourse()"
+			v-if="canCreateCourse(courses.data?.length)"
 			:to="{
 				name: 'CourseForm',
 				params: { courseName: 'new' },

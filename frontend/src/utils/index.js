@@ -15,6 +15,7 @@ import Embed from '@editorjs/embed'
 import SimpleImage from '@editorjs/simple-image'
 import Table from '@editorjs/table'
 import { usersStore } from '../stores/user'
+import { useSettings } from '../stores/settings'
 import AIAssistantInlineTool from './AIAssistantInlineTool'
 
 export function createToast(options) {
@@ -584,7 +585,14 @@ export const escapeHTML = (text) => {
 	)
 }
 
-export const canCreateCourse = () => {
+export const canCreateCourse = (courseCount) => {
 	const { userResource } = usersStore()
+	const { maxCourses } = useSettings()
+	const totalCourses = courseCount || 0;
+
+	if (totalCourses >= maxCourses.data) {
+		return false;
+	}
+
 	return userResource.data?.is_instructor || userResource.data?.is_moderator
 }

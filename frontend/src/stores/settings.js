@@ -71,6 +71,12 @@ export const useSettings = defineStore('settings', () => {
 		cache: ['quizzesEnabled'],
 	})
 
+	const maxCourses = createResource({
+		url: 'dls.dls.api.get_max_courses',
+		auto: true,
+		cache: ['maxCourses'],
+	})
+
 	return {
 		isSettingsOpen,
 		activeTab,
@@ -84,5 +90,6 @@ export const useSettings = defineStore('settings', () => {
 		lessonCompletionTime,
 		certificatesEnabled,
 		quizzesEnabled,
+		maxCourses,
 	}
 })

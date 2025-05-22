@@ -198,7 +198,7 @@ const tabsStructure = computed(() => {
 							name: 'openai_api_key',
 							description: 'Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys',
 							type: 'password',
-						},
+						}
 					],
 				},
 				{
@@ -251,6 +251,12 @@ const tabsStructure = computed(() => {
 							label: 'Lesson Completion Time',
 							name: 'lesson_completion_time',
 							description: 'Time in seconds a user needs to spend on a lesson before it can be marked as complete.',
+							type: 'number',
+						},
+						{
+							label: 'Max Courses',
+							name: 'max_courses',
+							description: 'How many courses can be created in the system',
 							type: 'number',
 						},
 					],

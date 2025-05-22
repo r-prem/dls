@@ -1494,6 +1494,11 @@ def has_openai_api_key():
 
 
 @frappe.whitelist(allow_guest=True)
+def get_max_courses():
+	return frappe.db.get_single_value('DLS Settings', 'max_courses')
+
+
+@frappe.whitelist(allow_guest=True)
 def is_certificates_enabled():
 	return frappe.db.get_single_value('DLS Settings', 'enable_certificates')
 

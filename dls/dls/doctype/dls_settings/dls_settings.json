@@ -280,6 +280,12 @@
    "description": "Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys"
   },
   {
+    "fieldname": "max_courses",
+    "label": "Max Courses",
+    "fieldtype": "Int",
+    "description": "How many courses can be created in the system"
+   },
+  {
    "fieldname": "sidebar_tab",
    "fieldtype": "Tab Break",
    "label": "Sidebar"
