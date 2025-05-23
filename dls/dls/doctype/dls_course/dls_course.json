@@ -119,8 +119,7 @@
    "in_standard_filter": 1,
    "label": "Instructors",
    "max_height": "50px",
-   "options": "Course Instructor",
-   "reqd": 1
+   "options": "Course Instructor"
   },
   {
    "fieldname": "section_break_7",

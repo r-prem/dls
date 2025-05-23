@@ -300,15 +300,12 @@ onBeforeUnmount(() => {
 })
 
 const courseCreationResource = createResource({
-	url: 'frappe.client.insert',
+	url: 'dls.dls.api.create_course',
 	makeParams(values) {
 		return {
 			doc: {
 				doctype: 'DLS Course',
 				image: course.course_image?.file_url || '',
-				instructors: [{
-					instructor: user.data?.name
-				}],
 				...values,
 			},
 		}
@@ -325,10 +322,6 @@ const courseEditResource = createResource({
 			fieldname: {
 				...course,
 				image: course.course_image?.file_url || '',
-				instructors: [{
-					instructor: user.data?.name
-				}],
-
 			},
 		}
 	},

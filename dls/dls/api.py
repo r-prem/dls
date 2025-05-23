@@ -1504,3 +1504,37 @@ def is_certificates_enabled():
 @frappe.whitelist(allow_guest=True)
 def is_quizzes_enabled():
 	return frappe.db.get_single_value('DLS Settings', 'enable_quizzes')
+
+
+@frappe.whitelist()
+def create_course(doc):
+	doc = frappe._dict(frappe.parse_json(doc))
+	
+	# Create the course
+	course = frappe.get_doc({
+		"doctype": "DLS Course",
+		"title": doc.title,
+		"short_introduction": doc.short_introduction,
+		"description": doc.description,
+		"image": doc.image,
+		"category": doc.category,
+		"published": doc.published,
+		"published_on": doc.published_on,
+		"upcoming": doc.upcoming,
+		"featured": doc.featured,
+		"disable_self_learning": doc.disable_self_learning,
+		"enable_certification": doc.enable_certification,
+		"paid_course": doc.paid_course,
+		"paid_certificate": doc.paid_certificate,
+		"course_price": doc.course_price,
+		"currency": doc.currency,
+		"evaluator": doc.evaluator,
+	})
+	
+	# Add the current user as instructor
+	course.append("instructors", {
+		"instructor": frappe.session.user
+	})
+	
+	course.insert()
+	return course.as_dict()

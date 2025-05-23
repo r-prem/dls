@@ -26,16 +26,8 @@ class DLSCourse(Document):
 			self.published_on = today()
 
 	def validate_instructors(self):
-		if self.is_new() and not self.instructors:
-			frappe.get_doc(
-				{
-					"doctype": "Course Instructor",
-					"instructor": self.owner,
-					"parent": self.name,
-					"parentfield": "instructors",
-					"parenttype": "DLS Course",
-				}
-			).save(ignore_permissions=True)
+		# Remove automatic instructor assignment
+		pass
 
 	def validate_status(self):
 		if self.published:
