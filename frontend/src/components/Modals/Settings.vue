@@ -92,11 +92,13 @@ import Categories from '@/components/Categories.vue'
 import BrandSettings from '@/components/BrandSettings.vue'
 import PaymentSettings from '@/components/PaymentSettings.vue'
 import { generateColorRange } from '@/utils/colors'
+import { usersStore } from '@/stores/user'
 
 const show = defineModel()
 const doctype = ref('DLS Settings')
 const activeTab = ref(null)
 const settingsStore = useSettings()
+const { userResource } = usersStore()
 
 const data = createDocumentResource({
 	doctype: doctype.value,
@@ -164,6 +166,7 @@ const tabsStructure = computed(() => {
 		{
 			label: 'Settings',
 			hideLabel: true,
+			only_admin: true,
 			items: [
 				{
 					label: 'General',
@@ -266,6 +269,7 @@ const tabsStructure = computed(() => {
 		{
 			label: 'Settings',
 			hideLabel: true,
+			only_admin: true,
 			items: [
 				...(settingsStore.paidCoursesEnabled.data ? [
 					{
@@ -318,6 +322,9 @@ const tabsStructure = computed(() => {
 					label: 'Evaluators',
 					description: 'Manage the evaluators of your learning system',
 					icon: 'UserCheck',
+					condition: () => {
+						return userResource.data?.is_system_manager
+					},
 				},
 				{
 					label: 'Categories',
@@ -329,6 +336,7 @@ const tabsStructure = computed(() => {
 		{
 			label: 'Customise',
 			hideLabel: false,
+			only_admin: true,
 			items: [
 				{
 					label: 'Branding',
@@ -383,6 +391,7 @@ const tabsStructure = computed(() => {
 					label: 'Sidebar',
 					icon: 'PanelLeftIcon',
 					description: 'Choose the items you want to show in the sidebar',
+					only_admin: true,
 					fields: [
 						{
 							label: 'Courses',
@@ -432,6 +441,7 @@ const tabsStructure = computed(() => {
 				{
 					label: 'Email Templates',
 					icon: 'MailPlus',
+					only_admin: true,
 					fields: [
 						{
 							label: 'Batch Confirmation Template',
@@ -450,6 +460,7 @@ const tabsStructure = computed(() => {
 				{
 					label: 'Signup',
 					icon: 'LogIn',
+					only_admin: true,
 					fields: [
 						{
 							label: 'Identify User Category',
@@ -475,6 +486,7 @@ const tabsStructure = computed(() => {
 				{
 					label: 'SEO',
 					icon: 'Search',
+					only_admin: true,
 					fields: [
 						{
 							label: 'Meta Description',
@@ -504,7 +516,14 @@ const tabsStructure = computed(() => {
 })
 
 const tabs = computed(() => {
-	return tabsStructure.value.map((tab) => {
+	const isAdmin = userResource.data?.is_system_manager;
+    const tabsFiltered = tabsStructure.value.filter((tab) => {
+		if (tab.only_admin) {
+			return isAdmin;
+		}
+		return true
+	})
+	return tabsFiltered.map((tab) => {
 		return {
 			...tab,
 			items: tab.items.filter((item) => {

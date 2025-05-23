@@ -73,6 +73,7 @@
 				-->
 			</div>
 
+			<!--
 			<div class="mb-4 mt-6">
 				<TabButtons
 					class="inline-block"
@@ -80,6 +81,7 @@
 					v-model="activeTab"
 				/>
 			</div>
+		-->
 			<router-view :profile="profile" />
 		</div>
 	</div>

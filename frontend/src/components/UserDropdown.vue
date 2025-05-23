@@ -156,7 +156,7 @@ const userDropdownOptions = computed(() => {
 						settingsStore.isSettingsOpen = true
 					},
 					condition: () => {
-						return userResource.data?.is_system_manager
+						return userResource.data?.is_system_manager || userResource.data?.is_moderator
 					},
 				},
 				{

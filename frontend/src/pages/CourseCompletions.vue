@@ -116,7 +116,11 @@ const { brand } = sessionStore()
 const selectedCourse = ref('')
 
 onMounted(() => {
-  if (!user.data?.is_moderator && !user.data?.is_system_manager) {
+  if (
+    !user.data?.is_moderator &&
+    !user.data?.is_system_manager &&
+    !user.data?.is_instructor
+  ) {
     router.push({ name: 'Courses' })
   }
 })
