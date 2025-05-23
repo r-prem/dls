@@ -424,7 +424,7 @@ const createNewLesson = () => {
 								updateOnboardingStep('create_first_lesson')
 
 							capture('lesson_created')
-							showToast('Success', 'Lesson created successfully', 'check')
+							showToast(__('Success'), __('Lesson created successfully'), 'check')
 							lessonDetails.reload()
 						},
 					}
@@ -448,7 +448,7 @@ const editCurrentLesson = () => {
 			},
 			onSuccess() {
 				showSuccessMessage
-					? showToast('Success', 'Lesson updated successfully', 'check')
+					? showToast(__('Success'), __('Lesson updated successfully'), 'check')
 					: ''
 			},
 			onError(err) {

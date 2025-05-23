@@ -1,17 +1,17 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: frappe\n"
+"Project-Id-Version:  frappe\n"
 "Report-Msgid-Bugs-To: jannat@frappe.io\n"
-"POT-Creation-Date: 2025-05-23 12:26+0000\n"
+"POT-Creation-Date: 2025-05-23 13:17+0000\n"
 "PO-Revision-Date: 2025-04-21 06:38+0000\n"
 "Last-Translator: jannat@frappe.io\n"
-"Language-Team: German\n"
 "Language: de_DE\n"
+"Language-Team: German\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: dls/templates/emails/assignment_submission.html:5
@@ -80,16 +80,12 @@ msgid "<span style=\"font-size: 18px;\"><b>Statistics</b></span>"
 msgstr "<span style=\"font-size: 18px;\"><b>Statistiken</b></span>"
 
 #: dls/dls/doctype/dls_course/dls_course.py:58
-msgid ""
-"A course cannot have both paid certificate and certificate of completion."
-msgstr ""
-"Ein Kurs kann nicht sowohl ein kostenpflichtiges Zertifikat als auch ein "
-"Abschlusszertifikat haben."
+msgid "A course cannot have both paid certificate and certificate of completion."
+msgstr "Ein Kurs kann nicht sowohl ein kostenpflichtiges Zertifikat als auch ein Abschlusszertifikat haben."
 
 #: frontend/src/pages/CourseForm.vue:37
 msgid "A one line introduction to the course that appears on the course card"
-msgstr ""
-"Eine einzeilige Einführung in den Kurs, die auf der Kurskarte erscheint"
+msgstr "Eine einzeilige Einführung in den Kurs, die auf der Kurskarte erscheint"
 
 #: frontend/src/utils/AIAssistantInlineTool.js:87
 msgid "AI Suggestion Preview"
@@ -137,9 +133,8 @@ msgstr "Aktiv"
 #: frontend/src/components/Categories.vue:26
 #: frontend/src/components/Evaluators.vue:37
 #: frontend/src/components/LiveClass.vue:11
-#: frontend/src/components/Members.vue:43
-#: frontend/src/pages/ProgramForm.vue:30 frontend/src/pages/ProgramForm.vue:92
-#: frontend/src/pages/ProgramForm.vue:137
+#: frontend/src/components/Members.vue:43 frontend/src/pages/ProgramForm.vue:30
+#: frontend/src/pages/ProgramForm.vue:92 frontend/src/pages/ProgramForm.vue:137
 msgid "Add"
 msgstr "Hinzufügen"
 
@@ -278,9 +273,7 @@ msgstr "Alle Einreichungen"
 
 #: dls/dls/doctype/dls_quiz/dls_quiz.py:44
 msgid "All questions should have the same marks if the limit is set."
-msgstr ""
-"Alle Fragen sollten die gleiche Punktzahl haben, wenn das Limit festgelegt "
-"ist."
+msgstr "Alle Fragen sollten die gleiche Punktzahl haben, wenn das Limit festgelegt ist."
 
 #. Label of the ratings_allowed (Check) field in DocType 'DLS Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
@@ -340,8 +333,7 @@ msgstr "Betrag und Währung sind für kostenpflichtige Kurse erforderlich."
 
 #: dls/dls/doctype/dls_course/dls_course.py:69
 msgid "Amount and currency are required for paid certificates."
-msgstr ""
-"Betrag und Währung sind für kostenpflichtige Zertifikate erforderlich."
+msgstr "Betrag und Währung sind für kostenpflichtige Zertifikate erforderlich."
 
 #: dls/dls/doctype/dls_course/dls_course.py:66
 msgid "Amount and currency are required for paid courses."
@@ -419,18 +411,12 @@ msgid "Archived"
 msgstr "Archiviert"
 
 #: frontend/src/components/UpcomingEvaluations.vue:170
-msgid ""
-"Are you sure you want to cancel this evaluation? This action cannot be "
-"undone."
-msgstr ""
-"Sind Sie sicher, dass Sie diese Bewertung abbrechen möchten? Diese Aktion "
-"kann nicht rückgängig gemacht werden."
+msgid "Are you sure you want to cancel this evaluation? This action cannot be undone."
+msgstr "Sind Sie sicher, dass Sie diese Bewertung abbrechen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
 
 #: frontend/src/components/UserDropdown.vue:168
 msgid "Are you sure you want to login to your Frappe Cloud dashboard?"
-msgstr ""
-"Sind Sie sicher, dass Sie sich bei Ihrem Frappe Cloud Dashboard anmelden "
-"möchten?"
+msgstr "Sind Sie sicher, dass Sie sich bei Ihrem Frappe Cloud Dashboard anmelden möchten?"
 
 #. Label of the assessment_tab (Tab Break) field in DocType 'DLS Batch'
 #. Label of the assessment (Table) field in DocType 'DLS Batch'
@@ -483,8 +469,7 @@ msgstr "Zuweisen"
 msgid "Assignment"
 msgstr "Aufgabe"
 
-#. Label of the assignment_attachment (Attach) field in DocType 'DLS
-#. Assignment
+#. Label of the assignment_attachment (Attach) field in DocType 'DLS Assignment
 #. Submission'
 #: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.json
 msgid "Assignment Attachment"
@@ -507,6 +492,10 @@ msgstr "Aufgabe erfolgreich erstellt"
 #: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.py:24
 msgid "Assignment for Lesson {0} by {1} already exists."
 msgstr "Aufgabe für Lektion {0} von {1} existiert bereits."
+
+#: frontend/src/components/Assignment.vue:355
+msgid "Assignment submitted successfully."
+msgstr "Aufgabe erfolgreich abgegeben"
 
 #: frontend/src/components/Modals/AssignmentForm.vue:129
 msgid "Assignment updated successfully"
@@ -638,8 +627,7 @@ msgstr "Kursdetails (Rohformat)"
 msgid "Batch Evaluator"
 msgstr "Kursevaluator"
 
-#. Label of the batch_name (Link) field in DocType 'DLS Certificate
-#. Evaluation'
+#. Label of the batch_name (Link) field in DocType 'DLS Certificate Evaluation'
 #: dls/dls/doctype/dls_certificate_evaluation/dls_certificate_evaluation.json
 msgid "Batch Name"
 msgstr "Kursname"
@@ -924,8 +912,7 @@ msgstr "Diskussion prüfen"
 
 #: dls/templates/certificates_section.html:24
 msgid "Check out the {0} to know more about certification."
-msgstr ""
-"Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
+msgstr "Schauen Sie sich die {0} an, um mehr über die Zertifizierung zu erfahren."
 
 #: frontend/src/components/NoPermission.vue:19
 msgid "Checkout Courses"
@@ -969,16 +956,8 @@ msgid "Clearly Defined Role"
 msgstr "Klar definierte Rolle"
 
 #: frontend/src/components/LessonHelp.vue:31
-msgid ""
-"Click on the add icon in the editor and select Quiz from the menu. It opens "
-"up a dialog, where you can either select a quiz from the list or create a "
-"new quiz. When you select the Create New option it redirects you to the quiz"
-" creation page."
-msgstr ""
-"Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. "
-"Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste "
-"auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu "
-"erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
+msgid "Click on the add icon in the editor and select Quiz from the menu. It opens up a dialog, where you can either select a quiz from the list or create a new quiz. When you select the Create New option it redirects you to the quiz creation page."
+msgstr "Klicken Sie auf das Plus-Symbol im Editor und wählen Sie Quiz aus dem Menü. Es öffnet sich ein Dialog, in dem Sie entweder ein Quiz aus der Liste auswählen oder ein neues Quiz erstellen können. Wenn Sie die Option 'Neu erstellen' wählen, werden Sie zur Quiz-Erstellungsseite weitergeleitet."
 
 #. Label of the client_id (Data) field in DocType 'Zoom Settings'
 #: dls/dls/doctype/zoom_settings/zoom_settings.json
@@ -1105,8 +1084,7 @@ msgstr "Unternehmen"
 msgid "Company Details"
 msgstr "Unternehmensdetails"
 
-#. Label of the company_email_address (Data) field in DocType 'Job
-#. Opportunity'
+#. Label of the company_email_address (Data) field in DocType 'Job Opportunity'
 #: dls/job/doctype/job_opportunity/job_opportunity.json
 #: frontend/src/pages/JobCreation.vue:83
 msgid "Company Email Address"
@@ -1160,8 +1138,7 @@ msgstr "Schließen Sie Ihre Anmeldung ab - Verpassen Sie es nicht!"
 #: dls/dls/doctype/cohort/cohort.json
 #: dls/dls/doctype/dls_batch_old/dls_batch_old.json
 #: dls/dls/doctype/dls_certificate_request/dls_certificate_request.json
-#: dls/dls/widgets/CourseCard.html:78
-#: frontend/src/components/CourseCard.vue:90
+#: dls/dls/widgets/CourseCard.html:78 frontend/src/components/CourseCard.vue:90
 #: frontend/src/pages/CourseCompletions.vue:28
 msgid "Completed"
 msgstr "Abgeschlossen"
@@ -1211,8 +1188,7 @@ msgstr "Bestätigen"
 msgid "Confirmation Email Sent"
 msgstr "Bestätigungs-E-Mail gesendet"
 
-#. Label of the confirmation_email_template (Link) field in DocType 'DLS
-#. Batch'
+#. Label of the confirmation_email_template (Link) field in DocType 'DLS Batch'
 #: dls/dls/doctype/dls_batch/dls_batch.json
 msgid "Confirmation Email Template"
 msgstr "Bestätigungs-E-Mail-Vorlage"
@@ -1223,8 +1199,7 @@ msgstr "Herzlichen Glückwunsch zur Zertifizierung!"
 
 #: frontend/src/components/CourseCardOverlay.vue:55
 msgid "Contact the Administrator to enroll for this course."
-msgstr ""
-"Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
+msgstr "Kontaktieren Sie den Administrator, um sich für diesen Kurs anzumelden."
 
 #. Label of the content (Text) field in DocType 'Course Lesson'
 #. Label of the content (Rating) field in DocType 'DLS Batch Feedback'
@@ -1249,12 +1224,8 @@ msgid "Cookie Policy"
 msgstr "Cookie-Richtlinie"
 
 #: frontend/src/components/LessonHelp.vue:69
-msgid ""
-"Copy the URL of the video from YouTube or Vimeo and paste it in the editor. "
-"Both platforms are supported."
-msgstr ""
-"Kopieren Sie die URL des Videos von YouTube oder Vimeo und fügen Sie sie in "
-"den Editor ein. Beide Plattformen werden unterstützt."
+msgid "Copy the URL of the video from YouTube or Vimeo and paste it in the editor. Both platforms are supported."
+msgstr "Kopieren Sie die URL des Videos von YouTube oder Vimeo und fügen Sie sie in den Editor ein. Beide Plattformen werden unterstützt."
 
 #. Option for the 'Company Type' (Select) field in DocType 'User'
 #: dls/fixtures/custom_field.json
@@ -1411,8 +1382,7 @@ msgstr "Kursliste"
 msgid "Course Name"
 msgstr "Kursname"
 
-#: frontend/src/pages/CourseDetail.vue:76
-#: frontend/src/pages/CourseForm.vue:197
+#: frontend/src/pages/CourseDetail.vue:76 frontend/src/pages/CourseForm.vue:197
 msgid "Course Outline"
 msgstr "Kursübersicht"
 
@@ -1452,6 +1422,10 @@ msgstr "Kurs zum Programm hinzugefügt"
 msgid "Course already added to the batch."
 msgstr "Kurs wurde bereits zum Batch hinzugefügt."
 
+#: frontend/src/pages/CourseForm.vue:411
+msgid "Course created successfully"
+msgstr "Kurse erfolgreich erstellt"
+
 #: frontend/src/pages/CourseForm.vue:432
 msgid "Course deleted successfully"
 msgstr "Kurs erfolgreich gelöscht"
@@ -1459,6 +1433,10 @@ msgstr "Kurs erfolgreich gelöscht"
 #: frontend/src/pages/ProgramForm.vue:301
 msgid "Course moved successfully"
 msgstr "Kurs erfolgreich verschoben"
+
+#: frontend/src/pages/CourseForm.vue:394
+msgid "Course updated successfully"
+msgstr "Kurs erfolgreich gespeichert"
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:49
 #: dls/dls/doctype/dls_program/dls_program.py:19
@@ -1480,6 +1458,7 @@ msgstr "Kurs {0} wurde bereits zu diesem Batch hinzugefügt."
 #: frontend/src/pages/BatchDetail.vue:24 frontend/src/pages/BatchDetail.vue:73
 #: frontend/src/pages/CourseCertification.vue:127
 #: frontend/src/pages/CourseCompletions.vue:222
+#: frontend/src/pages/CourseDetail.vue:133
 #: frontend/src/pages/CourseForm.vue:520 frontend/src/pages/Courses.vue:336
 #: frontend/src/pages/Courses.vue:343 frontend/src/pages/Lesson.vue:331
 #: frontend/src/pages/Statistics.vue:21
@@ -1938,31 +1917,16 @@ msgid "Delete this lesson?"
 msgstr "Diese Lektion löschen?"
 
 #: frontend/src/pages/CourseForm.vue:440
-msgid ""
-"Deleting the course will also delete all its chapters and lessons. Are you "
-"sure you want to delete this course?"
-msgstr ""
-"Das Löschen des Kurses löscht auch alle seine Kapitel und Lektionen. Sind "
-"Sie sicher, dass Sie diesen Kurs löschen möchten?"
+msgid "Deleting the course will also delete all its chapters and lessons. Are you sure you want to delete this course?"
+msgstr "Das Löschen des Kurses löscht auch alle seine Kapitel und Lektionen. Sind Sie sicher, dass Sie diesen Kurs löschen möchten?"
 
 #: frontend/src/components/CourseOutline.vue:298
-msgid ""
-"Deleting this chapter will also delete all its lessons and permanently "
-"remove it from the course. This action cannot be undone. Are you sure you "
-"want to continue?"
-msgstr ""
-"Das Löschen dieses Kapitels löscht auch alle seine Lektionen und entfernt es"
-" dauerhaft aus dem Kurs. Diese Aktion kann nicht rückgängig gemacht werden. "
-"Sind Sie sicher, dass Sie fortfahren möchten?"
+msgid "Deleting this chapter will also delete all its lessons and permanently remove it from the course. This action cannot be undone. Are you sure you want to continue?"
+msgstr "Das Löschen dieses Kapitels löscht auch alle seine Lektionen und entfernt es dauerhaft aus dem Kurs. Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
 
 #: frontend/src/components/CourseOutline.vue:240
-msgid ""
-"Deleting this lesson will permanently remove it from the course. This action"
-" cannot be undone. Are you sure you want to continue?"
-msgstr ""
-"Das Löschen dieser Lektion entfernt sie dauerhaft aus dem Kurs. Diese Aktion"
-" kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren "
-"möchten?"
+msgid "Deleting this lesson will permanently remove it from the course. This action cannot be undone. Are you sure you want to continue?"
+msgstr "Das Löschen dieser Lektion entfernt sie dauerhaft aus dem Kurs. Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
 
 #. Label of the description (Small Text) field in DocType 'Certification'
 #. Label of the description (Markdown Editor) field in DocType 'Cohort'
@@ -2048,12 +2012,8 @@ msgid "Document"
 msgstr "Dokument"
 
 #: dls/templates/emails/payment_reminder.html:11
-msgid ""
-"Don’t miss this opportunity to enhance your skills. Click below to complete "
-"your enrollment"
-msgstr ""
-"Verpassen Sie nicht die Gelegenheit, Ihre Fähigkeiten zu verbessern. Klicken"
-" Sie unten, um Ihre Anmeldung abzuschließen"
+msgid "Don’t miss this opportunity to enhance your skills. Click below to complete your enrollment"
+msgstr "Verpassen Sie nicht die Gelegenheit, Ihre Fähigkeiten zu verbessern. Klicken Sie unten, um Ihre Anmeldung abzuschließen"
 
 #. Label of the dream_companies (Data) field in DocType 'User'
 #: dls/fixtures/custom_field.json
@@ -2155,8 +2115,7 @@ msgstr "E-Mail gesendet"
 msgid "Email Template"
 msgstr "E-Mail-Vorlage"
 
-#. Label of the email_templates_tab (Tab Break) field in DocType 'DLS
-#. Settings'
+#. Label of the email_templates_tab (Tab Break) field in DocType 'DLS Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
 msgid "Email Templates"
 msgstr "E-Mail-Vorlagen"
@@ -2182,12 +2141,8 @@ msgid "Enable Certificates"
 msgstr "Zertifikate aktivieren"
 
 #: dls/dls/doctype/dls_settings/dls_settings.py:21
-msgid ""
-"Enable Google API in Google Settings to send calendar invites for "
-"evaluations."
-msgstr ""
-"Aktivieren Sie die Google API in den Google-Einstellungen, um "
-"Kalendereinladungen für Bewertungen zu senden."
+msgid "Enable Google API in Google Settings to send calendar invites for evaluations."
+msgstr "Aktivieren Sie die Google API in den Google-Einstellungen, um Kalendereinladungen für Bewertungen zu senden."
 
 #. Label of the enable_learning_paths (Check) field in DocType 'DLS Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
@@ -2211,9 +2166,7 @@ msgstr "Quiz aktivieren"
 
 #: frontend/src/components/Modals/ChapterModal.vue:24
 msgid "Enable this only if you want to upload a SCORM package as a chapter."
-msgstr ""
-"Aktivieren Sie dies nur, wenn Sie ein SCORM-Paket als Kapitel hochladen "
-"möchten."
+msgstr "Aktivieren Sie dies nur, wenn Sie ein SCORM-Paket als Kapitel hochladen möchten."
 
 #. Label of the enabled (Check) field in DocType 'DLS Badge'
 #: dls/dls/doctype/dls_badge/dls_badge.json
@@ -2221,12 +2174,8 @@ msgid "Enabled"
 msgstr "Aktiviert"
 
 #: frontend/src/components/Modals/BulkCertificates.vue:53
-msgid ""
-"Enabling this will publish the certificate on the certified participants "
-"page."
-msgstr ""
-"Durch Aktivieren wird das Zertifikat auf der Seite der zertifizierten "
-"Teilnehmer veröffentlicht."
+msgid "Enabling this will publish the certificate on the certified participants page."
+msgstr "Durch Aktivieren wird das Zertifikat auf der Seite der zertifizierten Teilnehmer veröffentlicht."
 
 #. Label of the end_date (Date) field in DocType 'Cohort'
 #. Label of the end_date (Date) field in DocType 'DLS Batch'
@@ -2299,12 +2248,8 @@ msgid "Enrollments"
 msgstr "Anmeldungen"
 
 #: dls/dls/doctype/dls_settings/dls_settings.py:26
-msgid ""
-"Enter Client Id and Client Secret in Google Settings to send calendar "
-"invites for evaluations."
-msgstr ""
-"Geben Sie Client-ID und Client-Geheimnis in den Google-Einstellungen ein, um"
-" Kalendereinladungen für Bewertungen zu senden."
+msgid "Enter Client Id and Client Secret in Google Settings to send calendar invites for evaluations."
+msgstr "Geben Sie Client-ID und Client-Geheimnis in den Google-Einstellungen ein, um Kalendereinladungen für Bewertungen zu senden."
 
 #: frontend/src/components/Assignment.vue:113
 msgid "Enter a URL"
@@ -2319,6 +2264,7 @@ msgid "Enter the correct answer"
 msgstr "Geben Sie die richtige Antwort ein"
 
 #: frontend/src/components/Assignment.vue:287
+#: frontend/src/components/Assignment.vue:373
 #: frontend/src/components/Modals/AnnouncementModal.vue:105
 #: frontend/src/components/Modals/BulkCertificates.vue:115
 #: frontend/src/components/Modals/ChapterModal.vue:160
@@ -2330,16 +2276,15 @@ msgstr "Geben Sie die richtige Antwort ein"
 #: frontend/src/components/Modals/StudentModal.vue:73
 #: frontend/src/components/Quiz.vue:592
 #: frontend/src/components/SettingDetails.vue:64
-#: frontend/src/pages/Billing.vue:262 frontend/src/pages/QuizForm.vue:349
-#: frontend/src/pages/QuizForm.vue:364
+#: frontend/src/pages/Billing.vue:262 frontend/src/pages/CourseForm.vue:397
+#: frontend/src/pages/QuizForm.vue:349 frontend/src/pages/QuizForm.vue:364
 #: frontend/src/pages/QuizSubmission.vue:150
 msgid "Error"
 msgstr "Fehler"
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:185
 msgid "Error creating live class. Please try again. {0}"
-msgstr ""
-"Fehler beim Erstellen des Live-Kurses. Bitte versuchen Sie es erneut. {0}"
+msgstr "Fehler beim Erstellen des Live-Kurses. Bitte versuchen Sie es erneut. {0}"
 
 #. Label of a Link in the DLS Workspace
 #. Label of a shortcut in the DLS Workspace
@@ -2389,8 +2334,7 @@ msgstr "Bewertung erfolgreich gespeichert"
 #: dls/templates/upcoming_evals.html:33
 #: frontend/src/components/Modals/BatchCourseModal.vue:26
 #: frontend/src/components/Modals/BulkCertificates.vue:22
-#: frontend/src/pages/CourseForm.vue:188
-#: frontend/src/pages/ProfileRoles.vue:22
+#: frontend/src/pages/CourseForm.vue:188 frontend/src/pages/ProfileRoles.vue:22
 msgid "Evaluator"
 msgstr "Bewerter"
 
@@ -2512,9 +2456,7 @@ msgstr "Feedback"
 
 #: frontend/src/components/Assignment.vue:64
 msgid "Feel free to make edits to your submission if needed."
-msgstr ""
-"Fühlen Sie sich frei, Änderungen an Ihrer Einreichung vorzunehmen, wenn "
-"nötig."
+msgstr "Fühlen Sie sich frei, Änderungen an Ihrer Einreichung vorzunehmen, wenn nötig."
 
 #. Label of the field_to_check (Select) field in DocType 'DLS Badge'
 #: dls/dls/doctype/dls_badge/dls_badge.json
@@ -2714,8 +2656,7 @@ msgstr "Helfen Sie uns, besser zu werden"
 
 #: dls/templates/courses_created.html:15
 msgid "Help others learn something new by creating a course."
-msgstr ""
-"Helfen Sie anderen, etwas Neues zu lernen, indem Sie einen Kurs erstellen."
+msgstr "Helfen Sie anderen, etwas Neues zu lernen, indem Sie einen Kurs erstellen."
 
 #: dls/templates/reviews.html:101
 msgid "Help us improve our course material."
@@ -2772,12 +2713,8 @@ msgid "I am currently working here"
 msgstr "Ich arbeite derzeit hier"
 
 #: dls/templates/emails/certification.html:6
-msgid ""
-"I am delighted to inform you that you have successfully earned your "
-"certification for the {0} course. Congratulations!"
-msgstr ""
-"Ich freue mich, Ihnen mitteilen zu können, dass Sie Ihr Zertifikat für den "
-"Kurs {0} erfolgreich erworben haben. Herzlichen Glückwunsch!"
+msgid "I am delighted to inform you that you have successfully earned your certification for the {0} course. Congratulations!"
+msgstr "Ich freue mich, Ihnen mitteilen zu können, dass Sie Ihr Zertifikat für den Kurs {0} erfolgreich erworben haben. Herzlichen Glückwunsch!"
 
 #. Label of the looking_for_job (Check) field in DocType 'User'
 #: dls/fixtures/custom_field.json
@@ -2804,12 +2741,8 @@ msgid "Identify User Category"
 msgstr "Benutzerkategorie identifizieren"
 
 #: frontend/src/components/LessonHelp.vue:12
-msgid ""
-"If Include in Preview is enabled for a lesson then the lesson will also be "
-"accessible to non logged in users."
-msgstr ""
-"Wenn die Vorschau für eine Lektion aktiviert ist, ist die Lektion auch für "
-"nicht eingeloggte Benutzer zugänglich."
+msgid "If Include in Preview is enabled for a lesson then the lesson will also be accessible to non logged in users."
+msgstr "Wenn die Vorschau für eine Lektion aktiviert ist, ist die Lektion auch für nicht eingeloggte Benutzer zugänglich."
 
 #. Description of the 'Enable Certificates' (Check) field in DocType 'DLS
 #. Settings'
@@ -2826,9 +2759,7 @@ msgstr "Wenn deaktiviert, sind Quizze in Lektionen nicht verfügbar."
 #. Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
 msgid "If enabled, courses can be set as paid courses with pricing"
-msgstr ""
-"Wenn aktiviert, können Kurse als kostenpflichtige Kurse mit Preisen "
-"festgelegt werden."
+msgstr "Wenn aktiviert, können Kurse als kostenpflichtige Kurse mit Preisen festgelegt werden."
 
 #. Description of the 'Enable Questions in Lessons' (Check) field in DocType
 #. 'DLS Settings'
@@ -2845,61 +2776,38 @@ msgstr "Wenn aktiviert, können Schüler Kurse bewerten und rezensieren."
 #. Description of the 'Show Enrolled Students Count' (Check) field in DocType
 #. 'DLS Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
-msgid ""
-"If enabled, the number of enrolled students will be displayed on course "
-"cards and pages"
-msgstr ""
-"Wenn aktiviert, wird die Anzahl der eingeschriebenen Schüler auf Kurskarten "
-"und -seiten angezeigt."
+msgid "If enabled, the number of enrolled students will be displayed on course cards and pages"
+msgstr "Wenn aktiviert, wird die Anzahl der eingeschriebenen Schüler auf Kurskarten und -seiten angezeigt."
 
 #: dls/templates/emails/mentor_request_creation_email.html:5
 msgid "If you are not any more interested to mentor the course"
 msgstr "Wenn Sie nicht mehr daran interessiert sind, den Kurs zu betreuen."
 
 #: frontend/src/components/Quiz.vue:20
-msgid ""
-"If you fail to do so, the quiz will be automatically submitted when the "
-"timer ends."
-msgstr ""
-"Wenn Sie dies versäumen, wird das Quiz automatisch abgegeben, wenn der Timer"
-" abläuft."
+msgid "If you fail to do so, the quiz will be automatically submitted when the timer ends."
+msgstr "Wenn Sie dies versäumen, wird das Quiz automatisch abgegeben, wenn der Timer abläuft."
 
 #: dls/templates/emails/payment_reminder.html:19
-msgid ""
-"If you have any questions or need assistance, feel free to reach out to our "
-"support team."
-msgstr ""
-"Wenn Sie Fragen haben oder Hilfe benötigen, zögern Sie nicht, sich an unser "
-"Support-Team zu wenden."
+msgid "If you have any questions or need assistance, feel free to reach out to our support team."
+msgstr "Wenn Sie Fragen haben oder Hilfe benötigen, zögern Sie nicht, sich an unser Support-Team zu wenden."
 
 #: dls/templates/emails/batch_confirmation.html:27
 #: dls/templates/emails/batch_start_reminder.html:27
 #: dls/templates/emails/live_class_reminder.html:24
-msgid ""
-"If you have any questions or require assistance, feel free to contact us."
-msgstr ""
-"Wenn Sie Fragen haben oder Unterstützung benötigen, zögern Sie nicht, uns zu"
-" kontaktieren."
+msgid "If you have any questions or require assistance, feel free to contact us."
+msgstr "Wenn Sie Fragen haben oder Unterstützung benötigen, zögern Sie nicht, uns zu kontaktieren."
 
 #. Description of the 'Amount (USD)' (Currency) field in DocType 'DLS Batch'
 #. Description of the 'Amount (USD)' (Currency) field in DocType 'DLS Course'
 #: dls/dls/doctype/dls_batch/dls_batch.json
 #: dls/dls/doctype/dls_course/dls_course.json
 #: dls/public/js/common_functions.js:400
-msgid ""
-"If you set an amount here, then the USD equivalent setting will not get "
-"applied."
-msgstr ""
-"Wenn Sie hier einen Betrag festlegen, wird die Einstellung für den USD-"
-"Äquivalentwert nicht angewendet."
+msgid "If you set an amount here, then the USD equivalent setting will not get applied."
+msgstr "Wenn Sie hier einen Betrag festlegen, wird die Einstellung für den USD-Äquivalentwert nicht angewendet."
 
 #: dls/dls/doctype/dls_quiz/dls_quiz.py:61
-msgid ""
-"If you want open ended questions then make sure each question in the quiz is"
-" of open ended type."
-msgstr ""
-"Wenn Sie offene Fragen wünschen, stellen Sie sicher, dass jede Frage im Quiz"
-" vom offenen Typ ist."
+msgid "If you want open ended questions then make sure each question in the quiz is of open ended type."
+msgstr "Wenn Sie offene Fragen wünschen, stellen Sie sicher, dass jede Frage im Quiz vom offenen Typ ist."
 
 #. Option for the 'File Type' (Select) field in DocType 'Course Lesson'
 #. Option for the 'Type' (Select) field in DocType 'DLS Assignment'
@@ -3258,6 +3166,14 @@ msgstr "Lektionsreferenz"
 msgid "Lesson Title"
 msgstr "Lektionstitel"
 
+#: frontend/src/pages/LessonForm.vue:427
+msgid "Lesson created successfully"
+msgstr "Lektion erfolgreich erstellt"
+
+#: frontend/src/pages/LessonForm.vue:451
+msgid "Lesson updated successfully"
+msgstr "Lektion erfolgreich gespeichert"
+
 #. Label of the lessons (Table) field in DocType 'Course Chapter'
 #. Group in Course Chapter's connections
 #. Label of the lessons (Int) field in DocType 'DLS Course'
@@ -3274,12 +3190,8 @@ msgid "Lessons Completed"
 msgstr "Abgeschlossene Lektionen"
 
 #: dls/templates/onboarding_header.html:11
-msgid ""
-"Lets start setting up your content on the DLS so that you can reclaim time "
-"and focus on growth."
-msgstr ""
-"Lassen Sie uns damit beginnen, Ihren Inhalt im DLS einzurichten, damit Sie "
-"Zeit sparen und sich auf das Wachstum konzentrieren können."
+msgid "Lets start setting up your content on the DLS so that you can reclaim time and focus on growth."
+msgstr "Lassen Sie uns damit beginnen, Ihren Inhalt im DLS einzurichten, damit Sie Zeit sparen und sich auf das Wachstum konzentrieren können."
 
 #. Option for the 'Grade Type' (Select) field in DocType 'Education Detail'
 #: dls/dls/doctype/education_detail/education_detail.json
@@ -3292,12 +3204,8 @@ msgid "Limit Questions To"
 msgstr "Fragen auf begrenzen"
 
 #: dls/dls/doctype/dls_quiz/dls_quiz.py:38
-msgid ""
-"Limit cannot be greater than or equal to the number of questions in the "
-"quiz."
-msgstr ""
-"Die Begrenzung darf nicht größer oder gleich der Anzahl der Fragen im Quiz "
-"sein."
+msgid "Limit cannot be greater than or equal to the number of questions in the quiz."
+msgstr "Die Begrenzung darf nicht größer oder gleich der Anzahl der Fragen im Quiz sein."
 
 #: frontend/src/pages/ProfileAbout.vue:74
 msgid "LinkedIn"
@@ -3401,12 +3309,8 @@ msgid "Make an Announcement"
 msgstr "Ankündigung machen"
 
 #: frontend/src/pages/Billing.vue:123
-msgid ""
-"Make sure to enter the correct billing name as the same will be used in your"
-" invoice."
-msgstr ""
-"Stellen Sie sicher, dass Sie den korrekten Rechnungsnamen eingeben, da "
-"dieser für Ihre Rechnung verwendet wird."
+msgid "Make sure to enter the correct billing name as the same will be used in your invoice."
+msgstr "Stellen Sie sicher, dass Sie den korrekten Rechnungsnamen eingeben, da dieser für Ihre Rechnung verwendet wird."
 
 #: frontend/src/components/BatchOverlay.vue:63
 msgid "Manage Batch"
@@ -3452,12 +3356,8 @@ msgid "Marks"
 msgstr "Punkte"
 
 #: dls/dls/doctype/dls_quiz_submission/dls_quiz_submission.py:41
-msgid ""
-"Marks for question number {0} cannot be greater than the marks allotted for "
-"that question."
-msgstr ""
-"Die Punkte für Frage {0} dürfen nicht größer sein als die für diese Frage "
-"festgelegten Punkte."
+msgid "Marks for question number {0} cannot be greater than the marks allotted for that question."
+msgstr "Die Punkte für Frage {0} dürfen nicht größer sein als die für diese Frage festgelegten Punkte."
 
 #. Label of the marks_out_of (Int) field in DocType 'DLS Quiz Result'
 #: dls/dls/doctype/dls_quiz_result/dls_quiz_result.json
@@ -3551,8 +3451,7 @@ msgstr "Mitglieder-E-Mail"
 msgid "Member Image"
 msgstr "Mitgliederbild"
 
-#. Label of the member_name (Data) field in DocType 'DLS Assignment
-#. Submission'
+#. Label of the member_name (Data) field in DocType 'DLS Assignment Submission'
 #. Label of the member_name (Data) field in DocType 'DLS Badge Assignment'
 #. Label of the member_name (Data) field in DocType 'DLS Batch Enrollment'
 #. Label of the member_name (Data) field in DocType 'DLS Batch Feedback'
@@ -3631,8 +3530,7 @@ msgstr "Mitgliederbenutzername"
 msgid "Mentor"
 msgstr "Mentor"
 
-#. Label of the mentor_name (Data) field in DocType 'DLS Course Mentor
-#. Mapping'
+#. Label of the mentor_name (Data) field in DocType 'DLS Course Mentor Mapping'
 #: dls/dls/doctype/dls_course_mentor_mapping/dls_course_mentor_mapping.json
 msgid "Mentor Name"
 msgstr "Mentorname"
@@ -3689,8 +3587,7 @@ msgstr "Meilensteine"
 
 #: dls/dls/doctype/dls_question/dls_question.py:48
 msgid "Minimum two options are required for multiple choice questions."
-msgstr ""
-"Für Multiple-Choice-Fragen sind mindestens zwei Optionen erforderlich."
+msgstr "Für Multiple-Choice-Fragen sind mindestens zwei Optionen erforderlich."
 
 #. Name of a role
 #: dls/dls/doctype/course_evaluator/course_evaluator.json
@@ -3828,8 +3725,7 @@ msgstr "Nächster"
 msgid "Next Question"
 msgstr "Nächste Frage"
 
-#: dls/templates/assessments.html:58
-#: frontend/src/components/Assessments.vue:75
+#: dls/templates/assessments.html:58 frontend/src/components/Assessments.vue:75
 msgid "No Assessments"
 msgstr "Keine Bewertungen"
 
@@ -3871,12 +3767,8 @@ msgid "No certified participants"
 msgstr "Keine zertifizierten Teilnehmer"
 
 #: frontend/src/pages/CertifiedParticipants.vue:114
-msgid ""
-"No certified participants found. Please check again later or get certified "
-"yourself."
-msgstr ""
-"Keine zertifizierten Teilnehmer gefunden. Bitte überprüfen Sie später erneut"
-" oder lassen Sie sich selbst zertifizieren."
+msgid "No certified participants found. Please check again later or get certified yourself."
+msgstr "Keine zertifizierten Teilnehmer gefunden. Bitte überprüfen Sie später erneut oder lassen Sie sich selbst zertifizieren."
 
 #: frontend/src/pages/CourseCompletions.vue:85
 msgid "No completion data available for this course"
@@ -4020,11 +3912,8 @@ msgid "Once again, congratulations on this significant accomplishment."
 msgstr "Nochmals herzlichen Glückwunsch zu diesem bedeutenden Erfolg."
 
 #: frontend/src/components/Assignment.vue:60
-msgid ""
-"Once the moderator grades your submission, you'll find the details here."
-msgstr ""
-"Sobald der Moderator Ihre Einreichung bewertet hat, finden Sie hier die "
-"Details."
+msgid "Once the moderator grades your submission, you'll find the details here."
+msgstr "Sobald der Moderator Ihre Einreichung bewertet hat, finden Sie hier die Details."
 
 #. Option for the 'Medium' (Select) field in DocType 'DLS Batch'
 #: dls/dls/doctype/dls_batch/dls_batch.json
@@ -4032,11 +3921,8 @@ msgid "Online"
 msgstr "Online"
 
 #: frontend/src/pages/ProgramForm.vue:157
-msgid ""
-"Only courses for which self learning is disabled can be added to program."
-msgstr ""
-"Nur Kurse, für die das Selbstlernen deaktiviert ist, können dem Programm "
-"hinzugefügt werden."
+msgid "Only courses for which self learning is disabled can be added to program."
+msgstr "Nur Kurse, für die das Selbstlernen deaktiviert ist, können dem Programm hinzugefügt werden."
 
 #: dls/templates/assignment.html:6
 msgid "Only files of type {0} will be accepted."
@@ -4107,14 +3993,8 @@ msgstr "Option 4"
 #. Description of the 'Unsplash Access Key' (Password) field in DocType 'DLS
 #. Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
-msgid ""
-"Optional. If this is set, students can pick a cover image from the unsplash "
-"library for their profile page. https://unsplash.com/documentation#getting-"
-"started."
-msgstr ""
-"Optional. Wenn dies festgelegt ist, können die Schüler ein Titelbild aus der"
-" Unsplash-Bibliothek für ihre Profilseite auswählen. "
-"https://unsplash.com/documentation#getting-started."
+msgid "Optional. If this is set, students can pick a cover image from the unsplash library for their profile page. https://unsplash.com/documentation#getting-started."
+msgstr "Optional. Wenn dies festgelegt ist, können die Schüler ein Titelbild aus der Unsplash-Bibliothek für ihre Profilseite auswählen. https://unsplash.com/documentation#getting-started."
 
 #. Label of the order_id (Data) field in DocType 'DLS Payment'
 #: dls/dls/doctype/dls_payment/dls_payment.json
@@ -4214,8 +4094,7 @@ msgid "Pass"
 msgstr "Bestehen"
 
 #. Label of the passing_percentage (Int) field in DocType 'DLS Quiz'
-#. Label of the passing_percentage (Int) field in DocType 'DLS Quiz
-#. Submission'
+#. Label of the passing_percentage (Int) field in DocType 'DLS Quiz Submission'
 #: dls/dls/doctype/dls_quiz/dls_quiz.json
 #: dls/dls/doctype/dls_quiz_submission/dls_quiz_submission.json
 #: frontend/src/pages/QuizForm.vue:72 frontend/src/pages/Quizzes.vue:129
@@ -4347,12 +4226,8 @@ msgid "Please Login"
 msgstr "Bitte einloggen"
 
 #: dls/dls/doctype/dls_settings/dls_settings.py:34
-msgid ""
-"Please add <a href='{0}'>{1}</a> for <a href='{2}'>{3}</a> to send calendar "
-"invites for evaluations."
-msgstr ""
-"Bitte fügen Sie <a href='{0}'>{1}</a> für <a href='{2}'>{3}</a> hinzu, um "
-"Kalendereinladungen für Bewertungen zu senden."
+msgid "Please add <a href='{0}'>{1}</a> for <a href='{2}'>{3}</a> to send calendar invites for evaluations."
+msgstr "Bitte fügen Sie <a href='{0}'>{1}</a> für <a href='{2}'>{3}</a> hinzu, um Kalendereinladungen für Bewertungen zu senden."
 
 #: dls/dls/user.py:75
 msgid "Please ask your administrator to verify your sign-up"
@@ -4364,22 +4239,15 @@ msgstr "Bitte überprüfen Sie Ihre E-Mail zur Bestätigung"
 
 #: dls/templates/emails/community_course_membership.html:7
 msgid "Please click on the following button to set your new password"
-msgstr ""
-"Bitte klicken Sie auf die folgende Schaltfläche, um Ihr neues Passwort "
-"festzulegen"
+msgstr "Bitte klicken Sie auf die folgende Schaltfläche, um Ihr neues Passwort festzulegen"
 
 #: dls/dls/utils.py:2037 dls/dls/utils.py:2041
-msgid ""
-"Please complete the previous courses in the program to enroll in this "
-"course."
-msgstr ""
-"Bitte absolvieren Sie die vorherigen Kurse im Programm, um sich für diesen "
-"Kurs anzumelden."
+msgid "Please complete the previous courses in the program to enroll in this course."
+msgstr "Bitte absolvieren Sie die vorherigen Kurse im Programm, um sich für diesen Kurs anzumelden."
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:192
 msgid "Please enable Zoom Settings to use this feature."
-msgstr ""
-"Bitte aktivieren Sie die Zoom-Einstellungen, um diese Funktion zu verwenden."
+msgstr "Bitte aktivieren Sie die Zoom-Einstellungen, um diese Funktion zu verwenden."
 
 #: frontend/src/components/CourseOutline.vue:322
 msgid "Please enroll for this course to view this lesson"
@@ -4387,8 +4255,7 @@ msgstr "Bitte melden Sie sich für diesen Kurs an, um diese Lektion anzuzeigen"
 
 #: frontend/src/components/Quiz.vue:13
 msgid "Please ensure that you complete all the questions in {0} minutes."
-msgstr ""
-"Bitte stellen Sie sicher, dass Sie alle Fragen in {0} Minuten beantworten."
+msgstr "Bitte stellen Sie sicher, dass Sie alle Fragen in {0} Minuten beantworten."
 
 #: frontend/src/components/Modals/LiveClassModal.vue:170
 msgid "Please enter a title."
@@ -4412,20 +4279,12 @@ msgid "Please enter your answer"
 msgstr "Bitte geben Sie Ihre Antwort ein"
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:58
-msgid ""
-"Please install the Payments App to create a paid batch. Refer to the "
-"documentation for more details. {0}"
-msgstr ""
-"Bitte installieren Sie die Zahlungs-App, um einen kostenpflichtigen Batch zu"
-" erstellen. Weitere Details finden Sie in der Dokumentation. {0}"
+msgid "Please install the Payments App to create a paid batch. Refer to the documentation for more details. {0}"
+msgstr "Bitte installieren Sie die Zahlungs-App, um einen kostenpflichtigen Batch zu erstellen. Weitere Details finden Sie in der Dokumentation. {0}"
 
 #: dls/dls/doctype/dls_course/dls_course.py:50
-msgid ""
-"Please install the Payments App to create a paid course. Refer to the "
-"documentation for more details. {0}"
-msgstr ""
-"Bitte installieren Sie die Zahlungs-App, um einen kostenpflichtigen Kurs zu "
-"erstellen. Weitere Details finden Sie in der Dokumentation. {0}"
+msgid "Please install the Payments App to create a paid course. Refer to the documentation for more details. {0}"
+msgstr "Bitte installieren Sie die Zahlungs-App, um einen kostenpflichtigen Kurs zu erstellen. Weitere Details finden Sie in der Dokumentation. {0}"
 
 #: frontend/src/pages/Billing.vue:254
 msgid "Please let us know where you heard about us from."
@@ -4435,8 +4294,7 @@ msgstr "Bitte lassen Sie uns wissen, woher Sie von uns erfahren haben."
 msgid "Please login to access the quiz."
 msgstr "Bitte melden Sie sich an, um auf das Quiz zuzugreifen."
 
-#: frontend/src/components/NoPermission.vue:25
-#: frontend/src/pages/Batch.vue:167
+#: frontend/src/components/NoPermission.vue:25 frontend/src/pages/Batch.vue:167
 msgid "Please login to access this page."
 msgstr "Bitte melden Sie sich an, um auf diese Seite zuzugreifen."
 
@@ -4447,8 +4305,7 @@ msgstr "Bitte melden Sie sich an, um mit der Zahlung fortzufahren."
 #: dls/dls/notification/certificate_request_reminder/certificate_request_reminder.html:7
 #: dls/templates/emails/certificate_request_notification.html:7
 msgid "Please prepare well and be on time for the evaluations."
-msgstr ""
-"Bitte bereiten Sie sich gut vor und seien Sie pünktlich zu den Bewertungen."
+msgstr "Bitte bereiten Sie sich gut vor und seien Sie pünktlich zu den Bewertungen."
 
 #: frontend/src/components/UpcomingEvaluations.vue:102
 msgid "Please schedule an evaluation to get certified."
@@ -4533,8 +4390,7 @@ msgstr "Veröffentlicht am"
 msgid "Preferred Function"
 msgstr "Bevorzugte Funktion"
 
-#. Label of the preferred_functions (Table MultiSelect) field in DocType
-#. 'User'
+#. Label of the preferred_functions (Table MultiSelect) field in DocType 'User'
 #: dls/fixtures/custom_field.json
 msgid "Preferred Functions"
 msgstr "Bevorzugte Funktionen"
@@ -4599,10 +4455,8 @@ msgstr "Privat"
 #. Description of the 'Hide my Private Information from others' (Check) field
 #. in DocType 'User'
 #: dls/fixtures/custom_field.json
-msgid ""
-"Private Information includes your Grade and Work Environment Preferences"
-msgstr ""
-"Private Informationen umfassen Ihre Note und Ihre Arbeitsumgebungsvorlieben"
+msgid "Private Information includes your Grade and Work Environment Preferences"
+msgstr "Private Informationen umfassen Ihre Note und Ihre Arbeitsumgebungsvorlieben"
 
 #: frontend/src/pages/Billing.vue:129
 msgid "Proceed to Payment"
@@ -4691,8 +4545,7 @@ msgstr "Veröffentlichte Kurse"
 msgid "Published On"
 msgstr "Veröffentlicht am"
 
-#. Label of the purchased_certificate (Check) field in DocType 'DLS
-#. Enrollment'
+#. Label of the purchased_certificate (Check) field in DocType 'DLS Enrollment'
 #: dls/dls/doctype/dls_enrollment/dls_enrollment.json
 msgid "Purchased Certificate"
 msgstr "Gekauftes Zertifikat"
@@ -4795,9 +4648,7 @@ msgstr "Quiz erfolgreich erstellt"
 
 #: dls/plugins.py:96
 msgid "Quiz is not available to Guest users. Please login to continue."
-msgstr ""
-"Quiz ist für Gastbenutzer nicht verfügbar. Bitte melden Sie sich an, um "
-"fortzufahren."
+msgstr "Quiz ist für Gastbenutzer nicht verfügbar. Bitte melden Sie sich an, um fortzufahren."
 
 #: frontend/src/pages/QuizForm.vue:361
 msgid "Quiz updated successfully"
@@ -4842,8 +4693,7 @@ msgstr "Bereit"
 msgid "Reference DocName"
 msgstr "Referenz Dokumentenname"
 
-#. Label of the reference_doctype (Link) field in DocType 'DLS Batch
-#. Timetable'
+#. Label of the reference_doctype (Link) field in DocType 'DLS Batch Timetable'
 #. Label of the reference_doctype (Link) field in DocType 'DLS Timetable
 #. Legend'
 #: dls/dls/doctype/dls_batch_timetable/dls_batch_timetable.json
@@ -4992,8 +4842,7 @@ msgstr "Zeilen {0} haben die gleichen Fragen."
 msgid "Run"
 msgstr "Ausführen"
 
-#. Label of the scorm_section (Section Break) field in DocType 'Course
-#. Chapter'
+#. Label of the scorm_section (Section Break) field in DocType 'Course Chapter'
 #: dls/dls/doctype/course_chapter/course_chapter.json
 msgid "SCORM"
 msgstr "SCORM"
@@ -5259,8 +5108,7 @@ msgstr "Anmelden"
 msgid "Signup Email"
 msgstr "Anmelde-E-Mail"
 
-#. Label of the signup_settings_tab (Tab Break) field in DocType 'DLS
-#. Settings'
+#. Label of the signup_settings_tab (Tab Break) field in DocType 'DLS Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
 msgid "Signup Settings"
 msgstr "Anmeldeeinstellungen"
@@ -5291,8 +5139,7 @@ msgstr "Fähigkeitsname"
 msgid "Skills"
 msgstr "Fähigkeiten"
 
-#: dls/templates/onboarding_header.html:6
-#: frontend/src/pages/PersonaForm.vue:75
+#: dls/templates/onboarding_header.html:6 frontend/src/pages/PersonaForm.vue:75
 msgid "Skip"
 msgstr "Überspringen"
 
@@ -5370,8 +5217,7 @@ msgstr "Lernen beginnen"
 #. Label of the start_time (Time) field in DocType 'DLS Batch'
 #. Label of the start_time (Time) field in DocType 'DLS Batch Old'
 #. Label of the start_time (Time) field in DocType 'DLS Batch Timetable'
-#. Label of the start_time (Time) field in DocType 'DLS Certificate
-#. Evaluation'
+#. Label of the start_time (Time) field in DocType 'DLS Certificate Evaluation'
 #. Label of the start_time (Time) field in DocType 'DLS Certificate Request'
 #. Label of the start_time (Time) field in DocType 'Evaluator Schedule'
 #. Label of the start_time (Time) field in DocType 'Scheduled Flow'
@@ -5481,11 +5327,8 @@ msgstr "Studierende erfolgreich gelöscht"
 
 #. Description of the 'Paid Batch' (Check) field in DocType 'DLS Batch'
 #: dls/dls/doctype/dls_batch/dls_batch.json
-msgid ""
-"Students will be enrolled in a paid batch once they complete the payment"
-msgstr ""
-"Studierende werden in einem kostenpflichtigen Kurs eingeschrieben, sobald "
-"sie die Zahlung abgeschlossen haben"
+msgid "Students will be enrolled in a paid batch once they complete the payment"
+msgstr "Studierende werden in einem kostenpflichtigen Kurs eingeschrieben, sobald sie die Zahlung abgeschlossen haben"
 
 #. Label of the subgroup (Link) field in DocType 'Cohort Join Request'
 #. Option for the 'Scope' (Select) field in DocType 'Cohort Web Page'
@@ -5534,13 +5377,8 @@ msgid "Submit and Continue"
 msgstr "Einreichen und Fortfahren"
 
 #: frontend/src/components/Modals/JobApplicationModal.vue:23
-msgid ""
-"Submit your resume to proceed with your application for this position. Upon "
-"submission, it will be shared with the job poster."
-msgstr ""
-"Reichen Sie Ihren Lebenslauf ein, um mit Ihrer Bewerbung für diese Stelle "
-"fortzufahren. Nach der Einreichung wird er mit dem Stelleninserenten "
-"geteilt."
+msgid "Submit your resume to proceed with your application for this position. Upon submission, it will be shared with the job poster."
+msgstr "Reichen Sie Ihren Lebenslauf ein, um mit Ihrer Bewerbung für diese Stelle fortzufahren. Nach der Einreichung wird er mit dem Stelleninserenten geteilt."
 
 #: dls/templates/livecode/extension_footer.html:85
 #: dls/templates/livecode/extension_footer.html:115
@@ -5548,6 +5386,7 @@ msgid "Submitted {0}"
 msgstr "Eingereicht am {0}"
 
 #: frontend/src/components/Assignment.vue:341
+#: frontend/src/components/Assignment.vue:355
 #: frontend/src/components/BatchCourses.vue:154
 #: frontend/src/components/BatchOverlay.vue:153
 #: frontend/src/components/BatchStudents.vue:325
@@ -5563,8 +5402,9 @@ msgstr "Eingereicht am {0}"
 #: frontend/src/components/Modals/Event.vue:310
 #: frontend/src/components/Modals/Question.vue:270
 #: frontend/src/components/Modals/Question.vue:321
-#: frontend/src/pages/CourseForm.vue:432
-#: frontend/src/pages/ProgramForm.vue:232
+#: frontend/src/pages/CourseForm.vue:394 frontend/src/pages/CourseForm.vue:411
+#: frontend/src/pages/CourseForm.vue:432 frontend/src/pages/LessonForm.vue:427
+#: frontend/src/pages/LessonForm.vue:451 frontend/src/pages/ProgramForm.vue:232
 #: frontend/src/pages/ProgramForm.vue:254
 #: frontend/src/pages/ProgramForm.vue:275
 #: frontend/src/pages/ProgramForm.vue:301 frontend/src/pages/QuizForm.vue:342
@@ -5714,30 +5554,20 @@ msgid "The batch is full. Please contact the Administrator."
 msgstr "Der Kurs ist voll. Bitte kontaktieren Sie den Administrator."
 
 #: dls/templates/emails/batch_start_reminder.html:6
-msgid ""
-"The batch you have enrolled for is starting tomorrow. Please be prepared and"
-" be on time for the session."
-msgstr ""
-"Der von Ihnen gebuchte Kurs beginnt morgen. Bitte seien Sie vorbereitet und "
-"pünktlich zur Sitzung."
+msgid "The batch you have enrolled for is starting tomorrow. Please be prepared and be on time for the session."
+msgstr "Der von Ihnen gebuchte Kurs beginnt morgen. Bitte seien Sie vorbereitet und pünktlich zur Sitzung."
 
 #: dls/templates/emails/dls_course_interest.html:5
 msgid "The course {0} is now available on {1}."
 msgstr "Der Kurs {0} ist jetzt auf {1} verfügbar."
 
 #: dls/dls/doctype/dls_certificate_request/dls_certificate_request.py:53
-msgid ""
-"The evaluator of this course is unavailable from {0} to {1}. Please select a"
-" date after {1}"
-msgstr ""
-"Der Bewerter dieses Kurses ist von {0} bis {1} nicht verfügbar. Bitte wählen"
-" Sie ein Datum nach {1}"
+msgid "The evaluator of this course is unavailable from {0} to {1}. Please select a date after {1}"
+msgstr "Der Bewerter dieses Kurses ist von {0} bis {1} nicht verfügbar. Bitte wählen Sie ein Datum nach {1}"
 
 #: dls/templates/quiz/quiz.html:24
-msgid ""
-"The quiz has a time limit. For each question you will be given {0} seconds."
-msgstr ""
-"Das Quiz hat eine Zeitbegrenzung. Für jede Frage haben Sie {0} Sekunden."
+msgid "The quiz has a time limit. For each question you will be given {0} seconds."
+msgstr "Das Quiz hat eine Zeitbegrenzung. Für jede Frage haben Sie {0} Sekunden."
 
 #: dls/dls/doctype/dls_certificate_request/dls_certificate_request.py:71
 msgid "The slot is already booked by another participant."
@@ -5748,43 +5578,24 @@ msgid "The status of your application has changed."
 msgstr "Der Status Ihrer Bewerbung hat sich geändert."
 
 #: frontend/src/pages/Batches.vue:83
-msgid ""
-"There are no batches matching the criteria. Keep an eye out, fresh learning "
-"experiences are on the way soon!"
-msgstr ""
-"Es gibt keine Chargen, die den Kriterien entsprechen. Halten Sie Ausschau, "
-"bald kommen neue Lernerfahrungen auf Sie zu!"
+msgid "There are no batches matching the criteria. Keep an eye out, fresh learning experiences are on the way soon!"
+msgstr "Es gibt keine Chargen, die den Kriterien entsprechen. Halten Sie Ausschau, bald kommen neue Lernerfahrungen auf Sie zu!"
 
 #: frontend/src/components/CreateOutline.vue:12
-msgid ""
-"There are no chapters in this course. Create and manage chapters from here."
-msgstr ""
-"In diesem Kurs gibt es keine Kapitel. Erstellen und verwalten Sie Kapitel "
-"von hier aus."
+msgid "There are no chapters in this course. Create and manage chapters from here."
+msgstr "In diesem Kurs gibt es keine Kapitel. Erstellen und verwalten Sie Kapitel von hier aus."
 
 #: frontend/src/pages/Courses.vue:79
-msgid ""
-"There are no courses matching the criteria. Keep an eye out, fresh learning "
-"experiences are on the way soon!"
-msgstr ""
-"Es gibt keine Kurse, die den Kriterien entsprechen. Halten Sie Ausschau, "
-"bald kommen neue Lernerfahrungen auf Sie zu!"
+msgid "There are no courses matching the criteria. Keep an eye out, fresh learning experiences are on the way soon!"
+msgstr "Es gibt keine Kurse, die den Kriterien entsprechen. Halten Sie Ausschau, bald kommen neue Lernerfahrungen auf Sie zu!"
 
 #: frontend/src/pages/Jobs.vue:84
-msgid ""
-"There are no jobs available at the moment. Open a job opportunity or check "
-"here again later."
-msgstr ""
-"Derzeit sind keine Stellen verfügbar. Eröffnen Sie eine Stellenmöglichkeit "
-"oder überprüfen Sie hier später erneut."
+msgid "There are no jobs available at the moment. Open a job opportunity or check here again later."
+msgstr "Derzeit sind keine Stellen verfügbar. Eröffnen Sie eine Stellenmöglichkeit oder überprüfen Sie hier später erneut."
 
 #: frontend/src/pages/Programs.vue:95
-msgid ""
-"There are no programs available at the moment. Keep an eye out, fresh "
-"learning experiences are on the way soon!"
-msgstr ""
-"Derzeit sind keine Programme verfügbar. Halten Sie Ausschau, bald kommen "
-"neue Lernerfahrungen auf Sie zu!"
+msgid "There are no programs available at the moment. Keep an eye out, fresh learning experiences are on the way soon!"
+msgstr "Derzeit sind keine Programme verfügbar. Halten Sie Ausschau, bald kommen neue Lernerfahrungen auf Sie zu!"
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:99
 msgid "There are no seats available in this batch."
@@ -5807,12 +5618,8 @@ msgid "There has been an update on your submission for assignment {0}"
 msgstr "Es gab ein Update zu Ihrer Einreichung für die Aufgabe {0}"
 
 #: dls/dls/doctype/dls_quiz_submission/dls_quiz_submission.py:59
-msgid ""
-"There has been an update on your submission. You have got a score of {0} for"
-" the quiz {1}"
-msgstr ""
-"Es gab ein Update zu Ihrer Einreichung. Sie haben eine Punktzahl von {0} für"
-" das Quiz {1} erhalten."
+msgid "There has been an update on your submission. You have got a score of {0} for the quiz {1}"
+msgstr "Es gab ein Update zu Ihrer Einreichung. Sie haben eine Punktzahl von {0} für das Quiz {1} erhalten."
 
 #. Description of the 'section_break_ubxi' (Section Break) field in DocType
 #. 'DLS Batch'
@@ -5844,41 +5651,26 @@ msgstr "Dieser Kurs ist kostenlos."
 #. Description of the 'Meta Description' (Small Text) field in DocType 'DLS
 #. Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
-msgid ""
-"This description will be shown on lists and pages without meta description"
-msgstr ""
-"Diese Beschreibung wird auf Listen und Seiten ohne Meta-Beschreibung "
-"angezeigt."
+msgid "This description will be shown on lists and pages without meta description"
+msgstr "Diese Beschreibung wird auf Listen und Seiten ohne Meta-Beschreibung angezeigt."
 
 #. Description of the 'Meta Image' (Attach Image) field in DocType 'DLS
 #. Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
-msgid ""
-"This image will be shown on lists and pages that don't have an image by "
-"default"
-msgstr ""
-"Dieses Bild wird auf Listen und Seiten angezeigt, die standardmäßig kein "
-"Bild haben."
+msgid "This image will be shown on lists and pages that don't have an image by default"
+msgstr "Dieses Bild wird auf Listen und Seiten angezeigt, die standardmäßig kein Bild haben."
 
 #: frontend/src/pages/Lesson.vue:15
 msgid "This lesson is locked"
 msgstr "Diese Lektion ist gesperrt."
 
 #: frontend/src/pages/Lesson.vue:20
-msgid ""
-"This lesson is not available for preview. Please enroll in the course to "
-"access it."
-msgstr ""
-"Diese Lektion ist nicht für die Vorschau verfügbar. Melden Sie sich im Kurs "
-"an, um darauf zuzugreifen."
+msgid "This lesson is not available for preview. Please enroll in the course to access it."
+msgstr "Diese Lektion ist nicht für die Vorschau verfügbar. Melden Sie sich im Kurs an, um darauf zuzugreifen."
 
 #: dls/dls/widgets/NoPreviewModal.html:16
-msgid ""
-"This lesson is not available for preview. Please join the course to access "
-"it."
-msgstr ""
-"Diese Lektion ist nicht für die Vorschau verfügbar. Treten Sie dem Kurs bei,"
-" um darauf zuzugreifen."
+msgid "This lesson is not available for preview. Please join the course to access it."
+msgstr "Diese Lektion ist nicht für die Vorschau verfügbar. Treten Sie dem Kurs bei, um darauf zuzugreifen."
 
 #: dls/templates/quiz/quiz.html:6 frontend/src/components/Quiz.vue:8
 msgid "This quiz consists of {0} questions."
@@ -5904,21 +5696,15 @@ msgstr "Zeit"
 msgid "Time Preference"
 msgstr "Zeitpräferenz"
 
-#. Description of the 'Lesson Completion Time (seconds)' (Int) field in
-#. DocType
+#. Description of the 'Lesson Completion Time (seconds)' (Int) field in DocType
 #. 'DLS Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
-msgid ""
-"Time in seconds a user needs to spend on a lesson before it can be marked as"
-" complete"
-msgstr ""
-"Zeit in Sekunden, die ein Benutzer auf einer Lektion verbringen muss, bevor "
-"sie als abgeschlossen markiert werden kann."
+msgid "Time in seconds a user needs to spend on a lesson before it can be marked as complete"
+msgstr "Zeit in Sekunden, die ein Benutzer auf einer Lektion verbringen muss, bevor sie als abgeschlossen markiert werden kann."
 
 #: frontend/src/components/Modals/LiveClassModal.vue:29
 msgid "Time must be in 24 hour format (HH:mm). Example 11:30 or 22:00"
-msgstr ""
-"Die Zeit muss im 24-Stunden-Format (HH:mm) sein. Beispiel 11:30 oder 22:00."
+msgstr "Die Zeit muss im 24-Stunden-Format (HH:mm) sein. Beispiel 11:30 oder 22:00."
 
 #. Label of the schedule_tab (Tab Break) field in DocType 'DLS Batch'
 #. Label of the timetable (Table) field in DocType 'DLS Batch'
@@ -6022,27 +5808,15 @@ msgstr "Bis Datum"
 
 #: dls/dls/utils.py:1789
 msgid "To join this batch, please contact the Administrator."
-msgstr ""
-"Um dieser Charge beizutreten, kontaktieren Sie bitte den Administrator."
+msgstr "Um dieser Charge beizutreten, kontaktieren Sie bitte den Administrator."
 
 #: frontend/src/components/LessonHelp.vue:50
-msgid ""
-"To upload Image, Video, Audio or PDF from your system, click on the add icon"
-" and select upload from the menu. Then choose the file you want to add to "
-"the lesson and it gets added to your lesson."
-msgstr ""
-"Um ein Bild, Video, Audio oder PDF von Ihrem System hochzuladen, klicken Sie"
-" auf das Hinzufügen-Symbol und wählen Sie im Menü 'Hochladen' aus. Wählen "
-"Sie dann die Datei aus, die Sie zur Lektion hinzufügen möchten, und sie wird"
-" Ihrer Lektion hinzugefügt."
+msgid "To upload Image, Video, Audio or PDF from your system, click on the add icon and select upload from the menu. Then choose the file you want to add to the lesson and it gets added to your lesson."
+msgstr "Um ein Bild, Video, Audio oder PDF von Ihrem System hochzuladen, klicken Sie auf das Hinzufügen-Symbol und wählen Sie im Menü 'Hochladen' aus. Wählen Sie dann die Datei aus, die Sie zur Lektion hinzufügen möchten, und sie wird Ihrer Lektion hinzugefügt."
 
 #: dls/dls/user.py:41
-msgid ""
-"Too many users signed up recently, so the registration is disabled. Please "
-"try back in an hour"
-msgstr ""
-"In letzter Zeit haben sich zu viele Benutzer angemeldet, daher ist die "
-"Registrierung deaktiviert. Bitte versuchen Sie es in einer Stunde erneut."
+msgid "Too many users signed up recently, so the registration is disabled. Please try back in an hour"
+msgstr "In letzter Zeit haben sich zu viele Benutzer angemeldet, daher ist die Registrierung deaktiviert. Bitte versuchen Sie es in einer Stunde erneut."
 
 #: frontend/src/pages/Billing.vue:53
 msgid "Total"
@@ -6096,8 +5870,7 @@ msgstr "Twitter"
 #: dls/templates/assessments.html:14
 #: frontend/src/components/Modals/AssessmentModal.vue:22
 #: frontend/src/components/Modals/Question.vue:54
-#: frontend/src/pages/Assignments.vue:29
-#: frontend/src/pages/Assignments.vue:165
+#: frontend/src/pages/Assignments.vue:29 frontend/src/pages/Assignments.vue:165
 #: frontend/src/pages/JobCreation.vue:33 frontend/src/pages/Jobs.vue:55
 msgid "Type"
 msgstr "Typ"
@@ -6118,8 +5891,7 @@ msgstr "UK-Bewertung (z.B. 1st, 2:2)"
 msgid "URL"
 msgstr "URL"
 
-#. Label of the unavailability_section (Section Break) field in DocType
-#. 'Course
+#. Label of the unavailability_section (Section Break) field in DocType 'Course
 #. Evaluator'
 #: dls/dls/doctype/course_evaluator/course_evaluator.json
 msgid "Unavailability"
@@ -6127,9 +5899,7 @@ msgstr "Nicht verfügbarkeit"
 
 #: dls/dls/doctype/course_evaluator/course_evaluator.py:29
 msgid "Unavailable From Date cannot be greater than Unavailable To Date"
-msgstr ""
-"Das Datum der Nichtverfügbarkeit ab kann nicht größer sein als das Datum der"
-" Nichtverfügbarkeit bis"
+msgstr "Das Datum der Nichtverfügbarkeit ab kann nicht größer sein als das Datum der Nichtverfügbarkeit bis"
 
 #. Option for the 'Status' (Select) field in DocType 'DLS Course'
 #: dls/dls/doctype/dls_course/dls_course.json
@@ -6310,19 +6080,12 @@ msgid "Volunteering or Internship"
 msgstr "Freiwilligenarbeit oder Praktikum"
 
 #: dls/templates/emails/batch_confirmation.html:6
-msgid ""
-"We are pleased to inform you that you have been enrolled in our upcoming "
-"batch. Congratulations!"
-msgstr ""
-"Wir freuen uns, Ihnen mitteilen zu können, dass Sie in unserem "
-"bevorstehenden Batch eingeschrieben wurden. Herzlichen Glückwunsch!"
+msgid "We are pleased to inform you that you have been enrolled in our upcoming batch. Congratulations!"
+msgstr "Wir freuen uns, Ihnen mitteilen zu können, dass Sie in unserem bevorstehenden Batch eingeschrieben wurden. Herzlichen Glückwunsch!"
 
 #: dls/templates/emails/payment_reminder.html:7
-msgid ""
-"We have a limited number of seats, and they won't be available for long!"
-msgstr ""
-"Wir haben nur eine begrenzte Anzahl von Plätzen, und sie werden nicht lange "
-"verfügbar sein!"
+msgid "We have a limited number of seats, and they won't be available for long!"
+msgstr "Wir haben nur eine begrenzte Anzahl von Plätzen, und sie werden nicht lange verfügbar sein!"
 
 #: dls/templates/emails/payment_reminder.html:4
 msgid "We noticed that you started enrolling in the"
@@ -6352,25 +6115,15 @@ msgstr "Was bedeutet Vorschau einschließen?"
 
 #: dls/templates/courses_under_review.html:15
 msgid "When a course gets submitted for review, it will be listed here."
-msgstr ""
-"Wenn ein Kurs zur Überprüfung eingereicht wird, wird er hier aufgeführt."
+msgstr "Wenn ein Kurs zur Überprüfung eingereicht wird, wird er hier aufgeführt."
 
 #: frontend/src/pages/Billing.vue:106
 msgid "Where did you hear about us?"
 msgstr "Wo haben Sie von uns gehört?"
 
 #: dls/templates/emails/certification.html:10
-msgid ""
-"With this certification, you can now showcase your updated skills and share "
-"your achievement with your colleagues and on LinkedIn. To access your "
-"certificate, please click on the link provided below. Make sure you are "
-"logged in to the portal."
-msgstr ""
-"Mit diesem Zertifikat können Sie jetzt Ihre aktualisierten Fähigkeiten "
-"präsentieren und Ihren Erfolg mit Ihren Kollegen und auf LinkedIn teilen. Um"
-" auf Ihr Zertifikat zuzugreifen, klicken Sie bitte auf den unten "
-"bereitgestellten Link. Stellen Sie sicher, dass Sie im Portal angemeldet "
-"sind."
+msgid "With this certification, you can now showcase your updated skills and share your achievement with your colleagues and on LinkedIn. To access your certificate, please click on the link provided below. Make sure you are logged in to the portal."
+msgstr "Mit diesem Zertifikat können Sie jetzt Ihre aktualisierten Fähigkeiten präsentieren und Ihren Erfolg mit Ihren Kollegen und auf LinkedIn teilen. Um auf Ihr Zertifikat zuzugreifen, klicken Sie bitte auf den unten bereitgestellten Link. Stellen Sie sicher, dass Sie im Portal angemeldet sind."
 
 #. Option for the 'Status' (Select) field in DocType 'DLS Mentor Request'
 #: dls/dls/doctype/dls_mentor_request/dls_mentor_request.json
@@ -6389,8 +6142,7 @@ msgstr "Arbeitsumgebung"
 msgid "Work Experience"
 msgstr "Berufserfahrung"
 
-#. Label of the work_experience_details (Section Break) field in DocType
-#. 'User'
+#. Label of the work_experience_details (Section Break) field in DocType 'User'
 #: dls/fixtures/custom_field.json
 msgid "Work Experience Details"
 msgstr "Details zur Berufserfahrung"
@@ -6414,12 +6166,8 @@ msgid "You already have an evaluation on {0} at {1} for the course {2}."
 msgstr "Sie haben bereits eine Bewertung am {0} um {1} für den Kurs {2}."
 
 #: frontend/src/pages/CourseCertification.vue:14
-msgid ""
-"You are already certified for this course. Click on the card below to open "
-"your certificate."
-msgstr ""
-"Sie sind bereits für diesen Kurs zertifiziert. Klicken Sie auf die Karte "
-"unten, um Ihr Zertifikat zu öffnen."
+msgid "You are already certified for this course. Click on the card below to open your certificate."
+msgstr "Sie sind bereits für diesen Kurs zertifiziert. Klicken Sie auf die Karte unten, um Ihr Zertifikat zu öffnen."
 
 #: dls/dls/api.py:260
 msgid "You are already enrolled for this batch."
@@ -6430,11 +6178,8 @@ msgid "You are already enrolled for this course."
 msgstr "Sie sind bereits für diesen Kurs eingeschrieben."
 
 #: frontend/src/pages/Batch.vue:161
-msgid ""
-"You are not a member of this batch. Please checkout our upcoming batches."
-msgstr ""
-"Sie sind kein Mitglied dieses Batches. Bitte schauen Sie sich unsere "
-"bevorstehenden Batches an."
+msgid "You are not a member of this batch. Please checkout our upcoming batches."
+msgstr "Sie sind kein Mitglied dieses Batches. Bitte schauen Sie sich unsere bevorstehenden Batches an."
 
 #: dls/dls/doctype/dls_batch_old/dls_batch_old.py:20
 msgid "You are not a mentor of the course {0}"
@@ -6445,17 +6190,13 @@ msgid "You are not enrolled"
 msgstr "Sie sind nicht eingeschrieben"
 
 #: frontend/src/pages/SCORMChapter.vue:22
-msgid ""
-"You are not enrolled in this course. Please enroll to access this lesson."
-msgstr ""
-"Sie sind nicht in diesem Kurs eingeschrieben. Bitte schreiben Sie sich ein, "
-"um auf diese Lektion zuzugreifen."
+msgid "You are not enrolled in this course. Please enroll to access this lesson."
+msgstr "Sie sind nicht in diesem Kurs eingeschrieben. Bitte schreiben Sie sich ein, um auf diese Lektion zuzugreifen."
 
 #: dls/templates/emails/dls_course_interest.html:13
 #: dls/templates/emails/dls_invite_request_approved.html:11
 msgid "You can also copy-paste following link in your browser"
-msgstr ""
-"Sie können auch den folgenden Link in Ihren Browser kopieren und einfügen"
+msgstr "Sie können auch den folgenden Link in Ihren Browser kopieren und einfügen"
 
 #: dls/templates/quiz/quiz.html:18
 msgid "You can attempt this quiz only {0} {1}"
@@ -6492,28 +6233,19 @@ msgstr "Du hast"
 #: frontend/src/components/Quiz.vue:241
 #, python-format
 msgid "You got {0}% correct answers with a score of {1} out of {2}"
-msgstr ""
-"Du hast {0}% richtige Antworten mit einer Punktzahl von {1} von {2} erhalten"
+msgstr "Du hast {0}% richtige Antworten mit einer Punktzahl von {1} von {2} erhalten"
 
 #: dls/templates/emails/live_class_reminder.html:6
-msgid ""
-"You have a live class scheduled tomorrow. Please be prepared and be on time "
-"for the session."
-msgstr ""
-"Sie haben morgen einen Live-Kurs geplant. Bitte seien Sie vorbereitet und "
-"pünktlich zur Sitzung."
+msgid "You have a live class scheduled tomorrow. Please be prepared and be on time for the session."
+msgstr "Sie haben morgen einen Live-Kurs geplant. Bitte seien Sie vorbereitet und pünktlich zur Sitzung."
 
 #: dls/job/doctype/dls_job_application/dls_job_application.py:22
 msgid "You have already applied for this job."
 msgstr "Sie haben sich bereits für diese Stelle beworben."
 
 #: dls/templates/quiz/quiz.html:43 frontend/src/components/Quiz.vue:72
-msgid ""
-"You have already exceeded the maximum number of attempts allowed for this "
-"quiz."
-msgstr ""
-"Sie haben bereits die maximale Anzahl von Versuchen für dieses Quiz "
-"überschritten."
+msgid "You have already exceeded the maximum number of attempts allowed for this quiz."
+msgstr "Sie haben bereits die maximale Anzahl von Versuchen für dieses Quiz überschritten."
 
 #: dls/dls/api.py:279
 msgid "You have already purchased the certificate for this course."
@@ -6533,43 +6265,27 @@ msgstr "Sie wurden in diesem Kurs eingeschrieben"
 
 #: dls/dls/doctype/dls_quiz_submission/dls_quiz_submission.py:30
 msgid "You have exceeded the maximum number of attempts ({0}) for this quiz"
-msgstr ""
-"Sie haben die maximale Anzahl von Versuchen ({0}) für dieses Quiz "
-"überschritten"
+msgstr "Sie haben die maximale Anzahl von Versuchen ({0}) für dieses Quiz überschritten"
 
 #: dls/dls/doctype/dls_quiz_submission/dls_quiz_submission.py:56
 msgid "You have got a score of {0} for the quiz {1}"
 msgstr "Sie haben eine Punktzahl von {0} für das Quiz {1} erhalten"
 
 #: frontend/src/pages/Assignments.vue:57
-msgid ""
-"You have not created any assignments yet. To create a new assignment, click "
-"on the \"New\" button above."
-msgstr ""
-"Sie haben noch keine Aufgaben erstellt. Um eine neue Aufgabe zu erstellen, "
-"klicken Sie auf die Schaltfläche \"Neu\" oben."
+msgid "You have not created any assignments yet. To create a new assignment, click on the \"New\" button above."
+msgstr "Sie haben noch keine Aufgaben erstellt. Um eine neue Aufgabe zu erstellen, klicken Sie auf die Schaltfläche \"Neu\" oben."
 
 #: frontend/src/pages/Quizzes.vue:65
-msgid ""
-"You have not created any quizzes yet. To create a new quiz, click on the "
-"\"New Quiz\" button above."
-msgstr ""
-"Sie haben noch keine Quizfragen erstellt. Um ein neues Quiz zu erstellen, "
-"klicken Sie auf die Schaltfläche \"Neues Quiz\" oben."
+msgid "You have not created any quizzes yet. To create a new quiz, click on the \"New Quiz\" button above."
+msgstr "Sie haben noch keine Quizfragen erstellt. Um ein neues Quiz zu erstellen, klicken Sie auf die Schaltfläche \"Neues Quiz\" oben."
 
-#: dls/dls/widgets/NoPreviewModal.html:12
-#: dls/public/js/common_functions.js:126
-msgid ""
-"You have opted to be notified for this course. You will receive an email "
-"when the course becomes available."
-msgstr ""
-"Sie haben sich dafür entschieden, über diesen Kurs benachrichtigt zu werden."
-" Sie erhalten eine E-Mail, wenn der Kurs verfügbar ist."
+#: dls/dls/widgets/NoPreviewModal.html:12 dls/public/js/common_functions.js:126
+msgid "You have opted to be notified for this course. You will receive an email when the course becomes available."
+msgstr "Sie haben sich dafür entschieden, über diesen Kurs benachrichtigt zu werden. Sie erhalten eine E-Mail, wenn der Kurs verfügbar ist."
 
 #: frontend/src/components/CourseCardOverlay.vue:172
 msgid "You need to login first to enroll for this course"
-msgstr ""
-"Sie müssen sich zuerst anmelden, um sich für diesen Kurs einzuschreiben"
+msgstr "Sie müssen sich zuerst anmelden, um sich für diesen Kurs einzuschreiben"
 
 #: dls/templates/quiz/quiz.html:11 frontend/src/components/Quiz.vue:27
 #, python-format
@@ -6577,12 +6293,8 @@ msgid "You will have to get {0}% correct answers in order to pass the quiz."
 msgstr "Sie müssen {0}% richtige Antworten erhalten, um das Quiz zu bestehen."
 
 #: dls/templates/emails/mentor_request_creation_email.html:4
-msgid ""
-"You've applied to become a mentor for this course. Your request is currently"
-" under review."
-msgstr ""
-"Sie haben sich als Mentor für diesen Kurs beworben. Ihre Anfrage wird "
-"derzeit überprüft."
+msgid "You've applied to become a mentor for this course. Your request is currently under review."
+msgstr "Sie haben sich als Mentor für diesen Kurs beworben. Ihre Anfrage wird derzeit überprüft."
 
 #: frontend/src/components/Assignment.vue:58
 msgid "You've successfully submitted the assignment."
@@ -6606,12 +6318,8 @@ msgstr "Ihr Konto wurde erfolgreich erstellt!"
 #. Description of the 'OpenAI API Key' (Password) field in DocType 'DLS
 #. Settings'
 #: dls/dls/doctype/dls_settings/dls_settings.json
-msgid ""
-"Your OpenAI API key. You can get this from "
-"https://platform.openai.com/account/api-keys"
-msgstr ""
-"Ihr OpenAI-API-Schlüssel. Sie können diesen von "
-"https://platform.openai.com/account/api-keys erhalten"
+msgid "Your OpenAI API key. You can get this from https://platform.openai.com/account/api-keys"
+msgstr "Ihr OpenAI-API-Schlüssel. Sie können diesen von https://platform.openai.com/account/api-keys erhalten"
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:423
 msgid "Your batch {0} is starting tomorrow"
@@ -6627,8 +6335,7 @@ msgstr "Ihr Kurs am {0} ist heute"
 
 #: dls/dls/notification/certificate_request_reminder/certificate_request_reminder.html:3
 #: dls/templates/emails/certificate_request_notification.html:3
-msgid ""
-"Your evaluation for the course {0} has been scheduled on {1} at {2} {3}."
+msgid "Your evaluation for the course {0} has been scheduled on {1} at {2} {3}."
 msgstr "Ihre Bewertung für den Kurs {0} wurde für {1} um {2} {3} geplant."
 
 #: dls/dls/doctype/dls_certificate_request/dls_certificate_request.py:126
@@ -6648,13 +6355,8 @@ msgid "Your score is"
 msgstr "Ihre Punktzahl ist"
 
 #: frontend/src/components/Quiz.vue:234
-msgid ""
-"Your submission has been successfully saved. The instructor will review and "
-"grade it shortly, and you'll be notified of your final result."
-msgstr ""
-"Ihre Einreichung wurde erfolgreich gespeichert. Der Dozent wird sie in Kürze"
-" überprüfen und bewerten, und Sie werden über Ihr Endergebnis "
-"benachrichtigt."
+msgid "Your submission has been successfully saved. The instructor will review and grade it shortly, and you'll be notified of your final result."
+msgstr "Ihre Einreichung wurde erfolgreich gespeichert. Der Dozent wird sie in Kürze überprüfen und bewerten, und Sie werden über Ihr Endergebnis benachrichtigt."
 
 #. Name of a DocType
 #: dls/dls/doctype/zoom_settings/zoom_settings.json
@@ -6830,3 +6532,4 @@ msgstr "{} Bestanden"
 #: dls/dls/workspace/dls/dls.json
 msgid "{} Published"
 msgstr "{} Veröffentlicht"
+

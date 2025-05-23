@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DLS VERSION\n"
 "Report-Msgid-Bugs-To: raffaelprem@gmail.com\n"
-"POT-Creation-Date: 2025-05-23 12:26+0000\n"
-"PO-Revision-Date: 2025-05-23 12:26+0000\n"
+"POT-Creation-Date: 2025-05-23 13:17+0000\n"
+"PO-Revision-Date: 2025-05-23 13:17+0000\n"
 "Last-Translator: raffaelprem@gmail.com\n"
 "Language-Team: raffaelprem@gmail.com\n"
 "MIME-Version: 1.0\n"
@@ -491,6 +491,10 @@ msgstr ""
 
 #: dls/dls/doctype/dls_assignment_submission/dls_assignment_submission.py:24
 msgid "Assignment for Lesson {0} by {1} already exists."
+msgstr ""
+
+#: frontend/src/components/Assignment.vue:355
+msgid "Assignment submitted successfully."
 msgstr ""
 
 #: frontend/src/components/Modals/AssignmentForm.vue:129
@@ -1417,12 +1421,20 @@ msgstr ""
 msgid "Course already added to the batch."
 msgstr ""
 
+#: frontend/src/pages/CourseForm.vue:411
+msgid "Course created successfully"
+msgstr ""
+
 #: frontend/src/pages/CourseForm.vue:432
 msgid "Course deleted successfully"
 msgstr ""
 
 #: frontend/src/pages/ProgramForm.vue:301
 msgid "Course moved successfully"
+msgstr ""
+
+#: frontend/src/pages/CourseForm.vue:394
+msgid "Course updated successfully"
 msgstr ""
 
 #: dls/dls/doctype/dls_batch/dls_batch.py:49
@@ -1445,6 +1457,7 @@ msgstr ""
 #: frontend/src/pages/BatchDetail.vue:24 frontend/src/pages/BatchDetail.vue:73
 #: frontend/src/pages/CourseCertification.vue:127
 #: frontend/src/pages/CourseCompletions.vue:222
+#: frontend/src/pages/CourseDetail.vue:133
 #: frontend/src/pages/CourseForm.vue:520 frontend/src/pages/Courses.vue:336
 #: frontend/src/pages/Courses.vue:343 frontend/src/pages/Lesson.vue:331
 #: frontend/src/pages/Statistics.vue:21
@@ -2250,6 +2263,7 @@ msgid "Enter the correct answer"
 msgstr ""
 
 #: frontend/src/components/Assignment.vue:287
+#: frontend/src/components/Assignment.vue:373
 #: frontend/src/components/Modals/AnnouncementModal.vue:105
 #: frontend/src/components/Modals/BulkCertificates.vue:115
 #: frontend/src/components/Modals/ChapterModal.vue:160
@@ -2261,8 +2275,8 @@ msgstr ""
 #: frontend/src/components/Modals/StudentModal.vue:73
 #: frontend/src/components/Quiz.vue:592
 #: frontend/src/components/SettingDetails.vue:64
-#: frontend/src/pages/Billing.vue:262 frontend/src/pages/QuizForm.vue:349
-#: frontend/src/pages/QuizForm.vue:364
+#: frontend/src/pages/Billing.vue:262 frontend/src/pages/CourseForm.vue:397
+#: frontend/src/pages/QuizForm.vue:349 frontend/src/pages/QuizForm.vue:364
 #: frontend/src/pages/QuizSubmission.vue:150
 msgid "Error"
 msgstr ""
@@ -3150,6 +3164,14 @@ msgstr ""
 #. Label of the lesson_title (Data) field in DocType 'Scheduled Flow'
 #: dls/dls/doctype/scheduled_flow/scheduled_flow.json
 msgid "Lesson Title"
+msgstr ""
+
+#: frontend/src/pages/LessonForm.vue:427
+msgid "Lesson created successfully"
+msgstr ""
+
+#: frontend/src/pages/LessonForm.vue:451
+msgid "Lesson updated successfully"
 msgstr ""
 
 #. Label of the lessons (Table) field in DocType 'Course Chapter'
@@ -5364,6 +5386,7 @@ msgid "Submitted {0}"
 msgstr ""
 
 #: frontend/src/components/Assignment.vue:341
+#: frontend/src/components/Assignment.vue:355
 #: frontend/src/components/BatchCourses.vue:154
 #: frontend/src/components/BatchOverlay.vue:153
 #: frontend/src/components/BatchStudents.vue:325
@@ -5379,7 +5402,9 @@ msgstr ""
 #: frontend/src/components/Modals/Event.vue:310
 #: frontend/src/components/Modals/Question.vue:270
 #: frontend/src/components/Modals/Question.vue:321
-#: frontend/src/pages/CourseForm.vue:432 frontend/src/pages/ProgramForm.vue:232
+#: frontend/src/pages/CourseForm.vue:394 frontend/src/pages/CourseForm.vue:411
+#: frontend/src/pages/CourseForm.vue:432 frontend/src/pages/LessonForm.vue:427
+#: frontend/src/pages/LessonForm.vue:451 frontend/src/pages/ProgramForm.vue:232
 #: frontend/src/pages/ProgramForm.vue:254
 #: frontend/src/pages/ProgramForm.vue:275
 #: frontend/src/pages/ProgramForm.vue:301 frontend/src/pages/QuizForm.vue:342
