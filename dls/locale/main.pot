@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DLS VERSION\n"
 "Report-Msgid-Bugs-To: raffaelprem@gmail.com\n"
-"POT-Creation-Date: 2025-05-23 13:17+0000\n"
-"PO-Revision-Date: 2025-05-23 13:17+0000\n"
+"POT-Creation-Date: 2025-05-23 15:27+0000\n"
+"PO-Revision-Date: 2025-05-23 15:27+0000\n"
 "Last-Translator: raffaelprem@gmail.com\n"
 "Language-Team: raffaelprem@gmail.com\n"
 "MIME-Version: 1.0\n"
@@ -81,7 +81,7 @@ msgstr ""
 msgid "<span style=\"font-size: 18px;\"><b>Statistics</b></span>"
 msgstr ""
 
-#: dls/dls/doctype/dls_course/dls_course.py:58
+#: dls/dls/doctype/dls_course/dls_course.py:50
 msgid "A course cannot have both paid certificate and certificate of completion."
 msgstr ""
 
@@ -331,11 +331,11 @@ msgstr ""
 msgid "Amount and currency are required for paid batches."
 msgstr ""
 
-#: dls/dls/doctype/dls_course/dls_course.py:69
+#: dls/dls/doctype/dls_course/dls_course.py:61
 msgid "Amount and currency are required for paid certificates."
 msgstr ""
 
-#: dls/dls/doctype/dls_course/dls_course.py:66
+#: dls/dls/doctype/dls_course/dls_course.py:58
 msgid "Amount and currency are required for paid courses."
 msgstr ""
 
@@ -772,6 +772,10 @@ msgstr ""
 msgid "Casual Wear"
 msgstr ""
 
+#: frontend/src/components/Categories.vue:5
+msgid "Categories"
+msgstr ""
+
 #. Label of the category (Link) field in DocType 'DLS Batch'
 #. Label of the category (Data) field in DocType 'DLS Category'
 #. Label of the category (Link) field in DocType 'DLS Course'
@@ -814,7 +818,7 @@ msgstr ""
 msgid "Certificate saved successfully"
 msgstr ""
 
-#: frontend/src/pages/Profile.vue:197
+#: frontend/src/pages/Profile.vue:199
 #: frontend/src/pages/ProfileCertificates.vue:4
 msgid "Certificates"
 msgstr ""
@@ -1328,8 +1332,8 @@ msgstr ""
 #: frontend/src/components/AppSidebar.vue:584
 #: frontend/src/components/AppSidebar.vue:587
 #: frontend/src/pages/CourseCompletions.vue:8
-#: frontend/src/pages/CourseCompletions.vue:226
-#: frontend/src/pages/CourseCompletions.vue:232
+#: frontend/src/pages/CourseCompletions.vue:230
+#: frontend/src/pages/CourseCompletions.vue:236
 msgid "Course Completions"
 msgstr ""
 
@@ -1421,11 +1425,11 @@ msgstr ""
 msgid "Course already added to the batch."
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:411
+#: frontend/src/pages/CourseForm.vue:404
 msgid "Course created successfully"
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:432
+#: frontend/src/pages/CourseForm.vue:425
 msgid "Course deleted successfully"
 msgstr ""
 
@@ -1433,7 +1437,7 @@ msgstr ""
 msgid "Course moved successfully"
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:394
+#: frontend/src/pages/CourseForm.vue:387
 msgid "Course updated successfully"
 msgstr ""
 
@@ -1456,9 +1460,9 @@ msgstr ""
 #: frontend/src/components/Modals/BatchStudentProgress.vue:79
 #: frontend/src/pages/BatchDetail.vue:24 frontend/src/pages/BatchDetail.vue:73
 #: frontend/src/pages/CourseCertification.vue:127
-#: frontend/src/pages/CourseCompletions.vue:222
+#: frontend/src/pages/CourseCompletions.vue:226
 #: frontend/src/pages/CourseDetail.vue:133
-#: frontend/src/pages/CourseForm.vue:520 frontend/src/pages/Courses.vue:336
+#: frontend/src/pages/CourseForm.vue:513 frontend/src/pages/Courses.vue:336
 #: frontend/src/pages/Courses.vue:343 frontend/src/pages/Lesson.vue:331
 #: frontend/src/pages/Statistics.vue:21
 msgid "Courses"
@@ -1895,7 +1899,7 @@ msgstr ""
 
 #: frontend/src/components/CourseOutline.vue:245
 #: frontend/src/components/CourseOutline.vue:303
-#: frontend/src/pages/CourseForm.vue:445
+#: frontend/src/pages/CourseForm.vue:438
 msgid "Delete"
 msgstr ""
 
@@ -1903,7 +1907,7 @@ msgstr ""
 msgid "Delete Chapter"
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:439
+#: frontend/src/pages/CourseForm.vue:432
 msgid "Delete Course"
 msgstr ""
 
@@ -1915,7 +1919,7 @@ msgstr ""
 msgid "Delete this lesson?"
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:440
+#: frontend/src/pages/CourseForm.vue:433
 msgid "Deleting the course will also delete all its chapters and lessons. Are you sure you want to delete this course?"
 msgstr ""
 
@@ -2069,7 +2073,7 @@ msgstr ""
 msgid "Edit Chapter"
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:531
+#: frontend/src/pages/CourseForm.vue:524
 msgid "Edit Course"
 msgstr ""
 
@@ -2275,7 +2279,7 @@ msgstr ""
 #: frontend/src/components/Modals/StudentModal.vue:73
 #: frontend/src/components/Quiz.vue:592
 #: frontend/src/components/SettingDetails.vue:64
-#: frontend/src/pages/Billing.vue:262 frontend/src/pages/CourseForm.vue:397
+#: frontend/src/pages/Billing.vue:262 frontend/src/pages/CourseForm.vue:390
 #: frontend/src/pages/QuizForm.vue:349 frontend/src/pages/QuizForm.vue:364
 #: frontend/src/pages/QuizSubmission.vue:150
 msgid "Error"
@@ -2357,7 +2361,7 @@ msgstr ""
 msgid "Evaluator is Unavailable"
 msgstr ""
 
-#: dls/dls/doctype/dls_course/dls_course.py:62
+#: dls/dls/doctype/dls_course/dls_course.py:54
 msgid "Evaluator is required for paid certificates."
 msgstr ""
 
@@ -3115,7 +3119,7 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
-#: frontend/src/pages/CourseCompletions.vue:181
+#: frontend/src/pages/CourseCompletions.vue:185
 msgid "Last Updated"
 msgstr ""
 
@@ -3604,6 +3608,7 @@ msgstr ""
 #: dls/dls/doctype/dls_program/dls_program.json
 #: dls/dls/doctype/dls_question/dls_question.json
 #: dls/dls/doctype/dls_quiz/dls_quiz.json
+#: dls/dls/doctype/dls_settings/dls_settings.json
 #: dls/dls/doctype/dls_source/dls_source.json
 #: dls/dls/doctype/dls_timetable_template/dls_timetable_template.json
 #: frontend/src/pages/ProfileRoles.vue:10
@@ -3666,8 +3671,8 @@ msgstr ""
 msgid "New Batch"
 msgstr ""
 
-#: dls/www/dls.py:85 frontend/src/pages/CourseForm.vue:531
-#: frontend/src/pages/CourseForm.vue:539
+#: dls/www/dls.py:85 frontend/src/pages/CourseForm.vue:524
+#: frontend/src/pages/CourseForm.vue:532
 msgid "New Course"
 msgstr ""
 
@@ -3928,7 +3933,7 @@ msgstr ""
 msgid "Only files of type {0} will be accepted."
 msgstr ""
 
-#: frontend/src/pages/CourseForm.vue:469 frontend/src/utils/index.js:566
+#: frontend/src/pages/CourseForm.vue:462 frontend/src/utils/index.js:566
 msgid "Only image file is allowed."
 msgstr ""
 
@@ -4192,7 +4197,7 @@ msgstr ""
 msgid "Pending"
 msgstr ""
 
-#: frontend/src/pages/Profile.vue:205
+#: frontend/src/pages/Profile.vue:207
 msgid "People"
 msgstr ""
 
@@ -4282,7 +4287,7 @@ msgstr ""
 msgid "Please install the Payments App to create a paid batch. Refer to the documentation for more details. {0}"
 msgstr ""
 
-#: dls/dls/doctype/dls_course/dls_course.py:50
+#: dls/dls/doctype/dls_course/dls_course.py:42
 msgid "Please install the Payments App to create a paid course. Refer to the documentation for more details. {0}"
 msgstr ""
 
@@ -4503,7 +4508,7 @@ msgstr ""
 #: dls/dls/doctype/dls_program_member/dls_program_member.json
 #: frontend/src/components/BatchStudents.vue:75
 #: frontend/src/components/Modals/BatchStudentProgress.vue:82
-#: frontend/src/pages/CourseCompletions.vue:176
+#: frontend/src/pages/CourseCompletions.vue:180
 msgid "Progress"
 msgstr ""
 
@@ -4809,7 +4814,7 @@ msgid "Role Preference"
 msgstr ""
 
 #: frontend/src/components/AppSidebar.vue:554
-#: frontend/src/pages/Profile.vue:198
+#: frontend/src/pages/Profile.vue:200
 msgid "Roles"
 msgstr ""
 
@@ -5402,8 +5407,8 @@ msgstr ""
 #: frontend/src/components/Modals/Event.vue:310
 #: frontend/src/components/Modals/Question.vue:270
 #: frontend/src/components/Modals/Question.vue:321
-#: frontend/src/pages/CourseForm.vue:394 frontend/src/pages/CourseForm.vue:411
-#: frontend/src/pages/CourseForm.vue:432 frontend/src/pages/LessonForm.vue:427
+#: frontend/src/pages/CourseForm.vue:387 frontend/src/pages/CourseForm.vue:404
+#: frontend/src/pages/CourseForm.vue:425 frontend/src/pages/LessonForm.vue:427
 #: frontend/src/pages/LessonForm.vue:451 frontend/src/pages/ProgramForm.vue:232
 #: frontend/src/pages/ProgramForm.vue:254
 #: frontend/src/pages/ProgramForm.vue:275
