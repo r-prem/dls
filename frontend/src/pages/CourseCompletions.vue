@@ -178,7 +178,7 @@ const columns = [
     sortable: true
   },
   {
-    label: 'Last Updated',
+    label: __('Last Updated'),
     key: 'modified',
     align: 'right',
     sortable: true

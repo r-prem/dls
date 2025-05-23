@@ -130,7 +130,7 @@ const userDropdownOptions = computed(() => {
 			items: [
 				{
 					icon: User,
-					label: 'My Profile',
+					label: __('My Profile'),
 					onClick: () => {
 						router.push(`/user/${userResource.data?.username}`)
 					},
@@ -151,17 +151,17 @@ const userDropdownOptions = computed(() => {
 				},
 				{
 					icon: Settings,
-					label: 'Settings',
+					label: __('Settings'),
 					onClick: () => {
 						settingsStore.isSettingsOpen = true
 					},
 					condition: () => {
-						return userResource.data?.is_moderator
+						return userResource.data?.is_system_manager
 					},
 				},
 				{
 					icon: FrappeCloudIcon,
-					label: 'Login to Frappe Cloud',
+					label: __('Login to Frappe Cloud'),
 					onClick: () => {
 						$dialog({
 							title: __('Login to Frappe Cloud?'),
@@ -189,10 +189,10 @@ const userDropdownOptions = computed(() => {
 				},
 				{
 					icon: LogOut,
-					label: 'Log out',
+					label: __('Log out'),
 					onClick: () => {
 						logout.submit().then(() => {
-							isLoggedIn = false
+							isLoggedIn = false	
 						})
 					},
 					condition: () => {
@@ -201,7 +201,7 @@ const userDropdownOptions = computed(() => {
 				},
 				{
 					icon: LogIn,
-					label: 'Log in',
+					label: __('Log in'),
 					onClick: () => {
 						window.location.href = '/login'
 					},

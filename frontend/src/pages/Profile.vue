@@ -21,6 +21,7 @@
 				class="absolute bottom-0 left-1/2 mb-4 flex -translate-x-1/2 space-x-2 opacity-0 transition-opacity focus-within:opacity-100 group-hover:opacity-100"
 				v-if="isSessionUser()"
 			>
+			<!--
 				<EditCoverImage
 					@select="(imageUrl) => coverImage.submit({ url: imageUrl })"
 				>
@@ -33,6 +34,7 @@
 						</Button>
 					</template>
 				</EditCoverImage>
+			-->
 			</div>
 		</div>
 		<div class="mx-auto -mt-10 md:-mt-4 max-w-4xl translate-x-0 px-5">
@@ -154,7 +156,7 @@ const coverImage = createResource({
 
 const setActiveTab = () => {
 	let fragments = route.path.split('/')
-	let sections = ['certificates', 'roles', 'slots', 'schedule']
+	let sections = ['certificates', 'roles']
 	sections.forEach((section) => {
 		if (fragments.includes(section)) {
 			activeTab.value = convertToTitleCase(section)
@@ -165,11 +167,14 @@ const setActiveTab = () => {
 
 watchEffect(() => {
 	if (activeTab.value) {
-		let route = {
+		const routes = {
 			Certificates: { name: 'ProfileCertificates' },
-			Roles: { name: 'ProfileRoles' },
-		}[activeTab.value]
-		router.push(route)
+			Roles: { name: 'ProfileRoles' }
+		}
+		const route = routes[activeTab.value]
+		if (route) {
+			router.push(route)
+		}
 	}
 })
 
